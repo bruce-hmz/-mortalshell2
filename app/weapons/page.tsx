@@ -5,7 +5,7 @@ import { getGuidePage } from "@/content/pages";
 const page = getGuidePage("weapons")!;
 
 export const metadata: Metadata = {
-  title: page.metaTitle,
+  title: { absolute: page.metaTitle },
   description: page.metaDescription,
   keywords: [
     "mortal shell 2 weapons",
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/weapons/" },
   openGraph: {
-    title: page.metaTitle,
+    title: { absolute: page.metaTitle },
     description: page.metaDescription,
-    images: ["/img/site-3.jpg"],
+    images: [{ url: "/img/site-3.jpg", width: 1000, height: 563 }],
     type: "article",
   },
 };

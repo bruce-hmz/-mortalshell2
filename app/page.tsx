@@ -121,6 +121,8 @@ const jsonLd = {
       "@type": "VideoGame",
       name: "Mortal Shell II",
       alternateName: ["Mortal Shell 2"],
+      description:
+        "Standalone dark fantasy souls-like action RPG by Cold Symmetry and Playstack: no-stamina resolve-driven combat, eight possessable warrior shells, and an interconnected world with over 60 dungeons. Releases August 20, 2026 on PC, PS5 and Xbox Series X/S.",
       genre: ["Action RPG", "Souls-like"],
       gamePlatform: ["PC", "PlayStation 5", "Xbox Series X/S"],
       playMode: "SinglePlayer",
@@ -131,7 +133,19 @@ const jsonLd = {
       sameAs: [
         "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
         "https://mortalshell.com/",
+        "https://www.youtube.com/@Playstack",
       ],
+    },
+    {
+      "@type": "VideoObject",
+      name: "Mortal Shell II — Official Gameplay Reveal",
+      description:
+        "Playstack's official gameplay reveal for Mortal Shell II.",
+      thumbnailUrl: [`${SITE_URL}/img/yt-cPSE1yrooT4.jpg`],
+      uploadDate: "2026-04-01",
+      duration: "PT11M39S",
+      embedUrl: "https://www.youtube.com/embed/cPSE1yrooT4",
+      contentUrl: "https://www.youtube.com/watch?v=cPSE1yrooT4",
     },
   ],
 };

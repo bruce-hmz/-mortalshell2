@@ -16,41 +16,71 @@ const SOURCES = [
 ];
 
 export function GuideArticle({ page }: { page: GuidePage }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        headline: page.h1,
-        inLanguage: "en",
-        datePublished: "2026-08-17",
-        dateModified: "2026-08-17",
-        author: {
-          "@type": "Organization",
-          name: "Mortal Shell II Community Guide",
+  const articleImage = `${SITE_URL}${page.heroImage?.src ?? "/img/site-2.jpg"}`;
+
+  const graph: object[] = [
+    {
+      "@type": "Article",
+      headline: page.h1,
+      url: `${SITE_URL}/${page.slug}/`,
+      image: [articleImage],
+      inLanguage: "en",
+      datePublished: "2026-08-17",
+      dateModified: "2026-08-17",
+      author: {
+        "@type": "Organization",
+        name: "Mortal Shell II Community Guide",
+        url: `${SITE_URL}/`,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Mortal Shell II Community Guide",
+        url: `${SITE_URL}/`,
+        logo: {
+          "@type": "ImageObject",
+          url: `${SITE_URL}/android-chrome-192x192.png`,
         },
-        about: { "@type": "VideoGame", name: "Mortal Shell II" },
-        isAccessibleForFree: true,
       },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Mortal Shell II Guide",
-            item: SITE_URL + "/",
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: page.h1,
-            item: `${SITE_URL}/${page.slug}/`,
-          },
-        ],
+      about: { "@type": "VideoGame", name: "Mortal Shell II" },
+      isAccessibleForFree: true,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `${SITE_URL}/${page.slug}/`,
       },
-    ],
-  };
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Mortal Shell II Guide",
+          item: `${SITE_URL}/`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: page.h1,
+          item: `${SITE_URL}/${page.slug}/`,
+        },
+      ],
+    },
+  ];
+
+  if (page.video) {
+    graph.push({
+      "@type": "VideoObject",
+      name: page.video.title,
+      description: page.video.caption,
+      thumbnailUrl: [`${SITE_URL}/img/yt-${page.video.youtubeId}.jpg`],
+      uploadDate: page.video.publishedAt,
+      duration: page.video.duration,
+      embedUrl: `https://www.youtube.com/embed/${page.video.youtubeId}`,
+      contentUrl: `https://www.youtube.com/watch?v=${page.video.youtubeId}`,
+    });
+  }
+
+  const jsonLd = { "@context": "https://schema.org", "@graph": graph };
 
   return (
     <>
@@ -59,72 +89,78 @@ export function GuideArticle({ page }: { page: GuidePage }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="wrap article">
-        <article className="article-body">
+        <div className="article-body">
           <p className="breadcrumb">
             <Link href="/">Mortal Shell II Guide</Link>
             <span aria-hidden="true"> / </span>
             {page.eyebrow}
           </p>
-          <p className="eyebrow">{page.eyebrow}</p>
-          <h1>{page.h1}</h1>
+          <article>
+            <p className="eyebrow">{page.eyebrow}</p>
+            <h1>{page.h1}</h1>
 
-          {page.heroImage ? (
-            <figure className="article-hero">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={page.heroImage.src}
-                alt={page.heroImage.alt}
-                loading="lazy"
-              />
-              <figcaption>{page.heroImage.caption}</figcaption>
-            </figure>
-          ) : null}
+            {page.heroImage ? (
+              <figure className="article-hero">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={page.heroImage.src}
+                  alt={page.heroImage.alt}
+                  loading="lazy"
+                />
+                <figcaption>{page.heroImage.caption}</figcaption>
+              </figure>
+            ) : null}
 
-          {page.intro.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
-
-          {page.blocks.map((block) => (
-            <section className="fact-block" key={block.heading}>
-              <h2>{block.heading}</h2>
-              {block.paragraphs.map((paragraph, i) => (
-                <p key={i}>{paragraph}</p>
-              ))}
-              {block.bullets ? (
-                <ul>
-                  {block.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-              ) : null}
-            </section>
-          ))}
-
-          {page.video ? (
-            <section className="article-video" aria-label="Official video">
-              <VideoFacade
-                youtubeId={page.video.youtubeId}
-                title={page.video.title}
-                poster={
-                  page.video.poster ??
-                  `/img/yt-${page.video.youtubeId}.jpg`
-                }
-                caption={page.video.caption}
-              />
-            </section>
-          ) : null}
-
-          {page.communityNote ? (
-            <aside className="note-box" aria-label="Community opinion">
-              <h2>{page.communityNote.heading}</h2>
-              <p>{page.communityNote.body}</p>
-              <p className="attribution">
-                — {page.communityNote.attribution}
+            {page.intro.map((paragraph, i) => (
+              <p key={i} className={i === 0 ? "lead" : undefined}>
+                {paragraph}
               </p>
-            </aside>
-          ) : null}
+            ))}
 
-          <section className="pending-box" aria-label="Pending launch verification">
+            {page.blocks.map((block) => (
+              <section className="fact-block" key={block.heading}>
+                <h2>{block.heading}</h2>
+                {block.paragraphs.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+                {block.bullets ? (
+                  <ul>
+                    {block.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                ) : null}
+              </section>
+            ))}
+
+            {page.video ? (
+              <section className="article-video" aria-label="Official video">
+                <VideoFacade
+                  youtubeId={page.video.youtubeId}
+                  title={page.video.title}
+                  poster={
+                    page.video.poster ?? `/img/yt-${page.video.youtubeId}.jpg`
+                  }
+                  caption={page.video.caption}
+                />
+              </section>
+            ) : null}
+
+            {page.communityNote ? (
+              <aside className="note-box" aria-label="Community opinion">
+                <h2>{page.communityNote.heading}</h2>
+                <p>{page.communityNote.body}</p>
+                <p className="attribution">
+                  — {page.communityNote.attribution}
+                </p>
+              </aside>
+            ) : null}
+          </article>
+
+          <aside
+            className="pending-box"
+            aria-label="Pending launch verification"
+          >
             <h2>{page.pending.heading}</h2>
             <p>{page.pending.intro}</p>
             <ul>
@@ -132,7 +168,7 @@ export function GuideArticle({ page }: { page: GuidePage }) {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-          </section>
+          </aside>
 
           <footer className="article-sources">
             <h2>Sources &amp; review trail</h2>
@@ -155,7 +191,7 @@ export function GuideArticle({ page }: { page: GuidePage }) {
               be rechecked against the launch build.
             </p>
           </footer>
-        </article>
+        </div>
 
         <aside className="article-side">
           <div className="side-box">

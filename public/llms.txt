@@ -1,0 +1,32 @@
+# Mortal Shell II Guide
+
+> Fan-made community guide hub for Mortal Shell II (mortalshell2.online), an English-language souls-like game guide site. Game facts are checked against the official Steam page and mortalshell.com; launch-specific data (shell stats, weapon costs, boss names) is marked as pending and will be verified against the release build.
+
+## Pages
+
+- [Mortal Shell 2 Beginner Guide](https://mortalshell2.online/beginner-guide/): no-stamina combat and the resolve economy, Standard vs Devout Edition early-access timing, and what gets confirmed at launch
+- [Mortal Shell 2 Best Build](https://mortalshell2.online/best-build/): the eight shells as build classes, resolve and sidearm synergy, and the attributed early community consensus on burst DPS
+- [Mortal Shell 2 Walkthrough](https://mortalshell2.online/walkthrough/): world structure — an interconnected open world with 60+ dungeons — and what exploration off the golden path rewards
+- [Mortal Shell 2 Shells](https://mortalshell2.online/shells/): all eight lost warrior shells, possession, innate abilities, and the memories that unlock each shell's story
+- [Mortal Shell 2 Weapons](https://mortalshell2.online/weapons/): melee blades and ranged sidearms, strategic upgrade tracks, and the posture-break system that enables critical execution strikes
+- [Mortal Shell 2 Tips](https://mortalshell2.online/tips/): resolve generation through aggression and non-linear dungeon exploration
+
+## Key facts (verified 2026-08-17 against official sources)
+
+- Release date: August 20, 2026, worldwide, on PC (Steam), PlayStation 5, and Xbox Series X/S
+- Developer: Cold Symmetry. Publisher: Playstack
+- Combat has no stamina gauge: landing aggressive melee hits generates resolve, which funds defensive skills and weapon arts
+- Eight possessable lost-warrior shells, each with a unique ability tree and personal lore unlocked through memories
+- The world is a compact, interconnected open world containing more than 60 dungeons
+- Consecutive melee strikes build posture damage; a full posture break staggers enemies for critical execution strikes
+- The Devout Edition grants up to 72 hours of advance access before the worldwide release
+
+## Sources
+
+- Steam store page: https://store.steampowered.com/app/2584270/Mortal_Shell_II/
+- Official website: https://mortalshell.com/
+- Official trailers: Playstack channel on YouTube
+
+## Usage policy
+
+Text guides may be cited and quoted with attribution to mortalshell2.online. Screenshots, key art, and trailers are official promotional material courtesy of Cold Symmetry / Playstack and are not ours to license.

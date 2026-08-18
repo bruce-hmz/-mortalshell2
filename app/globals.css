@@ -667,7 +667,7 @@ a:hover {
   max-width: var(--measure);
 }
 
-.article-body > p:first-of-type {
+.article-body .lead {
   font-size: 1.15rem;
   color: var(--bone);
 }

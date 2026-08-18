@@ -5,7 +5,7 @@ import { getGuidePage } from "@/content/pages";
 const page = getGuidePage("walkthrough")!;
 
 export const metadata: Metadata = {
-  title: page.metaTitle,
+  title: { absolute: page.metaTitle },
   description: page.metaDescription,
   keywords: [
     "mortal shell 2 walkthrough",
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/walkthrough/" },
   openGraph: {
-    title: page.metaTitle,
+    title: { absolute: page.metaTitle },
     description: page.metaDescription,
-    images: ["/img/site-5.jpg"],
+    images: [{ url: "/img/site-5.jpg", width: 750, height: 422 }],
     type: "article",
   },
 };

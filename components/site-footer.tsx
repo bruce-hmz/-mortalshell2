@@ -48,7 +48,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="footer-legal">
-          <span>© 2026 Mortal Shell II Community Guide</span>
+          <span>© 2026 mortalshell2.online</span>
           <nav aria-label="Legal">
             <Link href="/privacy/">Privacy Policy</Link>
             <Link href="/terms/">Terms of Service</Link>

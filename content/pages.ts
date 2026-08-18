@@ -14,6 +14,8 @@ export type GuidePageVideo = {
   youtubeId: string;
   title: string;
   caption: string;
+  publishedAt: string;
+  duration: string;
   poster?: string;
 };
 
@@ -47,7 +49,7 @@ export const RELEASE_DATE = "August 20, 2026";
 export const guidePages: GuidePage[] = [
   {
     slug: "beginner-guide",
-    metaTitle: "Mortal Shell 2 Beginner Guide — First Hours, Resolve & Editions",
+    metaTitle: "Mortal Shell 2 Beginner Guide: First Hours & Combat",
     metaDescription:
       "Mortal Shell 2 beginner guide: how no-stamina combat and resolve shape your first hours, what changes between Standard and Devout Edition, and what gets confirmed at launch.",
     cardBlurb:
@@ -56,6 +58,8 @@ export const guidePages: GuidePage[] = [
       youtubeId: "w0SLSLuYMhw",
       title: "Mortal Shell II — Official Announcement Trailer",
       caption: "Official Announcement Trailer — Playstack on YouTube",
+      publishedAt: "2025-06-06",
+      duration: "PT2M",
     },
     h1: "Mortal Shell 2 Beginner Guide",
     eyebrow: "Start Here",
@@ -103,7 +107,7 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "best-build",
-    metaTitle: "Mortal Shell 2 Best Build — Shells, Resolve & Posture Synergy",
+    metaTitle: "Mortal Shell 2 Best Build: Shells & Posture Synergy",
     metaDescription:
       "How builds work in Mortal Shell 2: eight shells as classes with talent trees, no-stamina resolve generation, and the early community consensus on the strongest burst combination.",
     cardBlurb:
@@ -157,7 +161,7 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "walkthrough",
-    metaTitle: "Mortal Shell 2 Walkthrough — World Structure & Exploration Routes",
+    metaTitle: "Mortal Shell 2 Walkthrough: World & Progression",
     metaDescription:
       "What is confirmed about Mortal Shell 2 progression: an interconnected open world with over 60 dungeons, and what exploration off the golden path rewards.",
     cardBlurb:
@@ -213,7 +217,7 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "shells",
-    metaTitle: "Mortal Shell 2 Shells — All 8 Lost Warriors, Abilities & Memories",
+    metaTitle: "Mortal Shell 2 Shells: All 8 Lost Warriors & Abilities",
     metaDescription:
       "All confirmed details on the eight lost warrior shells in Mortal Shell 2: possession, innate abilities, talent trees, and the memories that unlock each shell's story.",
     cardBlurb:
@@ -261,7 +265,7 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "weapons",
-    metaTitle: "Mortal Shell 2 Weapons — Upgrades, Sidearms & Posture Breaking",
+    metaTitle: "Mortal Shell 2 Weapons: Upgrades & Posture Breaks",
     metaDescription:
       "Confirmed Mortal Shell 2 weapon systems: strategic upgrades for melee blades and ranged sidearms, and how consecutive strikes break enemy posture for critical executions.",
     cardBlurb:
@@ -313,7 +317,7 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "tips",
-    metaTitle: "Mortal Shell 2 Tips — Resolve, Weapon Arts & Dungeon Secrets",
+    metaTitle: "Mortal Shell 2 Tips: Resolve, Combat & Dungeon Secrets",
     metaDescription:
       "Essential confirmed Mortal Shell 2 tips: how resolve funds defense and weapon arts, and why non-linear dungeon paths hide equipment, currencies and lore.",
     cardBlurb:

@@ -5,7 +5,7 @@ import { getGuidePage } from "@/content/pages";
 const page = getGuidePage("tips")!;
 
 export const metadata: Metadata = {
-  title: page.metaTitle,
+  title: { absolute: page.metaTitle },
   description: page.metaDescription,
   keywords: [
     "mortal shell 2 tips",
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/tips/" },
   openGraph: {
-    title: page.metaTitle,
+    title: { absolute: page.metaTitle },
     description: page.metaDescription,
-    images: ["/img/site-7.jpg"],
+    images: [{ url: "/img/site-7.jpg", width: 1000, height: 562 }],
     type: "article",
   },
 };

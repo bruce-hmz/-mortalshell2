@@ -5,7 +5,7 @@ import { getGuidePage } from "@/content/pages";
 const page = getGuidePage("best-build")!;
 
 export const metadata: Metadata = {
-  title: page.metaTitle,
+  title: { absolute: page.metaTitle },
   description: page.metaDescription,
   keywords: [
     "mortal shell 2 best build",
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/best-build/" },
   openGraph: {
-    title: page.metaTitle,
+    title: { absolute: page.metaTitle },
     description: page.metaDescription,
-    images: ["/img/site-2.jpg"],
+    images: [{ url: "/img/site-2.jpg", width: 1600, height: 899 }],
     type: "article",
   },
 };
