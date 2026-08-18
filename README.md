@@ -35,14 +35,20 @@ npm run dev    # 本地开发
 npm run build  # 静态导出到 out/
 ```
 
-## 部署（2026-08-18 已上线 Vercel）
+## 部署（2026-08-18 已正式上线 ✅）
 
-- **平台**：Vercel（CLI 账号 bruce-hmz），项目名 `mortal-shell-ii-nu`，生产地址 https://mortal-shell-ii-nu.vercel.app
-- **正式域名**：`mortalshell2.online`（Spaceship 购入，NS 已在 launch1/launch2.spaceship.net）
-- **待办（用户在 Spaceship 操作）**：删掉停放 A 记录（34.216.117.25 / 54.149.79.189），添加 A `@` → `76.76.21.21`，CNAME `www` → `cname.vercel-dns.com`；生效后 `vercel alias set <生产URL> mortalshell2.online` + `www.mortalshell2.online`，证书自动签发
-- **Next.js 已升级 15.5.4 → 15.5.23**（Vercel 安全门禁要求）
-- **GitHub**：本地 git 已初始化并提交；`gh` 的 fine-grained token 无建仓权限，待用户在 github.com 手动建 `mortal-shell-ii-guide` 私有仓（或给 token 加 repo 权限）后 `git remote add origin … && git push -u main`，再在 Vercel 接 GitHub 自动构建
-- **上线后**：GSC 添加 `mortalshell2.online` 资源（DNS TXT 验证）→ 提交 sitemap.xml → 按 06 方法论看数据补页
+- **正式地址**：https://mortalshell2.online（HTTPS + Let's Encrypt 证书；www 307 重定向到主域）
+- **平台**：Vercel，项目 `mortal-shell-ii`，已接 GitHub 自动构建（push main → 自动部署，已验证）
+- **GitHub**：https://github.com/bruce-hmz/-mortalshell2（私有）
+- **DNS（Spaceship）**：A `@` → 76.76.21.21；CNAME `www` → cname.vercel-dns.com
+- **域名绑定方式**：项目级域名（Vercel API 添加；曾用 `vercel alias set` 只做部署别名会触发 SSO 保护网关，勿再用）
+- **Next.js 15.5.23**（15.5.4 被 Vercel 安全门禁拒绝）
+- **上线检查已通过**：全页面/资产 HTTPS 200、canonical 绝对地址、sitemap(9 URL)/robots 域名正确、www→apex 307
+
+### 上线后待办
+1. **GSC**：Search Console → 网域资源 `mortalshell2.online`（DNS TXT 验证，TXT 加在 Spaceship）→ 提交 sitemap → 请求索引首页
+2. **GA4**（可选）：建媒体资源 → 数据流 `mortalshell2.online` → 脚本接入（当前站点无统计脚本）
+3. 8/21 复查 volatile 事实（发售日/版本），补内页 pending 内容；Steam CDN 恢复后补实机截图
 
 ## 命令
 
