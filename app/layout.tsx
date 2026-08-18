@@ -34,6 +34,11 @@ export const metadata: Metadata = {
   description:
     "Complete fan-made community guide hub for Mortal Shell II covering beginner routes, best builds, all 8 lost warrior shells, weapon upgrades, and dungeon walkthroughs.",
   manifest: "/site.webmanifest",
+  verification: {
+    other: {
+      "msvalidate.01": "4E8F39340F2231F9711A6DC34C13F360",
+    },
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
