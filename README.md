@@ -3,6 +3,8 @@
 基于 `/Volumes/RTL9210/keywords/game/research/mortal-shell-ii/` 的已验证素材创建的英文游戏攻略站。
 Next.js (App Router, 静态导出) · 单 locale (en-US) · 一关键词一内页。
 
+**正式域名**：`https://mortalshell2.online`（Spaceship 购入）· 部署平台：Vercel（项目 `mortal-shell-ii-guide`）
+
 ## 页面清单（与 page-plan.json 对齐）
 
 | 路径 | 关键词 | 优先级 |
