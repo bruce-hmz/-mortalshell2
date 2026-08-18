@@ -35,11 +35,23 @@ npm run dev    # 本地开发
 npm run build  # 静态导出到 out/
 ```
 
-## 部署
+## 部署（2026-08-18 已上线 Vercel）
 
-1. `out/` 是纯静态产物，可直接部署到 Vercel / Cloudflare Pages / GitHub Pages。
-2. **部署前必做**：确定正式域名后，在部署环境设置 `SITE_URL=https://<域名>`（sitemap.xml 与 robots.txt 使用该值），并在 `app/layout.tsx` 的 `metadata` 中补 `metadataBase: new URL(SITE_URL)` 让 canonical 变为绝对地址。
-3. 上线后接 GSC + GA，提交 sitemap，按方法论 05/06 流程请求索引与迭代。
+- **平台**：Vercel（CLI 账号 bruce-hmz），项目名 `mortal-shell-ii-nu`，生产地址 https://mortal-shell-ii-nu.vercel.app
+- **正式域名**：`mortalshell2.online`（Spaceship 购入，NS 已在 launch1/launch2.spaceship.net）
+- **待办（用户在 Spaceship 操作）**：删掉停放 A 记录（34.216.117.25 / 54.149.79.189），添加 A `@` → `76.76.21.21`，CNAME `www` → `cname.vercel-dns.com`；生效后 `vercel alias set <生产URL> mortalshell2.online` + `www.mortalshell2.online`，证书自动签发
+- **Next.js 已升级 15.5.4 → 15.5.23**（Vercel 安全门禁要求）
+- **GitHub**：本地 git 已初始化并提交；`gh` 的 fine-grained token 无建仓权限，待用户在 github.com 手动建 `mortal-shell-ii-guide` 私有仓（或给 token 加 repo 权限）后 `git remote add origin … && git push -u main`，再在 Vercel 接 GitHub 自动构建
+- **上线后**：GSC 添加 `mortalshell2.online` 资源（DNS TXT 验证）→ 提交 sitemap.xml → 按 06 方法论看数据补页
+
+## 命令
+
+```bash
+npm install
+npm run dev    # 本地开发
+npm run build  # 静态导出到 out/
+python3 preview-server.py  # 本地预览 http://127.0.0.1:4173（no-store）
+```
 
 ## 媒体素材（2026-08-18 接入）
 
