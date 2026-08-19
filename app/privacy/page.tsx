@@ -16,10 +16,13 @@ export default function PrivacyPage() {
         sign-in, and does not ask for personal information.
       </p>
       <p>
-        We do not sell or share personal data. If analytics are enabled in the
-        future, this policy will be updated before that happens, and any
-        measurement will be limited to aggregate, non-identifying traffic
-        counts.
+        We use Google Analytics (Google tag, measurement ID G-2WH9BHR3T7) to
+        measure aggregate traffic — which pages are read and where visitors
+        come from. Google&apos;s measurement cookies may be set in your
+        browser; IP addresses are anonymized by default in GA4 and we do not
+        build individual profiles, sell, or share personal data. You can
+        block measurement with any standard ad-blocker or browser tracking
+        protection without affecting how this site works.
       </p>
       <p>
         External links to the official Steam store page and the official
