@@ -30,9 +30,9 @@ export function GuideArticle({ page }: { page: GuidePage }) {
       datePublished: page.datePublished ?? "2026-08-17",
       dateModified: page.datePublished ?? "2026-08-17",
       author: {
-        "@type": "Organization",
-        name: "Mortal Shell II Community Guide",
-        url: `${SITE_URL}/`,
+        "@type": "Person",
+        name: "Bruce",
+        url: `${SITE_URL}/about/`,
       },
       publisher: {
         "@type": "Organization",

@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/${page.slug}/`,
       lastModified,
     })),
+    { url: `${BASE_URL}/about/`, lastModified },
     { url: `${BASE_URL}/privacy/`, lastModified },
     { url: `${BASE_URL}/terms/`, lastModified },
   ];

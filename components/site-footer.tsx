@@ -22,6 +22,11 @@ export function SiteFooter() {
               Steam store page, mortalshell.com, and Playstack&apos;s YouTube
               channel.
             </p>
+            <p style={{ fontSize: "0.82rem" }}>
+              Run by Bruce ·{" "}
+              <a href="mailto:yang2big@gmail.com">yang2big@gmail.com</a> ·{" "}
+              <Link href="/about/">About this guide</Link>
+            </p>
           </div>
           <div>
             <h2>Official links</h2>
@@ -50,6 +55,7 @@ export function SiteFooter() {
         <div className="footer-legal">
           <span>© 2026 mortalshell2.online</span>
           <nav aria-label="Legal">
+            <Link href="/about/">About</Link>
             <Link href="/privacy/">Privacy Policy</Link>
             <Link href="/terms/">Terms of Service</Link>
           </nav>
