@@ -142,7 +142,7 @@ const jsonLd = {
       description:
         "Playstack's official gameplay reveal for Mortal Shell II.",
       thumbnailUrl: [`${SITE_URL}/img/yt-cPSE1yrooT4.jpg`],
-      uploadDate: "2026-04-01",
+      uploadDate: "2026-04-01T07:58:06-07:00",
       duration: "PT11M39S",
       embedUrl: "https://www.youtube.com/embed/cPSE1yrooT4",
       contentUrl: "https://www.youtube.com/watch?v=cPSE1yrooT4",

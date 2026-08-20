@@ -66,7 +66,7 @@ export const guidePages: GuidePage[] = [
       youtubeId: "w0SLSLuYMhw",
       title: "Mortal Shell II — Official Announcement Trailer",
       caption: "Official Announcement Trailer — Playstack on YouTube",
-      publishedAt: "2025-06-06",
+      publishedAt: "2025-06-06T14:04:28-07:00",
       duration: "PT2M",
     },
     h1: "Mortal Shell 2 Beginner Guide",
