@@ -137,13 +137,35 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Shells are the class system",
         paragraphs: [
-          "The eight warrior shells act as specialized combat classes. Each shell carries its own talent tree and its own set of passives, so the foundation of any build is choosing the shell whose kit matches the way you want to fight.",
+          "The eight warrior shells act as specialized combat classes. Each shell carries its own talent tree and its own set of passives, so the foundation of any build is choosing the shell whose kit matches the way you want to fight. The full roster — and where to find every shell — is in the shells guide.",
         ],
       },
       {
         heading: "No stamina means resolve builds",
         paragraphs: [
           "There is no stamina management in Mortal Shell II. Instead, combat builds revolve around resolve generation and sidearm synergy: you charge resolve through aggression, then spend it on the abilities and sidearm discharge that define your build's power spikes.",
+        ],
+      },
+      {
+        heading: "A named build for every shell",
+        paragraphs: [
+          "Game8's walkthrough team (guide updated August 19, 2026, against the launch build) publishes a best build for each of the eight shells, pairing a weapon, a sidearm, and a seal with each shell's ability kit. Their picks, summarized:",
+        ],
+        bullets: [
+          "Tiel — Axe and Dagger + Salvaged Trebuchaxe: guaranteed critical strikes via the Critical Role ability",
+          "Proxima (Lightning) — Great Martyr's Blade + Triarch Repeater: Biosampler inflicts Stasis and Lightning stacks for burst",
+          "Eredrim — The Iconoclast + Forgotten Crossbow: wears down enemy Break gauges and controls groups",
+          "Gragu — Axe and Dagger + Triarch Repeater: high critical damage stacked on Revered Heart buffs",
+          "Smert (Chaos) — Axe and Dagger + Caged Hystrix: unarmed Chaos stacks during Miracle, burst at the end",
+          "Sester Genessa (Clone) — Axatana + Naylshotte: Light Attack spam with Faithful Double and Stray Double for multi-hit damage",
+          "Lazlo — Axatana + Ballistazooka: rapid critical hits during Overheat, Retribution feeding the Heat Meter",
+          "Sariel — Veteran's Battle Axe + Caged Hystrix: Trauma damage-over-time leading into executes",
+        ],
+      },
+      {
+        heading: "How to read these builds",
+        paragraphs: [
+          "These are attributed recommendations, not objective truth — build rankings will reshuffle as patches land and the community digs into the game. The stable principles are the ones this page was built on before launch: pick the shell whose abilities you enjoy, pair it with a weapon whose moveset you can pilot (all eight are catalogued in the weapons guide), and let resolve generation pay for your defense.",
         ],
       },
     ],
@@ -155,10 +177,11 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Pending launch verification",
       intro:
-        "Numeric details arrive with the full release. This page will be rechecked against:",
+        "Build rankings move fast in week one:",
       items: [
-        "Detailed damage multipliers for end-game weapon ascensions",
-        "Day-one patch balance adjustments and post-launch shell tuning",
+        "Damage multipliers for end-game weapon ascensions",
+        "Post-launch balance patches reshuffling shell and weapon rankings",
+        "Second attributed build source for cross-comparison",
       ],
     },
     related: [
@@ -246,23 +269,42 @@ export const guidePages: GuidePage[] = [
     ],
     blocks: [
       {
-        heading: "Eight lost warriors to possess",
+        heading: "The eight shells, named",
         paragraphs: [
-          "Eight distinct lost warrior shells are scattered throughout the game's ravaged world. Finding and possessing them is the core of character progression — each shell changes how the game feels to play.",
+          "The launch build's eight possessable shells are Tiel, Proxima, Eredrim, Gragu, Smert, Sester Genessa, Lazlo, and Sariel. A ninth figure, Harros, appears as the vassal who helps you during the prologue — he is not counted among the eight lost warriors your Harbinger ultimately inhabits.",
+          "Two of the shells, Gragu and Sester Genessa, are first encountered as living NPCs rather than corpses — Gragu drinking at the One Legged Wolf Tavern, Genessa running combat training in Marrow Keep. The rest are found out in the world, usually behind a boss fight or a ritual.",
         ],
       },
       {
-        heading: "Memories unlock abilities and lore",
+        heading: "How to unlock every shell",
         paragraphs: [
-          "Unravelling a shell's memories unlocks its unique innate abilities and reveals its personal lore background. Playing a shell well and digging into its secrets is how you develop its full kit.",
+          "Tiel and Proxima are the easiest: both general locations are revealed when you first enter Fainweald. Every other shell hides in a specific corner of the world, and several guard their bodies with a boss.",
+        ],
+        bullets: [
+          "Tiel — his gravestone east of Mushroom Village, inside a torch-lit fenced enclosure",
+          "Proxima — the Shattered Beacon in the Blackridge Cliffs, north of Widow's Overlook",
+          "Eredrim — defeat the Warden in the central arena of the Citadel of Penance (western Fainweald)",
+          "Gragu — bring him the Heart of Vatra from the Temple of Vatra; he dies and leaves his shell at the One Legged Wolf Tavern",
+          "Smert — interrupt the blood ritual over his body in Prophet's Rest, near the Outskirts of Nochte",
+          "Sester Genessa — win the censer from Sester Secondus in the Revenant Graves and return it to her in Marrow Keep",
+          "Lazlo — defeat Vellen, High Lord of Mammon, in the Royal Crypt of Mammon",
+          "Sariel — beat Sariel the Endless in his boss encounters: first in the white ruins of southern Mammon, then inside the Chamber of Becoming",
+        ],
+      },
+      {
+        heading: "What each shell is known for",
+        paragraphs: [
+          "Every shell carries its own ability tree and passive identity. Tiel's specialty is disappearing into the shadows; Smert wields time-stopping powers. For how those abilities turn into combat builds — which weapon, sidearm, and seal to pair with each shell — see the Mortal Shell 2 best build guide.",
+          "Shells also hold their own memories: unravelling them unlocks each shell's innate abilities and reveals their personal stories. Playing a shell well and digging into its secrets is how you develop its full kit — and the weapon you pair with it decides the rest. The full arsenal is catalogued in the weapons guide.",
         ],
       },
     ],
     pending: {
-      heading: "Pending launch verification",
-      intro: "Per-shell numbers arrive with the launch build:",
+      heading: "Still being verified",
+      intro: "Collected against the launch build over the coming days:",
       items: [
-        "Full individual shell stat spreads, including health and resolve capacity",
+        "Full per-shell stat spreads (health, resolve capacity) from individual shell data",
+        "Sidearm and seal rosters beyond the build pairings",
       ],
     },
     related: [
@@ -293,15 +335,31 @@ export const guidePages: GuidePage[] = [
     ],
     blocks: [
       {
-        heading: "Two upgrade tracks: melee and sidearms",
+        heading: "All 8 weapons in the launch build",
         paragraphs: [
-          "Weaponry features a strategic upgrade system that covers both close-quarters melee blades and ranged projectile sidearms. Upgrading is a deliberate choice between the two tracks rather than a single linear path.",
+          "Mortal Shell II ships with eight obtainable melee weapons, and the first one is handed to you: The Iconoclast is acquired during the prologue. The remaining seven are found across the world. Each has its own identity, from the pairing of a thief's axe with a dagger to a spear stolen from the Twiceborn.",
+        ],
+        bullets: [
+          "The Iconoclast — exceptionally light two-hander; your prologue starter",
+          "Axe and Dagger — a thief's tool paired with a northern axe",
+          "Great Martyr's Blade — the reforged weapon of the First Martyr Tarsus",
+          "Veteran's Battle Axe — solid steel, quenched in the blood of the Revered",
+          "Clockwork Scythe — the instrument of a madman or a genius",
+          "Axatana — exquisite forged blade that once bore the name Dream Thresher",
+          "Black Needle — a Twiceborn spear with implausible reach and speed",
+          "Obsidian Hammer — a brutalist chunk of obsidianite",
+        ],
+      },
+      {
+        heading: "Every moveset is unique",
+        paragraphs: [
+          "According to Game8's launch guide, each weapon defines its own complete moveset — Mortal Shell II has no weapon subtypes borrowing shared animations, so swapping weapons genuinely swaps playstyles. Ranged sidearms (like the Triarch Repeater or Ballistazooka that appear in build guides) extend that identity further.",
         ],
       },
       {
         heading: "Posture damage and critical strikes",
         paragraphs: [
-          "Consecutive melee strikes build posture damage on the target. Enough of it staggers tough enemies, opening them up for critical execution strikes — the payoff rhythm the whole combat system is built around.",
+          "Consecutive melee strikes build posture damage on the target. Enough of it staggers tough enemies, opening them up for critical execution strikes — the payoff rhythm the whole combat system is built around. Build guides lean into it: the shell-and-weapon pairings in the best build guide are largely organized around who breaks posture fastest and who capitalizes on the break.",
         ],
         bullets: [
           "Chain melee hits to build posture damage",
@@ -309,12 +367,19 @@ export const guidePages: GuidePage[] = [
           "Staggered enemies can be finished with critical execution strikes",
         ],
       },
+      {
+        heading: "None are missable",
+        paragraphs: [
+          "Per PowerPyx's location guide, no weapon is missable: all eight remain collectible after the final boss while you explore in free-roam, before entering New Game+. Their locations can be bought as map markers from the merchant Merrick in Marrow Keep — handy, but not required.",
+        ],
+      },
     ],
     pending: {
-      heading: "Pending launch verification",
-      intro: "Confirmed on this page after release:",
+      heading: "Still being verified",
+      intro: "Collected against the launch build over the coming days:",
       items: [
-        "Exact weapon upgrade material costs per tier",
+        "Per-weapon damage numbers and Tarstone upgrade costs per tier",
+        "Full sidearm roster with locations (second-source verification pending)",
       ],
     },
     related: [
