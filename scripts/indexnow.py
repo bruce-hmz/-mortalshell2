@@ -21,6 +21,7 @@ ALL_PATHS = [
     "/shells/",
     "/weapons/",
     "/tips/",
+    "/performance-fix/",
     "/privacy/",
     "/terms/",
 ]
