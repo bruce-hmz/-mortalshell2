@@ -41,6 +41,14 @@ export type GuidePage = {
     items: string[];
   };
   related: { label: string; href: string }[];
+  /**
+   * Per-page overrides. Defaults keep the original site-wide review trail
+   * (Steam store page + official site, August 17); pages researched later
+   * point at the sources they were actually verified against.
+   */
+  sources?: { name: string; url: string }[];
+  reviewedOn?: string;
+  datePublished?: string;
 };
 
 export const LAST_REVIEWED = "August 17, 2026";
@@ -370,7 +378,113 @@ export const guidePages: GuidePage[] = [
       { label: "Beginner Guide", href: "/beginner-guide/" },
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Walkthrough", href: "/walkthrough/" },
+      { label: "Performance Fix", href: "/performance-fix/" },
     ],
+  },
+  {
+    slug: "performance-fix",
+    metaTitle: "Mortal Shell 2 Performance Fix: Crashes & Stuttering",
+    metaDescription:
+      "Fix Mortal Shell 2 PC crashes and stuttering: Playstack's Hotfix 1, the official Keyboard Bindings save-file workaround, the shader cache fix, and minimum PC requirements.",
+    cardBlurb:
+      "The crash hotfix, the official save-file workaround, and the shader cache fix for lock-ups.",
+    h1: "Mortal Shell 2 Performance Fix",
+    eyebrow: "Troubleshooting",
+    intro: [
+      "The Advanced Access window that opened on August 17 came with PC crash reports — and Playstack has already responded. This page collects every fix that is officially confirmed: the crash hotfix the publisher shipped during Advanced Access, the save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release.",
+    ],
+    blocks: [
+      {
+        heading: "Fix 1 — Install the crash hotfix",
+        paragraphs: [
+          "If Mortal Shell II crashes frequently on PC, the first fix is already published. During Advanced Access, Playstack released Hotfix 1 for the frequent PC crashes players were reporting. It was first offered on the Steam patch-preview branch — Mortal Shell II in your library, Properties, then Betas — and has since been rolled out to all players as a standard patch, so the default branch already includes it.",
+        ],
+        bullets: [
+          "Hotfix 1 targets the frequent PC crashes reported during Advanced Access",
+          "It was initially opt-in via the patch-preview beta branch (Properties > Betas)",
+          "It is now available to all players as a standard patch",
+        ],
+      },
+      {
+        heading: "Fix 2 — Keyboard Bindings menu crash (official workaround)",
+        paragraphs: [
+          "Playstack has confirmed receiving several reports of crashes when opening the Keyboard Bindings menu in Settings. While a permanent fix is being worked on, the publisher published this official workaround:",
+        ],
+        bullets: [
+          "Close Mortal Shell II completely",
+          "Navigate to \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames",
+          "Delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav",
+          "Launch the game again",
+        ],
+      },
+      {
+        heading: "Fix 3 — Full lock-ups: set shader cache to Unlimited",
+        paragraphs: [
+          "For full lock-ups and crashes — including lock-ups on the loading screen after death — Playstack's community manager recommends raising the shader cache limit: open the NVIDIA Control Panel app, go to 3D Settings, and set Shader Cache Size to \"Unlimited\".",
+          "An independent guide reaches the same conclusion, listing the Shader Cache Size change (NVIDIA Control Panel or AMD Software equivalent) as the most effective fix for Mortal Shell II stuttering.",
+        ],
+        bullets: [
+          "NVIDIA Control Panel > 3D Settings > Shader Cache Size > Unlimited",
+          "AMD owners: the equivalent setting lives in AMD Software",
+        ],
+      },
+      {
+        heading: "Before anything else: check the requirements",
+        paragraphs: [
+          "Mortal Shell II's Steam listing sets a clear floor for PC players, and two details are easy to miss: the game wants 70 GB of space and an SSD is required. The PC release is Windows-only — there are no macOS or Linux listings.",
+        ],
+        bullets: [
+          "OS: Windows 10 / 11 (Windows-only release)",
+          "CPU: Intel Core i7-10700K @ 3.8 GHz or AMD Ryzen 5 3600 @ 3.6 GHz",
+          "RAM: 16 GB",
+          "GPU: NVIDIA GeForce RTX 2060 SUPER 8 GB or AMD Radeon RX 6600 8 GB",
+          "DirectX: Version 12",
+          "Storage: 70 GB available space — SSD required",
+        ],
+      },
+    ],
+    communityNote: {
+      heading: "Further settings worth trying (attributed)",
+      body: "Beyond the official fixes, LagoFast recommends disabling in-game V-Sync and capping the frame rate externally (e.g. 60 FPS via RivaTuner), switching Windows to a High Performance power plan with GPU mode \"Prefer maximum performance\", lowering Shadow Quality to High or Medium, enabling DLSS/FSR in Balanced mode, and trying the community-reported -UseFixedTimeStep Steam launch option for shader stutter.",
+      attribution: "LagoFast performance guide, updated August 16, 2026",
+    },
+    pending: {
+      heading: "Pending launch verification",
+      intro:
+        "The game releases August 20, 2026. This page will be rechecked against the launch build; still open:",
+      items: [
+        "Whether a launch-day patch supersedes Hotfix 1",
+        "A permanent fix note for the Keyboard Bindings crash (the workaround above is temporary)",
+        "Recommended PC requirements — Steam currently lists minimum only",
+        "Official word on Xbox Series S crash reports near the forgotten crossbow area (player-reported, collected by Playstack)",
+      ],
+    },
+    related: [
+      { label: "Mortal Shell 2 Tips", href: "/tips/" },
+      { label: "Beginner Guide", href: "/beginner-guide/" },
+      { label: "Best Build", href: "/best-build/" },
+    ],
+    sources: [
+      {
+        name: "Mortal Shell II Steam news (Playstack)",
+        url: "https://store.steampowered.com/news/app/2584270",
+      },
+      {
+        name: "Devout Edition Bug Reports megathread (Playstack community team, Reddit)",
+        url: "https://www.reddit.com/r/MortalShell/comments/1vqrp5x/megathread_devout_edition_bug_reports/",
+      },
+      {
+        name: "Mortal Shell II on Steam — store data",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
+      {
+        name: "LagoFast — Mortal Shell 2 stuttering & FPS drops guide",
+        url: "https://www.lagofast.com/en/blog/mortal-shell-2-stuttering-fps-drops/",
+      },
+    ],
+    reviewedOn: "August 19, 2026",
+    datePublished: "2026-08-20",
   },
 ];
 

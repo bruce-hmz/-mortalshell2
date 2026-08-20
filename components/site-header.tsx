@@ -10,6 +10,7 @@ const NAV = [
   { href: "/shells/", label: "Shells" },
   { href: "/weapons/", label: "Weapons" },
   { href: "/tips/", label: "Tips" },
+  { href: "/performance-fix/", label: "Fixes" },
 ];
 
 export function SiteHeader() {

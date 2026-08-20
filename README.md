@@ -16,6 +16,7 @@ Next.js (App Router, 静态导出) · 单 locale (en-US) · 一关键词一内�
 | `/shells/` | mortal shell 2 shells | P2 |
 | `/weapons/` | mortal shell 2 weapons | P2 |
 | `/tips/` | mortal shell 2 tips | P2 |
+| `/performance-fix/` | mortal shell 2 performance fix / crash fix / stuttering | P1（2026-08-20 发售日上线；素材验证于 08-19：Hotfix 1、键盘绑定存档修复、shader cache，来源为 Steam 新闻 + Playstack 官方 Reddit + LagoFast） |
 | `/privacy/` `/terms/` | 法律页（页脚要求） | — |
 
 achievements 页面在规划中为 `later / provisional`（等发售后完整奖杯路线图），**未创建**。

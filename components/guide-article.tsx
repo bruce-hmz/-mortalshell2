@@ -17,6 +17,8 @@ const SOURCES = [
 
 export function GuideArticle({ page }: { page: GuidePage }) {
   const articleImage = `${SITE_URL}${page.heroImage?.src ?? "/img/site-2.jpg"}`;
+  const articleSources = page.sources ?? SOURCES;
+  const reviewedOn = page.reviewedOn ?? LAST_REVIEWED;
 
   const graph: object[] = [
     {
@@ -25,8 +27,8 @@ export function GuideArticle({ page }: { page: GuidePage }) {
       url: `${SITE_URL}/${page.slug}/`,
       image: [articleImage],
       inLanguage: "en",
-      datePublished: "2026-08-17",
-      dateModified: "2026-08-17",
+      datePublished: page.datePublished ?? "2026-08-17",
+      dateModified: page.datePublished ?? "2026-08-17",
       author: {
         "@type": "Organization",
         name: "Mortal Shell II Community Guide",
@@ -173,7 +175,7 @@ export function GuideArticle({ page }: { page: GuidePage }) {
           <footer className="article-sources">
             <h2>Sources &amp; review trail</h2>
             <ul>
-              {SOURCES.map((source) => (
+              {articleSources.map((source) => (
                 <li key={source.url}>
                   <a
                     href={source.url}
@@ -187,7 +189,7 @@ export function GuideArticle({ page }: { page: GuidePage }) {
             </ul>
             <p style={{ marginTop: "12px" }}>
               Facts on this page were verified against the sources above on{" "}
-              {LAST_REVIEWED}. The game releases {RELEASE_DATE}; this page will
+              {reviewedOn}. The game releases {RELEASE_DATE}; this page will
               be rechecked against the launch build.
             </p>
           </footer>
@@ -207,7 +209,7 @@ export function GuideArticle({ page }: { page: GuidePage }) {
           <div className="side-box">
             <h2>Page status</h2>
             <p className="side-meta">
-              <strong>Last reviewed</strong> — {LAST_REVIEWED}
+              <strong>Last reviewed</strong> — {reviewedOn}
               <br />
               <strong>Game version</strong> — pre-release (1.0 pending)
               <br />
