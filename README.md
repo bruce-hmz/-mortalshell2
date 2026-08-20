@@ -28,6 +28,14 @@ achievements 页面在规划中为 `later / provisional`（等发售后完整奖
 - 页面标注的是真实核查日期（2026-08-17），不靠改日期制造新鲜度。
 - 游戏发售日 2026-08-20 属 volatile 事实（evidence `recheck_after: 2026-08-21`），**发售后需复查**首页 hero 与 about 区的日期、以及各内页 pending 清单。
 
+## 发售日内容扩充（2026-08-20，桶 B 完成）
+
+- **调研**：ego-browser 双源验证（game8 + RPS / game8 + PowerPyx），8 shell 名单+解锁+路线、8 武器名单+位置、8 个具名 build（归因 Game8 团队）。证据账本 +9 路线 claim（single_source 归因），validator 0 错 0 警。
+- **扩页**：shells 993 词（8 个寻路小节）/ weapons 825 词（7 条武器路线 + Tarstone/Tarforge + 配对指引）/ best-build 726 词 + 8-build 表（构筑四件套解剖 + 首个 build 指引）。
+- **冲突解决**：game8 表格含 Harros（9 行）vs RPS "8 个不含序章 Harros" → 按官方 eight lost warriors 采信 RPS 口径，resolution_note 入账。
+- **IndexNow**：三页两波共推送 6 次 + performance-fix 1 次，全部 HTTP 200。
+- **待第三批**：per-shell stat 表（血量/resolve）、副手/seal 独立清单（PowerPyx 有 Sidearm Locations 页）、boss 清单页（/bosses/，audit H6）、GSC 对新内容请求重索引。
+
 ## 命令
 
 ```bash
