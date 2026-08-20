@@ -97,6 +97,7 @@ const GUIDE_TAGS: Record<string, string> = {
   walkthrough: "Progression",
   shells: "Classes",
   weapons: "Arsenal",
+  bosses: "Bosses",
   tips: "Mechanics",
 };
 

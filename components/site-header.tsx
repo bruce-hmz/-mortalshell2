@@ -9,6 +9,7 @@ const NAV = [
   { href: "/walkthrough/", label: "Walkthrough" },
   { href: "/shells/", label: "Shells" },
   { href: "/weapons/", label: "Weapons" },
+  { href: "/bosses/", label: "Bosses" },
   { href: "/tips/", label: "Tips" },
   { href: "/performance-fix/", label: "Fixes" },
 ];

@@ -426,6 +426,12 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "The eight sidearms",
+        paragraphs: [
+          "The ranged half of the arsenal holds eight sidearms, and per PowerPyx's locations guide they mirror the melee roster's rules: Naylesshotte (your first), Forgotten Crossbow, Salvaged Trebuchaxe, Troubadour's Lute, Triarch Repeater, Ballistazooka, Cursed Child, and Caged Hystrix. Collecting all eight unlocks the trophy \u201cGuns. Lots of Guns\u201d, none are missable, and Merrick in Marrow Keep sells their map markers like he does for weapons. The build guide shows which sidearm each shell's loadout prefers.",
+        ],
+      },
+      {
         heading: "Pairing weapons with shells",
         paragraphs: [
           "Because every moveset is unique and every shell has its own kit, the interesting question is never “which weapon is best” — it’s which pairing you can pilot. The Iconoclast you start with becomes Eredrim's Break-gauge machine; the Axe and Dagger serves three different gameplans on Tiel, Gragu, and Smert. The pairing logic behind all eight shells is laid out in the best build guide.",
@@ -461,6 +467,78 @@ export const guidePages: GuidePage[] = [
       { label: "Best Build", href: "/best-build/" },
       { label: "Mortal Shell 2 Tips", href: "/tips/" },
       { label: "All Shells", href: "/shells/" },
+    ],
+  },
+  {
+    slug: "bosses",
+    metaTitle: "Mortal Shell 2 Bosses: All 10 Major Bosses in Order",
+    metaDescription:
+      "All ten Mortal Shell 2 major bosses in recommended order, with locations, region map, reward ties to shells and weapons, and general boss tips — verified against the launch build.",
+    cardBlurb:
+      "All 10 major bosses in order, their regions, and which fights pay out shells and weapons.",
+    h1: "Mortal Shell 2 Bosses",
+    eyebrow: "Bosses",
+    intro: [
+      "Mortal Shell II's critical path runs through ten major bosses guarding the Corrupted Gates, spread across nine regions from Disciple's Pass to the Faded Citadel and beyond. This page lists all ten in the recommended encounter order, with where each fight happens and what it pays out.",
+      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide, with Rock Paper Shotgun's ordered list corroborating the early encounters.",
+    ],
+    blocks: [
+      {
+        heading: "All 10 major bosses in order",
+        paragraphs: [
+          "Game8's recommended encounter order, with each boss's location:",
+        ],
+        bullets: [
+          "Magdalena, the Lady of the Woods — Magdalena's Glade in the Glutted Mire",
+          "The Lost Child — past the Sanguine Shoreline Beacon",
+          "The Nameless Captive — Prisoners' Domain, beyond the Executioner's Pulpit Beacon",
+          "Sir Isaac, the Scholar-Prince — past the Citadel Atrium Beacon",
+          "Droeg, the Conquerer — past the Ovate's Chamber Beacon",
+          "Hexapod — near the Nameless Pass Beacon",
+          "Monolith — near the Obsidian Vault Beacon",
+          "Malborn Offspring — near the Faithful's Shelter Beacon",
+          "Orrem, the Reclaimed — near the Bridge of Procession Beacon",
+          "Zmey, the Unbidden — The Hidden Nave Beacon, at The Unfounded Path (GameSpot's guide lists Zmey as the final boss)",
+        ],
+      },
+      {
+        heading: "The nine regions",
+        paragraphs: [
+          "Bosses are spread across Disciple's Pass, Fainweald, Glutted Mire, Sanguine Caverns, Ruins of Mammon, Prisoners' Domain, Withered Shoals, Conquered Temple, and Faded Citadel, with the endgame encounters waiting along The Unfounded Path. Beyond the ten majors, the world is thick with optional bosses and minibosses — Game8's compendium counts 44 boss encounters in total, with some of them missable.",
+        ],
+      },
+      {
+        heading: "Bosses that pay out shells and weapons",
+        paragraphs: [
+          "Several of the toughest fights double as collection milestones. The Warden at the centre of the Citadel of Penance rewards the Eredrim shell — the knight he killed long ago. Sariel the Endless guards his own shell at the Chamber of Becoming, and breaking his four reviving tombstones in the final room also yields the Clockwork Scythe. If you're planning a collection route, the shells guide and weapons guide map the rest of those payouts.",
+        ],
+      },
+      {
+        heading: "Rewards worth planning around",
+        paragraphs: [
+          "Per Game8's boss tables, the majors pay out boss-specific mementos and stones — Magdalena drops her Memento, the Lost Child the Lost Clotstone, the Nameless Captive the Captive's Scabstone — alongside hefty Gloom sums that scale from the 11,000s in the Glutted Mire to the 65,000s at the end of the path. Two optional fights matter just as much for build planners: the Tar Golem past the Disciple's Grotto drops Vatra's Seal (half of the strongest build setups), and the Great Arbiter of Flesh near Widow's Overlook drops the Arbiter's Prize stone that recurs across game8's recommended loadouts.",
+        ],
+      },
+      {
+        heading: "General boss tips",
+        paragraphs: [
+          "Game8's walkthrough team sums up boss preparation in five habits: level up your Harbinger before pushing into a new region, upgrade weapons and Tarstones, inflict Break damage with skills and parrying rather than raw trades, keep the resolve gauge maintained so your defenses stay funded, and treat red attacks as unconditional dodge signals.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro: "Collected against the launch build over the coming days:",
+      items: [
+        "Per-boss strategies and move-set breakdowns",
+        "Second-source confirmation of the 44 total boss count",
+        "Optional boss and miniboss roster per region",
+      ],
+    },
+    related: [
+      { label: "All Shells", href: "/shells/" },
+      { label: "Weapons Guide", href: "/weapons/" },
+      { label: "Walkthrough", href: "/walkthrough/" },
     ],
   },
   {
