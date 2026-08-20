@@ -211,9 +211,9 @@ export function GuideArticle({ page }: { page: GuidePage }) {
             <p className="side-meta">
               <strong>Last reviewed</strong> — {reviewedOn}
               <br />
-              <strong>Game version</strong> — pre-release (1.0 pending)
+              <strong>Game status</strong> — released Aug 20, 2026
               <br />
-              <strong>Status</strong> — facts verified, launch details pending
+              <strong>Status</strong> — facts verified; launch data being added
             </p>
           </div>
         </aside>

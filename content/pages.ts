@@ -93,9 +93,9 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Editions and when you can start",
         paragraphs: [
-          "Two editions are confirmed for launch. The Standard Edition unlocks on " +
+          "Two editions are confirmed. The Standard Edition unlocked on " +
             RELEASE_DATE +
-            ". The Devout Edition grants up to 72 hours of advance access, letting you begin playing before the worldwide release window opens.",
+            ". The Devout Edition granted up to 72 hours of advance access, letting early buyers begin playing before the worldwide release window opened.",
         ],
       },
     ],
@@ -182,9 +182,9 @@ export const guidePages: GuidePage[] = [
     h1: "Mortal Shell 2 Walkthrough",
     eyebrow: "Progression",
     intro: [
-      "A full step-by-step Mortal Shell II walkthrough will be published once the game is in players' hands on " +
+      "Mortal Shell II is out now (released " +
         RELEASE_DATE +
-        ". What is already officially confirmed is the shape of the journey — the world structure and the rules of exploration — and that is what this page covers today.",
+        "), and the full step-by-step walkthrough is being built against the launch build. What was officially confirmed before release — the world structure and the rules of exploration — is below and still accurate.",
       "Fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
         ".",

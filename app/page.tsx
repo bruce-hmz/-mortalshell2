@@ -55,7 +55,7 @@ const GALLERY = [
 ];
 
 const HERO_STATS = [
-  "Releasing worldwide on August 20, 2026 across PC, PS5, and Xbox Series X/S",
+  "Out now — released August 20, 2026 on PC, PS5, and Xbox Series X/S",
   "Features 8 distinct possessable warrior shells with dedicated ability trees",
   "Compact interconnected dark fantasy world with over 60 dungeons",
 ];

@@ -13,7 +13,7 @@
 
 ## Key facts (verified 2026-08-17 against official sources)
 
-- Release date: August 20, 2026, worldwide, on PC (Steam), PlayStation 5, and Xbox Series X/S
+- Release date: August 20, 2026 (out now), worldwide, on PC (Steam), PlayStation 5, and Xbox Series X/S
 - Developer: Cold Symmetry. Publisher: Playstack
 - Combat has no stamina gauge: landing aggressive melee hits generates resolve, which funds defensive skills and weapon arts
 - Eight possessable lost-warrior shells, each with a unique ability tree and personal lore unlocked through memories
