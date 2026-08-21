@@ -4,20 +4,24 @@
 
 ## Pages
 
-- [Mortal Shell 2 Beginner Guide](https://mortalshell2.online/beginner-guide/): no-stamina combat and the resolve economy, Standard vs Devout Edition early-access timing, and what gets confirmed at launch
-- [Mortal Shell 2 Best Build](https://mortalshell2.online/best-build/): the eight shells as build classes, resolve and sidearm synergy, and the attributed early community consensus on burst DPS
-- [Mortal Shell 2 Walkthrough](https://mortalshell2.online/walkthrough/): world structure — an interconnected open world with 60+ dungeons — and what exploration off the golden path rewards
-- [Mortal Shell 2 Shells](https://mortalshell2.online/shells/): all eight lost warrior shells, possession, innate abilities, and the memories that unlock each shell's story
-- [Mortal Shell 2 Weapons](https://mortalshell2.online/weapons/): melee blades and ranged sidearms, strategic upgrade tracks, and the posture-break system that enables critical execution strikes
-- [Mortal Shell 2 Tips](https://mortalshell2.online/tips/): resolve generation through aggression and non-linear dungeon exploration
+- [Mortal Shell 2 Beginner Guide](https://mortalshell2.online/beginner-guide/): no-stamina combat and the resolve economy, first shells, posture-break executions, and Standard vs Devout Edition start times
+- [Mortal Shell 2 Best Build](https://mortalshell2.online/best-build/): the eight shells as build classes, Game8's attributed per-shell loadouts for weapons, sidearms, and seals
+- [Mortal Shell 2 Walkthrough](https://mortalshell2.online/walkthrough/): the nine regions, the ten major bosses gating the critical path, and the shells and weapons hidden off the golden route in an interconnected world with 60+ dungeons
+- [Mortal Shell 2 Bosses](https://mortalshell2.online/bosses/): all ten major bosses in recommended order with locations, the nine regions, and the fights that pay out shells and weapons
+- [Mortal Shell 2 Shells](https://mortalshell2.online/shells/): all eight lost warrior shells, possession, every unlock location from Tiel to Sariel, and the memories that unlock each shell's story
+- [Mortal Shell 2 Weapons](https://mortalshell2.online/weapons/): all 8 melee weapons and sidearms, Tarstone upgrades and the Tarforge, and the posture-break system that enables critical execution strikes
+- [Mortal Shell 2 Tips](https://mortalshell2.online/tips/): the resolve economy, posture-break executions, non-linear dungeon exploration, and Game8's attributed boss-prep habits
+- [Mortal Shell 2 Performance Fix](https://mortalshell2.online/performance-fix/): Playstack's launch Hotfix 1, the Keyboard Bindings save-file workaround, and the shader cache fix for PC crashes and stuttering
+- [About This Guide](https://mortalshell2.online/about/): how this fan-made guide researches, verifies, attributes, and discloses its facts
 
-## Key facts (verified 2026-08-17 against official sources)
+## Key facts (core verified 2026-08-17; launch data verified 2026-08-20)
 
 - Release date: August 20, 2026 (out now), worldwide, on PC (Steam), PlayStation 5, and Xbox Series X/S
 - Developer: Cold Symmetry. Publisher: Playstack
 - Combat has no stamina gauge: landing aggressive melee hits generates resolve, which funds defensive skills and weapon arts
 - Eight possessable lost-warrior shells, each with a unique ability tree and personal lore unlocked through memories
 - The world is a compact, interconnected open world containing more than 60 dungeons
+- Ten major bosses gate the critical path across nine regions, from Magdalena the Lady of the Woods to Zmey the Unbidden (verified 2026-08-20)
 - Consecutive melee strikes build posture damage; a full posture break staggers enemies for critical execution strikes
 - The Devout Edition grants up to 72 hours of advance access before the worldwide release
 
@@ -26,6 +30,7 @@
 - Steam store page: https://store.steampowered.com/app/2584270/Mortal_Shell_II/
 - Official website: https://mortalshell.com/
 - Official trailers: Playstack channel on YouTube
+- Launch-build reference guides: Game8 (game8.co), Rock Paper Shotgun, GameSpot, PowerPyx — verified 2026-08-20
 
 ## Usage policy
 

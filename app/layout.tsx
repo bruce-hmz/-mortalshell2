@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s | Mortal Shell II Guide",
   },
   description:
-    "Complete fan-made community guide hub for Mortal Shell II covering beginner routes, best builds, all 8 lost warrior shells, weapon upgrades, and dungeon walkthroughs.",
+    "Fan-made Mortal Shell II guide hub: beginner routes, best builds, all 8 shells, weapon upgrades, boss order, and PC performance fixes.",
   manifest: "/site.webmanifest",
   verification: {
     other: {

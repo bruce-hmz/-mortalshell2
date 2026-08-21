@@ -1,8 +1,39 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { GuidePage } from "@/content/pages";
 import { LAST_REVIEWED, RELEASE_DATE } from "@/content/pages";
 import { SITE_URL } from "@/lib/site";
 import { VideoFacade } from "./video-facade";
+
+// Paragraphs may embed contextual links as `[label](/internal/)` or
+// `[label](https://external/)`.
+const INLINE_LINK = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+function renderInline(text: string): ReactNode[] {
+  const parts: ReactNode[] = [];
+  let cursor = 0;
+  let key = 0;
+  for (const match of text.matchAll(INLINE_LINK)) {
+    if (match.index > cursor) parts.push(text.slice(cursor, match.index));
+    const [_, label, href] = match;
+    if (href.startsWith("/")) {
+      parts.push(
+        <Link key={key++} href={href}>
+          {label}
+        </Link>,
+      );
+    } else {
+      parts.push(
+        <a key={key++} href={href} target="_blank" rel="noopener noreferrer">
+          {label}
+        </a>,
+      );
+    }
+    cursor = match.index + match[0].length;
+  }
+  if (cursor < text.length) parts.push(text.slice(cursor));
+  return parts;
+}
 
 const SOURCES = [
   {
@@ -115,7 +146,7 @@ export function GuideArticle({ page }: { page: GuidePage }) {
 
             {page.intro.map((paragraph, i) => (
               <p key={i} className={i === 0 ? "lead" : undefined}>
-                {paragraph}
+                {renderInline(paragraph)}
               </p>
             ))}
 
@@ -123,12 +154,12 @@ export function GuideArticle({ page }: { page: GuidePage }) {
               <section className="fact-block" key={block.heading}>
                 <h2>{block.heading}</h2>
                 {block.paragraphs.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
+                  <p key={i}>{renderInline(paragraph)}</p>
                 ))}
                 {block.bullets ? (
                   <ul>
                     {block.bullets.map((bullet) => (
-                      <li key={bullet}>{bullet}</li>
+                      <li key={bullet}>{renderInline(bullet)}</li>
                     ))}
                   </ul>
                 ) : null}

@@ -59,7 +59,7 @@ export const guidePages: GuidePage[] = [
     slug: "beginner-guide",
     metaTitle: "Mortal Shell 2 Beginner Guide: First Hours & Combat",
     metaDescription:
-      "Mortal Shell 2 beginner guide: how no-stamina combat and resolve shape your first hours, what changes between Standard and Devout Edition, and what gets confirmed at launch.",
+      "Mortal Shell 2 beginner guide: no-stamina combat, the resolve economy, your first shells, posture-break executions, and Standard vs Devout start times.",
     cardBlurb:
       "No-stamina combat pacing, resolve generation, and the edition that lets you start early.",
     video: {
@@ -72,10 +72,10 @@ export const guidePages: GuidePage[] = [
     h1: "Mortal Shell 2 Beginner Guide",
     eyebrow: "Start Here",
     intro: [
-      "Mortal Shell II rewards aggression from the very first fight. This beginner guide covers what is officially confirmed about the early game — the resolve-driven combat loop and the edition differences that decide when you can start playing.",
-      "It was fact-checked against the official Steam page and the developer's website on " +
+      "Mortal Shell II rewards aggression from the very first fight. This beginner guide covers the opening hours: the resolve-driven combat loop, your first shells, the posture-break system, and the edition differences that decided when you could start playing.",
+      "Core mechanics were fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        ". Everything not yet confirmed is listed openly at the bottom of the page.",
+        "; shell and weapon details were verified against the launch build on August 20, 2026. Anything still unconfirmed is listed openly at the bottom of the page.",
     ],
     blocks: [
       {
@@ -98,13 +98,42 @@ export const guidePages: GuidePage[] = [
             ". The Devout Edition granted up to 72 hours of advance access, letting early buyers begin playing before the worldwide release window opened.",
         ],
       },
+      {
+        heading: "Possession 101: your first shells",
+        paragraphs: [
+          "Shells are Mortal Shell II's answer to character classes: the forgotten bodies of eight lost warriors — Tiel, Proxima, Eredrim, Gragu, Smert, Sester Genessa, Lazlo, and Sariel — scattered across the world for your Harbinger to possess. A ninth figure, Harros, only helps you through the prologue; he is not one of the eight.",
+          "Tiel is the gentlest first pickup: his general location is revealed the moment you enter Fainweald, and his gravestone waits east of Mushroom Village. Possessing a shell is just the start — unravelling its memories unlocks its innate abilities and its personal story. Every shell's location is mapped in the [shells guide](/shells/).",
+        ],
+      },
+      {
+        heading: "Posture damage: the execution loop",
+        paragraphs: [
+          "Consecutive melee strikes build posture damage on your target. Fill the invisible bar and tough enemies stagger, opening them up for critical execution strikes — the payoff rhythm the whole combat system is built around.",
+          "For a beginner this reframes every fight: your job is not to chip health safely from range, it is to stay in the enemy's face long enough to break them. Which weapon you swing changes how fast that happens — see the [weapons guide](/weapons/).",
+        ],
+      },
+      {
+        heading: "Sidearms run on resolve too",
+        paragraphs: [
+          "Your ranged sidearm is not a free backup weapon — discharging it spends the same resolve your defense depends on. There are eight sidearms to collect (Naylesshotte is your first), and per PowerPyx's locations guide none of them are missable, so nothing is lost by postponing the collection.",
+          "Because sidearms draw on the aggression economy, which one you carry is a build decision, not an afterthought — the [best build guide](/best-build/) shows which sidearm each shell's loadout prefers.",
+        ],
+      },
+      {
+        heading: "Before your first session",
+        paragraphs: [
+          "Launch week has known rough edges. Playstack shipped Hotfix 1 for crashes, and there is an official save-file workaround for the keyboard bindings bug — both are step-by-step in the [performance fixes](/performance-fix/) guide, worth two minutes before your first run.",
+          "Once you are in-game, the [tips guide](/tips/) expands the resolve and posture habits above into concrete habits for dungeons and bosses.",
+        ],
+      },
     ],
     pending: {
       heading: "Pending launch verification",
       intro:
-        "The game has not released yet. The following will be confirmed on this page once the release build is in hand:",
+        "The launch build is in hand; the following are still being measured before they appear here:",
       items: [
         "Exact parry timing windows across different enemy weapon archetypes",
+        "Full per-shell stat spreads (health, resolve capacity)",
       ],
     },
     related: [
@@ -112,12 +141,36 @@ export const guidePages: GuidePage[] = [
       { label: "All Shells", href: "/shells/" },
       { label: "Best Build", href: "/best-build/" },
     ],
+    sources: [
+      {
+        name: "Mortal Shell II on Steam (Playstack)",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
+      {
+        name: "Official Mortal Shell website (Cold Symmetry)",
+        url: "https://mortalshell.com/",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Shells List",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 shell locations",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
+      },
+      {
+        name: "PowerPyx — Mortal Shell 2 All Sidearm Locations",
+        url: "https://www.powerpyx.com/mortal-shell-2-all-sidearm-locations/",
+      },
+    ],
+    reviewedOn: "August 20, 2026",
+    datePublished: "2026-08-20",
   },
   {
     slug: "best-build",
     metaTitle: "Mortal Shell 2 Best Build: Shells & Posture Synergy",
     metaDescription:
-      "How builds work in Mortal Shell 2: eight shells as classes with talent trees, no-stamina resolve generation, and the early community consensus on the strongest burst combination.",
+      "How builds work in Mortal Shell 2: the eight shells as classes, resolve-driven combat, and Game8's per-shell weapon, sidearm, and seal loadouts.",
     cardBlurb:
       "Eight shells as classes, resolve-driven builds, and the early consensus on burst DPS.",
     heroImage: {
@@ -137,7 +190,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Shells are the class system",
         paragraphs: [
-          "The eight warrior shells act as specialized combat classes. Each shell carries its own talent tree and its own set of passives, so the foundation of any build is choosing the shell whose kit matches the way you want to fight. The full roster — and where to find every shell — is in the shells guide.",
+          "The eight warrior shells act as specialized combat classes. Each shell carries its own talent tree and its own set of passives, so the foundation of any build is choosing the shell whose kit matches the way you want to fight. The full roster — and where to find every shell — is in the [shells guide](/shells/).",
         ],
       },
       {
@@ -165,7 +218,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "What goes into a build",
         paragraphs: [
-          "A full loadout in Mortal Shell II has four moving parts, and Game8's build tables show all four being tuned together. Your weapon carries the moveset and can be modified with Tarstones — the upgrade stones the whole arsenal feeds on. Your sidearm (from the repeaters and crossbows like the Triarch Repeater, Ballistazooka, Forgotten Crossbow, and Caged Hystrix) spends your resolve on ranged pressure. Seals — Untarnished Seal and Vatra's Seal appear across the strongest setups — round out the kit, and each shell's ability list does the rest: Genessa's clone skills, Smert's time-stopping kit, Proxima's Biosampler, Lazlo's Heat Meter.",
+          "A full loadout in Mortal Shell II has four moving parts, and Game8's build tables show all four being tuned together. Your weapon carries the moveset and can be modified with Tarstones — the upgrade stones catalogued in the [weapons guide](/weapons/). Your sidearm (from the repeaters and crossbows like the Triarch Repeater, Ballistazooka, Forgotten Crossbow, and Caged Hystrix) spends your resolve on ranged pressure. Seals — Untarnished Seal and Vatra's Seal appear across the strongest setups — round out the kit, and each shell's ability list does the rest: Genessa's clone skills, Smert's time-stopping kit, Proxima's Biosampler, Lazlo's Heat Meter.",
           "That layering is why builds are shell-first rather than weapon-first: the same Axe and Dagger serves completely different gameplans on Smert (Chaos burst), Gragu (critical damage), and Tiel (guaranteed crits). Decide what you want the fight to feel like, pick the shell that owns that fantasy, then let the weapon and seal choices follow.",
         ],
       },
@@ -208,7 +261,7 @@ export const guidePages: GuidePage[] = [
     slug: "walkthrough",
     metaTitle: "Mortal Shell 2 Walkthrough: World & Progression",
     metaDescription:
-      "What is confirmed about Mortal Shell 2 progression: an interconnected open world with over 60 dungeons, and what exploration off the golden path rewards.",
+      "Mortal Shell 2 walkthrough: the nine regions, the ten major bosses gating the critical path, and the shells and weapons waiting off the golden route.",
     cardBlurb:
       "An interconnected world of 60+ dungeons — and what hides beyond the golden path.",
     heroImage: {
@@ -221,10 +274,10 @@ export const guidePages: GuidePage[] = [
     intro: [
       "Mortal Shell II is out now (released " +
         RELEASE_DATE +
-        "), and the full step-by-step walkthrough is being built against the launch build. What was officially confirmed before release — the world structure and the rules of exploration — is below and still accurate.",
-      "Fact-checked against the official Steam page and the developer's website on " +
+        "), and the full step-by-step walkthrough is being built against the launch build. What is already verified: the world structure, the nine regions, the ten major bosses that gate the critical path, and the rewards that hide beyond it.",
+      "World structure was fact-checked against the official Steam page on " +
         LAST_REVIEWED +
-        ".",
+        "; regions, bosses, and locations were verified on August 20, 2026 against Game8's and Rock Paper Shotgun's launch guides.",
     ],
     blocks: [
       {
@@ -234,9 +287,22 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "The nine regions, in the order you meet them",
+        paragraphs: [
+          "Per Game8's launch compendium, the critical path runs through nine regions — Disciple's Pass, Fainweald, Glutted Mire, Sanguine Caverns, Ruins of Mammon, Prisoners' Domain, Withered Shoals, Conquered Temple, and Faded Citadel — with the endgame encounters waiting along The Unfounded Path. Each region is anchored by Beacons, the fast-travel and checkpoint spines you unlock as you push outward.",
+        ],
+      },
+      {
+        heading: "Ten major bosses gate the critical path",
+        paragraphs: [
+          "Ten major bosses guard the Corrupted Gates between you and the end of the path. Game8's recommended encounter order starts with Magdalena, the Lady of the Woods, in her glade in the Glutted Mire, and ends with Zmey the Unbidden at The Hidden Nave Beacon on The Unfounded Path — with GameSpot's guide naming Zmey as the final boss. Beyond the ten majors, Game8 counts 44 boss encounters in total, some of them missable.",
+          "The full ordered roster — every boss, its Beacon, and what it drops — is in the [boss guide](/bosses/), including the two optional fights that drop Vatra's Seal and the Arbiter's Prize.",
+        ],
+      },
+      {
         heading: "The golden path and what hides beyond it",
         paragraphs: [
-          "Exploration beyond the golden path — the main route to each objective — is how you find hidden shells, weapons, and upgrade curiosities. The game is built to reward players who wander from the critical route.",
+          "Exploration beyond the golden path — the main route to each objective — is how you find hidden shells, weapons, and upgrade curiosities. The game is built to reward players who wander from the critical route: the seals that anchor the strongest builds (Vatra's Seal from the optional Tar Golem fight, per Game8's tables) never touch the main story.",
         ],
         bullets: [
           "Hidden shells off the main route",
@@ -244,27 +310,70 @@ export const guidePages: GuidePage[] = [
           "Upgrade curiosities",
         ],
       },
+      {
+        heading: "Shells live off the critical route",
+        paragraphs: [
+          "Most of the eight lost warrior shells are detours, not story milestones. Tiel and Proxima are the easiest — both general locations are revealed when you first enter Fainweald, with Tiel's gravestone east of Mushroom Village and Proxima at the Shattered Beacon in the Blackridge Cliffs. Eredrim waits behind the Warden in the Citadel of Penance's central arena; Gragu is a quest — bring him the Heart of Vatra from the Temple of Vatra and his shell is left at the One Legged Wolf Tavern; Sariel must be beaten twice, finally in the Chamber of Becoming.",
+          "Every shell's unlock route, including the NPC quests for Gragu and Sester Genessa, is written up in the [shells guide](/shells/).",
+        ],
+      },
+      {
+        heading: "Weapon payouts along the way",
+        paragraphs: [
+          "The Iconoclast, your first weapon, arrives in the prologue. After that the arsenal is exploration bait: the Clockwork Scythe only drops in the Chamber of Becoming after Sariel the Endless is defeated twice and his four reviving tombstones are broken, and the remaining blades and axes sit in corners of the world ranging from the Obsidianite Mines to air-current rides above the High Lord's Courtyard. Weapons are upgraded with Tarstones at the Tarforge — the full set of routes and upgrade notes is in the [weapons guide](/weapons/).",
+        ],
+      },
     ],
     pending: {
-      heading: "Pending launch verification",
+      heading: "Still being verified",
       intro:
-        "The step-by-step route content will be added after public release, including:",
+        "The step-by-step route content is being written against the launch build:",
       items: [
-        "Boss names and encounter order",
-        "Exact dungeon order for non-critical side zones",
+        "Region-by-region route order with Beacon unlock sequence",
+        "Per-dungeon order for non-critical side zones",
+        "Optional boss and miniboss roster per region",
       ],
     },
     related: [
+      { label: "Boss Guide", href: "/bosses/" },
       { label: "Beginner Guide", href: "/beginner-guide/" },
-      { label: "Mortal Shell 2 Tips", href: "/tips/" },
       { label: "All Shells", href: "/shells/" },
+      { label: "Weapons Guide", href: "/weapons/" },
     ],
+    sources: [
+      {
+        name: "Mortal Shell II on Steam (Playstack)",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
+      {
+        name: "Official Mortal Shell website (Cold Symmetry)",
+        url: "https://mortalshell.com/",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 All Bosses",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614453",
+      },
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 all bosses",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-all-bosses",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Shells List",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 shell locations",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
+      },
+    ],
+    reviewedOn: "August 20, 2026",
+    datePublished: "2026-08-20",
   },
   {
     slug: "shells",
     metaTitle: "Mortal Shell 2 Shells: All 8 Lost Warriors & Abilities",
     metaDescription:
-      "All confirmed details on the eight lost warrior shells in Mortal Shell 2: possession, innate abilities, talent trees, and the memories that unlock each shell's story.",
+      "All eight Mortal Shell 2 shells: the named roster, every unlock location from Tiel to Sariel, and the memories that unlock their abilities.",
     cardBlurb:
       "All eight lost warriors: possession, innate abilities, and the memories that unlock them.",
     heroImage: {
@@ -336,8 +445,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "What each shell is known for",
         paragraphs: [
-          "Every shell carries its own ability tree and passive identity. Tiel's specialty is disappearing into the shadows; Smert wields time-stopping powers. For how those abilities turn into combat builds — which weapon, sidearm, and seal to pair with each shell — see the Mortal Shell 2 best build guide.",
-          "Shells also hold their own memories: unravelling them unlocks each shell's innate abilities and reveals their personal stories. Playing a shell well and digging into its secrets is how you develop its full kit — and the weapon you pair with it decides the rest. The full arsenal is catalogued in the weapons guide.",
+          "Every shell carries its own ability tree and passive identity. Tiel's specialty is disappearing into the shadows; Smert wields time-stopping powers. For how those abilities turn into combat builds — which weapon, sidearm, and seal to pair with each shell — see the Mortal Shell 2 [best build guide](/best-build/).",
+          "Shells also hold their own memories: unravelling them unlocks each shell's innate abilities and reveals their personal stories. Playing a shell well and digging into its secrets is how you develop its full kit — and the weapon you pair with it decides the rest. The full arsenal is catalogued in the [weapons guide](/weapons/), and the bosses that guard several shells are listed in the [boss guide](/bosses/).",
         ],
       },
     ],
@@ -359,7 +468,7 @@ export const guidePages: GuidePage[] = [
     slug: "weapons",
     metaTitle: "Mortal Shell 2 Weapons: Upgrades & Posture Breaks",
     metaDescription:
-      "Confirmed Mortal Shell 2 weapon systems: strategic upgrades for melee blades and ranged sidearms, and how consecutive strikes break enemy posture for critical executions.",
+      "All 8 Mortal Shell 2 weapons and sidearms: upgrade routes, Tarstones and the Tarforge, and the posture breaks that set up critical executions.",
     cardBlurb:
       "Melee blades, ranged sidearms, and the posture system that turns stagger into executions.",
     heroImage: {
@@ -395,7 +504,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Where to find each weapon",
         paragraphs: [
-          "PowerPyx's location guide walks all seven findable weapons; the routes below follow their numbering. Two of them hide behind the same boss as a shell — the Chamber of Becoming duel with Sariel also yields the Clockwork Scythe, so you can double-dip one trip.",
+          "PowerPyx's location guide walks all seven findable weapons; the routes below follow their numbering. Two of them hide behind the same boss as a shell — the Chamber of Becoming duel with Sariel also yields the Clockwork Scythe (see the [boss guide](/bosses/)), so you can double-dip one trip.",
         ],
         bullets: [
           "Axe and Dagger — walk through the arch facing the burning pyre south of Mushroom Village to summon the statue holding the Chapel Key, then open the Shrine of Trials dungeon northwest of the village",
@@ -434,7 +543,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Pairing weapons with shells",
         paragraphs: [
-          "Because every moveset is unique and every shell has its own kit, the interesting question is never “which weapon is best” — it’s which pairing you can pilot. The Iconoclast you start with becomes Eredrim's Break-gauge machine; the Axe and Dagger serves three different gameplans on Tiel, Gragu, and Smert. The pairing logic behind all eight shells is laid out in the best build guide.",
+          "Because every moveset is unique and every shell has its own kit, the interesting question is never “which weapon is best” — it’s which pairing you can pilot. The Iconoclast you start with becomes Eredrim's Break-gauge machine; the Axe and Dagger serves three different gameplans on Tiel, Gragu, and Smert. The pairing logic behind all eight shells is laid out in the [best build guide](/best-build/).",
         ],
       },
       {
@@ -473,7 +582,7 @@ export const guidePages: GuidePage[] = [
     slug: "bosses",
     metaTitle: "Mortal Shell 2 Bosses: All 10 Major Bosses in Order",
     metaDescription:
-      "All ten Mortal Shell 2 major bosses in recommended order, with locations, region map, reward ties to shells and weapons, and general boss tips — verified against the launch build.",
+      "All 10 Mortal Shell 2 major bosses in order, with locations, the nine regions, and the fights that pay out shells and weapons.",
     cardBlurb:
       "All 10 major bosses in order, their regions, and which fights pay out shells and weapons.",
     h1: "Mortal Shell 2 Bosses",
@@ -510,7 +619,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Bosses that pay out shells and weapons",
         paragraphs: [
-          "Several of the toughest fights double as collection milestones. The Warden at the centre of the Citadel of Penance rewards the Eredrim shell — the knight he killed long ago. Sariel the Endless guards his own shell at the Chamber of Becoming, and breaking his four reviving tombstones in the final room also yields the Clockwork Scythe. If you're planning a collection route, the shells guide and weapons guide map the rest of those payouts.",
+          "Several of the toughest fights double as collection milestones. The Warden at the centre of the Citadel of Penance rewards the Eredrim shell — the knight he killed long ago. Sariel the Endless guards his own shell at the Chamber of Becoming, and breaking his four reviving tombstones in the final room also yields the Clockwork Scythe. If you're planning a collection route, the [shells guide](/shells/) and [weapons guide](/weapons/) map the rest of those payouts.",
         ],
       },
       {
@@ -545,7 +654,7 @@ export const guidePages: GuidePage[] = [
     slug: "tips",
     metaTitle: "Mortal Shell 2 Tips: Resolve, Combat & Dungeon Secrets",
     metaDescription:
-      "Essential confirmed Mortal Shell 2 tips: how resolve funds defense and weapon arts, and why non-linear dungeon paths hide equipment, currencies and lore.",
+      "Mortal Shell 2 tips: the resolve economy, posture-break executions, branching dungeons, and the boss-prep habits that carry the early game.",
     cardBlurb:
       "Resolve is earned in melee — and dungeons are branching mazes that reward wandering.",
     heroImage: {
@@ -557,31 +666,53 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Mechanics",
     intro: [
       "The best Mortal Shell II tips follow from two confirmed systems: resolve, the currency your aggression earns, and dungeons built as non-linear branching mazes. Master both and the early game opens up.",
-      "Fact-checked against the official Steam page and the developer's website on " +
+      "Mechanics were verified against the official Steam page on " +
         LAST_REVIEWED +
-        ".",
+        "; boss-preparation habits and shell details below are attributed to Game8's launch guides, checked August 20, 2026.",
     ],
     blocks: [
       {
-        heading: "Tip 1 — Stay aggressive to stay defended",
+        heading: "Why does aggression pay in Mortal Shell 2?",
         paragraphs: [
-          "Landing aggressive hits actively generates resolve. Resolve is the primary currency for your defensive skills and your powerful weapon arts, so the safest play in Mortal Shell II looks violent: keep hitting things to keep your options open.",
+          "Because defense is bought with the resolve that only attacking generates. Landing aggressive hits charges resolve, and resolve is the primary currency for your defensive skills, your powerful weapon arts, and your sidearm's discharge. Stop swinging and your options quietly empty — the safest play in Mortal Shell II looks violent.",
+          "The habit to build early: treat every exchange as a deposit. Even punishing trades that you survive while hitting back fund the skills that make the next exchange safer. The [beginner guide](/beginner-guide/) walks this loop in detail.",
         ],
         bullets: [
           "Resolve is generated by landing hits",
-          "Resolve pays for defensive skills",
-          "Resolve pays for powerful weapon arts",
+          "Resolve pays for defensive skills, weapon arts, and sidearm discharge",
+          "One economy: attacking is defending",
         ],
       },
       {
-        heading: "Tip 2 — Treat dungeons as branching mazes",
+        heading: "How do posture breaks decide fights?",
         paragraphs: [
-          "Dungeons feature non-linear branching paths containing hidden equipment, upgrade currencies, and lore items. Dead ends are rarely wasted — the path you skip is often where the reward is.",
+          "Consecutive melee strikes build posture damage on the target; fill it and tough enemies stagger, opening them up for critical execution strikes. This is the payoff rhythm the whole combat system is built around, and it rewards exactly the sustained aggression the resolve economy demands.",
+          "Game8's boss guide frames the same system as preparation: inflict Break damage with skills and parrying rather than raw trades, keep the resolve gauge maintained, and treat red attacks as unconditional dodge signals. Which weapon breaks posture fastest is covered in the [weapons guide](/weapons/); the fights themselves are in the [boss guide](/bosses/).",
+        ],
+      },
+      {
+        heading: "Why are dungeons worth getting lost in?",
+        paragraphs: [
+          "Dungeons feature non-linear branching paths containing hidden equipment, upgrade currencies, and lore items. Dead ends are rarely wasted — the path you skip is often where the reward is. In a game whose shells and weapons live off the critical route (see the [walkthrough](/walkthrough/)), dungeon side paths are not optional content; they are the collection route.",
+          "The upgrade currencies matter more than they look: Tarstones — found scattered across the world — are what the Tarforge uses to upgrade your weapons, so a dungeon that seems to pay out only stones is actually funding your next weapon tier.",
         ],
         bullets: [
           "Hidden equipment",
           "Upgrade currencies",
           "Lore items",
+        ],
+      },
+      {
+        heading: "Which boss-prep habits carry the early game?",
+        paragraphs: [
+          "Game8's walkthrough team sums up boss preparation in five habits: level up your Harbinger before pushing into a new region, upgrade weapons and Tarstones, inflict Break damage with skills and parrying, keep the resolve gauge maintained, and dodge red attacks on sight. None of them require reflexes — all of them are planning, which is what makes them tips worth keeping.",
+        ],
+      },
+      {
+        heading: "Which shell should you learn first?",
+        paragraphs: [
+          "Tiel is the gentlest first pickup — his general location is revealed when you first enter Fainweald, and his gravestone sits east of Mushroom Village. Every shell then plays differently through its ability tree: Tiel's specialty is disappearing into shadows, Smert wields time-stopping powers, Proxima's Biosampler drives lightning builds.",
+          "Pick the shell whose fantasy matches how you like to fight, then pair it deliberately — the [shells guide](/shells/) maps every unlock, and the [best build guide](/best-build/) records the per-shell weapon, sidearm, and seal pairings.",
         ],
       },
     ],
@@ -598,12 +729,32 @@ export const guidePages: GuidePage[] = [
       { label: "Walkthrough", href: "/walkthrough/" },
       { label: "Performance Fix", href: "/performance-fix/" },
     ],
+    sources: [
+      {
+        name: "Mortal Shell II on Steam (Playstack)",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
+      {
+        name: "Official Mortal Shell website (Cold Symmetry)",
+        url: "https://mortalshell.com/",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 All Bosses",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614453",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Shells List",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+    ],
+    reviewedOn: "August 20, 2026",
+    datePublished: "2026-08-20",
   },
   {
     slug: "performance-fix",
     metaTitle: "Mortal Shell 2 Performance Fix: Crashes & Stuttering",
     metaDescription:
-      "Fix Mortal Shell 2 PC crashes and stuttering: Playstack's Hotfix 1, the official Keyboard Bindings save-file workaround, the shader cache fix, and minimum PC requirements.",
+      "Fix Mortal Shell 2 crashes and stuttering: Playstack's Hotfix 1, the Keyboard Bindings save-file workaround, the shader cache fix, and PC specs.",
     cardBlurb:
       "The crash hotfix, the official save-file workaround, and the shader cache fix for lock-ups.",
     h1: "Mortal Shell 2 Performance Fix",
@@ -651,6 +802,7 @@ export const guidePages: GuidePage[] = [
         heading: "Before anything else: check the requirements",
         paragraphs: [
           "Mortal Shell II's Steam listing sets a clear floor for PC players, and two details are easy to miss: the game wants 70 GB of space and an SSD is required. The PC release is Windows-only — there are no macOS or Linux listings.",
+          "Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours, and the [boss guide](/bosses/) maps the ten fights ahead.",
         ],
         bullets: [
           "OS: Windows 10 / 11 (Windows-only release)",

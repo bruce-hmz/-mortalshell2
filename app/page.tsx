@@ -8,7 +8,7 @@ import { VideoFacade } from "@/components/video-facade";
 export const metadata: Metadata = {
   title: "Mortal Shell II Guide & Walkthrough Hub",
   description:
-    "Complete fan-made community guide hub for Mortal Shell II covering beginner routes, best builds, all 8 lost warrior shells, weapon upgrades, and dungeon walkthroughs.",
+    "Fan-made Mortal Shell II guide hub: beginner routes, best builds, all 8 shells, weapon upgrades, boss order, and PC performance fixes.",
   keywords: [
     "mortal shell 2 guide",
     "mortal shell 2 wiki",
@@ -162,7 +162,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-bg" aria-hidden="true">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/img/site-4.jpg" alt="" width={1600} height={899} />
+          <img src="/img/site-4.jpg" alt="Mortal Shell II key art: the possessed warrior before a dark, ruined landscape" width={1600} height={899} />
         </div>
         <div className="wrap">
           <div className="hero-copy">
