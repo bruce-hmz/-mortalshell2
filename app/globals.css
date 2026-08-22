@@ -1012,3 +1012,100 @@ a:hover {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* ---- Ad slot (loads only after consent; see components/ad-slot.tsx) ---- */
+
+.ad-slot {
+  display: none;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ad-slot.is-reserved {
+  display: block;
+  /* banner 300x250 + label; native fills below */
+  min-height: 300px;
+}
+
+.ad-slot__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ash-dim);
+  margin-bottom: 10px;
+}
+
+.ad-slot iframe {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ad-slot [id^="container-"] {
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+/* ---- Cookie consent banner ---- */
+
+.consent-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 90;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  background: var(--shell-2);
+  border: 1px solid var(--line-bright);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.consent-banner p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--ash);
+  flex: 1 1 320px;
+}
+
+.consent-banner a {
+  color: var(--ember);
+}
+
+.consent-banner__actions {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.consent-banner__actions button {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.consent-banner__accept {
+  background: var(--ember);
+  border: 1px solid var(--ember);
+  color: #16110c;
+}
+
+.consent-banner__decline {
+  background: transparent;
+  border: 1px solid var(--line-bright);
+  color: var(--ash);
+}

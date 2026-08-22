@@ -3,6 +3,8 @@ import { Cinzel, Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
+import { AdSlot } from "@/components/ad-slot";
+import { ConsentBanner } from "@/components/consent-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SITE_URL } from "@/lib/site";
 
@@ -58,7 +60,9 @@ export default function RootLayout({
       <body>
         <SiteHeader />
         <main id="main">{children}</main>
+        <AdSlot />
         <SiteFooter />
+        <ConsentBanner />
         <GoogleAnalytics gaId="G-2WH9BHR3T7" />
       </body>
     </html>
