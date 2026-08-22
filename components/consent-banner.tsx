@@ -26,7 +26,7 @@ export function ConsentBanner() {
     } catch {
       // storage unavailable — still apply the choice for this visit
     }
-    window.dispatchEvent(
+    document.dispatchEvent(
       new CustomEvent("mortalshell2:consent", { detail: value }),
     );
     setVisible(false);
