@@ -31,11 +31,11 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Mortal Shell II Guide & Walkthrough Hub",
-    template: "%s | Mortal Shell II Guide",
+    default: "Mortal Shell 2 Guide & Walkthrough: Builds, Shells, Bosses",
+    template: "%s | Mortal Shell 2 Guide",
   },
   description:
-    "Fan-made Mortal Shell II guide hub: beginner routes, best builds, all 8 shells, weapon upgrades, boss order, and PC performance fixes.",
+    "Fan-made Mortal Shell 2 guide hub: beginner routes, best builds, all 8 shells, weapon upgrades, boss order, and PC performance fixes.",
   manifest: "/site.webmanifest",
   verification: {
     other: {

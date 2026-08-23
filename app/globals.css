@@ -470,6 +470,46 @@ a:hover {
   font-size: 0.95rem;
 }
 
+/* ---------- pillars + faq ---------- */
+
+.pillar-list {
+  max-width: var(--measure);
+}
+
+.pillar-list p {
+  margin: 0 0 1.2em;
+  line-height: 1.7;
+}
+
+.pillar-list strong {
+  color: var(--bone);
+}
+
+.faq-list {
+  max-width: var(--measure);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.faq-item h3 {
+  font-size: 1.02rem;
+  margin: 0 0 0.45em;
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--ash);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
 /* ---------- final cta ---------- */
 
 .final-cta {

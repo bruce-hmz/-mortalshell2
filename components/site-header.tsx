@@ -25,12 +25,12 @@ export function SiteHeader() {
           <img
             className="brand-logo"
             src="/android-chrome-192x192.png"
-            alt="Mortal Shell II Guide logo"
+            alt="Mortal Shell 2 Guide logo"
             width={28}
             height={28}
           />
           <span>
-            Mortal Shell II<span style={{ color: "var(--ash-dim)" }}> Guide</span>
+            Mortal Shell 2<span style={{ color: "var(--ash-dim)" }}> Guide</span>
           </span>
         </Link>
         <nav className="site-nav" aria-label="Guides">

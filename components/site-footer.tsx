@@ -8,8 +8,8 @@ export function SiteFooter() {
           <div>
             <h2>Mortal Shell II Community Guide</h2>
             <p>
-              An independent, fan-made resource for Mortal Shell II players.
-              Guides, builds, walkthroughs, and mechanics for Mortal Shell II.
+              An independent, fan-made resource for players — guides, builds,
+              walkthroughs, and mechanics.
             </p>
             <p style={{ fontSize: "0.82rem" }}>
               Mortal Shell II is developed by Cold Symmetry and published by
