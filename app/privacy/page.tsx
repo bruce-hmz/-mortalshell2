@@ -27,12 +27,17 @@ export default function PrivacyPage() {
       <p>
         Advertising: this site shows third-party ads (300&times;250 banner and
         native banner formats served via Adsterra-network domains such as
-        highrevenueformat.com and profitableratecpmnetwork.com). Ads load only
-        if you choose &ldquo;Allow ads&rdquo; in the consent banner; if you
-        decline, no ad scripts or ad cookies run at all. Ad networks may set
-        their own cookies to measure and cap impressions once allowed; each
-        network&rsquo;s own privacy policy applies to that data, and revoking
-        the choice requires clearing this site&rsquo;s storage in your browser.
+        highrevenueformat.com and profitableratecpmnetwork.com). For visitors
+        we detect as being in the EU/EEA and similar jurisdictions, ads load
+        only if you choose &ldquo;Allow ads&rdquo; in the consent banner — if
+        you decline, no ad scripts or ad cookies run at all. Everywhere else,
+        ads load by default; the consent banner&rsquo;s &ldquo;Turn off
+        ads&rdquo; button removes ad content immediately. Visitors with
+        Chinese-language browsers always get an ad-free page. Ad networks may
+        set their own cookies to measure and cap impressions; each
+        network&rsquo;s own privacy policy applies to that data, and changing
+        a stored choice requires clearing this site&rsquo;s storage in your
+        browser.
       </p>
       <p>
         External links to the official Steam store page and the official
