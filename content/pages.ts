@@ -168,9 +168,9 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "best-build",
-    metaTitle: "Mortal Shell 2 Best Build: Shells & Posture Synergy",
+    metaTitle: "Mortal Shell 2 Best Build: Shell, Weapon & Sidearm Combos",
     metaDescription:
-      "How builds work in Mortal Shell 2: the eight shells as classes, resolve-driven combat, and Game8's per-shell weapon, sidearm, and seal loadouts.",
+      "The best build for every Mortal Shell 2 shell: per-shell weapon, sidearm, and seal loadouts, plus the resolve loop that makes each one work.",
     cardBlurb:
       "Eight shells as classes, resolve-driven builds, and the early consensus on burst DPS.",
     heroImage: {
@@ -252,6 +252,7 @@ export const guidePages: GuidePage[] = [
       ],
     },
     related: [
+      { label: "Damage Calculator", href: "/damage-calculator/" },
       { label: "All Shells", href: "/shells/" },
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Beginner Guide", href: "/beginner-guide/" },
@@ -573,6 +574,7 @@ export const guidePages: GuidePage[] = [
       ],
     },
     related: [
+      { label: "Damage Calculator", href: "/damage-calculator/" },
       { label: "Best Build", href: "/best-build/" },
       { label: "Mortal Shell 2 Tips", href: "/tips/" },
       { label: "All Shells", href: "/shells/" },
@@ -752,22 +754,24 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "performance-fix",
-    metaTitle: "Mortal Shell 2 Performance Fix: Crashes & Stuttering",
+    metaTitle: "Mortal Shell 2 Crash Fix: Crashing, Stuttering, Black Screen",
     metaDescription:
-      "Fix Mortal Shell 2 crashes and stuttering: Playstack's Hotfix 1, the Keyboard Bindings save-file workaround, the shader cache fix, and PC specs.",
+      "Fix Mortal Shell 2 crashing on load: the official Hotfix 1 crash fix, the save-file workaround, the shader cache fix, and stuttering settings for PC.",
     cardBlurb:
-      "The crash hotfix, the official save-file workaround, and the shader cache fix for lock-ups.",
-    h1: "Mortal Shell 2 Performance Fix",
+      "Every confirmed crash fix: the launch hotfix, the save-file workaround, and the shader cache fix for stuttering and full lock-ups.",
+    h1: "Mortal Shell 2 Crash Fix",
     eyebrow: "Troubleshooting",
     intro: [
-      "The Advanced Access window that opened on August 17 came with PC crash reports — and Playstack has already responded. This page collects every fix that is officially confirmed: the crash hotfix the publisher shipped during Advanced Access, the save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups.",
+      "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
+      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, stuttering lives in the shader cache change and the attributed settings, and a game that won't launch at all starts with the requirements check.",
       "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release.",
     ],
     blocks: [
       {
-        heading: "Fix 1 — Install the crash hotfix",
+        heading: "Keeps crashing? Install the crash hotfix first (Fix 1)",
         paragraphs: [
-          "If Mortal Shell II crashes frequently on PC, the first fix is already published. During Advanced Access, Playstack released Hotfix 1 for the frequent PC crashes players were reporting. It was first offered on the Steam patch-preview branch — Mortal Shell II in your library, Properties, then Betas — and has since been rolled out to all players as a standard patch, so the default branch already includes it.",
+          "When the game keeps crashing every few minutes, the first crash fix is already published. During Advanced Access — the August 17 window that let Devout Edition pre-orders play up to 72 hours early — Playstack shipped Hotfix 1 for the frequent PC crashes players were reporting.",
+          "It was first offered on the Steam patch-preview branch — Mortal Shell II in your library, Properties, then Betas. It has since been rolled out to all players as a standard patch, so if the game keeps crashing today, the default branch already includes the fix: update fully and relaunch before trying anything else.",
         ],
         bullets: [
           "Hotfix 1 targets the frequent PC crashes reported during Advanced Access",
@@ -776,9 +780,9 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
-        heading: "Fix 2 — Keyboard Bindings menu crash (official workaround)",
+        heading: "Keyboard Bindings crash: the official save-file workaround (Fix 2)",
         paragraphs: [
-          "Playstack has confirmed receiving several reports of crashes when opening the Keyboard Bindings menu in Settings. While a permanent fix is being worked on, the publisher published this official workaround:",
+          "A second confirmed crash has a specific trigger: opening the Keyboard Bindings menu in Settings. Playstack has confirmed receiving several reports of exactly that. While a permanent fix is being worked on, the publisher published this official workaround:",
         ],
         bullets: [
           "Close Mortal Shell II completely",
@@ -788,10 +792,10 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
-        heading: "Fix 3 — Full lock-ups: set shader cache to Unlimited",
+        heading: "Crash on load: full lock-ups and the shader cache fix (Fix 3)",
         paragraphs: [
-          "For full lock-ups and crashes — including lock-ups on the loading screen after death — Playstack's community manager recommends raising the shader cache limit: open the NVIDIA Control Panel app, go to 3D Settings, and set Shader Cache Size to \"Unlimited\".",
-          "An independent guide reaches the same conclusion, listing the Shader Cache Size change (NVIDIA Control Panel or AMD Software equivalent) as the most effective fix for Mortal Shell II stuttering.",
+          "The officially confirmed loading-screen problem is a full lock-up: the game freezes solid, including on the loading screen after a death. For those lock-ups and crashes, Playstack's community manager recommends raising the shader cache limit — open the NVIDIA Control Panel app, go to 3D Settings, and set Shader Cache Size to \"Unlimited\".",
+          "An independent guide reaches the same conclusion: LagoFast lists the Shader Cache Size change (NVIDIA Control Panel or the AMD Software equivalent) as the most effective fix for the game's stuttering, which points at the same underlying shader-compilation behavior.",
         ],
         bullets: [
           "NVIDIA Control Panel > 3D Settings > Shader Cache Size > Unlimited",
@@ -799,10 +803,19 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
-        heading: "Before anything else: check the requirements",
+        heading: "Stuttering fixes beyond the hotfix (attributed)",
         paragraphs: [
-          "Mortal Shell II's Steam listing sets a clear floor for PC players, and two details are easy to miss: the game wants 70 GB of space and an SSD is required. The PC release is Windows-only — there are no macOS or Linux listings.",
-          "Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours, and the [boss guide](/bosses/) maps the ten fights ahead.",
+          "For stuttering and frame drops specifically, the settings-level fix with the strongest support is the shader cache change above — LagoFast independently calls it the most effective fix for the game's stuttering. Beyond that, everything else is attributed opinion rather than official guidance: the settings box on this page collects LagoFast's additional suggestions — disabling in-game V-Sync, capping the frame rate externally, a High Performance power plan, lower Shadow Quality, DLSS/FSR in Balanced mode, and a community-reported launch option — with full attribution so you can weigh them yourself.",
+          "One million people played the beta across Steam, PS5 and Xbox — announced by the development team on August 17 — so launch-week reports cover an enormous range of hardware. Treat any single settings list, including LagoFast's, as a starting point to test rather than a guarantee.",
+        ],
+      },
+      {
+        heading: "Won't launch? Check the requirements before anything else",
+        paragraphs: [
+          "If the game won't launch at all, start with the blunt possibility: the machine may sit below the floor that Steam publishes. The listing sets a clear minimum for PC players, and two details are easy to miss — the game wants 70 GB of space and an SSD is required, not merely recommended.",
+          "Two of the listed numbers trip people up in practice: the GPUs on the minimum list carry 8 GB of VRAM, and the storage note says SSD required — a spinning drive is below minimum no matter how much space is free.",
+          "The PC release is also Windows-only: there are no macOS or Linux listings, so if you are trying to launch it there, that is the whole story.",
+          "Once the game runs clean, the [boss guide](/bosses/) maps the ten fights ahead.",
         ],
         bullets: [
           "OS: Windows 10 / 11 (Windows-only release)",
@@ -811,6 +824,43 @@ export const guidePages: GuidePage[] = [
           "GPU: NVIDIA GeForce RTX 2060 SUPER 8 GB or AMD Radeon RX 6600 8 GB",
           "DirectX: Version 12",
           "Storage: 70 GB available space — SSD required",
+        ],
+      },
+      {
+        heading: "Black screen: what is confirmed — and what isn't",
+        paragraphs: [
+          "Black screens sit in a gray zone. Publisher channels have confirmed frequent crashes, the Keyboard Bindings crash, and full lock-ups including loading-screen freezes, but no black-screen-specific fix has been announced. What you can honestly do is run the confirmed stack — the crash hotfix, the save-file workaround if the crash has that trigger, the shader cache change, and the requirements check — because those are the fixes that exist.",
+          "Anything beyond that list is not yet official. If you report a black screen in the Devout Edition bug-report megathread, include your build number — it is readable on the pause menu, bottom right. That thread and the Steam news page are where Playstack posts fix notes first, and this page gets rechecked when they do.",
+        ],
+      },
+      {
+        heading: "How do you stop Mortal Shell 2 from crashing?",
+        paragraphs: [
+          "Install Hotfix 1 — it is now a standard patch on the default branch, so a normal update applies it. If the crash happens when opening Keyboard Bindings, delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav as described in Fix 2. For full lock-ups, set Shader Cache Size to Unlimited in the NVIDIA Control Panel (Fix 3). Apply one change at a time and re-test after each, so you know which fix your crash actually responded to.",
+        ],
+      },
+      {
+        heading: "How do I fix Mortal Shell 2 crash on load?",
+        paragraphs: [
+          "Set Shader Cache Size to Unlimited in the NVIDIA Control Panel — Playstack's community manager recommends exactly that for the confirmed loading-screen lock-ups after a death. Frequent general crashes are covered by Hotfix 1, and no other cause has been officially named.",
+        ],
+      },
+      {
+        heading: "How do I fix Mortal Shell 2 stuttering?",
+        paragraphs: [
+          "Set the shader cache to Unlimited — it has the strongest support: LagoFast independently calls it the most effective stuttering fix, and Playstack's community manager recommends the same change for lock-ups. LagoFast's further suggestions (disabling in-game V-Sync, capping the frame rate externally, a High Performance power plan, lower Shadow Quality, DLSS/FSR in Balanced mode, and the community-reported -UseFixedTimeStep launch option) are attributed opinion, collected in the settings box on this page.",
+        ],
+      },
+      {
+        heading: "Why won't Mortal Shell 2 launch?",
+        paragraphs: [
+          "Check Steam's minimum specs first: Windows 10/11, an Intel Core i7-10700K or AMD Ryzen 5 3600, 16 GB of RAM, an RTX 2060 SUPER or RX 6600 with 8 GB, DirectX 12, and 70 GB on an SSD. The PC build is Windows-only, so there is no macOS or Linux version to launch.",
+        ],
+      },
+      {
+        heading: "How do I fix the Keyboard Bindings crash in Mortal Shell 2?",
+        paragraphs: [
+          "Delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav in AppData\\Local\\MortalShell2\\Saved\\SaveGames, then relaunch — that is Playstack's official workaround. It is not a permanent fix: the publisher says one is in progress, and the page's pending-verification box tracks that status.",
         ],
       },
     ],
@@ -855,6 +905,53 @@ export const guidePages: GuidePage[] = [
     ],
     reviewedOn: "August 19, 2026",
     datePublished: "2026-08-20",
+  },
+  {
+    slug: "damage-calculator",
+    metaTitle: "Mortal Shell 2 Damage Calculator: Weapon & Stagger Scaling",
+    metaDescription:
+      "Mortal Shell 2 damage calculator: upgrade multipliers for damage and stagger, Tarforge costs for every level to +25, and poise pools for every boss.",
+    cardBlurb:
+      "Damage and stagger multipliers at every upgrade level, Tarforge costs to +25, and boss poise pools in one tool.",
+    h1: "Mortal Shell 2 Damage Calculator",
+    eyebrow: "Tools",
+    intro: [
+      "A multiplier calculator for Mortal Shell 2 weapons: pick a weapon, set an upgrade level, and see damage, stagger, crit, and guard-meter scaling plus the full Tarforge cost curve.",
+    ],
+    blocks: [
+      {
+        heading: "Interactive calculator",
+        paragraphs: [
+          "The calculator lives on the page itself and runs entirely in the browser. Data was verified against the launch build on August 25, 2026.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Not yet documented",
+      intro:
+        "The game does not publish absolute damage numbers, and multiplier behavior beyond +20 is not documented in any public source.",
+      items: [
+        "What upgrade levels +21 to +25 actually improve",
+        "Absolute base damage values (hidden in-game; enter your own tested values)",
+      ],
+    },
+    related: [
+      { label: "All Weapons & Locations", href: "/weapons/" },
+      { label: "Best Build", href: "/best-build/" },
+      { label: "Boss Order & Rewards", href: "/bosses/" },
+    ],
+    sources: [
+      {
+        name: "Game8 — Mortal Shell 2 Weapons List",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614498",
+      },
+      {
+        name: "mortalshelldb.com — upgrade multipliers",
+        url: "https://mortalshelldb.com/",
+      },
+    ],
+    reviewedOn: "August 25, 2026",
+    datePublished: "2026-08-25",
   },
 ];
 

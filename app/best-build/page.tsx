@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     images: [{ url: "/img/site-2.jpg", width: 1600, height: 899 }],
     type: "article",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: { absolute: page.metaTitle },
+    description: page.metaDescription,
+    images: [{ url: "/img/site-2.jpg" }],
+  },
 };
 
 export default function BestBuildPage() {

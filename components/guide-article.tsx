@@ -46,10 +46,20 @@ const SOURCES = [
   },
 ];
 
+// Plain text for JSON-LD answers: keeps the link label, drops the markdown.
+function plainText(text: string): string {
+  return text.replace(INLINE_LINK, "$1");
+}
+
 export function GuideArticle({ page }: { page: GuidePage }) {
   const articleImage = `${SITE_URL}${page.heroImage?.src ?? "/img/site-2.jpg"}`;
   const articleSources = page.sources ?? SOURCES;
   const reviewedOn = page.reviewedOn ?? LAST_REVIEWED;
+  // FAQ blocks are plain sections whose heading is the full question —
+  // visible content and FAQPage schema stay in sync by construction.
+  const faqEntries = page.blocks.filter((block) =>
+    block.heading.trim().endsWith("?"),
+  );
 
   const graph: object[] = [
     {
@@ -110,6 +120,20 @@ export function GuideArticle({ page }: { page: GuidePage }) {
       duration: page.video.duration,
       embedUrl: `https://www.youtube.com/embed/${page.video.youtubeId}`,
       contentUrl: `https://www.youtube.com/watch?v=${page.video.youtubeId}`,
+    });
+  }
+
+  if (faqEntries.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: faqEntries.map((block) => ({
+        "@type": "Question",
+        name: block.heading,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: block.paragraphs.map(plainText).join(" "),
+        },
+      })),
     });
   }
 
