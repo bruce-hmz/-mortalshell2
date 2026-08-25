@@ -20,8 +20,11 @@ ALL_PATHS = [
     "/walkthrough/",
     "/shells/",
     "/weapons/",
+    "/bosses/",
     "/tips/",
     "/performance-fix/",
+    "/damage-calculator/",
+    "/about/",
     "/privacy/",
     "/terms/",
 ]
