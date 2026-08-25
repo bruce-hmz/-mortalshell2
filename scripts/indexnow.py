@@ -24,6 +24,8 @@ ALL_PATHS = [
     "/tips/",
     "/performance-fix/",
     "/damage-calculator/",
+    "/best-proxima-build/",
+    "/best-smert-build/",
     "/about/",
     "/privacy/",
     "/terms/",

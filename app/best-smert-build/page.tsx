@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import { GuideArticle } from "@/components/guide-article";
+import { getGuidePage } from "@/content/pages";
+
+const page = getGuidePage("best-smert-build")!;
+
+export const metadata: Metadata = {
+  title: { absolute: page.metaTitle },
+  description: page.metaDescription,
+  keywords: [
+    "mortal shell 2 best smert build",
+    "mortal shell 2 smert build",
+    "best smert build mortal shell 2",
+    "mortal shell 2 chaos build",
+  ],
+  alternates: { canonical: "/best-smert-build/" },
+  openGraph: {
+    title: { absolute: page.metaTitle },
+    description: page.metaDescription,
+    images: [{ url: "/img/site-2.jpg", width: 1600, height: 899 }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: { absolute: page.metaTitle },
+    description: page.metaDescription,
+    images: [{ url: "/img/site-2.jpg" }],
+  },
+};
+
+export default function BestSmertBuildPage() {
+  return <GuideArticle page={page} />;
+}

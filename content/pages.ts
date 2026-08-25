@@ -206,10 +206,10 @@ export const guidePages: GuidePage[] = [
         ],
         bullets: [
           "Tiel — Axe and Dagger + Salvaged Trebuchaxe: guaranteed critical strikes via the Critical Role ability",
-          "Proxima (Lightning) — Great Martyr's Blade + Triarch Repeater: Biosampler inflicts Stasis and Lightning stacks for burst",
+          "Proxima (Lightning) — Great Martyr's Blade + Triarch Repeater: Biosampler inflicts Stasis and Lightning stacks for burst — [full Proxima build guide](/best-proxima-build/)",
           "Eredrim — The Iconoclast + Forgotten Crossbow: wears down enemy Break gauges and controls groups",
           "Gragu — Axe and Dagger + Triarch Repeater: high critical damage stacked on Revered Heart buffs",
-          "Smert (Chaos) — Axe and Dagger + Caged Hystrix: unarmed Chaos stacks during Miracle, burst at the end",
+          "Smert (Chaos) — Axe and Dagger + Caged Hystrix: unarmed Chaos stacks during Miracle, burst at the end — [full Smert build guide](/best-smert-build/)",
           "Sester Genessa (Clone) — Axatana + Naylshotte: Light Attack spam with Faithful Double and Stray Double for multi-hit damage",
           "Lazlo — Axatana + Ballistazooka: rapid critical hits during Overheat, Retribution feeding the Heat Meter",
           "Sariel — Veteran's Battle Axe + Caged Hystrix: Trauma damage-over-time leading into executes",
@@ -448,6 +448,13 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Every shell carries its own ability tree and passive identity. Tiel's specialty is disappearing into the shadows; Smert wields time-stopping powers. For how those abilities turn into combat builds — which weapon, sidearm, and seal to pair with each shell — see the Mortal Shell 2 [best build guide](/best-build/).",
           "Shells also hold their own memories: unravelling them unlocks each shell's innate abilities and reveals their personal stories. Playing a shell well and digging into its secrets is how you develop its full kit — and the weapon you pair with it decides the rest. The full arsenal is catalogued in the [weapons guide](/weapons/), and the bosses that guard several shells are listed in the [boss guide](/bosses/).",
+        ],
+      },
+      {
+        heading: "Which shell is the best class in Mortal Shell 2?",
+        paragraphs: [
+          "There is no official best shell — each of the eight pairs a unique ability kit with a different playstyle, so the honest answer is which kit matches how you fight. Two practical starting points: Tiel and Proxima are the earliest shells you can possess (both are revealed when you first enter Fainweald), and the community's launch-build consensus pairs every shell with its own weapon, sidearm, and seal rather than crowning one class above the rest.",
+          "If you want a place to start: Proxima's Lightning burst kit and Smert's Chaos Miracle setup each have a full deep-dive — the [best Proxima build](/best-proxima-build/) and the [best Smert build](/best-smert-build/) — and all eight pairings are compared in the [best build guide](/best-build/).",
         ],
       },
     ],
@@ -810,6 +817,20 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Screen tearing: the V-Sync trade-off (attributed)",
+        paragraphs: [
+          "Screen tearing — horizontal tears in the image when a frame lands mid-refresh — has no officially confirmed fix in Mortal Shell 2. The attributed guidance from LagoFast runs against instinct: disable the in-game V-Sync and cap the frame rate externally instead (for example at 60 FPS via a tool like RivaTuner). The logic is to let one frame-rate governor handle pacing rather than stacking the game's own V-Sync on top of it.",
+          "As with every attributed setting on this page, treat it as a test rather than a guarantee: change one thing, re-test, and keep what your hardware actually responds to.",
+        ],
+      },
+      {
+        heading: "Compiling shaders: why the stutter happens and what the cache does",
+        paragraphs: [
+          "Much of Mortal Shell 2's mid-fight stutter points at the same underlying shader-compilation behavior the lock-up fix addresses: when the game meets visual effects it has not compiled yet, that compilation lands in the middle of play as a hitch. The fix with the strongest support is the same one Playstack's community manager recommends for lock-ups — set Shader Cache Size to Unlimited in the NVIDIA Control Panel (or the AMD Software equivalent) so compiled shaders are kept instead of being recompiled.",
+          "LagoFast additionally lists the community-reported -UseFixedTimeStep Steam launch option as a thing to try for shader stutter. That one is community-reported only — it is not an official recommendation, so weigh it accordingly.",
+        ],
+      },
+      {
         heading: "Won't launch? Check the requirements before anything else",
         paragraphs: [
           "If the game won't launch at all, start with the blunt possibility: the machine may sit below the floor that Steam publishes. The listing sets a clear minimum for PC players, and two details are easy to miss — the game wants 70 GB of space and an SSD is required, not merely recommended.",
@@ -861,6 +882,12 @@ export const guidePages: GuidePage[] = [
         heading: "How do I fix the Keyboard Bindings crash in Mortal Shell 2?",
         paragraphs: [
           "Delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav in AppData\\Local\\MortalShell2\\Saved\\SaveGames, then relaunch — that is Playstack's official workaround. It is not a permanent fix: the publisher says one is in progress, and the page's pending-verification box tracks that status.",
+        ],
+      },
+      {
+        heading: "How do I fix screen tearing in Mortal Shell 2?",
+        paragraphs: [
+          "No screen-tearing fix has been officially confirmed. The attributed guidance is to disable the in-game V-Sync and cap the frame rate externally — for example at 60 FPS — so a single governor handles frame pacing. Change one setting at a time and re-test after each.",
         ],
       },
     ],
@@ -948,6 +975,208 @@ export const guidePages: GuidePage[] = [
       {
         name: "mortalshelldb.com — upgrade multipliers",
         url: "https://mortalshelldb.com/",
+      },
+    ],
+    reviewedOn: "August 25, 2026",
+    datePublished: "2026-08-25",
+  },
+  {
+    slug: "best-proxima-build",
+    metaTitle: "Mortal Shell 2 Best Proxima Build: Lightning Burst Loadout",
+    metaDescription:
+      "Mortal Shell 2 best Proxima build: Great Martyr's Blade and Triarch Repeater, how the Biosampler Lightning kit works, and where to find every piece.",
+    cardBlurb:
+      "The Lightning burst build for Proxima: loadout, why Biosampler wins, and where every piece is found.",
+    h1: "Mortal Shell 2 Best Proxima Build",
+    eyebrow: "Builds",
+    intro: [
+      "Proxima turns Mortal Shell 2's lightning system into a burst-damage machine: her Biosampler kit stacks Stasis and Lightning while a heavy blade holds enemies in place. This page collects the community's launch-build loadout for her, why it works, and where to find every piece of it.",
+      "The loadout pairing below follows Game8's launch guide, verified against the August 20 release build; the locations come from our own shell and weapon research. Anything not yet confirmed is listed openly at the bottom of the page.",
+    ],
+    blocks: [
+      {
+        heading: "The best Proxima build in one look",
+        paragraphs: [
+          "Game8's walkthrough team publishes a best build for each of the eight shells, pairing a weapon and a sidearm with each shell's ability kit. Their pick for Proxima:",
+        ],
+        bullets: [
+          "Shell — Proxima (Lightning), found at the Shattered Beacon in the Blackridge Cliffs",
+          "Weapon — Great Martyr's Blade, the reforged weapon of the First Martyr Tarsus",
+          "Sidearm — Triarch Repeater",
+          "Gameplan — Biosampler inflicts Stasis and Lightning stacks, then the blade converts them into burst damage",
+        ],
+      },
+      {
+        heading: "Why this loadout wins: Biosampler and the Lightning gameplan",
+        paragraphs: [
+          "Proxima's signature is the Biosampler kit that lightning builds are built on: it inflicts Stasis and Lightning stacks on enemies, setting up a window where burst damage lands all at once. The Great Martyr's Blade is the pairing that makes that window pay — a heavy weapon whose complete, unique moveset can dump damage into a Stasis-slowed target instead of chipping at it.",
+          "Every weapon in Mortal Shell II defines its own full moveset — there are no shared-animation subtypes — so the blade genuinely changes how Proxima plays compared with a faster pairing. The Triarch Repeater covers the gap: as a ranged sidearm it extends pressure between the blade's slower swings and keeps Lightning stacks ticking while you reposition.",
+        ],
+      },
+      {
+        heading: "Where to find Proxima",
+        paragraphs: [
+          "Proxima is one of the two easiest shells: her general location is revealed when you first enter Fainweald. From the Widow's Overlook Beacon head north into the Blackridge Cliffs, past cultists fighting a Tarred Vestige and the white spider-like enemy, until a glimmering beacon appears — the Shattered Beacon. Proxima's body lies on a table inside; possessing her unlocks the Biosampler kit.",
+        ],
+      },
+      {
+        heading: "Where to find the Great Martyr's Blade and Triarch Repeater",
+        paragraphs: [
+          "The Great Martyr's Blade waits in the Martyr's Prison dungeon at the northeast corner of the castle, reachable from the Gloomshade Grove Beacon or via the well from the Holding Cells. Clear the four enemies in the locked room and the blade is yours.",
+          "The Triarch Repeater is one of the eight ranged sidearms. Per PowerPyx's locations guide, none of the sidearms are missable, and Merrick in Marrow Keep sells their map markers like he does for weapons — so if you would rather buy the waymark than search, that trade exists.",
+        ],
+      },
+      {
+        heading: "The Great Martyr's Blade is the guard-meter outlier",
+        paragraphs: [
+          "One detail build planners miss: the Great Martyr's Blade is the only weapon in the game whose Guard Meter scaling breaks the universal curve. Every other weapon scales Guard Meter at x1.25; the Great Martyr's Blade scales at x1.30 — a small but real defensive edge at high upgrade levels.",
+          "Raw damage on all weapons scales from x1.00 at +0 to x1.80 at +16, while stagger and the zero-based stats keep scaling to x2.00 at +20. The full multiplier table and a level-by-level Tarforge cost calculator are in the [damage calculator](/damage-calculator/).",
+        ],
+      },
+      {
+        heading: "What is the best Proxima build in Mortal Shell 2?",
+        paragraphs: [
+          "Game8's launch-build pick pairs the Great Martyr's Blade with the Triarch Repeater: Biosampler inflicts Stasis and Lightning stacks for burst, and the blade's heavy unique moveset converts that crowd control into damage. See the loadout breakdown above for why each piece earns its slot.",
+        ],
+      },
+      {
+        heading: "Where do I find Proxima in Mortal Shell 2?",
+        paragraphs: [
+          "Proxima lies at the Shattered Beacon in the Blackridge Cliffs, north of the Widow's Overlook Beacon in Fainweald. Her general location is revealed automatically when you first enter Fainweald — head past the cultists fighting a Tarred Vestige and the white spider-like enemy to reach her.",
+        ],
+      },
+      {
+        heading: "Is Proxima a good first shell?",
+        paragraphs: [
+          "She is one of the two earliest shells you can possess — the Fainweald pair, Tiel and Proxima, are both revealed when you first enter the region, while every other shell hides in a specific corner of the world and several are guarded by bosses. An early Proxima means an early Lightning gameplan; whether that suits you depends on how comfortable you are with a heavy blade's slower swings.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Not yet verified",
+      intro:
+        "Post-launch patch tuning will reshuffle build rankings; these points are not yet confirmed in any source we trust.",
+      items: [
+        "Which seal pairs with Proxima's loadout — Game8's per-shell pairings do not list one for her",
+        "Exact Biosampler stack values and decay rates",
+      ],
+    },
+    related: [
+      { label: "All Best Builds", href: "/best-build/" },
+      { label: "All Shells & Locations", href: "/shells/" },
+      { label: "Weapons Guide", href: "/weapons/" },
+      { label: "Damage Calculator", href: "/damage-calculator/" },
+    ],
+    sources: [
+      {
+        name: "Game8 — Mortal Shell 2 Best Builds",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+      {
+        name: "PowerPyx — Mortal Shell 2 All Sidearm Locations",
+        url: "https://www.powerpyx.com/mortal-shell-2-all-sidearm-locations/",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Weapons List",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614498",
+      },
+    ],
+    reviewedOn: "August 25, 2026",
+    datePublished: "2026-08-25",
+  },
+  {
+    slug: "best-smert-build",
+    metaTitle: "Mortal Shell 2 Best Smert Build: Chaos Miracle Loadout",
+    metaDescription:
+      "Mortal Shell 2 best Smert build: Axe and Dagger with the Caged Hystrix, how unarmed Chaos stacks during Miracle work, and where to find everything.",
+    cardBlurb:
+      "The Chaos build for Smert: unarmed stacks during Miracle, the ritual to claim him, and every piece's location.",
+    h1: "Mortal Shell 2 Best Smert Build",
+    eyebrow: "Builds",
+    intro: [
+      "Smert is Mortal Shell 2's time-stopping Chaos shell, and his best build is the strangest of the eight: you win by not attacking. Unarmed strikes during Miracle build Chaos stacks that burst all at once when the ability ends — a setup that rewards patience more than any other shell.",
+      "The loadout below follows Game8's launch guide, verified against the August 20 release build; locations and the ritual walkthrough come from our own shell and weapon research. Anything not yet confirmed is listed openly at the bottom of the page.",
+    ],
+    blocks: [
+      {
+        heading: "The best Smert build in one look",
+        paragraphs: [
+          "Game8's walkthrough team publishes a best build for each of the eight shells, pairing a weapon, a sidearm, and a seal with each shell's ability kit. Their pick for Smert:",
+        ],
+        bullets: [
+          "Shell — Smert (Chaos), claimed from the blood ritual in Prophet's Rest",
+          "Weapon — Axe and Dagger, a thief's tool paired with a northern axe",
+          "Sidearm — Caged Hystrix",
+          "Seal — Untarnished Seal",
+          "Gameplan — unarmed attacks during Miracle build Chaos stacks, then burst at the end of the duration",
+        ],
+      },
+      {
+        heading: "Why this loadout wins: Chaos stacks during Miracle",
+        paragraphs: [
+          "The engine of this build is a deliberate contradiction: while Miracle is active, you attack with your bare hands. Unarmed strikes stack Chaos during the ability's duration, and when Miracle ends the stacks detonate into a single burst — timing damage for the end of the window instead of the start.",
+          "The Axe and Dagger covers everything outside Miracle. It is the one weapon in the arsenal that serves three different gameplans — guaranteed crits on Tiel, Revered Heart buffs on Gragu, and Chaos stacking on Smert — so the pairing is flexible rather than exotic. The Caged Hystrix sidearm keeps pressure on while you wait for the next Miracle window, and the Untarnished Seal rounds out the kit.",
+        ],
+      },
+      {
+        heading: "Where to find Smert",
+        paragraphs: [
+          "Smert's ritual is the strangest sight of the eight shells. From the Outskirts of Nochte Beacon turn left up the slope into Prophet's Rest: three cultist groups chant over circular pits of red liquid, with Smert's body on a stone slab beside them. Clear the three groups — Rock Paper Shotgun notes the Troubadour's Lute can turn them on each other — and the screen glows red when the shell is claimable.",
+        ],
+      },
+      {
+        heading: "Where to find the Axe and Dagger and Caged Hystrix",
+        paragraphs: [
+          "The Axe and Dagger sits behind a two-step puzzle: walk through the arch facing the burning pyre south of Mushroom Village to summon the statue holding the Chapel Key, then open the Shrine of Trials dungeon northwest of the village.",
+          "The Caged Hystrix is one of the eight ranged sidearms. Per PowerPyx's locations guide none of them are missable, and Merrick in Marrow Keep sells their map markers if you would rather buy the waymark than search.",
+        ],
+      },
+      {
+        heading: "What is the best Smert build in Mortal Shell 2?",
+        paragraphs: [
+          "Game8's launch-build pick pairs the Axe and Dagger with the Caged Hystrix and the Untarnished Seal: unarmed attacks during Miracle build Chaos stacks that burst at the end of the duration, while the paired weapon handles everything outside the ability window. See the loadout breakdown above for why each piece earns its slot.",
+        ],
+      },
+      {
+        heading: "Where do I find Smert in Mortal Shell 2?",
+        paragraphs: [
+          "Smert's body lies on a stone slab in Prophet's Rest, up the slope from the Outskirts of Nochte Beacon, surrounded by three cultist groups chanting over pits of red liquid. Clear the three groups — the Troubadour's Lute can turn them on each other — and the screen glows red when the shell is claimable.",
+        ],
+      },
+      {
+        heading: "Why does the Smert build use unarmed attacks?",
+        paragraphs: [
+          "Because that is where the Chaos stacks come from. Unarmed strikes during Miracle are what build the Chaos count; when the ability ends, the stacks convert into a single burst of damage. Attacking with your weapon during the window would deal normal damage instead of stacking the payoff — hence a build that deliberately fights bare-handed inside Miracle and saves the Axe and Dagger for everything else.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Not yet verified",
+      intro:
+        "Post-launch patch tuning will reshuffle build rankings; these points are not yet confirmed in any source we trust.",
+      items: [
+        "The community-reported 'Smert memory bug' — what it affects and whether it is real is unverified; general crash fixes live in the crash fix guide",
+        "Exact Chaos stack values and the burst formula during Miracle",
+      ],
+    },
+    related: [
+      { label: "All Best Builds", href: "/best-build/" },
+      { label: "All Shells & Locations", href: "/shells/" },
+      { label: "Weapons Guide", href: "/weapons/" },
+      { label: "Crash & Stutter Fixes", href: "/performance-fix/" },
+    ],
+    sources: [
+      {
+        name: "Game8 — Mortal Shell 2 Best Builds",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 shell locations",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
+      },
+      {
+        name: "PowerPyx — Mortal Shell 2 All Sidearm Locations",
+        url: "https://www.powerpyx.com/mortal-shell-2-all-sidearm-locations/",
       },
     ],
     reviewedOn: "August 25, 2026",

@@ -107,6 +107,8 @@ const GUIDE_TAGS: Record<string, string> = {
   tips: "Mechanics",
   "performance-fix": "Troubleshooting",
   "damage-calculator": "Tools",
+  "best-proxima-build": "Builds",
+  "best-smert-build": "Builds",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -120,6 +122,8 @@ const GUIDE_CTA: Record<string, string> = {
   tips: "Get the survival tips →",
   "performance-fix": "Fix PC stutters →",
   "damage-calculator": "Run the numbers →",
+  "best-proxima-build": "Build Proxima's burst →",
+  "best-smert-build": "Stack Chaos with Smert →",
 };
 
 const PILLARS = [
