@@ -106,6 +106,7 @@ const GUIDE_TAGS: Record<string, string> = {
   bosses: "Bosses",
   tips: "Mechanics",
   "performance-fix": "Troubleshooting",
+  "damage-calculator": "Tools",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -118,6 +119,7 @@ const GUIDE_CTA: Record<string, string> = {
   bosses: "Study the boss order →",
   tips: "Get the survival tips →",
   "performance-fix": "Fix PC stutters →",
+  "damage-calculator": "Run the numbers →",
 };
 
 const PILLARS = [
