@@ -302,7 +302,7 @@ export const guidePages: GuidePage[] = [
     slug: "walkthrough",
     metaTitle: "Mortal Shell 2 Walkthrough: World & Progression",
     metaDescription:
-      "Mortal Shell 2 walkthrough: the nine regions, the ten major bosses gating the critical path, and the shells and weapons waiting off the golden route.",
+      "Mortal Shell 2 walkthrough, region by region: step-by-step route through Fainweald and Ruins of Mammon, every beacon and gate in order, boss checkpoints, and detours worth taking.",
     cardBlurb:
       "An interconnected world of 60+ dungeons — and what hides beyond the golden path.",
     heroImage: {
@@ -315,10 +315,10 @@ export const guidePages: GuidePage[] = [
     intro: [
       "Mortal Shell II is out now (released " +
         RELEASE_DATE +
-        "), and the full step-by-step walkthrough is being built against the launch build. What is already verified: the world structure, the nine regions, the ten major bosses that gate the critical path, and the rewards that hide beyond it.",
-      "World structure was fact-checked against the official Steam page on " +
+        "), and it drops you into its interconnected world with a map and zero hand-holding. This walkthrough gives you the order: every step from the end of the tutorial to the gates of the Ruins of Mammon — which beacon to activate first, which gate to cleanse next, where each boss waits, and which detours pay off.",
+      "The route below follows AltChar's complete progression guide (published August 17, 2026), with encounter specifics corroborated against Rock Paper Shotgun's 45-boss compendium (updated August 25, 2026). The world-structure overview was originally fact-checked against the official Steam page on " +
         LAST_REVIEWED +
-        "; regions, bosses, and locations were verified on August 20, 2026 against Game8's and Rock Paper Shotgun's launch guides.",
+        ". Notes on the game's later regions and final area are marked as still being built out.",
     ],
     blocks: [
       {
@@ -328,10 +328,66 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
-        heading: "The nine regions, in the order you meet them",
+        heading: "The regions, in the order you meet them",
         paragraphs: [
           "Per Game8's launch compendium, the critical path runs through nine regions — Disciple's Pass, Fainweald, Glutted Mire, Sanguine Caverns, Ruins of Mammon, Prisoners' Domain, Withered Shoals, Conquered Temple, and Faded Citadel — with the endgame encounters waiting along The Unfounded Path. Each region is anchored by Beacons, the fast-travel and checkpoint spines you unlock as you push outward.",
           "Most of what looks missable here is not: after the final boss a free-roam window lets you claim any Beacon, shell, or weapon still on the board. The genuinely one-time encounters are few — the [missable content guide](/missable-content/) keeps the honest list, and the [fast travel guide](/fast-travel/) maps every Beacon node.",
+        ],
+      },
+      {
+        heading: "The route at a glance",
+        paragraphs: [
+          "The campaign's critical path in one line — steps follow in the region blocks below:",
+        ],
+        bullets: [
+          "**Prologue** (Disciple's Pass): Gloombound Ritualist → Tainted Vestige → Tar Golem → arrive at Marrow Keep",
+          "**Fainweald south**: Widow's Overlook Beacon → first miniboss → map extension + Mushroom Village Beacon → eastern corrupted gate → Magdalena",
+          "**Fainweald north**: Blackridge Pass Beacon → Broodshell Swarm → Flooded Village Grisha → Lucian in the Hidden Keep",
+          "**Fainweald west**: teleporter → Outskirts of Nochte Beacon → Vrago's Abandoned Shrine → eastern gate → deposit Ova → unlock Mether's Breath",
+          "**Ruins of Mammon**: Outskirts of Mammon Beacon → two corrupted gates → all shells → return to Marrow Keep for the endgame",
+        ],
+      },
+      {
+        heading: "Step 1 — Prologue: Disciple's Pass",
+        paragraphs: [
+          "Three encounters open the game. The **Gloombound Ritualist** is your first fight, in an arena you drop into beyond the bridges past the Village Outskirts Beacon; dodge its exploding summons and punish between waves. From the Disciple's Grotto Beacon, a left exit leads out to the **Tainted Vestige**, an early test of your Perfect Guard timing — everything telegraphs except the unblockable grab. Down the slope from the same beacon waits the **Tar Golem**, the prologue's scripted closer.",
+          "Win or lose, the Golem fight ends the same way: Harros surrenders his shell so you can continue, and Marrow Keep opens as your hub. Secretly winning awards the **No, You Still Can't Win** trophy on the spot — see the [missable content checklist](/missable-content/) before you skip this fight. Once in Marrow Keep, speak to the NPCs, then head to the roof where fast travel is introduced properly.",
+        ],
+      },
+      {
+        heading: "Step 2 — Fainweald south: first shell, first map, Magdalena",
+        paragraphs: [
+          "Fast travel from Marrow Keep's roof deposits you at the **Widow's Overlook Beacon** in Fainweald. Go **south first**: southern enemies are weaker, making it the better leveling ground, and the story-path shells split by direction — **Tiel to the south, Proxima to the north**, both marked on your map. Claim whichever shell fits your build early; unshelled, the Harbinger takes heavy damage and has no second life.",
+          "Past the first miniboss arena sits the map extension guarded by Ruk, then **Mushroom Village** with its own beacon — your base for the whole southern sweep. East of the village beacon, Fainweald's first **corrupted gates** appear alongside a neighboring beacon; cleansing the village gate both teaches the gate mechanic (each cleanse pays Ova, the currency that later unlocks Mether's Breath fast travel) and opens the path to **Magdalena, the Lady of the Woods**, your first major boss.",
+          "Magdalena is intentionally winnable early, and she is worth the effort: beating her pays 26 Ova and returns you to Marrow Keep to deposit it. RPS adds that she fights from a rocket-powered mobility scooter — keep to her flank during fiery donut attacks and punish after her two rotation cycles; summoning Smert can smooth the opener if you're underleveled.",
+        ],
+      },
+      {
+        heading: "Step 3 — Fainweald north: Blackridge Pass and the Hidden Keep",
+        paragraphs: [
+          "With the south cleared, head north of Widow's Overlook to the **Blackridge Pass Beacon**. Northern Fainweald is measurably tougher than the south — treat it as your checkpoint for whether to farm more levels before pushing on. Detours here compound: the graveyard at Stones of Remembrance hides the **Broodshell Swarm** enclave northeast of the cliffs, and the rope bridges south of the pass lead to the **Flooded Village dungeon**, where a full Grisha miniboss waits in its eastern arena.",
+          "Northern Fainweald also contains the first shell-route dungeons: cleansing the **Stonebled Gate Beacon** opens the **Hidden Keep**, whose final rooms hold **Lucian, the Thirsting Knight** — he ambushes you once mid-dungeon in visible form, then rematches invisible in the Ovum chamber. Stay aggressive so his stagger prevents him vanishing again. Clearing this keep lines up directly with the guide's shell-route notes in the [shells guide](/shells/), including the nearby Gloomshade Grove farming loop in western Fainweald should you need extra Gloom.",
+        ],
+      },
+      {
+        heading: "Step 4 — Fainweald west: Outskirts of Nochte and Mether's Breath",
+        paragraphs: [
+          "Take the **teleporter on the map's southern edge directly below Widow's Overlook** to reach Fainweald's western zone. Activate the **Outskirts of Nochte Beacon** and work toward the gate at the area's eastern edge; behind it waits the **Abandoned Shrine dungeon ending in Vrago, Solikar Champion** — who drops the Voltaic Crown sidearm lightning Tarstone noted in the [missable content guide](/missable-content/). Clearing Nochte's eastern gate auto-returns you to Marrow Keep.",
+          "Back home, **deposit enough Ova at the syphon to unlock Mether's Breath** — the game's fast-travel / gate-cleansing ability. If you arrived short, Magdalena's 26-Ova payout plus your accumulated gate cleanses are usually enough; per-beacon totals live in the [fast travel guide](/fast-travel/). Take the roof lift up, use Mether's Breath to clear corruption on the far side of the roof teleporter, and the southern route to the Ruins of Mammon opens.",
+        ],
+      },
+      {
+        heading: "Step 5 — Ruins of Mammon: level check, two gates, endgame trigger",
+        paragraphs: [
+          "The Ruins of Mammon land you at the **Outskirts of Mammon Beacon**, and the common soldiers patrolling outside are the region's difficulty check: if they pressure you, go farm first. AltChar recommends arriving around **level 20 or higher**. Mammon's pattern compresses to what you've practiced: pick an area, fight through to its corrupted gate, cleanse it. Only two gates exist here.",
+          "Before triggering the endgame, finish your collection sweep. Shell positions can be bought from **Zhirelle in Marrow Keep** if any remain hidden — though AltChar advises holding off until your Glimpse is mostly spent on upgrades you actually want, since shells aren't going anywhere and the free-roam window after the final boss keeps every non-prologue pickup available (see the [missable content checklist](/missable-content/)). With both gates down and every shell claimed, return to Marrow Keep to trigger the endgame sequence.",
+        ],
+      },
+      {
+        heading: "Beyond Mammon: Prisoners' Domain through the endgame",
+        paragraphs: [
+          "AltChar's progression guide stops at the Mammon boundary — past that point, RPS's 45-boss ordered list maps the road ahead. **Prisoners' Domain** climbs from the Hangman's Scaffold and Executioner's Pulpit Beacons through the Gloombound Legion, Tishina's Confessor, and the parry-gauntlet **Nameless Captive** (whose reversed seven-spin holds the hardest missable trophy). The **Withered Shoals** run from the Gate of Mammon Beacon through Strange Grisha, Hexapod near Nameless Pass, and Sariel's double fight at the Chamber of Becoming.",
+          "Late regions stack up through Mammon's snowy **Valley of the Revered** (Caged Grisha, Urrig, Droeg), the **Vestige of Infinity** (Starved Harridan, Gloombound Wraith), and the **Ashen Sanctum** (Solnir, Servants, Sir Isaac). The final multi-layered area beneath Marrow Keep chains Monolith, Malborn Offspring, Orrem, and finally **Zmey the Unbidden** at the Hidden Nave — with the Monolith standing out as the roadblock most players grind on. Each region gets a detailed expansion here as research wraps; per-fight tactics meanwhile live in the [boss guide](/bosses/), and every beacon referenced above has rest effects and unlock rules catalogued in the [fast travel guide](/fast-travel/).",
         ],
       },
       {
@@ -369,11 +425,11 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Still being verified",
       intro:
-        "The step-by-step route content is being written against the launch build:",
+        "The route walkthrough currently covers the prologue through the Ruins of Mammon in full steps; later regions are mapped at boss-checkpoint level. Still being expanded:",
       items: [
-        "Region-by-region route order with Beacon unlock sequence",
-        "Per-dungeon order for non-critical side zones",
-        "Optional boss and miniboss roster per region",
+        "Full step-level expansions for Prisoners' Domain, Withered Shoals, Conquered Temple, Faded Citadel, and The Unfounded Path — following the same entry point → key pickups → exit template used above",
+        "Per-dungeon order for non-critical side zones in Mammon's sub-regions (Valley of the Revered, Vestige of Infinity, Ashen Sanctum)",
+        "Second source for region-name spellings: Game8's compendium was unreachable this session, so late-region naming leans on RPS's list alone",
       ],
     },
     related: [
@@ -404,11 +460,15 @@ export const guidePages: GuidePage[] = [
         url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
       },
       {
+        name: "AltChar — Mortal Shell 2: The Complete Progression Guide",
+        url: "https://www.altchar.com/guides/mortal-shell-2-the-complete-progression-guide-aDaUv0P7BNa7",
+      },
+      {
         name: "Rock Paper Shotgun — Mortal Shell 2 shell locations",
         url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
       },
     ],
-    reviewedOn: "August 20, 2026",
+    reviewedOn: "August 27, 2026",
     datePublished: "2026-08-20",
   },
   {

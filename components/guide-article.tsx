@@ -8,26 +8,35 @@ import { VideoFacade } from "./video-facade";
 // Paragraphs may embed contextual links as `[label](/internal/)` or
 // `[label](https://external/)`.
 const INLINE_LINK = /\[([^\]]+)\]\(([^)]+)\)/g;
+const INLINE_BOLD = /\*\*([^*]+)\*\*/g;
+const INLINE_TOKEN = new RegExp(
+  `${INLINE_LINK.source}|${INLINE_BOLD.source}`,
+  "g",
+);
 
 function renderInline(text: string): ReactNode[] {
   const parts: ReactNode[] = [];
   let cursor = 0;
   let key = 0;
-  for (const match of text.matchAll(INLINE_LINK)) {
+  for (const match of text.matchAll(INLINE_TOKEN)) {
     if (match.index > cursor) parts.push(text.slice(cursor, match.index));
-    const [_, label, href] = match;
-    if (href.startsWith("/")) {
-      parts.push(
-        <Link key={key++} href={href}>
-          {label}
-        </Link>,
-      );
+    const [, label, href, bold] = match;
+    if (bold !== undefined) {
+      parts.push(<strong key={key++}>{bold}</strong>);
     } else {
-      parts.push(
-        <a key={key++} href={href} target="_blank" rel="noopener noreferrer">
-          {label}
-        </a>,
-      );
+      if (href.startsWith("/")) {
+        parts.push(
+          <Link key={key++} href={href}>
+            {label}
+          </Link>,
+        );
+      } else {
+        parts.push(
+          <a key={key++} href={href} target="_blank" rel="noopener noreferrer">
+            {label}
+          </a>,
+        );
+      }
     }
     cursor = match.index + match[0].length;
   }
@@ -48,7 +57,7 @@ const SOURCES = [
 
 // Plain text for JSON-LD answers: keeps the link label, drops the markdown.
 function plainText(text: string): string {
-  return text.replace(INLINE_LINK, "$1");
+  return text.replace(INLINE_LINK, "$1").replace(INLINE_BOLD, "$1");
 }
 
 export function GuideArticle({ page }: { page: GuidePage }) {
