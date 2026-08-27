@@ -112,6 +112,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "fast-travel": "Progression",
   "missable-content": "Completion",
   "ova-locations": "Completion",
+  "achievements-guide": "Completion",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -130,6 +131,7 @@ const GUIDE_CTA: Record<string, string> = {
   "fast-travel": "Map every Beacon →",
   "missable-content": "Check what locks you out →",
   "ova-locations": "Collect all 196 Ova →",
+  "achievements-guide": "Plan the platinum run →",
 };
 
 const PILLARS = [

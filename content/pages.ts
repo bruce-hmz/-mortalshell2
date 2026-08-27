@@ -56,10 +56,122 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "achievements-guide",
+    metaTitle: "Mortal Shell 2 Achievement Guide: Rare Ones First (53 Total)",
+    metaDescription:
+      "A rare-first Mortal Shell 2 achievement guide: Seeking the Past's must-VIEW memory rule and NG++ requirement, the three missables, Lord of War's roster count, and Steam rarity data for every trophy.",
+    cardBlurb:
+      "The 53-trophy roadmap ordered by risk: what to secure early, what to leave for free-roam, and the one chain that needs NG++.",
+    heroImage: {
+      src: "/img/site-4.jpg",
+      alt: "Mortal Shell II key art with a fallen knight before a monumental door",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Achievement Guide — Rare Ones First",
+    eyebrow: "Achievements",
+    intro: [
+      "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But two things still punish the unprepared: exactly three achievements are missable, and the single rarest one (Seeking the Past, **1.9%** of players per Steam) quietly demands enough Glimpse income to reach New Game++.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap.",
+    ],
+    blocks: [
+      {
+        heading: "The numbers at a glance (Steam official stats)",
+        paragraphs: [
+          "All 53 achievements are offline; there is no multiplayer or difficulty gating. Steam's global stats show the platinum-tier completion rate at just **1.3%** (No Lifer), with a long middle band of story and collectible unlocks between 15% and 40%. The full risk map:",
+        ],
+        bullets: [
+          "**3 missable:** Mid Summer? (83.2% — high rate because most players accept naturally), No You Still Can't Win (13.0%), Peter's Perfect Parry (4.2%)",
+          "**1 glitched:** Bring My Ova Back to Me (15.7%) — currently earnable only in a first playthrough; see its section below",
+          "**Needs NG++:** Seeking the Past (1.9%, Watch all Shell Memories) — the only achievement requiring more than one playthrough by design",
+          "**Post-game safe:** everything else, including all shells (17.5% Shell Seeker), weapons (18.8% Lord of War), sidearms (17.0% Guns. Lots of Guns), Tarstones (6.0% Stoned), Beacons (7.8% So Fresh, So Clean), and Map Fragments (19.0% Sat Nav)",
+        ],
+      },
+      {
+        heading: "Seeking the Past (1.9%) — the rarest trophy, explained properly",
+        paragraphs: [
+          "Seeking the Past requires watching all 40 Shell Memories — five per shell across all eight shells. The rule almost every generic guide gets wrong: memories are unlocked by spending Glimpse at the Shellkeeper, but unlocking alone does not count. Each one must be selected and **viewed from the Shellkeeper bond menu**, even though every shell forces you through one memory during its natural bond progression. The very first memory has its own easier trophy (Haunting Times, 68.1%), which is where most players discover the distinction.",
+          "The Glimpse economy decides how many runs this takes. Raising one shell to maximum Bond Tier 4 costs **27 Glimpse**; all eight shells cost a cumulative **216 Glimpse**, and a single playthrough reliably funds only about three maxed shells. That math pushes Seeking the Past into a minimum of roughly two full playthroughs plus a partial third (NG++). Two income rules per run: cleanse every Beacon again (Glimpse rewards recur), grab the handful of loose Glimpse caches sitting near Beacons, and visit each original shell location at night once per playthrough for an extra **8 Glimpse** each cycle.",
+          "Known bug behavior as of August 2026: PowerPyx commenters and Steam discussions report the counter stalling at 38/40 with no unwatched memories left, and one player saw it pop after restarting the game mid-dungeon. Developers are reportedly aware. Nothing was fixed via Balance Patch 1 notes we could verify — if your tracker wedges below 40/40 after viewing everything, reboot the game first, then finish that shell's bond menu entry again before starting a fresh run.",
+        ],
+      },
+      {
+        heading: "The three missables — secure them in your first hour",
+        paragraphs: [
+          "None of the three are hard; they are only easy to walk past. All details live in our [missable content checklist](/missable-content/) — the short version:",
+        ],
+        bullets: [
+          "**Mid Summer? (83.2%)** — accept Marigold's flower crown during the prologue walk. The offer never re-runs in NG+, so skipping it costs a fresh save slot (~10 minutes) if missed.",
+          "**No You Still Can't Win (13.0%)** — reduce the tutorial Tar Golem to zero health instead of losing the scripted fight. He never reappears in any later playthrough.",
+          "**Peter's Perfect Parry (4.2%)** — Perfect Guard every hit of The Nameless Captive's reversed second-phase head-spin while wearing the Untarnished Seal. Because he spawns once per run, set up the seal before the fight rather than trying to backfill it.",
+        ],
+      },
+      {
+        heading: "Lord of War counts weapons — but which ones?",
+        paragraphs: [
+          "Lord of War (18.8%) asks you to 'Unlock all Weapons', and the useful nuance is in that word *weapons*: the count follows the game's own collectible roster of **eight melee weapons and eight sidearms**, tracked through their dedicated inventory screens. Iconoclast (your starting weapon) and the tutorial Hallowed Sword are excluded from the tally — the Hallowed Sword does not even persist past the prologue. Merrick in Marrow Keep sells map markers that reveal any still-hidden locations, and nothing here expires: the whole roster stays collectible through the endgame free-roam window.",
+          "Full location tables for both halves of the arsenal — including the Coin-and-material upgrade ladder feeding Over 9000 (+16 max) — are maintained in the [weapons guide](/weapons/).",
+        ],
+      },
+      {
+        heading: "Bring My Ova Back to Me (15.7%) — the glitched one",
+        paragraphs: [
+          "Collecting all 196 Ova should be a straightforward Beacon-sweeping task (the [Ova locations page](/ova-locations/) maps the route), but a recent patch introduced a bug: PowerPyx reports the achievement can currently pop only in a first playthrough. Crossing into NG+ with unfinished cleanup risks a permanently dead save for this entry until a fix lands.",
+          "Sooner or later the developers will patch this — at which point the restriction presumably lifts and normal NG+ collection resumes. Until an update note says otherwise, treat every post-boss 26-Ova Beacon payout as first-run-critical and do not send Ova through the Marrow Keep Siphon's ending prompt without a finished count.",
+        ],
+      },
+      {
+        heading: "Efficient order of operations",
+        paragraphs: [
+          "One disciplined pass covers nearly everything; only Seeking the Past legitimately needs repeats.",
+        ],
+        bullets: [
+          "**Playthrough 1:** secure the three missables in the prologue and Prisoners' Domain; cleanse all 49 Beacons while collecting Ova as you go (serves So Fresh So Clean at 7.8%, Stoned at 6.0%, Sat Nav at 19.0%, Bring My Ova at 15.7%); find Mether's Flesh and complete the Mango cup ritual for Ascension (16.7%); max one shell's bond (Decked Out, 37.1%); push one weapon to +16 (Over 9000, 24.7%). Endgame free-roam mops up anything left before you trigger NG+ via the Siphon.",
+          "**Playthroughs 2-3:** spend Glimpse on remaining shells' bond trees, re-cleanse Beacons each cycle, night-pickup the shell locations' bonus Glimpse (8 per cycle), and view every memory in the bond menus. Both Shell Seeker (17.5%) and Guns. Lots of Guns (17.0%) fall somewhere along these runs if the roster survived run one.",
+        ],
+      },
+      {
+        heading: "FAQ quick hits",
+        paragraphs: [
+          "**Does Night (increased difficulty mode) affect trophies?** No — the in-game Night toggle raises enemy pressure but is required for certain content like night-only Glimpse pickups, and no achievement demands clearing bosses under it specifically.",
+          "**Is Ascension the 196-Ova trophy?** No — they are separate entries. Ascension (16.7%, Discover the secret of the Mango) ties to the hidden Mango sanctuary quest; Bring My Ova Back to Me (15.7%) is the Ova-completion one. Community confusion between the two is common because their rates sit close together.",
+          "**How long is a full completion?** PowerPyx estimates **40-60 hours** at a 6/10 difficulty rating, with roughly 85% of that being one thorough first playthrough plus two lighter Glimpse-farming cycles.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro:
+        "This hub ships anchored to official Steam stats and PowerPyx's roadmap — open about what isn't pinned down yet:",
+      items: [
+        "Whether Balance Patch 1 (or later hotfixes) lifted the Bring My Ova Back to Me first-playthrough bug — no visible change in patch documentation yet",
+        "Exact Glimpse-per-cycle totals beyond Beacon cleanse rewards (night-bonus 8-per-location figure is community-transcribed, not dev-confirmed)",
+        "Whether the Seeking the Past 38/40 stall shares a root cause with the Bring My Ova tracker bug",
+      ],
+    },
+    related: [
+      { label: "Ova Locations", href: "/ova-locations/" },
+      { label: "Missable Content", href: "/missable-content/" },
+      { label: "Shells Guide", href: "/shells/" },
+      { label: "Weapons Guide", href: "/weapons/" },
+    ],
+    sources: [
+      {
+        name: "Steam Community — Mortal Shell II Global Achievements",
+        url: "https://steamcommunity.com/stats/2584270/achievements",
+      },
+      {
+        name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
+        url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
+    datePublished: "2026-08-27",
+  },
+  {
     slug: "ova-locations",
     metaTitle: "Mortal Shell 2 Ova Locations: How to Collect All 196",
     metaDescription:
-      "Every Mortal Shell 2 Ova location explained: all 196 come from cleansing Beacons, six post-boss nodes pay 26 each, and the first-playthrough rule that protects your Ascension trophy.",
+      "Every Mortal Shell 2 Ova location explained: all 196 come from cleansing Beacons, six post-boss nodes pay 26 each, and the first-playthrough rule that protects the Bring My Ova Back to Me trophy.",
     cardBlurb:
       "Where all 196 Ova hide, which Beacons pay the biggest hauls, and the NG+ bug to respect.",
     heroImage: {
@@ -83,7 +195,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "How many Ova are in Mortal Shell 2?",
         paragraphs: [
-          "196. That total is tied directly to the Ascension trophy — one of the rarest in the game at roughly a 14% unlock rate — and per community help threads it counts only Ova obtained through Beacon cleansing. Boss payouts like Magdalena's famous 26-Ova purse feed the same economy but don't add collection slots beyond what the Beacons hold; if your count stalls below 196, an uncleansed Beacon somewhere is why, not a missed field pickup.",
+          "196 — and the collection is tracked by its own achievement, **Bring My Ova Back to Me**, which Steam records at a **15.7%** unlock rate. (Ascension at 16.7% looks similar but is actually the hidden Mango-secret trophy — see our [achievement guide](/achievements-guide/) for why the two are frequently confused.) Per community help threads the count includes only Ova obtained through Beacon cleansing; boss payouts like Magdalena's famous 26-Ova purse feed the same economy but don't add collection slots beyond what the Beacons hold. If your count stalls below 196, an uncleansed Beacon somewhere is why, not a missed field pickup.",
         ],
       },
       {
@@ -121,8 +233,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "What is the Ascension trophy?",
         paragraphs: [
-          "Ascension is the completion trophy awarded for depositing all 196 Ova — PowerPyx records it at roughly a **14% unlock rate**, making it one of the rarest awards in the game despite requiring no out-of-route exploration. The grind is real (49 cleanse dives) but nothing about it is missable *except* through the NG+ bug above: keep everything in the first playthrough and Ascension follows mechanically from playing the campaign through.",
-          "Its sibling achievement So Fresh, So Clean (cleanse every Beacon) runs on the same route, so one disciplined pass serves both — the fuller trophy-ordering plan lives in our [achievements guide](/achievements-guide/) as it grows.",
+          "Correction from an earlier draft: Ascension is **not** the Ova trophy. Steam's official stats list Ascension (16.7% unlock rate) as “Discover the secret of the Mango” — the hidden sanctuary quest behind Mether's Flesh and the Outskirts of Nochte cup ritual detailed in the [missable content guide](/missable-content/). The Ova-collection achievement is the separate **Bring My Ova Back to Me** entry covered above (15.7%, currently bugged first-playthrough-only). Both sit in the same completion neighborhood, which is why so many guides conflate them.",
+          "Its actual sibling on this route is So Fresh, So Clean (7.8%, cleanse every Beacon) — one disciplined pass serves both, and the fuller rare-first ordering plan lives in our [achievement guide](/achievements-guide/).",
         ],
       },
       {
@@ -723,10 +835,11 @@ export const guidePages: GuidePage[] = [
       { label: "Best Build", href: "/best-build/" },
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Beginner Guide", href: "/beginner-guide/" },
-    ],
-  },
-  {
-    slug: "weapons",
+      { label: "Achievements Guide", href: "/achievements-guide/" },
+   ],
+ },
+ {
+   slug: "weapons",
     metaTitle: "Mortal Shell 2 Weapons: Upgrades & Posture Breaks",
     metaDescription:
       "All 8 Mortal Shell 2 weapons and sidearms, annotated through Balance Patch 1: buff callouts, Tarforge cost ladder to +25, and the eel-hitbox sidearm bug FAQ.",
