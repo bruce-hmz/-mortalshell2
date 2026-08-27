@@ -739,14 +739,14 @@ export const guidePages: GuidePage[] = [
     slug: "bosses",
     metaTitle: "Mortal Shell 2 Bosses: All 10 Major Bosses in Order",
     metaDescription:
-      "All 10 Mortal Shell 2 major bosses in order, with locations, the nine regions, and the fights that pay out shells and weapons.",
+      "All 10 Mortal Shell 2 major bosses in order, with location, payout, and a phase-by-phase strategy for every fight, from Magdalena to Zmey.",
     cardBlurb:
       "All 10 major bosses in order, their regions, and which fights pay out shells and weapons.",
     h1: "Mortal Shell 2 Bosses",
     eyebrow: "Bosses",
     intro: [
       "Mortal Shell II's critical path runs through ten major bosses guarding the Corrupted Gates, spread across nine regions from Disciple's Pass to the Faded Citadel and beyond. This page lists all ten in the recommended encounter order, with where each fight happens and what it pays out.",
-      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide, with Rock Paper Shotgun's ordered list corroborating the early encounters.",
+      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide. The per-boss strategies below were written against Rock Paper Shotgun's 45-boss compendium, updated August 25, 2026.",
     ],
     blocks: [
       {
@@ -763,7 +763,7 @@ export const guidePages: GuidePage[] = [
           "Hexapod — near the Nameless Pass Beacon",
           "Monolith — near the Obsidian Vault Beacon",
           "Malborn Offspring — near the Faithful's Shelter Beacon",
-          "Orrem, the Reclaimed — near the Bridge of Procession Beacon",
+          "Orrem, the Discarded Golem — near the Bridge of Procession Beacon",
           "Zmey, the Unbidden — The Hidden Nave Beacon, at The Unfounded Path (GameSpot's guide lists Zmey as the final boss)",
         ],
       },
@@ -786,6 +786,83 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Magdalena, the Lady of the Woods strategy",
+        paragraphs: [
+          "Arena and gimmick: she fights from a rocket-powered mobility scooter, driving through the arena and doing fiery donuts while flames pour from the vehicle's back. Summonable Smert helps little here — plan to carry the fight yourself.",
+          "The pattern: hug **her flank** to dodge the rear exhaust flames, and learn that she always does exactly **two donut rotations** before pausing — that pause after rotation two is your punishment window. Her scooter periodically gets stuck; if you're far away when it happens, chip with your sidearm instead of running in. Dealing enough damage opens **two Riposte cut-ins** where you hop atop the scooter for quick stabs. When mutated **Tar Babies** spawn later, delete them cheaply — they die in a hit or two and each kill generates resolve for your next big exchange.",
+        ],
+      },
+      {
+        heading: "The Lost Child strategy",
+        paragraphs: [
+          "Arena and gimmick: a slug-mass horror in the Sanguine Caverns spitting acid streams, swallowing you whole, and swinging arms — one of which is **unblockable**. His other unblockable is an **inhale** that drags you into his gut: when he draws breath, sprint-dodge sideways immediately or you're swallowed.",
+          "Safe plan: this is the fight where ranged carries hardest. A **Forgotten Crossbow** infused with Burn (Emberseed Stone) plus the Barrage Stone shreds him from elevation while he eats the damage-over-time. Melee works too — respect the mouth streams and arm sweeps, punish after his inhale whiffs, and bank your ripostes for stagger windows. Eredrim can be summoned but melts fast; treat him as a distraction, not a tank.",
+        ],
+      },
+      {
+        heading: "The Nameless Captive strategy",
+        paragraphs: [
+          "Arena and gimmick: the parry-gauntlet. Almost everything he throws — including the rotating sword-head swings — is **blockable**, designed around Perfect Guard mastery; the main exception is a nasty kick he favors in the second half. His blade reach is enormous: when a read fails, **dodge sideways repeatedly** rather than once.",
+          "Safe plan: build the fight around your defense stat, not trades. Two interruptions make it survivable: the **Grisha Remnant** equipped as a passive summons allies that knock him out of swing animations, and the Infused Stone lets you fling a heavy weapon to create space from the sword-head. Expect dozens of attempts — the reversed seven-spin variant holds the site-wide trophy detailed in the [missable content guide](/missable-content/).",
+        ],
+      },
+      {
+        heading: "Droeg, the Conquerer strategy",
+        paragraphs: [
+          "Arena and gimmick: a frost giant whose club punishes panic — counterintuitively, staying **close** is safer than mid-range, where his swings track best. Kneeling club combos invite parries; watch the stomp; the **club slam** is unblockable and must be dodged.",
+          "The real killer arrives after your first riposte: he begins raining **flaming ice balls** that track and deal enormous damage — arguably deadlier than the club all fight. Never stand still, dodge on their descent, and equip anti-Frozen insurance (**Martyr's Ash** as your active item, fired the moment phase two starts) because being frozen mid-slam is how runs end.",
+        ],
+      },
+      {
+        heading: "Hexapod strategy",
+        paragraphs: [
+          "Arena and gimmick: an alien arthropod in Withered Shoals that rewards a very specific loadout — its own shell's memories hint at it. Fire **Proxima's Triarch Repeater** nonstop; stack Deadeye or Marksman stones (crit damage/chance) with the Rupturing Stone so critical shots apply Break, steadily feeding you riposte windows without ever closing distance.",
+          "Late fight adjustments: at low health the Hexapod speeds up, dives into the arena water, and rushdowns — reopen distance and resume firing, jumping into melee only when cornered. Pure melee builds clear it too, but respect the **unblockable grab**; it's the one mistake the arena doesn't forgive.",
+        ],
+      },
+      {
+        heading: "The Warden strategy",
+        paragraphs: [
+          "Arena and gimmick: a cramped circular pit at Citadel of Penance where nearly every axe swing is **unblockable** — this is a dodge-and-punish fight by design, and wall-behinds-you awareness matters more than normal.",
+          "The tell: his signature is **four rapid spin-flings** of the burning axe; survive the sequence and you get a guaranteed punish window after the fourth blow. Damage-over-time carries the attrition battle — apply **Burn or Poison via Tarstones** to his huge health pool, and reuse the Nameless Captive toolkit that interrupts: passive **Grisha Remnant** summons plus the Infused Stone thrown weapon to buy breathing room between spins.",
+        ],
+      },
+      {
+        heading: "Sir Isaac, the Scholar-Prince strategy",
+        paragraphs: [
+          "Phase one: he holds a shield that eats frontal and ranged damage entirely — strafe to his **shieldless flank** to land anything meaningful. At roughly one-third health he discards the shield and goes berserk with **four blades**, launching aerial multi-stab dives that require repeated backward dodges.",
+          "The cliff-edge rules: his second form kills in one or two hits, and his lone **unblockable grab** near-wipes your health bar on catch. Safe proven plan: the Proxima lightning setup — Biosampler-driven **Lightning stacks** for steady damage-over-time through both phases, then manage distance from the blade barrage with a thrown weapon. Resolver discipline matters; Common Moonshine-style resolve regen is legitimate insurance for a long learning curve.",
+        ],
+      },
+      {
+        heading: "Monolith strategy",
+        paragraphs: [
+          "The wall: widely rated the game's worst fight — Day-one overtuned, briefly nerfed, still brutal. Its ground slams have absurd tracking; answer them with **parries or Hardening** timed for i-frames rather than trying to outrun the targeting. The central fleshy mass swing is parryable too.",
+          "After your first riposte it rolls and fires **lasers**: tracked beams plus swinging arcs. The counterintuitive core skill — dodge **into** the arcs, never away, cutting through with i-frames, then sprint to its back where lasers haven't extended yet and unload there. Phase three adds top-spin attacks, an **unblockable airborne drop** (dodge at the last second), and the accelerating death-spiral arc show — lock the rhythm down and accept it takes attempts. Corner yourself and the camera will kill you; fight center-arena. Thrown weapons have been observed glitching the lasers off temporarily — abuse anything cheap, this fight deserves it.",
+        ],
+      },
+      {
+        heading: "Malborn Offspring strategy",
+        paragraphs: [
+          "Phase one reads as: a repeating triple sword combo where the **first two strikes parry and the third is unblockable**, plus a teleported sword-throw into jump-slash you must respect at range. Phase two adds Lightning damage, relentless aggression, and an almost-always-available unblockable grab with nasty tracking — trading hits back is losing play here.",
+          "Win condition: prevent him from acting. Overwhelm with summons (**Grisha Remnant** passives, or Genessa's clones) until his stagger bar breaks repeatedly, or bring fast cancel-heavy gear like the **Axatana with Duality Tarstone**. Proxima's Lightning mitigation blunts phase two. There is a farm: the secret Desolate Keep behind Genessa's training room lets you kill a remnant-dropping Grisha, exit to the main menu, and repeat with everything kept — about twenty stored remnants trivializes both phases. Flagged honestly: exploit-shaped, could be patched anytime.",
+        ],
+      },
+      {
+        heading: "Orrem, the Discarded Golem strategy",
+        paragraphs: [
+          "Phase one reads as: tutorial-nostalgia tar golem with twin axes — hard-hitting but very readable, primed for Perfect Guards. Two exceptions demand dodges: the **jumping slam** and the **double-axe smash**. Build Break, cash ripostes.",
+          "Phase two transforms him into **Orrem the Reclaimed**: faster, tail-equipped, much harder to parry. Two outs exist: inflict **Stasis stacks** to drag his speed back down, or simply overwhelm the lumbering body with summon armies — among the final four bosses this is the forgiving one, the place to breathe before the Monolith and Zmey take turns humbling you.",
+        ],
+      },
+      {
+        heading: "Zmey, the Unbidden strategy",
+        paragraphs: [
+          "The final exam: obscene health, a far-reaching **unblockable tail impale** that pins you for a follow-up butt slam capable of knocking you out of (or ending) your run, delayed fire breath, and post-riposte **AoE flame waves** that must be dashed into — getting clipped inflicts **Cosmic Disease**, locking you out of re-shelling and every skill and Tarstone.",
+          "The shape of the win: stand under him and work the lower body, timing guards against the foot stamps; when he leaps back and raises the blade-throw, dodge immediately (your summoned companions rarely draw that specific throw — assume it's coming for you). Pack the **Seedbearer's Scripture** as your active if you've completed the Night Mode Forgotten Tower gland quest — triggered on-hit, it cures Cosmic Disease *and* floors Zmey for a free punish. And if the mountain won't move: the **Slayer Seal** exists precisely for fights like this, no shame attached.",
+        ],
+      },
+      {
         heading: "General boss tips",
         paragraphs: [
           "Game8's walkthrough team sums up boss preparation in five habits: level up your Harbinger before pushing into a new region, upgrade weapons and Tarstones, inflict Break damage with skills and parrying rather than raw trades, keep the resolve gauge maintained so your defenses stay funded, and treat red attacks as unconditional dodge signals.",
@@ -796,7 +873,6 @@ export const guidePages: GuidePage[] = [
       heading: "Still being verified",
       intro: "Collected against the launch build over the coming days:",
       items: [
-        "Per-boss strategies and move-set breakdowns",
         "Second-source confirmation of the 44 total boss count",
         "Optional boss and miniboss roster per region",
       ],
@@ -806,6 +882,21 @@ export const guidePages: GuidePage[] = [
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Walkthrough", href: "/walkthrough/" },
     ],
+    sources: [
+      {
+        name: "Game8 — Mortal Shell 2 All Bosses",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614453",
+      },
+      {
+        name: "Rock Paper Shotgun — All 45 bosses in Mortal Shell 2 (per-boss strategies)",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-all-bosses",
+      },
+      {
+        name: "GameSpot — Mortal Shell 2 Boss Guide",
+        url: "https://www.gamespot.com/articles/mortal-shell-2-boss-guide/1100-6524311/",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
   },
   {
     slug: "tips",
