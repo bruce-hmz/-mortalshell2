@@ -99,6 +99,12 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Before you skip anything: the missables shortlist",
+        paragraphs: [
+          "Only three trophies in Mortal Shell II can be permanently locked out of a playthrough — Marigold's prologue flower crown, beating the tutorial Tar Golem, and The Nameless Captive's second-phase parry trial. All three are quick to secure if you know they exist, and painful to discover after the fact. Run through the [missable content checklist](/missable-content/) before you commit serious hours to a save.",
+        ],
+      },
+      {
         heading: "Possession 101: your first shells",
         paragraphs: [
           "Shells are Mortal Shell II's answer to character classes: the forgotten bodies of eight lost warriors — Tiel, Proxima, Eredrim, Gragu, Smert, Sester Genessa, Lazlo, and Sariel — scattered across the world for your Harbinger to possess. A ninth figure, Harros, only helps you through the prologue; he is not one of the eight.",
@@ -325,6 +331,7 @@ export const guidePages: GuidePage[] = [
         heading: "The nine regions, in the order you meet them",
         paragraphs: [
           "Per Game8's launch compendium, the critical path runs through nine regions — Disciple's Pass, Fainweald, Glutted Mire, Sanguine Caverns, Ruins of Mammon, Prisoners' Domain, Withered Shoals, Conquered Temple, and Faded Citadel — with the endgame encounters waiting along The Unfounded Path. Each region is anchored by Beacons, the fast-travel and checkpoint spines you unlock as you push outward.",
+          "Most of what looks missable here is not: after the final boss a free-roam window lets you claim any Beacon, shell, or weapon still on the board. The genuinely one-time encounters are few — the [missable content guide](/missable-content/) keeps the honest list, and the [fast travel guide](/fast-travel/) maps every Beacon node.",
         ],
       },
       {
@@ -1331,6 +1338,130 @@ export const guidePages: GuidePage[] = [
       {
         name: "Fextralife Wiki — Mortal Shell 2 Beacons",
         url: "https://mortalshell2.wiki.fextralife.com/Beacons",
+      },
+    ],
+     reviewedOn: "August 27, 2026",
+     datePublished: "2026-08-27",
+   },
+  {
+    slug: "missable-content",
+    metaTitle: "Mortal Shell 2 Missable Content: Everything That Locks You Out",
+    metaDescription:
+      "Every missable trophy and one-time encounter in Mortal Shell 2: Marigold's flower crown, the Tar Golem tutorial fight, Peter's Perfect Parry, and what survives into NG+.",
+    cardBlurb:
+      "Three trophies can lock you out per run — here is exactly where, and what stays recoverable.",
+    h1: "Mortal Shell 2 Missable Content Guide",
+    eyebrow: "Completion",
+    intro: [
+      "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum.",
+    ],
+    blocks: [
+      {
+        heading: "The quick answer: only 3 things are truly missable",
+        paragraphs: [
+          "PowerPyx's launch-window roadmap counts exactly three missable trophies out of 53:",
+        ],
+        bullets: [
+          "**Mid Summer?** — accept Marigold's flower crown during the prologue walk to your first Shell. Ignore her once and it is gone for that playthrough.",
+          "**No, You Still Can't Win** — reduce the tutorial Tar Golem to zero health. The game casts it as an unwinnable fight; winning ends the tutorial fight immediately, and the Golem never appears again in any playthrough including NG+.",
+          "**Peter's Perfect Parry** — Perfect Guard every hit of a specific head-spin variant from The Nameless Captive while wearing the Untarnished Seal. If he dies before you land it, the save moves past the encounter permanently.",
+        ],
+      },
+      {
+        heading: "Mid Summer? — the flower crown everyone asks about",
+        paragraphs: [
+          "During the prologue, before you claim your first Shell, you pass a character named **Marigold** who offers you a flower crown. Accepting it triggers Mid Summer?; walking past without interacting locks the trophy for that run. It cannot be earned in NG+ either, because the offer only exists in the initial prologue sequence.",
+          "The recovery path is mechanical, not magical: start a new save in a different slot, watch for Marigold, accept the crown, done. Trophy progress across save slots is shared, so this costs about ten minutes, not a full replay.",
+          "**The community angle:** Steam users report that once accepted, the crown stays on your character through the rest of the campaign — though some players report it vanishing after certain story beats. A Playstack team member (liv) confirmed on the official forums that adding a way to reclaim lost cosmetics is logged as a suggestion, but no recovery method exists as of this writing. Skipping Marigold by mistake means the crown is simply gone until a fresh save.",
+        ],
+      },
+      {
+        heading: "No, You Still Can't Win — beat the unbeatable tutorial boss",
+        paragraphs: [
+          "In the prologue the game hands you a scripted-losing fight against the **Tar Golem**. Reducing it to zero health instead skips the loss cutscene and awards the trophy instantly, regardless of your own HP bar.",
+          "This is a strict one-shot window: the Tar Golem never respawns — not later in the same run, not in NG+, not anywhere else in the world. If you skip past the tutorial without winning the duel, the trophy waits for a brand-new save file.",
+          "**Backup saves work here**: PlayStation Plus cloud users can upload a save right before the Bone Gate (the checkpoint just before the fight), then reload if the attempt goes badly. On PC, exiting to the main menu and continuing also resets you to just before the Bone Gate — useful if you take a big mid-fight hit but don't want to abandon the attempt.",
+        ],
+      },
+      {
+        heading: "Peter's Perfect Parry — the hardest clean-up item",
+        paragraphs: [
+          "The hardest entry on the missable list. During the second phase of **The Nameless Captive** fight (Prisoners' Domain), at half health he performs a fast 7-hit spinning head attack; sometime afterward he uses a slower, opposite-direction variant — again seven consecutive spins, but reversed. You must Perfect Guard all seven hits of that reversed variant, with the Untarnished Seal equipped in your seal slot.",
+          "Two failure modes exist: dying before you ever see the reversed spin (it is random within phase two), or killing him too fast between phase-two attempts. He only spawns once per playthrough, so prepare properly rather than winging it.",
+          "**Recommended approach:** unlock Untarnished Seal first if you don't have it, practice the regular 7-spin timing on earlier phase-two attempts, and bring a tanky shell like Eredrim so a single mistimed guard doesn't end the run. The seal requirement is mandatory — guards without it do not count even if the parry itself lands.",
+        ],
+      },
+      {
+        heading: "What is NOT missable — the long safety net",
+        paragraphs: [
+          "Most big-ticket collectibles survive past credits, thanks to post-game free-roam:",
+        ],
+        bullets: [
+          "**All 49 Beacons** — none missable; anything left cleanses fine during free-roam before entering NG+ (see the [fast travel guide](/fast-travel/)).",
+          "**All shells** — each can still be claimed after the final boss.",
+          "**All weapons, sidearms, and Tarstones** — including reward drops from optional encounters such as Vatra's Seal from the Tar Golem past Disciple's Grotto (a different Golem from the tutorial's) and the Arbiter's Prize from the Great Arbiter of Flesh near Widow's Overlook.",
+          "**The Voltaic Crown** — worth naming because some lists miscategorize it: per the Fextralife wiki it is not festival or prologue content at all, but a sidearm lightning Tarstone dropped by Vrago, the Solikar Champion of the Abandoned Shrine in Prisoners' Domain. That places it squarely in the weapons-and-Tarstones category above, covered by the same free-roam window.",
+          "**Egon's Feed Me trophy** — found southwest of Castigator's Keep Beacon; cumulative giving totals matter, not a specific amount, so there is no wrong order.",
+          "**The Mango secret (Ascension)** — reachable any time; no expiry on Mether's Flesh or the cup interaction.",
+        ],
+      },
+      {
+        heading: "The one caveat: Bring My Ova Back to Me",
+        paragraphs: [
+          "Technically not flagged missable, but currently bugged in a way that makes it behave like one: per PowerPyx's patch-era warning, **Bring My Ova Back to Me (all 196 Ova) can currently only be earned in your first playthrough** due to a bug introduced in a recent patch. Enter NG+ without finishing your Ova cleanup and the trophy may be unobtainable on that save until a fix lands.",
+          "Practical rule until this changes: treat all 196 Ova as first-playthrough-only content. Collect them before entering NG+, using the endgame free-roam window if needed; the Beacon-to-Ova mapping lives in the [fast travel guide](/fast-travel/), and boss-by-boss payouts sit in the [boss guide](/bosses/).",
+        ],
+      },
+      {
+        heading: "What carries over vs what starts fresh in New Game+",
+        paragraphs: [
+          "Understanding carryover determines whether 'missing' something actually matters:",
+        ],
+        bullets: [
+          "**Carries into NG+:** your level, gear, tarstone infusions, shells already unlocked, Beacons already cleansed, and trophy state for anything collected.",
+          "**Does not carry:** anything tied specifically to the prologue — Marigold's crown offer and the Tar Golem tutorial fight simply do not re-run in subsequent playthroughs.",
+          "**Seeking the Past nuance:** memories must be VIEWED via the Shellkeeper bond menu (not merely unlocked), and community reports flag it as buggy in NG+ — budget extra partial runs if a memory refuses to count.",
+        ],
+      },
+      {
+        heading: "Can I still get missed content after beating the game?",
+        paragraphs: [
+          "Mostly yes. After the final boss, a free-roam window opens before you commit to NG+: any Beacon still corrupted can be cleansed there, and every shell, weapon, sidearm, and Tarstone remains collectible. What free-roam cannot restore is anything tied to the prologue itself — Marigold's crown offer and the Tar Golem tutorial duel do not re-run — plus the bugged all-Ova trophy if you have already entered NG+. Anything genuinely lost costs only a fresh save slot, since trophy progress is shared across saves."
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro:
+        "Open questions we could not pin down from fetched sources this week:",
+      items: [
+        "Exact trigger (if any) behind player reports of the flower crown disappearing mid-campaign",
+        "Whether the Bring My Ova NG+ bug has been fixed by Balance Patch 1 — PowerPyx's warning predates it and has not visibly changed",
+      ],
+    },
+    related: [
+      { label: "Fast Travel & Beacons", href: "/fast-travel/" },
+      { label: "Boss Guide", href: "/bosses/" },
+      { label: "Walkthrough", href: "/walkthrough/" },
+      { label: "Beginner Guide", href: "/beginner-guide/" },
+    ],
+    sources: [
+      {
+        name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
+        url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
+      },
+      {
+        name: "Steam Discussions — Flower crown thread (Playstack forum)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178549011/",
+      },
+      {
+        name: "Fextralife Wiki — Voltaic Crown",
+        url: "https://mortalshell2.wiki.fextralife.com/Voltaic_Crown",
+      },
+      {
+        name: "GameTrek — Mortal Shell 2 Trophies",
+        url: "https://gmtreks.com/mortal-shell-2/page/01M098T01E73M7CEN55T07PWFY",
       },
     ],
     reviewedOn: "August 27, 2026",
