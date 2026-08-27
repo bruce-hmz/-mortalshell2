@@ -59,9 +59,9 @@ export const guidePages: GuidePage[] = [
     slug: "beginner-guide",
     metaTitle: "Mortal Shell 2 Beginner Guide: First Hours & Combat",
     metaDescription:
-      "Mortal Shell 2 beginner guide: no-stamina combat, the resolve economy, your first shells, posture-break executions, and Standard vs Devout start times.",
+      "Mortal Shell 2 beginner guide: a step-by-step first two hours, the five mistakes that waste them, your first shell, and the combat rules that matter.",
     cardBlurb:
-      "No-stamina combat pacing, resolve generation, and the edition that lets you start early.",
+      "A first-two-hours route, the mistakes that cost runs, and your first shell-and-weapon pairing.",
     video: {
       youtubeId: "w0SLSLuYMhw",
       title: "Mortal Shell II — Official Announcement Trailer",
@@ -75,7 +75,7 @@ export const guidePages: GuidePage[] = [
       "Mortal Shell II rewards aggression from the very first fight. This beginner guide covers the opening hours: the resolve-driven combat loop, your first shells, the posture-break system, and the edition differences that decided when you could start playing.",
       "Core mechanics were fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        "; shell and weapon details were verified against the launch build on August 20, 2026. Anything still unconfirmed is listed openly at the bottom of the page.",
+        "; shell and weapon details were verified against the launch build on August 20, 2026, and the opening-route script was checked against Kotaku's starter-tips guide on August 27, 2026. Anything still unconfirmed is listed openly at the bottom of the page.",
     ],
     blocks: [
       {
@@ -91,11 +91,40 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Your first two hours, step by step",
+        paragraphs: [
+          "The opening hours hand you the systems gradually, but they do reward a plan. Follow this order and every step compounds into the next; each one maps onto a fuller block in the [region-by-region walkthrough](/walkthrough/).",
+        ],
+        bullets: [
+          "**Before you load in:** open Settings → Gameplay and turn on Auto Pick Up Gold — walking over coins collects them automatically, which matters in dark, cluttered zones where loose piles are easy to miss",
+          "**Play the prologue as scripted:** the Gloombound Ritualist, the Tainted Vestige, and the Tar Golem arrive in order — and secretly beating the Golem is one of the game's missable trophies, so read the [missable checklist](/missable-content/) first",
+          "**Reach Marrow Keep and take the roof:** talk to the NPCs, ride the roof lift, and the game introduces fast travel properly — your first destination is Widow's Overlook in Fainweald",
+          "**Go south first:** southern Fainweald fields measurably weaker enemies than the north, making it the right leveling ground; Tiel's gravestone waits east of Mushroom Village",
+          "**Cleanse the Mushroom Village gate:** your first corrupted-gate cleanse teaches the mechanic and pays Ova, the currency that unlocks Mether's Breath fast travel",
+          "**Take Magdalena when she feels fair:** the Lady of the Woods is intentionally winnable early — her fight pays 26 Ova and returns you to Marrow Keep to deposit it",
+          "**Unlock Mether's Breath, aim for level 20:** deposit Ova at the syphon, grab the fast-travel ability, and treat level 20 as the soft checkpoint before the Ruins of Mammon",
+        ],
+      },
+      {
+        heading: "The five mistakes that cost beginners hours",
+        paragraphs: [
+          "Most wasted progress in this game traces back to one of five habits. None are permanent damage — but each one quietly multiplies grind.",
+        ],
+        bullets: [
+          "**Wandering unshelled:** the base Harbinger takes heavy damage and has no second life — possess Tiel or Proxima as soon as the story path reveals either, then never look back",
+          "**Skipping south to chase the main arrow:** northern Fainweald will check whether you belong there yet; if common soldiers pressure you, reroute rather than bash through",
+          "**Spending Glimpses casually:** prioritize your main shell's upgrade tree before optional purchases — and hold surplus until you know which upgrades you actually want, per AltChar's progression notes",
+          "**Upgrading every weapon with gold:** test a weapon's moveset first; Balance Patch 1 cut Tarforge smelting costs by 75%, so swapping tools mid-run is cheap experimentation now, not commitment",
+          "**Treating it like a stamina game:** stopping your offense stops your defense — resolve funds both, so backing off between swings is how you lose fights you were winning",
+        ],
+      },
+      {
         heading: "Editions and when you can start",
         paragraphs: [
           "Two editions are confirmed. The Standard Edition unlocked on " +
             RELEASE_DATE +
             ". The Devout Edition granted up to 72 hours of advance access, letting early buyers begin playing before the worldwide release window opened.",
+          "Buying today, the calculus is simple: the Standard Edition is the complete game, and Devout's entire advantage — the 72-hour head start — expired at launch. Pay extra only if collector packaging or future bundle terms matter to you, not for access that no longer exists.",
         ],
       },
       {
@@ -112,6 +141,13 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Which shell should I unlock first?",
+        paragraphs: [
+          "Tiel, and the game does most of the work for you: his location is revealed the moment you enter Fainweald, and his gravestone waits just east of Mushroom Village along the southern route. He is the gentlest first pickup — forgiving mobility and a straightforward kit — and possessing any shell immediately fixes the Harbinger's fragility problem.",
+          "Proxima is the natural second (the northern story marker reveals her), and neither choice locks anything: shells remain collectible all run, their abilities stay available to unravel later, and a second body is always worth claiming whenever a dungeon detour puts it in reach — full locations live in the [shells guide](/shells/).",
+        ],
+      },
+      {
         heading: "Posture damage: the execution loop",
         paragraphs: [
           "Consecutive melee strikes build posture damage on your target. Fill the invisible bar and tough enemies stagger, opening them up for critical execution strikes — the payoff rhythm the whole combat system is built around.",
@@ -123,6 +159,13 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Your ranged sidearm is not a free backup weapon — discharging it spends the same resolve your defense depends on. There are eight sidearms to collect (Naylesshotte is your first), and per PowerPyx's locations guide none of them are missable, so nothing is lost by postponing the collection.",
           "Because sidearms draw on the aggression economy, which one you carry is a build decision, not an afterthought — the [best build guide](/best-build/) shows which sidearm each shell's loadout prefers.",
+        ],
+      },
+      {
+        heading: "Your first build pairing",
+        paragraphs: [
+          "You do not need best-in-slot gear to feel strong — you need one coherent pairing. The crit-focused Tiel setup (an Axe and Dagger you can find early, later upgraded with the Salvaged Trebuchaxe) turns every hit into guaranteed critical strikes and carries an entire playthrough. If you find the Great Martyr's Blade in Martyr's Prison early, slotting it on Proxima with the Triarch Repeater is the other proven opener — the 'Lightning Proxima' spread featured across Game8's build tables.",
+          "Both paths scale the same way: pick the shell whose ability you enjoy, match one weapon to it, add a seal (Vatra's Seal from the Tar Golem past Disciple's Grotto remains the strongest single pickup), and iterate from there. The full matrix, including patch-tuned matchups, is laid out in the [best build guide](/best-build/).",
         ],
       },
       {
@@ -168,8 +211,12 @@ export const guidePages: GuidePage[] = [
         name: "PowerPyx — Mortal Shell 2 All Sidearm Locations",
         url: "https://www.powerpyx.com/mortal-shell-2-all-sidearm-locations/",
       },
+      {
+        name: "Kotaku — 12 Tips To Know Before You Start Playing Mortal Shell 2",
+        url: "https://kotaku.com/12-tips-to-know-before-you-start-playing-mortal-shell-2-2000725388",
+      },
     ],
-    reviewedOn: "August 20, 2026",
+    reviewedOn: "August 27, 2026",
     datePublished: "2026-08-20",
   },
   {
