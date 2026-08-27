@@ -56,6 +56,152 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "side-quests",
+    metaTitle: "Mortal Shell 2 Side Quests: Every NPC Line Explained",
+    metaDescription:
+      "Every Mortal Shell 2 side quest explained: Gorf & Hilga's five Marsh Pearls, the Grisha Pup's costly rescue, Vlas's Coin of Mammon trail, Egon's Gloom-doubling ritual, Baghead's joke ending, and unlocking Sester Genessa as the ninth shell.",
+    cardBlurb:
+      "A giant lovesick frog, a cult that worships an empty sack, and seven more optional chains worth dropping everything for — walked start to finish.",
+    heroImage: {
+      src: "/img/site-3.jpg",
+      alt: "Mortal Shell II key art showing a hooded warrior amid desolate ruins",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Side Quests — Every NPC Chain Explained",
+    eyebrow: "Quests",
+    intro: [
+      "Mortal Shell II keeps its world hostile but its heart weirdly soft: tucked behind Beacons across Fallgrimm are a lovesick toad the size of a chapel, a banker begging to be made rich before he dies, and a cult that worships an empty sack. This guide walks every major side quest we could verify end-to-end, with the rewards, the easy mistakes, and the permanent consequences called out at each fork.",
+      "Every step below was transcribed and cross-checked on August 27, 2026 against Rock Paper Shotgun's dedicated chain guides, Destructoid's and KosGames' NPC compendiums, GameRant's Vlas walkthrough, GamesRadar's Genessa unlock guide, and PowerPyx's trophy roadmap. Where the sources disagree, the disagreement is stated rather than smoothed over — and the whole page plugs into our [completion checklist](/missable-content/) so chasing flavor never costs you a trophy.",
+    ],
+    blocks: [
+      {
+        heading: "Quest list at a glance",
+        paragraphs: [
+          "Eight chains reward stepping off the critical path across Fainweald, Mammon, and Castigator's Keep. Two of them feed trophies directly; the rest pay in gear, currency, or stories that hit harder than they should:",
+        ],
+        bullets: [
+          "**Gorf & Hilga (Widow's Overlook)** — the longest chain: swamp mushroom medicine becomes a love story, and Marsh Pearls pile up at nearly every step",
+          "**Grisha Pup (Shrine of Trials)** — free a caged beast cub and pay for it with an entire hunting camp; short, brutal, one-time-only",
+          "**Vlas (Road to Absolution → Lonesome Spire)** — rescue a broken-down merchant and reunite him with his cat, collecting Coin of Mammon along the way",
+          "**Egon (Castigator's Keep)** — grant a dying creature's final request and he repays ten thousand Gloom with twenty thousand; ties to the Feed Me trophy",
+          "**Baghead (Desolate Peak)** — say yes to everything, hand over nothing, and trigger a joke ending with its own trophy",
+          "**Sester Genessa (Revenant Graves)** — clear the Censer dungeon to unlock the game's ninth shell, obtainable no other way",
+          "**Gragu (Fallgrimm tavern)** — fetch the Heart of Vatra from the Temple of Vara's altar while the temple statues fight back",
+          "**The Mango sanctuary** — the hidden chain behind Ascension, kept on its own page: see the [achievement guide](/achievements-guide/) for that puzzle",
+        ],
+      },
+      {
+        heading: "Gorf & Hilga — the love story at Widow's Overlook",
+        paragraphs: [
+          "Just off the path toward the Trial obelisk near the Widow's Overlook Beacon, a truly enormous toad named Gorf lies visibly ill in a rocky crevice. Talking to him starts a multi-visit saga that braids together with a second thread on the other side of the map: in Mushroom Village east of the area's bridge, a brute named Grom has caged Hilga — a fellow amphibian, and evidently the love of Gorf's large life — after killing her pet frog Harwald. Drinking from Grom's bubbling cauldron emboldens you to push her subplot forward before the two paths converge.",
+          "Rock Paper Shotgun's full sequence takes roughly nine visits. Early steps ask only for Weltcaps, the red marsh mushrooms growing along the low ground near the overlook — feed him two and he burps up Marsh Pearls as gratitude. As Hilga's rescue progresses, brigand raiding parties start ambushing the road between the village and the crevice; their bodies (and lootable camps) accumulate right alongside the romance. Once she finally joins Gorf, though, his condition turns: the pearls stop coming, and instead a Poisoned Dagger juts from his side. Hilga explains that Common Moonshine — the swill brewed in every brigand camp — is the only antidote.",
+          "Deliver a bottle to the suffering pair and the scene resolves warmly: Gorf is revealed as the legendary Great Frógga (“technically a toad,” Hilga concedes — “very handsome, but very foolish”), the poison recedes, and the epilogue finds Hilga transformed into a giant amphibian herself, the two of them curled around four named baby toads. Summoned with the Troubadour's Lute, the whole family dances. Run every branch cleanly and RPS counts **five Marsh Pearls** in pocket by the credits — most paid incrementally along the way, not handed over at the end.",
+        ],
+      },
+      {
+        heading: "Grisha Pup — kindness with collateral damage",
+        paragraphs: [
+          "Head west from the Mushroom Village Beacon and keep going until the ground rises toward the Shrine of Trials: a hunter camp occupies the approach, with a Grisha pup pacing inside a cage at its center. Speak to the lead hunter at the table and his shop unlocks — and Destructoid recommends draining it **before** anything else, buying the Cage Key (**250 Glimpse**) along with the Grisha Remnant and three Common Moonshine while he still has pulse and inventory.",
+          "Open the cell and the pup quietly gives you a Sheephead Totem, no violence required. Rest at a Beacon and return, though, and the scene has rewritten itself: every hunter lies slaughtered and the pup stands vigil over its dead parent — including, possibly, the man you just shopped from. It stays calm toward you. A last conversation yields **one Glimpse and one Ventrium**, and then the Grisha vanish from the region entirely.",
+          "One warning comes with a split verdict. KosGames states that freeing the pup gets the lead hunter killed outright — cost you an eventual re-stock point if you wanted one — while Destructoid presents the massacre as inevitable once any key turns. Until someone tests leaving the cell shut through a full rest cycle, treat the vendor as mortal on every timeline and spend his stock first.",
+        ],
+      },
+      {
+        heading: "Vlas — the merchant, his cat, and two Coins of Mammon",
+        paragraphs: [
+          "South of the Outskirts of Mammon Beacon, at the roadside spot Destructoid calls the Road to Absolution, Vlas bleeds quietly beside his wrecked cart — reachable most easily by dropping from the bridge above. He's alive but distraught: his cat Mutton fled the crash, and finding her falls to you. Check the cage ahead of his position before wandering off; a **Coin of Mammon** sits inside it, cashable no matter how the rest of the chain goes.",
+          "Rest and talk until his dialogue escalates: Mutton has been carried off to Lonesome Spire, reached by riding the lift west of the Gate of Mammon Beacon. The spire belongs to brigands — and unlike ordinary bandits these can't simply be killed, per GameRant, so infiltration replaces combat. Near the broken wooden structure past the lift lies the aptly named Unremarkable Key, and in a cage deeper in camp sits Vlas himself. Deliver the key and father-cat reunion follows.",
+          "The chain closes back at Marrow Keep, where Vlas and Mutton relocate to the corridor outside Merrick's shop; speaking with him there grants a **second Coin of Mammon** per Destructoid's count. One economic footnote matters more than it sounds: the Lonesome Spire merchant disappears once the camp's story completes, so buy anything you'll ever want from his stall before handing over that key.",
+        ],
+      },
+      {
+        heading: "Egon — doubling your Gloom at death's door",
+        paragraphs: [
+          "Castigator's Keep hides the game's strangest transaction in its central tower, southwest of the main Beacon: Egon, a pitiable creature who begs for Gloom as tribute and rewards each gift by lingering another day. Per PowerPyx, contributions accrue cumulatively — and once they cross **10,000 Gloom**, he expires on the spot and refunds **20,000**, unlocking the Feed Me trophy (currently at **20.5%** on Steam). Generosity has rarely compounded faster.",
+        ],
+        bullets: [
+          "PowerPyx's figures: give cumulatively 10,000 Gloom total; receive double back, 20,000 at completion",
+          "KosGames disputes the arithmetic — early builds doubled your entire carry, and a day-one patch capped the mechanic hard; small test donations first are advised before dumping savings",
+          "Feed Me (20.5%) pops on his death; nothing here affects the story or blocks other content",
+        ],
+      },
+      {
+        heading: "Baghead — the sack, the sect, and a joke ending",
+        paragraphs: [
+          "Desolate Peak, southwest of the Gloomshade Grove Beacon through the Bone Gates (traversal portals from Citadel of Penance and Prophet's Rest both lead there too), hosts the least demanding congregation in Fallgrimm: robed cultists seated in a semicircle around Baghead, a figure whose headwear explains his name and little else. Accept the invitation to sit, listen to his questions, and follow one rule above all others — agree constantly, concede nothing material.",
+          "PowerPyx's roadmap lays out the exact script: sit down, answer Yes throughout, refuse to hand over any of the odd trinkets scattered around the peak, sit again, talk again, keep agreeing. Destructoid adds the mechanical detail — one item he covets is a Special Moonshine from the Illusionist's Cache entrance, and surrendering it earns only scripted refusal. Holding nothing back (literally: give him nothing at every prompt) triggers a full joke-ending cutscene and the **Bag Holder trophy** at **23.5%** rarity. You can skip the credits immediately, reload back at Desolate Peak, and keep playing with progress intact — nothing locks, nothing resets, and the worst outcome of wasting fifteen minutes is having seen something memorable.",
+        ],
+      },
+      {
+        heading: "Sester Genessa — earning the ninth shell",
+        paragraphs: [
+          "Genessa doesn't roam a landmark the way the eight habitable shells do. From the Outskirts of Mammon Beacon, head southeast through the middle Bone Gate, cross the gap traversal creates, and climb toward the Revenant Graves — an arena haunted by ghostly red apparitions and dominated by an enormous **Sester's Censer**. Touch it and the environment dissolves into a dungeon built inside the artifact itself, with Sester Secundus waiting at the bottom.",
+          "GamesRadar calls Secundus comfortably beatable mid-progression: stay mobile, respect her wide cleave arcs, and capitalize on recovery windows after heavy swings. Winning releases the Censer into your inventory. Carry it home to Genessa's seat in Marrow Keep and hand it over — she becomes the game's **ninth shell**, permanently, and notably does *not* join the rotation at Zhirelle's chamber: swapping into her always requires returning to her own arena first.",
+          "Unlocking her also opens the sparring trials at the keep, which award the parry-focused Infinite Seal — and GamesRadar points out bonus bond expansions plus a backup-safe method for preserving progress at Genessa's corner of the elevator room. That seal alone makes the detour worthwhile; if Sester Secundus herself is the obstacle, the [bosses guide](/bosses/) maps her attack rhythm in detail.",
+        ],
+      },
+      {
+        heading: "Threads without a walkthrough",
+        paragraphs: [
+          "Two further loops matter mostly for completeness rather than strategy. Gragu's tavern chain sends you west to the Temple of Vara, where plucking the Heart of Vatra from the altar wakes the building's statue guardians — fight down and out, deliver the heart back, and witness a memory cutscene; Destructoid confirms it but flags no unique reward. And Grom's cauldron back in Mushroom Village is drinkable repeatedly with zero effect on the player — community consensus treats it as set dressing, not a hidden buff, so don't burn rests farming it.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro:
+        "NPC chains have loose ends most compendiums smooth over — these questions stayed open as of verification day:",
+      items: [
+        "Whether sparing the lead Grisha hunter is even possible — KosGames says releasing the pup kills him and his shop outright, while Destructoid implies the massacre occurs regardless once you rest",
+        "Marsh Pearl maximum: RPS documents five obtainable without skipping steps; whether alternate visit orders squeeze out additional pearls hasn't been independently tested",
+        "Egon's exact doubling ceiling after the day-one cap — PowerPyx cites flat 10,000/20,000 economics while KosGames insists patched limits make amounts variable",
+        "Whether completing Egon's chain at all interacts with endgame free-roam — i.e., if he's dead permanently after the Siphon, or respawns per cycle like the rest of the keep",
+      ],
+    },
+    related: [
+      { label: "Missable Content", href: "/missable-content/" },
+      { label: "Boss Guide", href: "/bosses/" },
+      { label: "Ova Locations", href: "/ova-locations/" },
+      { label: "Achievement Guide", href: "/achievements-guide/" },
+    ],
+    sources: [
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 Gorf questline",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-gorf-questline",
+      },
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 Hilga questline",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-hilga-questline",
+      },
+      {
+        name: "DualShockers — Mortal Shell 2 Gorf and Hilga quest",
+        url: "https://www.dualshockers.com/mortal-shell-2-how-to-complete-gorf-and-hilgas-quest/",
+      },
+      {
+        name: "Destructoid — All NPC quests in Mortal Shell 2 and how to complete them",
+        url: "https://www.destructoid.com/all-npc-quests-in-mortal-shell-2-and-how-to-complete-them/",
+      },
+      {
+        name: "GameRant — Mortal Shell 2 Vlas questline walkthrough",
+        url: "https://gamerant.com/mortal-shell-2-vlas-questline-walkthrough-where-to-find-key-cage-free/",
+      },
+      {
+        name: "GamesRadar — How to get the Mortal Shell 2 Genessa Shell",
+        url: "https://www.gamesradar.com/games/rpg/mortal-shell-2-genessa-unlock/",
+      },
+      {
+        name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
+        url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
+      },
+      {
+        name: "KosGames — Mortal Shell 2 Complete NPC Quest Guide",
+        url: "https://kosgames.com/mortal-shell-2-complete-npc-quest-guide-57279/",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
+    datePublished: "2026-08-28",
+  },
+  {
     slug: "achievements-guide",
     metaTitle: "Mortal Shell 2 Achievement Guide: Rare Ones First (53 Total)",
     metaDescription:
@@ -664,7 +810,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "The golden path and what hides beyond it",
         paragraphs: [
-          "Exploration beyond the golden path — the main route to each objective — is how you find hidden shells, weapons, and upgrade curiosities. The game is built to reward players who wander from the critical route: the seals that anchor the strongest builds (Vatra's Seal from the optional Tar Golem fight, per Game8's tables) never touch the main story.",
+          "Exploration beyond the golden path — the main route to each objective — is how you find hidden shells, weapons, and upgrade curiosities. The game is built to reward players who wander from the critical route: the seals that anchor the strongest builds (Vatra's Seal from the optional Tar Golem fight, per Game8's tables) never touch the main story. The full set of optional NPC chains is walked step-by-step in our [side quests guide](/side-quests/).",
         ],
         bullets: [
           "Hidden shells off the main route",
@@ -1906,7 +2052,7 @@ export const guidePages: GuidePage[] = [
           "**All shells** — each can still be claimed after the final boss.",
           "**All weapons, sidearms, and Tarstones** — including reward drops from optional encounters such as Vatra's Seal from the Tar Golem past Disciple's Grotto (a different Golem from the tutorial's) and the Arbiter's Prize from the Great Arbiter of Flesh near Widow's Overlook.",
           "**The Voltaic Crown** — worth naming because some lists miscategorize it: per the Fextralife wiki it is not festival or prologue content at all, but a sidearm lightning Tarstone dropped by Vrago, the Solikar Champion of the Abandoned Shrine in Prisoners' Domain. That places it squarely in the weapons-and-Tarstones category above, covered by the same free-roam window.",
-          "**Egon's Feed Me trophy** — found southwest of Castigator's Keep Beacon; cumulative giving totals matter, not a specific amount, so there is no wrong order.",
+          "**Egon's Feed Me trophy** — found southwest of Castigator's Keep Beacon; give him tribute until his cumulative total crosses the threshold and he refunds it doubled (see the [side quests guide](/side-quests/) for the exact figures), with no wrong order or expiry.",
           "**The Mango secret (Ascension)** — reachable any time; no expiry on Mether's Flesh or the cup interaction.",
         ],
       },

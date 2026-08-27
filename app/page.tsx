@@ -113,6 +113,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "missable-content": "Completion",
   "ova-locations": "Completion",
   "achievements-guide": "Completion",
+  "side-quests": "Quests",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -132,6 +133,7 @@ const GUIDE_CTA: Record<string, string> = {
   "missable-content": "Check what locks you out →",
   "ova-locations": "Collect all 196 Ova →",
   "achievements-guide": "Plan the platinum run →",
+  "side-quests": "Complete every NPC chain →",
 };
 
 const PILLARS = [
