@@ -57,6 +57,107 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "night-mode",
+    metaTitle: "Mortal Shell 2 Night Mode Guide: Bonus, Unlock & Rewards",
+    metaDescription:
+      "Mortal Shell 2 Night Mode explained: how to unlock it, Thestus's toggle at Marrow Keep, the +20% Gloom bonus, The Collector's night-only stock, and the gland quest it gates.",
+    cardBlurb:
+      "The opt-in night difficulty: +20% Gloom, the night merchant, and the gland quest it gates.",
+    heroImage: {
+      src: "/img/site-4.jpg",
+      alt: "Mortal Shell II key art with a fallen knight before a monumental door",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Night Mode",
+    eyebrow: "Endgame",
+    intro: [
+      "Night Mode is Mortal Shell II's opt-in difficulty layer: a toggle that turns the world to night, hardens the enemies already standing in it, and pays you for the trouble with better Gloom income and night-only content. This primer covers when it unlocks, what the bonus actually pays, and everything the dark currently gates.",
+      "Fact-checked on " +
+        LAST_REVIEWED +
+        " against GamingBolt's Gloom farming guide, Game8's complete walkthrough, and Playstack's official Balance Patch 1 announcement thread.",
+    ],
+    blocks: [
+      {
+        anchor: "what-night-mode-is",
+        heading: "What Night Mode is",
+        paragraphs: [
+          "Night Mode is not a main-menu difficulty setting. It is an in-world toggle: once unlocked, you set the time to night and the same world keeps its layout while its enemies hit harder and take more of your attention. GamingBolt frames the trade plainly — whether the mode is worth it comes down to your skill level, because the reward is a **20% boost to Gloom gains** and access to content that simply does not exist in daylight.",
+          "If you are still dying to regular elite mobs, stay in daylight and run the Beacon loops in our [farming guide](/farming-guide/) first. Night Mode amplifies income you are already earning; it does not fix a struggling build.",
+        ],
+      },
+      {
+        anchor: "how-to-unlock",
+        heading: "How to unlock and activate Night Mode",
+        paragraphs: [
+          "The gate is boss-shaped. In Game8's recommended route, defeating the **Great Arbiter of Flesh** — the optional Ritual Grounds boss — is the step immediately before Night Mode opens up, which is why most players first meet the night toggle in the mid-game rather than the opening hours.",
+          "Once unlocked, activation runs through **Thestus at Marrow Keep**: talk to him to set the world to night (per GamingBolt), and the world stays nocturnal until you choose otherwise. Marrow Keep is already on your route for [Sester Genessa](/shells/#gragu-and-genessa), so the toggle is never out of the way.",
+        ],
+      },
+      {
+        anchor: "gloom-bonus",
+        heading: "The +20% Gloom bonus, in practice",
+        paragraphs: [
+          "The headline reward is mechanical: **+20% Gloom on gains**, which makes every existing farm loop pay a fifth better for the same effort — GamingBolt calls this the most important effect the mode has. It pairs naturally with the **Gloombound Stone** Tarstone, whose four levels each raise the Gloom bonus from slain enemies; slot it before an intentional farming run and let the two bonuses pile onto the same kills.",
+          "Practically, the bonus matters most in the level-up stretch between roughly 20 and 40, where Gloom requirements climb steeply and every Beacon reset loop's yield adds up. Our [farming guide](/farming-guide/) lists the loops; Night Mode is the multiplier you switch on once the loops themselves are muscle memory.",
+        ],
+      },
+      {
+        anchor: "night-only-content",
+        heading: "What the night unlocks: merchant, glands, and Glimpse",
+        paragraphs: [
+          "**The Collector, the night merchant** — set the time to night and he appears near the **Abandoned Outpost Beacon** in the Outskirts of Mammon. The headline wares per Game8: **three Glimpses**, a **Blackmarrow Key**, and a stock of **Tarstones**. The Glimpses are the notable line item — they convert spare Coin into shell bond progress, which the [completion checklist](/missable-content/) leans on for the platinum math.",
+          "**The Forbidden Tower gland quest** — in the Silent Steps region, the giant statue at the Forbidden Tower accepts an offering of **three different Glands** during night mode and grants the **Seedbearer's Scripture**, plus access to the locked tower holding the **Axatana**. The Scripture is a genuine boss-fight item: our [boss guide](/bosses/) recommends it for the Zmey, the Unbidden fight, where its on-hit Cosmic Disease cure also floors the boss for a free punish.",
+          "**Night Glimpse pickups at shell locations** — visiting each original shell location at night once per playthrough is worth an extra **8 Glimpse** per location per cycle (a community-transcribed figure, not dev-confirmed). Across eight shells that is meaningful progress toward the 216-Glimpse total the [achievements guide](/achievements-guide/) breaks down.",
+        ],
+      },
+      {
+        anchor: "trophies",
+        heading: "Does Night Mode affect trophies?",
+        paragraphs: [
+          "No achievement demands clearing a boss or the game under night specifically. But the toggle is **required for certain content** — the night-only Glimpse pickups above and the Forbidden Tower offering — so completion routes pass through the night even though no trophy tests your ability to survive it.",
+        ],
+      },
+      {
+        anchor: "roadmap",
+        heading: "Playstack plans to extend Night Mode",
+        paragraphs: [
+          "The mode is early. In the official Balance Patch 1 announcement, Playstack states: \"Planned future updates will see extensions to popular game features such as Night Mode, Tarstones, PP Items, and more.\" Treat this page as a snapshot of launch-era Night Mode — when the promised extensions land, the new rewards and any changes to the unlock chain will be verified and folded in here.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro: "Open questions on Night Mode as of the launch window:",
+      items: [
+        "Exact night-time enemy stat multipliers (harder is confirmed; by how much is not)",
+        "The Collector's full stock beyond the three headline wares",
+        "Night Mode extensions promised in Playstack's post-launch roadmap",
+      ],
+    },
+    related: [
+      { label: "Farming Guide", href: "/farming-guide/" },
+      { label: "Completion Checklist", href: "/missable-content/" },
+      { label: "Achievements Guide", href: "/achievements-guide/" },
+      { label: "Boss Guide", href: "/bosses/" },
+    ],
+    sources: [
+      {
+        name: "GamingBolt — Mortal Shell 2 Guide: Best Gloom Farming Spots",
+        url: "https://gamingbolt.com/mortal-shell-2-guide-best-gloom-farming-spots-how-to-level-up-fast",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Complete Walkthrough",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+      {
+        name: "Balance Patch 1 — Mortal Shell II Steam announcement",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
+    datePublished: "2026-08-31",
+  },
+  {
     slug: "farming-guide",
     metaTitle: "Mortal Shell 2 Farming Guide: Gloom and Coin After Balance Patch 1",
     metaDescription:
