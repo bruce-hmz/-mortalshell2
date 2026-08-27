@@ -811,7 +811,7 @@ export const guidePages: GuidePage[] = [
     slug: "tips",
     metaTitle: "Mortal Shell 2 Tips: Resolve, Combat & Dungeon Secrets",
     metaDescription:
-      "Mortal Shell 2 tips: the resolve economy, posture-break executions, branching dungeons, and the boss-prep habits that carry the early game.",
+      "Mortal Shell 2 tips: a 0.3-second parry window you can train, posture-break math, bear-trap survival, escape steps when geometry eats you, and boss-prep habits.",
     cardBlurb:
       "Resolve is earned in melee — and dungeons are branching mazes that reward wandering.",
     heroImage: {
@@ -872,6 +872,45 @@ export const guidePages: GuidePage[] = [
           "Pick the shell whose fantasy matches how you like to fight, then pair it deliberately — the [shells guide](/shells/) maps every unlock, and the [best build guide](/best-build/) records the per-shell weapon, sidearm, and seal pairings.",
         ],
       },
+      {
+        heading: "The parry has roughly 0.3 seconds of prep — so train it like it",
+        paragraphs: [
+          "Community testing on Steam converges on a rough figure worth planning around: the parry animation needs about 0.3 seconds before its active frames, and some of the game's fastest combo strings re-touch you in less time than that. This is why parrying feels unfair against certain enemies while feeling trivial against others — the attack's tell, not your reflexes, decides whether 0.3 seconds is enough.",
+          "The drill that follows from the number: pick one enemy archetype per session (Fainweald soldiers are ideal), and for that session do not dodge — every incoming attack gets exactly one committed attempt at a timed Perfect Guard or an eat-the-hit reset. Twenty minutes of this converts vague 'parry when it feels right' into concrete per-enemy tells you can name. Perfect Guard timing is also fully compatible with aggressive play: a landed guard preserves your posture position and feeds the same resolve economy described above.",
+          "Per-archetype frame data is still being measured — that precision lives in this page's pending list rather than pretending it is settled science.",
+        ],
+      },
+      {
+        heading: "Posture math: what actually fills the bar",
+        paragraphs: [
+          "The stagger bar rewards sustained pressure, not big single hits. Two facts from Game8's tables shape the arithmetic: skills and parries inflict Break damage alongside raw strikes — with no stamina bar limiting how often you can press — and red-glow attacks are pure dodge signals, meaning trading into them always loses more than it teaches. The practical loop against any tanky enemy: three to four quick strikes between their swings, parry anything telegraphed yellow, save skills for windows after you force a whiff, and treat red attacks as the loop's reset button.",
+          "Weapon choice changes the exchange rate: heavy weapons spend longer per swing but move larger chunks of posture, while fast weapons deposit smaller amounts at higher frequency — the [weapons guide](/weapons/) keeps the per-weapon breakdowns, and the [boss guide](/bosses/) shows where each fight's posture rhythm breaks down phase by phase.",
+        ],
+      },
+      {
+        heading: "Bear traps: survive them without losing runs",
+        paragraphs: [
+          "Invisible bear traps are among the most complained-about design choices since launch — Steam players describe stepping on chained traps they could not see while kiting enemies, eating heavy damage plus a stagger at the worst possible moment. Three habits neutralize most of that damage:",
+        ],
+        bullets: [
+          "**Never backpedal through grass:** traps hide almost perfectly behind foliage — strafe sideways during kites instead of retreating blind",
+          "**Let chasers path over traps first:** pursuing enemies trigger them too; a Grisha chasing you through a trap cluster does half your work for free",
+          "**Trek unknown ground ranged:** poking distant targets with a sidearm discharge beats walking face-first into unseen ground — remembering sidearm discharges spend resolve, so budget accordingly",
+        ],
+      },
+      {
+        heading: "Is there a way to disable bear traps?",
+        paragraphs: [
+          "In-game: no setting or ability turns them off, and placement persists across visits. PC players unwilling to tolerate them use Nexus Mods community patches that remove world traps entirely; console players get the behavioral workarounds above as the practical answer. Traps do not respawn mid-dungeon once triggered, so heavily-trafficked corridors become safer over a run — first-pass exploration zones concentrate the risk.",
+        ],
+      },
+      {
+        heading: "My character is wedged near Hall of Murmirs — how do I escape?",
+        paragraphs: [
+          "Steam threads document a specific geometry hole near South Castigator Keep by Hall of Murmirs that swallows characters during careless traversal. Escape order, cheapest first: sprint-jump repeatedly against the seam toward the wedge lip; if that fails, force a state refresh by changing equipment and retrying; if still stuck, fast travel out — cleansed Beacons override your collision state (the [fast travel guide](/fast-travel/) helps if none are nearby yet); the last resort is reloading your last save, which costs everything since your last autosave.",
+          "Prevention matters more than escape here: walk, never sprint-jump, across the cliffside seam on Hall of Murmirs' southern approach toward the Castigator Keep wall — that specific traversal is what drops characters into the wedge in the first place.",
+        ],
+      },
     ],
     pending: {
       heading: "Pending launch verification",
@@ -903,8 +942,12 @@ export const guidePages: GuidePage[] = [
         name: "Game8 — Mortal Shell 2 Shells List",
         url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
       },
+      {
+        name: "Mortal Shell II Steam Community Discussions (community timing and bug reports)",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/discussions/",
+      },
     ],
-    reviewedOn: "August 20, 2026",
+    reviewedOn: "August 27, 2026",
     datePublished: "2026-08-20",
   },
   {
