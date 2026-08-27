@@ -624,7 +624,7 @@ export const guidePages: GuidePage[] = [
     slug: "weapons",
     metaTitle: "Mortal Shell 2 Weapons: Upgrades & Posture Breaks",
     metaDescription:
-      "All 8 Mortal Shell 2 weapons and sidearms: upgrade routes, Tarstones and the Tarforge, and the posture breaks that set up critical executions.",
+      "All 8 Mortal Shell 2 weapons and sidearms, annotated through Balance Patch 1: buff callouts, Tarforge cost ladder to +25, and the eel-hitbox sidearm bug FAQ.",
     cardBlurb:
       "Melee blades, ranged sidearms, and the posture system that turns stagger into executions.",
     heroImage: {
@@ -638,9 +638,21 @@ export const guidePages: GuidePage[] = [
       "Mortal Shell II's arsenal spans close-quarters melee blades and ranged projectile sidearms, both feeding into one posture system. This page covers every weapon mechanic officially confirmed so far.",
       "Fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        ".",
+        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 25, 2026), and the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026).",
     ],
     blocks: [
+      {
+        heading: "What Balance Patch 1 changed about weapons",
+        paragraphs: [
+          "Playstack's first balance patch materially reshuffles weapon advice — four of its lines touch this arsenal directly. If your weapon assumptions predate August 25, re-read the notes below: two names received damage buffs large enough to change tier-list arguments, two sidearms lost the resolve floors that used to gate their fire rate, and the forge economy got dramatically cheaper.",
+        ],
+        bullets: [
+          "**Great Martyr's Blade +20% attack damage** — already the heavy hitter of Proxima Lightning builds; the lead widens",
+          "**Troubadour's Lute +100% attack damage** — the support-flavored pick doubled its damage; re-check it before dismissing it as a meme",
+          "**Caged Hystrix & Triarch Repeater: resolve minimums removed** — both now fire at any resolve level instead of holding fire below a threshold, which changes sidearm budgeting in long boss fights",
+          "**Tarforge smelting −75% Gloom** — mid-run weapon swapping becomes cheap experimentation rather than an NG+-length commitment",
+        ],
+      },
       {
         heading: "All 8 weapons in the launch build",
         paragraphs: [
@@ -689,6 +701,13 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Weapons are modified using Tarstones — the upgrade stones scattered across the world — at the Tarforge. Game8's build tables slot named Tarstones like the Duality Stone, Rupturing Stone, or Acolyte's Stone directly into loadouts, so collecting the right stones for your weapon is as much a part of a build as the shell wearing it. Exact per-tier upgrade costs are still being verified against the launch build.",
         ],
+        bullets: [
+          "**Mechanism:** Franz runs the Tarforge in Marrow Keep; upgrading burns materials plus Coin, with a Muradean Actuator tied into the process per Fextralife's upgrades guide",
+          "**Cost ladder:** five materials in five-level tiers — Ventrium (+1–5), Laterite (+6–10), Dorsalite (+11–15), Thoracium (+16–20), Ossinite (+21–25), costing 1/3/6/9/12 pieces per step respectively",
+          "**Total bill:** a full +0 → +25 journey consumes **185,650 Coin** alongside the material ladder",
+          "**Damage curve:** shared across all eight weapons — ×1.00 at +0 rising to ×1.80 at +16, while stagger-type stats keep climbing to ×2.00 at +20; the only per-weapon exception is Great Martyr's Blade's Guard Meter multiplier",
+          "**Post-patch discount:** smelting costs dropped 75% under Balance Patch 1, so the real Gloom price is far kinder than launch-era guides told you",
+        ],
       },
       {
         heading: "The eight sidearms",
@@ -719,12 +738,19 @@ export const guidePages: GuidePage[] = [
           "Per PowerPyx's location guide, no weapon is missable: all eight remain collectible after the final boss while you explore in free-roam, before entering New Game+. Their locations can be bought as map markers from the merchant Merrick in Marrow Keep — handy, but not required.",
         ],
       },
+      {
+        heading: "Do sidearms pass through eel-type enemies on purpose?",
+        paragraphs: [
+          "It reads like a bug, not design. Steam threads report **Triarch Repeater shots phasing through the heads of eel-type enemies** — projectiles visibly connect but deal no damage — with similar echoes appearing across player reviews around launch. Until a patch note says otherwise, treat ranged hits on serpentine models as unreliable and switch to melee rather than wasting resolve on refused hitboxes.",
+          "If your sidearm seems to stop working entirely, rule out the other usual suspects first: post-patch there is no resolve floor left on Caged Hystrix or Triarch Repeater (both fire at any resolve level), so a gun refusing to fire is more likely animation lock or ammo state than the removed threshold mechanic.",
+        ],
+      },
     ],
     pending: {
       heading: "Still being verified",
       intro: "Collected against the launch build over the coming days:",
       items: [
-        "Per-weapon damage numbers and Tarstone upgrade costs per tier",
+        "Per-weapon absolute base damage (hidden in-game; the multiplier curve and cost ladder above are complete)",
         "Full sidearm roster with locations (second-source verification pending)",
       ],
     },
@@ -734,6 +760,25 @@ export const guidePages: GuidePage[] = [
       { label: "Mortal Shell 2 Tips", href: "/tips/" },
       { label: "All Shells", href: "/shells/" },
     ],
+    sources: [
+      {
+        name: "Mortal Shell II on Steam (Playstack)",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Weapons List",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614498",
+      },
+      {
+        name: "PowerPyx — Mortal Shell 2 All Weapon Locations",
+        url: "https://www.powerpyx.com/mortal-shell-2-all-weapon-locations/",
+      },
+      {
+        name: "mortalshelldb.com — Tarforge ladder & upgrade multipliers",
+        url: "https://mortalshelldb.com/forge",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
   },
   {
     slug: "bosses",
