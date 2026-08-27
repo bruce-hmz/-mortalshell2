@@ -184,7 +184,11 @@ export function GuideArticle({ page }: { page: GuidePage }) {
             ))}
 
             {page.blocks.map((block) => (
-              <section className="fact-block" key={block.heading}>
+              <section
+                className="fact-block"
+                key={block.heading}
+                id={block.anchor}
+              >
                 <h2>{block.heading}</h2>
                 {block.paragraphs.map((paragraph, i) => (
                   <p key={i}>{renderInline(paragraph)}</p>

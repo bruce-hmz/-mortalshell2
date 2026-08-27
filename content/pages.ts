@@ -2,6 +2,7 @@ export type FactBlock = {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  anchor?: string;
 };
 
 export type GuidePageMedia = {
@@ -1017,6 +1018,7 @@ export const guidePages: GuidePage[] = [
     ],
     blocks: [
       {
+        anchor: "the-eight-shells",
         heading: "The eight shells, named",
         paragraphs: [
           "The launch build's eight possessable shells are Tiel, Proxima, Eredrim, Gragu, Smert, Sester Genessa, Lazlo, and Sariel. A ninth figure, Harros, appears as the vassal who helps you during the prologue — he is not counted among the eight lost warriors your Harbinger ultimately inhabits.",
@@ -1024,6 +1026,7 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "how-to-unlock-every-shell",
         heading: "How to unlock every shell",
         paragraphs: [
           "Tiel and Proxima are the easiest: both general locations are revealed when you first enter Fainweald. Every other shell hides in a specific corner of the world, and several guard their bodies with a boss.",
@@ -1040,6 +1043,7 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "tiel-and-proxima",
         heading: "Tiel and Proxima: the Fainweald pair",
         paragraphs: [
           "Tiel is the gentlest unlock of the eight. His general location is revealed the moment you first enter Fainweald; Rock Paper Shotgun's location guide describes the walk — from Mushroom Village keep heading east to a torch-lit fenced enclosure, where Tiel's gravestone waits inside on the left. Interact with it and the shadow-specialist shell is yours.",
@@ -1047,6 +1051,7 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "gragu-and-genessa",
         heading: "Gragu and Sester Genessa: the living NPCs",
         paragraphs: [
           "Gragu drinks at the One Legged Wolf Tavern long before you can wear him. To claim his shell you need the Heart of Vatra, found on a vampire-infested mountain pass northeast of the tavern: infiltrate the Temple of Vatra past petrified cultists who wake and attack, carry the heart back, and Gragu dies content — leaving his shell behind. The tavern is also where you pick up the Troubadour's Lute.",
@@ -1054,6 +1059,7 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "guarded-bodies",
         heading: "Eredrim, Smert, Lazlo: the guarded bodies",
         paragraphs: [
           "Eredrim is the knight waiting in the Citadel of Penance, the heavily patrolled keep of western Fainweald. From the citadel's own beacon, drop from the courtyard into the pit, follow the circular lower passage past burstable eggs until you spot the lift near the air current, and ride it into the central arena — the Warden who killed Eredrim long ago is the price of the shell.",
@@ -1062,12 +1068,14 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "sariel",
         heading: "Sariel: the shell you fight for",
         paragraphs: [
           "Sariel is the only shell you earn entirely through boss encounters. He first challenges you at the brutalist structure in the far south of Mammon, near The Silent Steps Beacon — RPS's writer even knocked him off the edge seconds into the fight. It doesn't end there: he retreats through the walls into the dungeon behind the massive statue, leading to the Chamber of Becoming. Break the stones in the final room so he can't keep reviving, and the Endless is finally yours.",
         ],
       },
       {
+        anchor: "what-each-shell-is-known-for",
         heading: "What each shell is known for",
         paragraphs: [
           "Every shell carries its own ability tree and passive identity. Tiel's specialty is disappearing into the shadows; Smert wields time-stopping powers. For how those abilities turn into combat builds — which weapon, sidearm, and seal to pair with each shell — see the Mortal Shell 2 [best build guide](/best-build/).",
@@ -1075,6 +1083,15 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "balance-patch-pairings",
+        heading: "Balance Patch 1 and shell pairings",
+        paragraphs: [
+          "Playstack's Balance Patch 1 (August 25, 2026) reshuffles the weapon half of every shell pairing. The Great Martyr's Blade — Proxima's signature heavy option in our [best build guide](/best-build/) — gained **+20% attack damage**, and the Troubadour's Lute doubled its attack damage outright (**+100%**). Neither buff changes which shell you enjoy playing, but both change which weapon deserves your first Tarforge investment once you have claimed a body — and the patch cut Tarforge smelting costs by 75%, so swapping weapons between shells is far cheaper than it was at launch.",
+          "The patch also touches how you hunt shells in the first place: shell map locations now cost Gloom instead of Glimpse, with refunded Glimpses waiting in the Shell Keeper's alcove in Blackmarrow. A Seals note applies to every shell's defensive kit too — Guard can now be used while walking. For the full weapon-by-weapon breakdown, see the [weapons guide](/weapons/).",
+        ],
+      },
+      {
+        anchor: "best-shell",
         heading: "Which shell is the best class in Mortal Shell 2?",
         paragraphs: [
           "There is no official best shell — each of the eight pairs a unique ability kit with a different playstyle, so the honest answer is which kit matches how you fight. Two practical starting points: Tiel and Proxima are the earliest shells you can possess (both are revealed when you first enter Fainweald), and the community's launch-build consensus pairs every shell with its own weapon, sidearm, and seal rather than crowning one class above the rest.",
@@ -1095,8 +1112,24 @@ export const guidePages: GuidePage[] = [
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Beginner Guide", href: "/beginner-guide/" },
       { label: "Achievements Guide", href: "/achievements-guide/" },
-   ],
- },
+    ],
+    sources: [
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 shell locations",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
+      },
+      {
+        name: "Balance Patch 1 — Mortal Shell II Steam announcement",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
+      },
+      {
+        name: "Mortal Shell II on Steam (Playstack)",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
+    datePublished: "2026-08-20",
+  },
  {
    slug: "weapons",
     metaTitle: "Mortal Shell 2 Weapons: Upgrades & Posture Breaks",
