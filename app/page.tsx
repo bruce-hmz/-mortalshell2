@@ -111,6 +111,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "best-smert-build": "Builds",
   "fast-travel": "Progression",
   "missable-content": "Completion",
+  "ova-locations": "Completion",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -128,6 +129,7 @@ const GUIDE_CTA: Record<string, string> = {
   "best-smert-build": "Stack Chaos with Smert →",
   "fast-travel": "Map every Beacon →",
   "missable-content": "Check what locks you out →",
+  "ova-locations": "Collect all 196 Ova →",
 };
 
 const PILLARS = [

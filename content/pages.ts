@@ -56,6 +56,111 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "ova-locations",
+    metaTitle: "Mortal Shell 2 Ova Locations: How to Collect All 196",
+    metaDescription:
+      "Every Mortal Shell 2 Ova location explained: all 196 come from cleansing Beacons, six post-boss nodes pay 26 each, and the first-playthrough rule that protects your Ascension trophy.",
+    cardBlurb:
+      "Where all 196 Ova hide, which Beacons pay the biggest hauls, and the NG+ bug to respect.",
+    heroImage: {
+      src: "/img/site-5.jpg",
+      alt: "Mortal Shell II key art with a helmeted shell facing a corrupted landscape",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Ova Locations",
+    eyebrow: "Completion",
+    intro: [
+      "There is no secret stash of 196 hidden eggs — every Ova in Mortal Shell II is a Beacon reward. Cleansing any of the game's Beacons pays out its Ova at the end of that mini-dive, so collecting all of them is a fast-travel discipline task, not a scavenger hunt. This page explains where they all are, what progress looks like, and the patch-era bug that decides when you must finish.",
+      "Totals, payout tables, and trophy rules were verified against PowerPyx's trophy guide and Beacon compendium on August 27, 2026, cross-checked against this site's own beacon research. The per-Beacon count table below fills in as those numbers are transcribed — the skeleton is open about what is verified today.",
+    ],
+    blocks: [
+      {
+        heading: "What are Ova in Mortal Shell 2?",
+        paragraphs: [
+          "Ova are the oval collectible eggs you obtain throughout the game by cleansing Beacons — PowerPyx's trophy guide describes them as rewards 'always given at the end of Beacons'. They function as the currency of completion: the syphon NPC in Marrow Keep tracks your deposited total, and depositing enough unlocks Mether's Breath early in the campaign (the fast-travel ability detailed in the [fast travel guide](/fast-travel/)).",
+        ],
+      },
+      {
+        heading: "How many Ova are in Mortal Shell 2?",
+        paragraphs: [
+          "196. That total is tied directly to the Ascension trophy — one of the rarest in the game at roughly a 14% unlock rate — and per community help threads it counts only Ova obtained through Beacon cleansing. Boss payouts like Magdalena's famous 26-Ova purse feed the same economy but don't add collection slots beyond what the Beacons hold; if your count stalls below 196, an uncleansed Beacon somewhere is why, not a missed field pickup.",
+        ],
+      },
+      {
+        heading: "Where to find every Ova",
+        paragraphs: [
+          "All 196 live inside the game's 49 Beacons — three start pre-cleansed and simply reveal their contents as you discover them, while the other 46 require a cleanse dive (which is why trackers show 46/49 until endgame). The dive order below follows the same region sweep our [walkthrough](/walkthrough/) uses, so you can fold cleanses into progression instead of backtracking:",
+        ],
+        bullets: [
+          "**Disciple's Pass:** tutorial beacons walk you through the cleanse loop on scripted dives",
+          "**Fainweald south:** Widow's Overlook → Mushroom Village + gate pairings — the village area's cleanse teaches the Ova payout rhythm early",
+          "**Fainweald north:** Blackridge Pass → Stonebled Gate → Hidden Keep run, plus Gloomshade Grove's side cleanes for materials on top of Ova",
+          "**Fainweald west → Nochte:** Outskirts of Nochte, whose eastern-gate cleanse triggers the Mether's Breath unlock at Marrow Keep's syphon",
+          "**Ruins of Mammon outward:** every post-boss Beacon from here through The Unfounded Path carries the heavy 26-Ova purses — never skip these even if you're underleveled, because the bug below makes them first-playthrough-critical",
+        ],
+      },
+      {
+        heading: "The six big payouts: post-boss Beacons pay 26 each",
+        paragraphs: [
+          "Payouts are not flat across the network. Per PowerPyx's tables, the six Beacons that appear behind each main boss always hold **26 Ova** — roughly 156 of your 196 total sits in just those six dives. Whenever your route passes a post-boss Beacon, cleanse it before moving on; postponing them concentrates the entire late-game collection burden into the free-roam window instead of spreading it naturally across the campaign.",
+          "Boss fight specifics for reaching each of those gated nodes are mapped boss-by-boss in the [boss guide](/bosses/), and what resting at each node does for your build loop is covered in the [fast travel guide](/fast-travel/).",
+        ],
+      },
+      {
+        heading: "How to check your Ova progress",
+        paragraphs: [
+          "The Ova Siphon in Marrow Keep reads out your deposited total whenever you interact with it — make a habit of banking after big cleanse runs rather than hoarding, since deposited totals are what trigger both the Mether's Breath unlock and eventually the ending choice itself. There is no separate per-region breakdown anywhere in-game, which is exactly why this page's checklist expands next.",
+        ],
+      },
+      {
+        heading: "Can you still get all Ova in NG+?",
+        paragraphs: [
+          "Treat the answer as no until a patch says otherwise. PowerPyx warns that **Bring My Ova Back to Me currently can only be earned in your first playthrough** due to a bug introduced in a recent patch — entering NG+ without finishing your cleanup can lock the trophy out on that save indefinitely. Finish all 196 before interacting with the Siphon's “Send Ova” option at the end of the game; the endgame free-roam window exists precisely so you can complete this sweep before committing.",
+        ],
+      },
+      {
+        heading: "What is the Ascension trophy?",
+        paragraphs: [
+          "Ascension is the completion trophy awarded for depositing all 196 Ova — PowerPyx records it at roughly a **14% unlock rate**, making it one of the rarest awards in the game despite requiring no out-of-route exploration. The grind is real (49 cleanse dives) but nothing about it is missable *except* through the NG+ bug above: keep everything in the first playthrough and Ascension follows mechanically from playing the campaign through.",
+          "Its sibling achievement So Fresh, So Clean (cleanse every Beacon) runs on the same route, so one disciplined pass serves both — the fuller trophy-ordering plan lives in our [achievements guide](/achievements-guide/) as it grows.",
+        ],
+      },
+      {
+        heading: "Why don't you list all 49 Beacons individually here?",
+        paragraphs: [
+          "Because the exact per-node Ova counts haven't been published as clean text anywhere yet — video guides dominate this query space, and transcription without verification is how bad collectible lists spread. Rather than ship 46 guessed numbers, we shipped the verified structure (the 196 total, the 26×6 heavy nodes, the Siphon mechanics, the bug warning) now and will fill in per-Beacon figures as they're confirmed against played saves. The full Beacon locations themselves, region by region, are already catalogued in the [fast travel guide](/fast-travel/).",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro: "This page ships as a checklist skeleton — deliberately honest about what isn't pinned down yet:",
+      items: [
+        "Per-Beacon Ova counts for all 46 cleanse dives (structure verified; individual figures awaiting transcription)",
+        "Whether Balance Patch 1 fixed the Bring My Ova Back to Me NG+ bug — PowerPyx's warning predates it with no visible change noted yet",
+        "Exact Mether's Breath unlock threshold (community consensus points to roughly 40-50 deposited, unconfirmed)",
+      ],
+    },
+    related: [
+      { label: "Fast Travel Guide", href: "/fast-travel/" },
+      { label: "Missable Content", href: "/missable-content/" },
+      { label: "Boss Guide", href: "/bosses/" },
+      { label: "Walkthrough", href: "/walkthrough/" },
+    ],
+    sources: [
+      {
+        name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
+        url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
+      },
+      {
+        name: "PowerPyx — Mortal Shell 2 All Beacon Locations",
+        url: "https://www.powerpyx.com/mortal-shell-2-all-beacon-locations/",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
+    datePublished: "2026-08-27",
+  },
+  {
     slug: "beginner-guide",
     metaTitle: "Mortal Shell 2 Beginner Guide: First Hours & Combat",
     metaDescription:
