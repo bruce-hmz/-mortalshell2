@@ -109,6 +109,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "damage-calculator": "Tools",
   "best-proxima-build": "Builds",
   "best-smert-build": "Builds",
+  "fast-travel": "Progression",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -124,6 +125,7 @@ const GUIDE_CTA: Record<string, string> = {
   "damage-calculator": "Run the numbers →",
   "best-proxima-build": "Build Proxima's burst →",
   "best-smert-build": "Stack Chaos with Smert →",
+  "fast-travel": "Map every Beacon →",
 };
 
 const PILLARS = [

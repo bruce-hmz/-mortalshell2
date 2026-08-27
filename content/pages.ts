@@ -1216,6 +1216,126 @@ export const guidePages: GuidePage[] = [
     reviewedOn: "August 25, 2026",
     datePublished: "2026-08-25",
   },
+  {
+    slug: "fast-travel",
+    metaTitle: "Mortal Shell 2 Fast Travel: All 49 Beacons & Unlock Steps",
+    metaDescription:
+      "Mortal Shell 2 fast travel explained: cleanse Beacons to reach the Mether's Breath menu, all 49 Beacon locations by region, and why none are missable.",
+    cardBlurb:
+      "Cleanse Beacons to open the fast-travel network — all 49, none missable.",
+    h1: "Mortal Shell 2 Fast Travel",
+    eyebrow: "Progression",
+    intro: [
+      "Fast travel in Mortal Shell II is not a spell you learn or a questline you finish — it is the Beacon network you build yourself. Every region hides corrupted checkpoints that become the travel map's pins as you cleanse them, and by launch week players were asking the same question across Steam and YouTube: where exactly does fast travel start?",
+      "This page covers the mechanic end to end: what Beacons do before and after cleansing, how to trigger the Mether's Breath travel menu, every one of the 49 Beacon locations ordered by region, and the completion stakes — none of them are missable. Everything below was verified against PowerPyx's Beacon compendium and the Fextralife wiki on August 27, 2026.",
+    ],
+    blocks: [
+      {
+        heading: "Fast travel runs through Beacons",
+        paragraphs: [
+          "Mortal Shell II has no standalone teleport system: the fast-travel network lives inside the world's Beacon checkpoints. Each region you push into is anchored by these Beacons — the checkpoint-and-travel spines our [walkthrough](/walkthrough/) routes are built around — so your travel map fills out naturally as you explore rather than unlocking in one cutscene.",
+          "A freshly found Beacon is corrupted. Per Fextralife's wiki, it offers only the basics while darkened overgrowth still covers it: you can rest there and set it as your respawn point, but none of the travel and progression menus exist yet. Cleansing is what turns a campfire stop into a node of the network.",
+        ],
+      },
+      {
+        heading: "How to unlock fast travel at a Beacon",
+        paragraphs: [
+          "Unlocking travel node by node follows the same loop everywhere in the world:",
+        ],
+        bullets: [
+          "Interact with a corrupted Beacon to rest: the prompt confirms it will now revive you here if you fall in combat.",
+          "Enter the Beacon to cleanse it. Cleansing drops you into a contained dungeon — clear the enemies, and sometimes a miniboss, then claim the reward waiting at the end.",
+          "Once cleansed, the Beacon's menu expands. Fextralife lists the unlocked options: Level Up with Gloom, Change Equipment, Mether's Pulse upgrades, Return to Marrow Keep (a direct fast-travel ride back to the hub), and Enter/Cleanse to dive back inside.",
+          "From any Beacon's Mether's Breath menu you reach the full fast-travel destination list — PowerPyx orders its complete 49-Beacon rundown by exactly how the entries appear in that in-game menu.",
+        ],
+      },
+      {
+        heading: "What resting at a Beacon does",
+        paragraphs: [
+          "Whether corrupted or cleansed, resting is what makes a Beacon matter mid-run. Four effects stack every time you sit down at one:",
+        ],
+        bullets: [
+          "Revives the equipped shell if it had fallen.",
+          "Restores Health and Resolve.",
+          "Respawns regular enemies — boss encounters stay dead — so farming loops run through whatever route feeds the Beacon.",
+          "Updates your respawn point to this Beacon for your next death.",
+        ],
+      },
+      {
+        heading: "Cleansing pays in Ova, loot, and shortcuts",
+        paragraphs: [
+          "Every cleanse ends with a unique reward, usually the Ova tucked inside the Beacon — the collectibles needed for the game's toughest completion trophy — plus smaller payouts like Glimpse or materials such as Laterite, depending on the node. Cleansing also clears the obstructions around a Beacon, per Fextralife, unblocking loot you couldn't reach before.",
+          "Payouts are not flat. The six Beacons that appear after each main boss always hold the heaviest haul: 26 Ova each, per PowerPyx's tables. If completion hunting is part of your loop, those are the dives worth prioritizing whenever the route passes one — the full roster and drop tables live in the [boss guide](/bosses/).",
+        ],
+      },
+      {
+        heading: "All 49 Beacon locations by region",
+        paragraphs: [
+          "PowerPyx catalogs 49 Beacons worldwide, grouped below by the region each sits in and numbered the way the Mether's Breath menu lists them. Three arrive pre-cleansed when you find them: Marrow Keep, Widow's Overlook, and Outskirts of Mammon.",
+        ],
+        bullets: [
+          "Marrow Keep — Marrow Keep (#1), the hub itself.",
+          "Fainweald — Stonebled Gate (#2), Mushroom Village Gate (#3), Nochtean Gate (#4), Mushroom Village (#5), Outskirts of Nochte (#6), Blackridge Pass (#7), Widow's Overlook (#8), Gloomshade Grove (#9), Citadel of Penance (#10), One Legged Wolf Ruins (#11).",
+          "Ruins of Mammon — Outskirts of Mammon (#12), Sester's Gate (#13), Gate of Infinity (#14), Castigator's Keep (#15), Abbey Entrance (#16), Abandoned Outpost (#17), Gate of Mammon (#18), The Silent Steps (#19), High Lord's Courtyard (#20).",
+          "Glutted Mire — Seeping Mire (#21), Sunken Village (#22), Magdalena's Glade (#23).",
+          "Prisoners' Domain — Hangman's Scaffold (#24), Executioner's Pulpit (#25), Slumwater Drain (#26), Captive's End (#27).",
+          "Sanguine Caverns — Pulsing Caves (#28), Sanguine Shoreline (#29), Child's Feeding Grounds (#30).",
+          "Conquered Temple — Ovate's Chamber (#31), Winterglass Lake (#32), Conqueror's Hoard (#33).",
+          "Faded Citadel — Citadel Annex (#34), Citadel Atrium (#35), Scholar-Prince's Chamber (#36).",
+          "Withered Shoals — Nameless Pass (#37), Ossinite Falls (#38), Hexapod's Burrow (#39).",
+          "The Unfounded Path — The Hidden Nave (#40), Receiving Hall (#41), Faithful's Shelter (#42), Brether's Court (#43), Obsidian Vault (#44), Bridge of Procession (#45), Empty Cradle (#46), Chamber of the Forsaken (#47).",
+          "Disciple's Pass — Disciple's Grotto (#48), Village Outskirts (#49).",
+        ],
+      },
+      {
+        heading: "No Beacon is ever missable",
+        paragraphs: [
+          "Completionists get a safety net the rest of the game doesn't always offer: none of the 49 Beacons can be missed. PowerPyx confirms you can still find and cleanse anything left over after the final boss, during the free-roam window before you choose to enter New Game+.",
+          "The math behind the cleanup: only 46 of 49 show progress on the trophy tracker, because three are already cleansed the moment you discover them. Cleansing everything is required for the So Fresh, So Clean achievement — and since Beacons are where the Ova live, finishing them also serves the companion collection achievement attached to those rewards.",
+        ],
+      },
+      {
+        heading: "When do you unlock fast travel?",
+        paragraphs: [
+          "There is no story gate or timer: the pieces appear with the world itself. The first time you meet a corrupted Beacon you already have a working checkpoint, and every successful cleanse immediately extends the travel network — culminating in the full 49-entry Mether's Breath menu. By endgame, all six post-boss Beacons and every regional node are reachable across the whole map without a single repeat footpath.",
+        ],
+      },
+      {
+        heading: "Why can't I fast travel yet?",
+        paragraphs: [
+          "You're standing at a Beacon that is still corrupted — or trying to travel from somewhere that isn't a Beacon at all. An uncleansed node gives you rest, healing, and a respawn point, but no destinations. Step inside and clear its dungeon first; once cleansed, the travel options appear in that node's menu, and the Return to Marrow Keep option is the fastest way home from anywhere the network reaches.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro:
+        "Two behaviors and one naming discrepancy were not pinned down by the sources checked this week:",
+      items: [
+        "Whether the Mether's Breath menu shows corrupted Beacons as locked entries or hides them entirely until cleansed",
+        "Whether fast travel carries any resource cost or usage limit (none is described by PowerPyx or Fextralife)",
+        "Spelling: PowerPyx writes the endgame region as 'The Unfound Path'; this site keeps 'The Unfounded Path', the form used by the walkthrough sources — the same late-game zone either way",
+      ],
+    },
+    related: [
+      { label: "Walkthrough", href: "/walkthrough/" },
+      { label: "Beginner Guide", href: "/beginner-guide/" },
+      { label: "Boss Guide", href: "/bosses/" },
+      { label: "Best Builds", href: "/best-build/" },
+    ],
+    sources: [
+      {
+        name: "PowerPyx — Mortal Shell 2 All Beacon Locations",
+        url: "https://www.powerpyx.com/mortal-shell-2-all-beacon-locations/",
+      },
+      {
+        name: "Fextralife Wiki — Mortal Shell 2 Beacons",
+        url: "https://mortalshell2.wiki.fextralife.com/Beacons",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
+    datePublished: "2026-08-27",
+  },
 ];
 
 export function getGuidePage(slug: string): GuidePage | undefined {
