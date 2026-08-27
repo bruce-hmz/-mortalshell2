@@ -170,9 +170,9 @@ export const guidePages: GuidePage[] = [
     slug: "best-build",
     metaTitle: "Mortal Shell 2 Best Build: Shell, Weapon & Sidearm Combos",
     metaDescription:
-      "The best build for every Mortal Shell 2 shell: per-shell weapon, sidearm, and seal loadouts, plus the resolve loop that makes each one work.",
+      "The best build for every Mortal Shell 2 shell after Balance Patch 1: per-shell weapon, sidearm, and seal loadouts, plus the patch changes that shift each one.",
     cardBlurb:
-      "Eight shells as classes, resolve-driven builds, and the early consensus on burst DPS.",
+      "Post-patch build picks for all eight shells — what Balance Patch 1 changed and how to read it.",
     heroImage: {
       src: "/img/site-2.jpg",
       alt: "Mortal Shell II key art: an armored warrior bearing a sword against a burning backdrop",
@@ -181,12 +181,24 @@ export const guidePages: GuidePage[] = [
     h1: "Mortal Shell 2 Best Build",
     eyebrow: "Builds",
     intro: [
-      "Builds in Mortal Shell II are built from two confirmed pillars: which of the eight shells you possess, and how your combat loop generates and spends resolve. This page explains both, then records the early community consensus — clearly attributed, because it is an opinion, not a verified fact.",
-      "It was fact-checked against the official Steam page and the developer's website on " +
-        LAST_REVIEWED +
-        ".",
+      "Builds in Mortal Shell II are built from two confirmed pillars: which of the eight shells you possess, and how your combat loop generates and spends resolve. This page explains both, then records the community's launch-build consensus — clearly attributed, because it is an opinion, not a verified fact.",
+      "The build tables below follow Game8's launch guide; this page was rechecked on August 27, 2026 against Playstack's official Balance Patch 1 notes (live since August 20), which buffed key weapons, cut Tarforge smelt costs, and rebalanced enemy health. The patch facts in the boxes below come straight from those notes.",
     ],
     blocks: [
+      {
+        heading: "What Balance Patch 1 changed for builds (August 20)",
+        paragraphs: [
+          "Four patch lines matter when picking a build. Weapons: Great Martyr's Blade attack damage is up 20%, Troubadour's Lute attack damage is up 100%, Caged Hystrix and Triarch Repeater no longer have minimum resolve requirements to fire, and light attacks track better on Axatana, Black Needle, and Clockwork Scythe. Economy: Tarforge smelting costs 75% less Gloom, gold drops are significantly increased (enemies in Mammon drop double), and shell map locations now cost Gloom instead of Glimpses — refunds wait in the Shell Keeper's alcove in Blackmarrow. Enemies: beta health values were restored, cutting boss damage and health across the board (The Lost Child takes 15% less health and 10% less damage; Monolith 10% less health and 19% less damage, with some attacks retimed).",
+          "Read together, that shifts builds toward the buffed weapons and cheaper experimentation. The Martyr's Blade Lightning setup gains flat damage; repeater sidearms lose their resolve floor, so casters can spend resolve on defense without starving their sidearm; smelting being cheap makes swapping weapons mid-run a plan instead of a punishment; and Mammon's doubled gold funds Tarstone work faster. Full nerf math per enemy lives in the patch discussion linked at the bottom of this page.",
+        ],
+        bullets: [
+          "Great Martyr's Blade +20% attack damage — Proxima setups scale directly",
+          "Troubadour's Lute +100% attack damage — watch this slot",
+          "Caged Hystrix / Triarch Repeater: no minimum resolve to fire",
+          "Tarforge smelt costs −75% Gloom; swapping weapons mid-run is cheap now",
+          "Beta enemy HP/damage values restored (Lost Child −15% HP, Monolith −19% dmg, and more)",
+        ],
+      },
       {
         heading: "Shells are the class system",
         paragraphs: [
@@ -202,7 +214,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "A named build for every shell",
         paragraphs: [
-          "Game8's walkthrough team (guide updated August 19, 2026, against the launch build) publishes a best build for each of the eight shells, pairing a weapon, a sidearm, and a seal with each shell's ability kit. Their picks, summarized:",
+          "Game8's walkthrough team (guide updated August 19, 2026, against the launch build) publishes a best build for each of the eight shells, pairing a weapon, a sidearm, and a seal with each shell's ability kit. Balance Patch 1 touched several of these picks — the patch notes under each line show what changed. Their base picks, summarized:",
         ],
         bullets: [
           "Tiel — Axe and Dagger + Salvaged Trebuchaxe: guaranteed critical strikes via the Critical Role ability",
@@ -226,7 +238,15 @@ export const guidePages: GuidePage[] = [
         heading: "Your first build of the run",
         paragraphs: [
           "The opening hours hand you the pieces in a sensible order. The Iconoclast arrives in the prologue, and Tiel and Proxima are the first shells most players find in Fainweald — which means the Lightning Proxima setup (Great Martyr's Blade plus Triarch Repeater) and crit-focused Tiel are realistic early targets, even though their best-in-slot parts take longer to assemble.",
-          "Until then, the pre-launch principles hold: aggression generates resolve, resolve funds defense, and posture breaks create your execute windows. Any shell and any weapon played inside that loop will carry you through the first dungeons while you collect the parts for the loadout you actually want.",
+          "Balance Patch 1 makes both early targets hit harder. The Martyr's Blade in the Proxima setup carries a flat +20% damage buff, and with no minimum resolve to fire, the Triarch Repeater stops competing with your defensive skills for resolve — fire it freely while keeping your guard funded.",
+          "Until then, the core principles hold: aggression generates resolve, resolve funds defense, and posture breaks create your execute windows. Any shell and any weapon played inside that loop will carry you through the first dungeons while you collect the parts for the loadout you actually want.",
+        ],
+      },
+      {
+        heading: "Smelting and swap economy after the patch",
+        paragraphs: [
+          "Two economic changes reshape how aggressively you can iterate on builds. Tarforge smelting now costs 75% less Gloom, so re-speccing a weapon or shifting to a different upgrade path mid-run is a reasonable move rather than an NG+-length grind; Playstack framed it as letting players switch weapons without hours of grinding through repeated runs. Gold drops also rose significantly across the board, with Mammon enemies dropping double — which pairs well with Lazlo's Royal Crypt stomping grounds if you need coin for Tarstone work fast.",
+          "The practical takeaway for builders: test more builds per hour of play. The cost of a wrong pick dropped alongside the buff table above, so treat the first half of the campaign as cheap experimentation instead of commitment.",
         ],
       },
       {
@@ -246,9 +266,9 @@ export const guidePages: GuidePage[] = [
       intro:
         "Build rankings move fast in week one:",
       items: [
-        "Damage multipliers for end-game weapon ascensions",
-        "Post-launch balance patches reshuffling shell and weapon rankings",
-        "Second attributed build source for cross-comparison",
+        "Second attributed build source for cross-comparison against Game8's picks",
+        "Whether console versions of Balance Patch 1 (PC live since August 20) ship with any additional tuning",
+        "Troubadour's Lute build pairings worth revisiting after its +100% damage buff",
       ],
     },
     related: [
@@ -256,6 +276,20 @@ export const guidePages: GuidePage[] = [
       { label: "All Shells", href: "/shells/" },
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Beginner Guide", href: "/beginner-guide/" },
+    ],
+    sources: [
+      {
+        name: "Balance Patch 1 — Patch Notes (Playstack, official Steam announcement thread)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Best Builds",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+      {
+        name: "Mortal Shell II on Steam (Playstack)",
+        url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
     ],
   },
   {
