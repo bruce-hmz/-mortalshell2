@@ -114,6 +114,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "ova-locations": "Completion",
   "achievements-guide": "Completion",
   "side-quests": "Quests",
+  "farming-guide": "Economy",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -134,6 +135,7 @@ const GUIDE_CTA: Record<string, string> = {
   "ova-locations": "Collect all 196 Ova →",
   "achievements-guide": "Plan the platinum run →",
   "side-quests": "Complete every NPC chain →",
+  "farming-guide": "Farm Gloom and Coin fast →",
 };
 
 const PILLARS = [

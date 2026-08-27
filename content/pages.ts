@@ -56,6 +56,119 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "farming-guide",
+    metaTitle: "Mortal Shell 2 Farming Guide: Gloom and Coin After Balance Patch 1",
+    metaDescription:
+      "Where to farm Gloom and Coin in Mortal Shell 2 after Balance Patch 1: the Sunken Village sheep loop, Mushroom Village Gate's 2,000-Gloom elite, Mammon's doubled gold, and the Tarforge math that decides what you actually need.",
+    cardBlurb:
+      "Three Beacon loops for Gloom, four methods for Coin, and the patch math that decides how much you really need before grinding.",
+    heroImage: {
+      src: "/img/site-2.jpg",
+      alt: "Mortal Shell II key art with a knight standing before a ruined bridge",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Farming Guide — Gloom and Coin After Balance Patch 1",
+    eyebrow: "Economy",
+    intro: [
+      "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. This page ranks the loops actually worth your time under the new numbers, plus what each currency buys so you know when to stop grinding.",
+      "Farm data and setting tips were verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with patch-economy figures quoted directly from Playstack's official Balance Patch 1 notes on Steam. Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+    ],
+    blocks: [
+      {
+        heading: "What Balance Patch 1 changed about farming",
+        paragraphs: [
+          "Three patch lines reshape the grind. First, Tarforge smelting now costs **75% less Gloom** — Playstack's own note admits launch prices were 'set exorbitantly high' and the goal is switching weapons 'without the need to spend hours grinding through NG+ runs.' Second, gold drops were 'significantly increased' game-wide. Third, enemies in Mammon now drop **double gold**, which the patch notes say brings the gold economy in line with weapon crafting item discovery.",
+          "The combined effect: mid-game Gloom pressure dropped sharply (smelting was the main late Gloom sink), while Coin pressure rose if you're pushing the Tarstone ladder. Practical translation: farm Gloom in Fainweald until your build settles, then move your Coin loop to Mammon where every kill pays twice.",
+        ],
+      },
+      {
+        heading: "Best Gloom farms (ranked by return per minute)",
+        paragraphs: [
+          "Gloom funds level-ups at any Beacon and the cheaper post-patch Tarforge smelts. GamingBolt ranks three loops; all rely on the same Beacon-rest reset mechanic that respawns regular enemies while bosses stay dead:",
+        ],
+        bullets: [
+          "**Mushroom Village Gate Beacon — ~2,000 Gloom per 20-30 seconds (best in game).** Cross the nearest bridge right of the Beacon to a single elite, fire three Shotgun blasts loaded with an Emberseed Stone (level 2+ so Burn procs even on non-crits), collect the kill as burn finishes him, rest, repeat. GamingBolt calls this the highest-return-per-effort Gloom farm in the game so far. Requires the separate Mushroom Village *Gate* node — not the village's main Beacon — and a damage build that can carry the burst.",
+          "**Sunken Village Beacon — just under 1,000 Gloom per ~60 seconds (best early game).** After killing the local boss, The Wandering Shepherd, the sheep pen behind the Beacon across the narrow bridge opens up. One strike per sheep, rest at the Beacon to reset, loop. The lowest-effort farm available once unlocked; stays worthwhile until level costs outpace its payout.",
+          "**Widow's Overlook Beacon — ~200 Gloom per sub-minute loop (fallback).** Bear right off the Beacon, down the slope to the rundown structure on the left: five clustered ground enemies plus one flyer. Functional but tedious; most players outgrow it quickly. Keep it in reserve for the Coin notes below — the same loop serves double duty.",
+        ],
+      },
+      {
+        heading: "The emergency chest loop at the endgame",
+        paragraphs: [
+          "If you hit the final gate underleveled, Game8's walkthrough documents a farm inside The Hidden Nave: the opening section hides numerous Gloom chests behind a torch-revealed path. Open every chest, exit to the main menu, and you reload standing outside the Beacon with all collected Gloom still banked — repeat until satisfied, then offer Gloom at the door to reach Zmey. Menu-exit farming is slower per hour than the Beacon loops above but requires zero combat, works at any level, and scales with nothing but patience.",
+        ],
+      },
+      {
+        heading: "Best Coin farms (ranked by effort)",
+        paragraphs: [
+          "Coin pays vendors, map markers, and — the real sink — the Tarforge upgrade ladder. Four methods matter:",
+        ],
+        bullets: [
+          "**Mammon Beacon loops — double gold, every kill.** The patch specifically doubled Mammon gold drops, making any dense enemy cluster near a Mammon-area Beacon the strongest per-kill Coin source. High Lord's Keep and the Deserted Slums both pack respawning humanoids close to their nodes — and per Game8, the Prisoner's Way fountain route pairs Brigand kills with a hidden-area bonus.",
+          "**Gorf's questline — 8,000 Coin windfall.** Feeding the giant toad Weltcaps at Widow's Overlook pays Marsh Pearls per visit (GamingBolt counts four at 2,000 Coin each via Merrick). The fifth feeding flips to the Poisoned Dagger story item instead of currency, so don't expect an infinite pearl tap. One-time, but it funds early Tarforge work outright. Full steps in our [side quests guide](/side-quests/).",
+          "**Proxima's Specimen collector — passive income on kills.** At Proxima's final bond tier the Specimen harvest procs often enough to matter: 100 Coin each at Merrick, stacked on top of whatever farming loop you're already running. Zero extra travel — the income rides along with combat you were doing anyway.",
+          "**Widow's Overlook loop — low output, situational.** The same five-enemy cluster that makes a mediocre Gloom farm technically drops Coin, but GamingBolt notes only the humanoids pay out — skip the flyer. Use it only when you're already there for Gloom and don't want to travel.",
+        ],
+      },
+      {
+        heading: "Where the money actually goes",
+        paragraphs: [
+          "Grinding without a target wastes an evening. The honest accounting: the Tarforge materials ladder (Ventrium through Ossinite) plus its Coin bill up to +25 comes to roughly 185,650 Coin in total per our weapons guide, but almost nobody pays that in one playthrough — pick your carry weapon and fund just its tiers. Levels from Beacon Gloom scale steeply; GamingBolt's farming numbers matter most in the 20-40 stretch where the Sunken Village and Mushroom Village Gate loops live. And shell bond upgrades eat **Glimpse**, not Gloom — 27 per shell to max, per our achievement guide — which is why Beacon cleanses (one of the few Glimpse sources) stay non-negotiable even on pure farm runs.",
+        ],
+        bullets: [
+          "**Gloom** — level-ups at any Beacon; cheaper post-patch Tarforge smelts",
+          "**Coin** — vendor stock, map markers, and the Tarforge's material ladder",
+          "**Glimpse** — shell bonds only (27 per shell); farm via Beacon cleanses and night-bonus pickups",
+          "**Ova** — Beacon-cleanse collectibles, never purchased; see the Ova locations page",
+        ],
+      },
+      {
+        heading: "Settings and Tarstones that pay for themselves",
+        paragraphs: [
+          "Two loadout choices compound every loop above. First, enable **Auto Pick Up Gold** in the settings — GamingBolt flags it as the single biggest anti-tedium toggle, eliminating the per-drop pouch chase entirely. Second, slot the right Tarstone before an intentional farm: **Gloombound Stone** boosts Gloom-per-kill (its four levels each add a few percentage points), while **Justiciar's Stone** does the same for Coin drops. Both matter enough that GamingBolt recommends equipping them at the start of any dedicated run rather than mid-loop.",
+          "Night Mode adds a **20% Gloom gain bonus** if your skills can carry the harder enemies — a late-game amplifier, not an early option. And one spending note: The Collector, the night merchant, sells Tarstones and Glimpses near the Abandoned Outpost Beacon after dark, so leftover Coin converts to bond progress if you'd rather skip the Glimpse grind entirely.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro:
+        "Economy numbers shifted under the patch and some community figures haven't been re-tested publicly:",
+      items: [
+        "Whether Egon's 10,000-to-20,000 Gloom refund (Castigator's Keep) survives as a farm post-cap — KosGames reports the day-one patch capped the doubling sharply, and no retest has pinned the current ceiling",
+        "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table",
+        "Whether Mammon's doubled gold stacks with the Justiciar's Stone bonus additively or multiplicatively",
+        "Hidden Nave chest Gloom amounts per chest — Game8 confirms the menu-reset method but not the per-chest payout",
+      ],
+    },
+    related: [
+      { label: "Fast Travel Guide", href: "/fast-travel/" },
+      { label: "Weapons Guide", href: "/weapons/" },
+      { label: "Side Quests", href: "/side-quests/" },
+      { label: "Achievement Guide", href: "/achievements-guide/" },
+    ],
+    sources: [
+      {
+        name: "GamingBolt — Mortal Shell 2 Guide: Best Gloom Farming Spots",
+        url: "https://gamingbolt.com/mortal-shell-2-guide-best-gloom-farming-spots-how-to-level-up-fast",
+      },
+      {
+        name: "GamingBolt — Mortal Shell 2 Guide: Best Coin Farming Methods",
+        url: "https://gamingbolt.com/mortal-shell-2-guide-best-coin-farming-methods-how-to-get-gold-fast",
+      },
+      {
+        name: "Balance Patch 1 — Patch Notes (Playstack, official Steam announcement thread)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Complete Walkthrough",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
+      },
+    ],
+    reviewedOn: "August 27, 2026",
+    datePublished: "2026-08-29",
+  },
+  {
     slug: "side-quests",
     metaTitle: "Mortal Shell 2 Side Quests: Every NPC Line Explained",
     metaDescription:
@@ -1914,7 +2027,7 @@ export const guidePages: GuidePage[] = [
         bullets: [
           "Revives the equipped shell if it had fallen.",
           "Restores Health and Resolve.",
-          "Respawns regular enemies — boss encounters stay dead — so farming loops run through whatever route feeds the Beacon.",
+          "Respawns regular enemies — boss encounters stay dead — so farming loops run through whatever route feeds the Beacon (the most efficient ones are ranked in our [farming guide](/farming-guide/)).",
           "Updates your respawn point to this Beacon for your next death.",
         ],
       },
