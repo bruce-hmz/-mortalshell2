@@ -119,6 +119,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "sidearms": "Arsenal",
   "patch-notes": "Updates",
   "achievements": "Completion",
+  "achievements/seeking-the-past": "Achievements",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -144,6 +145,7 @@ const GUIDE_CTA: Record<string, string> = {
   "sidearms": "Collect all 8 sidearms →",
   "patch-notes": "Track every patch →",
   "achievements": "Scan every trophy →",
+  "achievements/seeking-the-past": "Earn the rarest trophy →",
 };
 
 const PILLARS = [

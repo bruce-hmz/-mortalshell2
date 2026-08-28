@@ -57,6 +57,110 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "achievements/seeking-the-past",
+    metaTitle: "Mortal Shell 2 Seeking the Past Trophy: All 40 Shell Memories (1.9% Rarity)",
+    metaDescription:
+      "How to earn Mortal Shell 2's rarest trophy: the 40 Shell Memories explained — the must-watch rule, the 216-Glimpse budget across three playthroughs, and the known 38/40 counter stall.",
+    cardBlurb:
+      "The rarest trophy's verification chain: must-watch memories, the three-run Glimpse budget, and the 38/40 stall workaround.",
+    h1: "Mortal Shell 2 Seeking the Past — Every Shell Memory, Watched Properly",
+    eyebrow: "Achievements",
+    intro: [
+      "Seeking the Past is Mortal Shell II's rarest achievement — **1.9%** of Steam players hold it, against a 1.3% rate for the platinum itself. Its official condition is just 'Watch all Shell Memories': **40 memories, five per shell, across all eight shells**. What makes it rare is not difficulty but logistics — unlocking every memory requires raising all eight shells to maximum Bond Tier 4, which costs **27 Glimpse per shell and 216 Glimpse in total**, more than two full playthroughs reliably fund. PowerPyx's roadmap puts the real price at two complete runs plus at least a partial third (NG++).",
+      "This page is the verification chain: how the gating works, why watching counts but unlocking alone does not, how to budget Glimpse per run, and what to do when the tracker stalls — a failure mode PowerPyx commenters were still reporting fresh this week. For where this sits in the full 53-trophy plan, see the [achievement strategy guide](/achievements-guide/) and the [full achievements list](/achievements/).",
+    ],
+    blocks: [
+      {
+        anchor: "gating",
+        heading: "How the 40 memories are gated",
+        paragraphs: [
+          "Memories are bought, not found. Each shell's bond tree tops out at Tier 4, and all five of that shell's memories become available there. The Shellkeeper (Sester Genessa's bond menu) is where Glimpse converts into bond levels — and where each memory is then viewed. PowerPyx's trophy entry prices it exactly: 27 Glimpse raises one shell to the maximum, so the full eight-shell sweep costs 216. A single playthrough funds roughly three shells to max, which is why the trophy structurally cannot be done in one run.",
+        ],
+      },
+      {
+        anchor: "must-watch",
+        heading: "The must-VIEW rule almost every guide fumbles",
+        paragraphs: [
+          "The official wording of both trophies uses the same verb deliberately: Haunting Times (68.1%) is 'Watch your first Shell Memory' and Seeking the Past is 'Watch all Shell Memories'. Unlocking a memory by reaching Bond Tier 4 is a separate act from selecting it and watching it in the bond menu. Every shell forces one memory on you during its natural bond progression, which teaches the wrong lesson — the other four sit in the menu waiting, and they do not tick until watched.",
+          "The practical habit: after topping a shell to Tier 4, stay in the bond menu and play all five memories back-to-back, then confirm the shell shows no unwatched marker before moving on. Players who treat the menu as a checklist per shell are the ones who reach 40/40 cleanly; the tracker-stall reports below are one more reason not to leave views for later.",
+        ],
+      },
+      {
+        anchor: "budget",
+        heading: "The Glimpse budget, run by run",
+        paragraphs: [
+          "PowerPyx's roadmap names three income lines per playthrough, and all three recur in NG+ cycles:",
+        ],
+        bullets: [
+          "**Cleanse every Beacon again** — Glimpse rewards repeat each cycle, which makes the Beacon network your primary income in runs two and three (the cleansing habit doubles as the So Fresh, So Clean trophy; routing lives in the [fast travel guide](/fast-travel/)).",
+          "**Grab the loose Glimpse caches near Beacons** — a handful sits within a short walk of the network; easy to miss in run one when inventory pressure feels low.",
+          "**Visit every original shell location at night** — worth an extra **8 Glimpse per shell location per playthrough** when the time-of-day is shifted; with eight locations that is a meaningful flat bonus each cycle, and the [night mode guide](/night-mode/) covers how the toggle works.",
+          "With one playthrough reliably funding about three maxed shells (81 of the 216 total), the official expectation is two full runs plus a partial third — you finish the last shells' trees and views early in run three and are done before the credits.",
+        ],
+      },
+      {
+        anchor: "bug",
+        heading: "The 38/40 stall — a known, still-open bug",
+        paragraphs: [
+          "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs.",
+          "Status against the current patch: Playstack's official Balance Patch 1 notes (August 20) contain no memory, bond, or trophy fixes — their only Glimpse line is a refund of map costs into the Shell Keeper's alcove in Blackmarrow. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
+        ],
+      },
+      {
+        anchor: "checklist",
+        heading: "The three-run checklist",
+        paragraphs: [
+          "The whole trophy collapses into one discipline per run:",
+        ],
+        bullets: [
+          "**Run 1 (story focus):** max the three shells your build touches anyway; watch all five memories of each the moment it hits Tier 4. Bank the night-pickup habit early — shell locations at night, 8 Glimpse each.",
+          "**Run 2 (NG+, Glimpse focus):** re-cleanse all Beacons first, sweep the loose caches, re-run the night pickups, and max the next three shells with their full memory views.",
+          "**Run 3 (NG++, cleanup):** the partial run — fund and finish the last two shells, watch their ten memories, and the trophy pops before you are anywhere near the ending. If the counter stalls, reboot and re-watch before anything drastic.",
+        ],
+      },
+      {
+        anchor: "faq",
+        heading: "FAQ",
+        paragraphs: [],
+        bullets: [
+          "**Why can't this be done in one playthrough?** The math: 216 Glimpse needed, roughly 81 fundable per run even with perfect routing. Two full runs get you most of the way; the remainder spills into a third.",
+          "**Is the trophy still bugged?** The stall reports are recent (August 23 and 27) and no patch has addressed them. Relaunch-and-rewatch is the only community-verified stopgap.",
+          "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — which is exactly why the per-run checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
+          "**Does this trophy share a root cause with the Ova tracker bug?** Unknown. Both are count-to-complete trackers misbehaving (the Ova one currently locks its trophy out of NG+ entirely — see the [Ova locations page](/ova-locations/)), but no developer statement connects them.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Open verification items",
+      intro: "What this page genuinely does not know yet:",
+      items: [
+        "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement found in PowerPyx's roadmap, its comments, or Balance Patch 1's notes",
+        "Whether memory-view progress persists across NG+ cycles on the same save (the checklist assumes per-shell completion early precisely because this is unconfirmed)",
+        "Exact Glimpse payouts per Beacon cleanse per cycle — PowerPyx describes the income lines qualitatively; per-Beacon numbers have not been published",
+      ],
+    },
+    related: [
+      { label: "Achievements List", href: "/achievements/" },
+      { label: "Achievement Strategy Guide", href: "/achievements-guide/" },
+      { label: "Farming Guide", href: "/farming-guide/" },
+      { label: "Night Mode", href: "/night-mode/" },
+      { label: "Patch Notes", href: "/patch-notes/" },
+    ],
+    sources: [
+      {
+        name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap (trophy entry, roadmap, and August 2026 comments)",
+        url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
+      },
+      {
+        name: "Balance Patch 1 — Mortal Shell II Steam announcement (Playstack, August 20, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/",
+      },
+    ],
+    reviewedOn: "August 28, 2026",
+    datePublished: "2026-08-28",
+  },
+
+  {
     slug: "achievements",
     metaTitle: "Mortal Shell 2 Achievements List: All 53 Trophies (Bronze/Silver/Gold/Platinum)",
     metaDescription:
