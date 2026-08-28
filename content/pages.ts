@@ -72,12 +72,12 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official Balance Patch 1 announcement thread (August 25, 2026) and the site's crash-fix reporting; last reviewed August 28, 2026.",
+      "Verified against Playstack's official Balance Patch 1 announcement thread (August 20, 2026) and the site's crash-fix reporting; last reviewed August 28, 2026.",
     ],
     blocks: [
       {
         anchor: "balance-patch-1",
-        heading: "Balance Patch 1 — August 25, 2026",
+        heading: "Balance Patch 1 — August 20, 2026",
         paragraphs: [
           "Playstack's first balance patch (\"live on PC and coming to PlayStation 5 and Xbox Series shortly\") is the largest update so far, touching economy, enemies, bosses, weapons, seals, and Tarstones in one pass. The complete published list, section by section:",
         ],
@@ -217,7 +217,7 @@ export const guidePages: GuidePage[] = [
         anchor: "patch-changes",
         heading: "Balance Patch 1: resolve floors removed, Lute doubled",
         paragraphs: [
-          "The patch (August 25, 2026) made two sidearm lines materially better. The **Caged Hystrix and Triarch Repeater no longer have minimum resolve requirements to fire** — before the patch they held fire below a resolve threshold, which forced you to starve defense to shoot; now they fire at any resolve level, which changes long boss-fight budgeting entirely. And the **Troubadour's Lute gained +100% attack damage**, doubling its output — re-check it before dismissing it as a meme pick, because Confusion utility plus doubled damage is a real package. Full patch math lives in our [weapons guide](/weapons/).",
+          "The patch (August 20, 2026) made two sidearm lines materially better. The **Caged Hystrix and Triarch Repeater no longer have minimum resolve requirements to fire** — before the patch they held fire below a resolve threshold, which forced you to starve defense to shoot; now they fire at any resolve level, which changes long boss-fight budgeting entirely. And the **Troubadour's Lute gained +100% attack damage**, doubling its output — re-check it before dismissing it as a meme pick, because Confusion utility plus doubled damage is a real package. Full patch math lives in our [weapons guide](/weapons/).",
         ],
       },
       {
@@ -1398,7 +1398,7 @@ export const guidePages: GuidePage[] = [
         anchor: "balance-patch-pairings",
         heading: "Balance Patch 1 and shell pairings",
         paragraphs: [
-          "Playstack's Balance Patch 1 (August 25, 2026) reshuffles the weapon half of every shell pairing. The Great Martyr's Blade — Proxima's signature heavy option in our [best build guide](/best-build/) — gained **+20% attack damage**, and the Troubadour's Lute doubled its attack damage outright (**+100%**). Neither buff changes which shell you enjoy playing, but both change which weapon deserves your first Tarforge investment once you have claimed a body — and the patch cut Tarforge smelting costs by 75%, so swapping weapons between shells is far cheaper than it was at launch.",
+          "Playstack's Balance Patch 1 (August 20, 2026) reshuffles the weapon half of every shell pairing. The Great Martyr's Blade — Proxima's signature heavy option in our [best build guide](/best-build/) — gained **+20% attack damage**, and the Troubadour's Lute doubled its attack damage outright (**+100%**). Neither buff changes which shell you enjoy playing, but both change which weapon deserves your first Tarforge investment once you have claimed a body — and the patch cut Tarforge smelting costs by 75%, so swapping weapons between shells is far cheaper than it was at launch.",
           "The patch also touches how you hunt shells in the first place: shell map locations now cost Gloom instead of Glimpse, with refunded Glimpses waiting in the Shell Keeper's alcove in Blackmarrow. A Seals note applies to every shell's defensive kit too — Guard can now be used while walking. For the full weapon-by-weapon breakdown, see the [weapons guide](/weapons/).",
         ],
       },
@@ -1460,7 +1460,7 @@ export const guidePages: GuidePage[] = [
       "Mortal Shell II's arsenal spans close-quarters melee blades and ranged projectile sidearms, both feeding into one posture system. This page covers every weapon mechanic officially confirmed so far.",
       "Fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 25, 2026), and the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026).",
+        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 20, 2026), and the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026).",
     ],
     blocks: [
       {

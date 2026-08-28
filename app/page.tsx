@@ -386,6 +386,10 @@ export default function HomePage() {
             <p>
               One page per topic, each fact-checked against the launch build —
               start anywhere; every page stands alone.
+              Guides last reviewed August 28, 2026, with update coverage
+              current through Balance Patch 1 — the{" "}
+              <Link href="/patch-notes/">patch notes</Link> carry the full
+              history.
             </p>
           </div>
           <div className="guides-grid">
