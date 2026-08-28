@@ -57,6 +57,102 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "patch-notes",
+    metaTitle: "Mortal Shell 2 Patch Notes: Balance Patch 1 & Update History",
+    metaDescription:
+      "Mortal Shell 2 update history: Balance Patch 1 in full (weapon buffs, economy, boss nerfs), the Advanced-Access crash hotfixes, and Playstack's roadmap for what ships next.",
+    cardBlurb:
+      "Every update in one place: Balance Patch 1 changes, crash hotfixes, and what Playstack ships next.",
+    heroImage: {
+      src: "/img/site-7.jpg",
+      alt: "Mortal Shell II key art showing a knight before a monumental ruined structure",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Patch Notes & Update History",
+    eyebrow: "Updates",
+    intro: [
+      "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
+      "Verified against Playstack's official Balance Patch 1 announcement thread (August 25, 2026) and the site's crash-fix reporting; last reviewed August 28, 2026.",
+    ],
+    blocks: [
+      {
+        anchor: "balance-patch-1",
+        heading: "Balance Patch 1 — August 25, 2026",
+        paragraphs: [
+          "Playstack's first balance patch (\"live on PC and coming to PlayStation 5 and Xbox Series shortly\") is the largest update so far, touching economy, enemies, bosses, weapons, seals, and Tarstones in one pass. The complete published list, section by section:",
+        ],
+        bullets: [
+          "**Economy** — shell map locations now cost Gloom instead of Glimpse, with refunded Glimpses claimable in the Shell Keeper's alcove in Blackmarrow; enemy gold drops increased significantly, with enemies in Mammon dropping double gold; smelting at the Tarforge costs 75% less Gloom",
+          "**Enemies & Bosses** — all beta enemies restored to their beta HP values, except the Caerinid spider in Magdelena's area, which stays post-launch (and does not respawn once defeated)",
+          "**Boss nerfs** — The Lost Child: −10% base damage, −15% max health; Monolith: −19% base damage, −10% max health, plus attack retiming \"to be more fair\"",
+          "**Enemy trims** — Cultist (mace) −21.1% max health; Caerinid spider −33.3%; Infested Stalker −52.4%; Rusted Knave (halberd) −20.8% max health with a hit-detection fix on its overhead strike",
+          "**Weapons** — Great Martyr's Blade +20% attack damage; Troubadour's Lute +100% attack damage; Caged Hystrix and Triarch Repeater lose their minimum resolve requirements to fire; improved tracking for Axatana, Black Needle, and Clockwork Scythe light attacks",
+          "**Seals** — Guard can now be used while walking",
+          "**Tarstones** — Parasitic Stone, Grudge Stone, Clerik's Stone, and Squall Stone buffed; Bulwark Stone damage reduction increased significantly",
+          "**Miscellaneous** — crash fixes, bug fixes, and performance updates",
+        ],
+      },
+      {
+        anchor: "what-patch-1-changed",
+        heading: "What Balance Patch 1 changes for players",
+        paragraphs: [
+          "The patch reshuffles more than numbers. Builds shift toward the buffed lines — the Martyr's Blade Lightning setup widens its lead, and the Lute graduates from joke to genuine pick (its [Confusion effect](/sidearms/#all-eight-sidearms) plus doubled damage is a real package). The resolve-floor removal on Hystrix and Repeater changes boss-fight budgeting: you no longer starve defense to keep shooting.",
+          "The economy lines matter for routes. Shell-location maps becoming a Gloom purchase refunds real Glimpse into the [shell bond grind](/achievements-guide/), Mammon's doubled gold supercharges the [Coin farming routes](/farming-guide/), and the 75% smelt discount makes mid-run weapon swapping cheap — which is also why the [best build pairings](/best-build/) now treat weapon swaps as a plan rather than a punishment.",
+        ],
+      },
+      {
+        anchor: "hotfixes",
+        heading: "Pre-launch hotfixes (Advanced Access window)",
+        paragraphs: [
+          "Before Balance Patch 1, Playstack shipped crash-targeted fixes during the Advanced Access window: **Hotfix 1** addressed the frequent PC crashes reported in the August 17 early-play period (initially opt-in via the patch-preview beta branch, later rolled out to everyone), and a **Keyboard Bindings menu crash** received an official save-file workaround while a permanent fix was developed. The step-by-step fix instructions live in the [performance fix guide](/performance-fix/) — this page tracks the update timeline; that page carries the how-to.",
+        ],
+      },
+      {
+        anchor: "roadmap",
+        heading: "What Playstack says ships next",
+        paragraphs: [
+          "In the Balance Patch 1 announcement, Playstack states: \"While we have a bigger patch in the works, which has to be thoroughly tested... Planned future updates will see extensions to popular game features such as Night Mode, Tarstones, PP Items, and more.\" Nothing in that line carries a date — treat it as directional. When the bigger patch lands, its changes will be verified against the official notes and added here, with affected guide pages re-checked the same way Balance Patch 1 pages were.",
+        ],
+      },
+      {
+        anchor: "patch-faq",
+        heading: "Patch FAQ",
+        paragraphs: [
+          "**Do console players have Balance Patch 1 yet?** The patch went live on PC first; Playstack's announcement says it was \"coming to PlayStation 5 and Xbox Series shortly\". Check your platform's update history for the current rollout state.",
+          "**Are the enemy nerfs retroactive to NG+?** The announcement phrases enemy changes as flat restorations to beta HP values, not difficulty-mode-specific multipliers — the beta-restoration line applies across the game, while the patch-preview language (\"live on PC and coming to PlayStation 5 and Xbox Series shortly\") is about platform rollout, not difficulty tiers.",
+          "**Where are the official notes posted?** Playstack's announcements live in the game's official Steam community hub — the Balance Patch 1 thread is linked in this page's sources. Console patch histories appear on each platform's official channels.",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro: "Open questions on the update trail as of August 28, 2026:",
+      items: [
+        "Exact console rollout dates for Balance Patch 1",
+        "Contents of the \"bigger patch\" Playstack says is being tested",
+        "Whether any hotfix has addressed the eel-type enemy hitbox reports",
+      ],
+    },
+    related: [
+      { label: "Performance Fix", href: "/performance-fix/" },
+      { label: "Best Build", href: "/best-build/" },
+      { label: "Weapons Guide", href: "/weapons/" },
+      { label: "Sidearms Guide", href: "/sidearms/" },
+    ],
+    sources: [
+      {
+        name: "Balance Patch 1 — Mortal Shell II Steam announcement (Playstack)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
+      },
+      {
+        name: "Mortal Shell II Steam news hub (Playstack)",
+        url: "https://store.steampowered.com/news/app/2584270",
+      },
+    ],
+    reviewedOn: "August 28, 2026",
+    datePublished: "2026-08-28",
+  },
+  {
     slug: "sidearms",
     metaTitle: "Mortal Shell 2 Sidearms: All 8 Ranged Weapons & Locations",
     metaDescription:

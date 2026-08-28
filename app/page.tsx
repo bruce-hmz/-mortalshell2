@@ -117,6 +117,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "farming-guide": "Economy",
   "night-mode": "Endgame",
   "sidearms": "Arsenal",
+  "patch-notes": "Updates",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -140,6 +141,7 @@ const GUIDE_CTA: Record<string, string> = {
   "farming-guide": "Farm Gloom and Coin fast →",
   "night-mode": "Turn on the night →",
   "sidearms": "Collect all 8 sidearms →",
+  "patch-notes": "Track every patch →",
 };
 
 const PILLARS = [
