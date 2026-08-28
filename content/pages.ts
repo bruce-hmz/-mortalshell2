@@ -2048,9 +2048,9 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Pending launch verification",
       intro:
-        "The game releases August 20, 2026. This page will be rechecked against the launch build; still open:",
+        "Rechecked August 28, 2026 against Playstack's Balance Patch 1 notes: Hotfix 1 remains the current crash fix, and no launch-day stability patch superseded it. Still open:",
       items: [
-        "Whether a launch-day patch supersedes Hotfix 1",
+        "Whether the promised rapid balance & crash fix patch (Playstack, Balance Patch 1 announcement) lands cleanly — it will be verified here when it ships",
         "A permanent fix note for the Keyboard Bindings crash (the workaround above is temporary)",
         "Recommended PC requirements — Steam currently lists minimum only",
         "Official word on Xbox Series S crash reports near the forgotten crossbow area (player-reported, collected by Playstack)",
@@ -2079,7 +2079,7 @@ export const guidePages: GuidePage[] = [
         url: "https://www.lagofast.com/en/blog/mortal-shell-2-stuttering-fps-drops/",
       },
     ],
-    reviewedOn: "August 19, 2026",
+    reviewedOn: "August 28, 2026",
     datePublished: "2026-08-20",
   },
   {
