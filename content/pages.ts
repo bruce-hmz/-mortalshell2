@@ -57,6 +57,121 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "sidearms",
+    metaTitle: "Mortal Shell 2 Sidearms: All 8 Ranged Weapons & Locations",
+    metaDescription:
+      "Every Mortal Shell 2 sidearm: how resolve-firing works, all 8 locations in progression order, the Balance Patch 1 resolve-floor removals, and the Lute's Confusion trick.",
+    cardBlurb:
+      "The offhand arsenal: all eight sidearms, their locations, and the patch changes that reshaped them.",
+    heroImage: {
+      src: "/img/site-3.jpg",
+      alt: "Mortal Shell II key art: a hooded warrior in worn armor standing in a dark corrupted scene",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Sidearms",
+    eyebrow: "Arsenal",
+    intro: [
+      "Sidearms are Mortal Shell II's offhand ranged weapons: eight collectible arms that fire on resolve instead of ammo, swap freely at any Beacon, and turn spare resolve into ranged pressure, utility, or plain panic buttons. This guide covers how the system works, every sidearm's location in progression order, and what Balance Patch 1 changed about the two most build-relevant picks.",
+      "Fact-checked on August 28, 2026 against PowerPyx's sidearm locations guide, mortalshelldb's game-data bundle (re-parsed this session), and Playstack's official Balance Patch 1 announcement.",
+    ],
+    blocks: [
+      {
+        anchor: "how-sidearms-work",
+        heading: "How sidearms work",
+        paragraphs: [
+          "Every sidearm discharge costs **resolve** — the same resource your parries and shell abilities run on — and ranged hits do not refill it the way melee aggression does. That makes the sidearm a budgeted tool rather than a second magazine: fire it when the spend buys something (a posture chunk, a distance-closer, a clutch heal-window), and let melee refill the tank. The resolve economy is explained step by step in our [weapons guide](/weapons/).",
+          "Sidearms swap for free at any Beacon, so the offhand slot is loadout-flexible in a way melee weapons are not — melee swaps require a Tarforge smelt. Tarstones modify sidearm behavior the same as melee, and collecting all eight unlocks the Guns. Lots of Guns trophy discussed below.",
+        ],
+      },
+      {
+        anchor: "all-eight-sidearms",
+        heading: "All 8 sidearms",
+        paragraphs: [
+          "The launch build's eight sidearms, with identities straight from the game's own item data (mortalshelldb's bundle, re-parsed this session):",
+        ],
+        bullets: [
+          "**Naylshotte** — your prologue starter; the game's internal ID (ID_Sidearm_NailShotgun) marks it as a nail shotgun (some guides spell it Naylesshotte)",
+          "**Forgotten Crossbow** — \"a surprisingly well-calibrated\" crossbow traded away by a desperate addict",
+          "**Salvaged Trebuchaxe** — a siege arm that throws axes as projectiles",
+          "**Troubadour's Lute** — the support pick: its in-game effect line reads *inflicts Confusion when used in combat*, and its flavor notes it \"soothes man and beast alike\"",
+          "**Triarch Repeater** — otherworldly carved-bone repeater, the sustained-fire option",
+          "**Ballistazooka** — heavy and unwieldy; \"scholars argue if the weapon was ever used in battle or just executions\"",
+          "**Cursed Child** — a protective relic whose caretaker it desperately guards",
+          "**Caged Hystrix** — a contraption that pierces the creature trapped inside, \"prompting a violent and often useful reaction\"",
+        ],
+      },
+      {
+        anchor: "locations",
+        heading: "Where to find every sidearm",
+        paragraphs: [
+          "Locations below follow PowerPyx's progression order — roughly the sequence a normal playthrough surfaces them. None are missable: the whole roster stays collectible in free-roam after the final boss, before you enter New Game+.",
+        ],
+        bullets: [
+          "**Naylshotte** — handed to you at the start of the prologue",
+          "**Forgotten Crossbow** — Flooded Village dungeon, northwest of Blackridge Pass Beacon: use the arc mechanism to open the doorway, grab the Damp Key from a box in the underground village, and unlock the central building",
+          "**Salvaged Trebuchaxe** — Ravaged Hideout dungeon, south of Gloomshade Grove Beacon (opens after the nearby Bloodcursed Lithopod); on a body in the final room",
+          "**Troubadour's Lute** — on the stage inside the One Legged Wolf Tavern, southeast of the One Legged Wolf Beacon, left of the lute-playing man",
+          "**Triarch Repeater** — Blackwell Cavern dungeon, north of Castigator's Keep Beacon's lower level; on the ground in the first lit area",
+          "**Ballistazooka** — Sentry's Grave dungeon off Gate of Mammon Beacon (northwest stairs, indoor clockwise loop); drops from the Subjugated Guardian miniboss",
+          "**Cursed Child** — Revered Beacon dungeon, from Sester's Gate Beacon: circle counterclockwise past the golden-light tower, strike the central pillar to stop the light, then claim it",
+          "**Caged Hystrix** — Chamber of Becoming: after breaking all four of Sariel's reviving tombstones, the sidearm waits near the dungeon exit stairs",
+        ],
+      },
+      {
+        anchor: "patch-changes",
+        heading: "Balance Patch 1: resolve floors removed, Lute doubled",
+        paragraphs: [
+          "The patch (August 25, 2026) made two sidearm lines materially better. The **Caged Hystrix and Triarch Repeater no longer have minimum resolve requirements to fire** — before the patch they held fire below a resolve threshold, which forced you to starve defense to shoot; now they fire at any resolve level, which changes long boss-fight budgeting entirely. And the **Troubadour's Lute gained +100% attack damage**, doubling its output — re-check it before dismissing it as a meme pick, because Confusion utility plus doubled damage is a real package. Full patch math lives in our [weapons guide](/weapons/).",
+        ],
+      },
+      {
+        anchor: "eel-hitbox-bug",
+        heading: "The eel-hitbox bug, briefly",
+        paragraphs: [
+          "One known frustration: Steam threads and launch-window reviews report Repeater shots phasing through the heads of eel-type enemies — the projectile visibly connects but deals no damage. Until a patch note says otherwise, treat ranged hits on serpentine models as unreliable and switch to melee. The FAQ entry with sources lives in the [weapons guide](/weapons/).",
+        ],
+      },
+      {
+        anchor: "guns-lots-of-guns",
+        heading: "Guns. Lots of Guns: the collection trophy",
+        paragraphs: [
+          "Collecting all eight sidearms unlocks **Guns. Lots of Guns** (each sidearm also has its own small trophy). Nothing expires and nothing is missable — you can finish the set in the post-final-boss free-roam window. Merrick in Marrow Keep sells map markers that reveal each hidden sidearm's approximate location, but per PowerPyx the maps are optional: if you would rather keep the Coin for Tarstones or the [night merchant's Glimpses](/night-mode/), every location above is findable unaided. The full trophy path is laid out in the [achievements guide](/achievements-guide/).",
+        ],
+      },
+    ],
+    pending: {
+      heading: "Still being verified",
+      intro: "Open questions on sidearms as of the launch window:",
+      items: [
+        "Numeric damage, ammo, and resolve costs — no source publishes them",
+        "Full Tarstone-fit matrix per sidearm",
+        "Whether the eel-hitbox behavior has been fixed in any hotfix",
+      ],
+    },
+    related: [
+      { label: "Weapons Guide", href: "/weapons/" },
+      { label: "Best Build", href: "/best-build/" },
+      { label: "Achievements Guide", href: "/achievements-guide/" },
+      { label: "Night Mode", href: "/night-mode/" },
+    ],
+    sources: [
+      {
+        name: "PowerPyx — Mortal Shell 2 All Sidearm Locations",
+        url: "https://www.powerpyx.com/mortal-shell-2-all-sidearm-locations/",
+      },
+      {
+        name: "mortalshelldb — game data bundle (sidearm objects)",
+        url: "https://mortalshelldb.com/assets/index-q1tdAEgn.js",
+      },
+      {
+        name: "Balance Patch 1 — Mortal Shell II Steam announcement",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
+      },
+    ],
+    reviewedOn: "August 28, 2026",
+    datePublished: "2026-08-28",
+  },
+  {
     slug: "night-mode",
     metaTitle: "Mortal Shell 2 Night Mode Guide: Bonus, Unlock & Rewards",
     metaDescription:
