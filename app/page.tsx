@@ -118,6 +118,7 @@ const GUIDE_TAGS: Record<string, string> = {
   "night-mode": "Endgame",
   "sidearms": "Arsenal",
   "patch-notes": "Updates",
+  "achievements": "Completion",
 };
 
 /* Per-card CTA anchors: varied, descriptive of the target page. */
@@ -142,6 +143,7 @@ const GUIDE_CTA: Record<string, string> = {
   "night-mode": "Turn on the night →",
   "sidearms": "Collect all 8 sidearms →",
   "patch-notes": "Track every patch →",
+  "achievements": "Scan every trophy →",
 };
 
 const PILLARS = [

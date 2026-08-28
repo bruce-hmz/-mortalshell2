@@ -57,6 +57,171 @@ export const RELEASE_DATE = "August 20, 2026";
 
 export const guidePages: GuidePage[] = [
   {
+    slug: "achievements",
+    metaTitle: "Mortal Shell 2 Achievements List: All 53 Trophies (Bronze/Silver/Gold/Platinum)",
+    metaDescription:
+      "The complete Mortal Shell 2 achievement list: all 53 trophies with official descriptions, rarity tiers, and missable/glitched flags — story, bosses, shells, weapons, collectibles, and secrets.",
+    cardBlurb:
+      "Every trophy in one place: official descriptions, rarity tiers, and the three you can lock yourself out of.",
+    heroImage: {
+      src: "/img/site-4.jpg",
+      alt: "Mortal Shell II key art with a fallen knight before a monumental door",
+      caption: "Official key art — Cold Symmetry / Playstack",
+    },
+    h1: "Mortal Shell 2 Achievements — The Full List of 53",
+    eyebrow: "Achievements",
+    intro: [
+      "Every Mortal Shell II achievement in one list: the official name and unlock condition for all **53 trophies** — 41 Bronze, 10 Silver, 1 Gold, and 1 Platinum — transcribed from PowerPyx's full trophy guide (August 2026) and grouped by what they ask of you. Three are missable, one is glitched as of Balance Patch 1, and one demands New Game++; each carries its flag inline so you can scan the list before it costs you.",
+      "This page is the reference list. For the order to earn them in — the rare-first route, the Glimpse math behind Seeking the Past, and the efficient three-playthrough plan — use the [achievement strategy guide](/achievements-guide/) alongside it. Rarity percentages cited there were checked against Steam's official global stats on August 27, 2026; the descriptions here follow the official unlock wording.",
+    ],
+    blocks: [
+      {
+        anchor: "story",
+        heading: "Story and tutorial (5 achievements)",
+        paragraphs: [
+          "Unmissable except where flagged — the first hour of the game carries two of the three missables in the entire list."
+        ],
+        bullets: [
+          "**1. Mid Summer?** (Bronze — *MISSABLE*) — Enter the Festival. Accept Marigold's flower crown during the walk to your first Shell; refusing or skipping it ends the chance for that playthrough.",
+          "**2. Home at Last** (Bronze) — Reach Marrowkeep. Story-related; awarded after the tutorial.",
+          "**3. Haunting Times** (Bronze) — Watch your first Shell Memory. Awarded the first time you view one from the Shellkeeper bond menu.",
+          "**43. No, You Still Can't Win** (Bronze — *MISSABLE*) — Take the Tar Golem to his minimum health in the tutorial fight instead of losing on script. He never reappears in NG+ or later runs.",
+          "**37. Peter's Perfect Parry** (Bronze — *MISSABLE*) — Perfect Guard each one of The Nameless Captive's headspins using the Untarnished Seal. Setup before the fight; he spawns once per run."
+        ],
+      },
+      {
+        anchor: "bosses",
+        heading: "Boss defeat trophies (10 achievements)",
+        paragraphs: [
+          "One Bronze per major boss, all story-gated and unmissable. Strategy for each fight lives in the [bosses guide](/bosses/)."
+        ],
+        bullets: [
+          "**19. Ultimate Karen** — Defeat Magdalena, the Lady of the Woods.",
+          "**20. Meat's Back on the Menu, Boys!** — Defeat The Lost Child.",
+          "**21. Headcase** — Defeat The Nameless Captive.",
+          "**22. Nightmare Fuel** — Defeat Sir Isaac, the Scholar-Prince.",
+          "**23. Something in the deep…** — Defeat Hexapod.",
+          "**24. Praise him!** — Defeat The Monolith.",
+          "**25. It burnssssssssss** — Defeat Droeg, the Conquerer.",
+          "**26. Giga Chad** — Defeat Malborn Offspring.",
+          "**27. Lost Your Head** — Defeat Orrem, the Reclaimed.",
+          "**28. It's over now?** — Defeat Zmey, the Unbidden."
+        ],
+      },
+      {
+        anchor: "shells",
+        heading: "Shell unlock trophies (8 achievements)",
+        paragraphs: [
+          "Each Bronze pops the moment you claim that shell's body. Where all eight wait is mapped in the [shells guide](/shells/)."
+        ],
+        bullets: [
+          "**29. Sester** — Unlock Sester Genessa.",
+          "**30. Forever Alone?** — Unlock Tiel.",
+          "**31. Down with the Thickness** — Unlock Lazlo.",
+          "**32. Vengeance is Mine** — Unlock Eredrim.",
+          "**33. The Alchemist** — Unlock Sariel.",
+          "**34. Arrival** — Unlock Proxima.",
+          "**35. My Brether** — Unlock Smert.",
+          "**36. Heartless** — Unlock Gragu."
+        ],
+      },
+      {
+        anchor: "weapons",
+        heading: "Weapon unlock trophies (14 achievements)",
+        paragraphs: [
+          "Six Bronze cover the melee roster, six cover named sidearms, and one Silver sits on top of the full set. Location tables for every weapon and sidearm are in the [weapons guide](/weapons/) and the [sidearms guide](/sidearms/)."
+        ],
+        bullets: [
+          "**4. Deep Cuts** (Bronze) — Unlock Axe and Dagger.",
+          "**5. Big Boi** (Bronze) — Unlock Great Martyr's Blade.",
+          "**6. Just the Tip** (Bronze) — Unlock Black Needle.",
+          "**7. Like Clockwork** (Bronze) — Unlock the Clockwork Scythe.",
+          "**8. Stop – Hammer Time** (Bronze) — Unlock the Obsidian Hammer.",
+          "**9. Dual Wielding** (Bronze) — Unlock the Axatana.",
+          "**10. Cut You Down to Size** (Bronze) — Unlock the Veteran's Battle Axe.",
+          "**11. Spiked** (Bronze) — Unlock the Caged Hystrix.",
+          "**12. Old Painless** (Bronze) — Unlock the Triarch Repeater.",
+          "**13. Beautiful Baby** (Bronze) — Unlock the Cursed Child.",
+          "**14. Speared** (Bronze) — Unlock the Ballistazooka.",
+          "**15. Chop Chop** (Bronze) — Unlock the Salvaged Trebuchaxe.",
+          "**16. Old School** (Bronze) — Unlock the Forgotten Crossbow.",
+          "**48. Lord of War** (Silver) — Unlock all Weapons. The count follows the collectible roster — eight melee and eight sidearms — excluding the Iconoclast starter and the prologue's Hallowed Sword."
+        ],
+      },
+      {
+        anchor: "collectibles",
+        heading: "Collectibles and completion (11 achievements)",
+        paragraphs: [
+          "The heavy Silver tier. Everything here survives past the credits thanks to post-game free roam — except the glitched one, which must be finished in your first playthrough until a patch lifts the restriction."
+        ],
+        bullets: [
+          "**17. Bring My Ova Back to Me** (Silver — *GLITCHED*) — Collect all of the Ova. PowerPyx reports it currently pops only in a first playthrough; the route and bug status are tracked on the [Ova locations page](/ova-locations/).",
+          "**38. Stoned** (Silver) — Find all Tarstones.",
+          "**39. Decked Out** (Silver) — Reach the maximum bonding tier for a Shell at the Shellkeeper (27 Glimpse for one shell).",
+          "**40. Over 9000** (Silver) — Max out a Weapon at the Tarforge (+16; the upgrade math is in the [weapons guide](/weapons/)).",
+          "**42. So Fresh, So Clean** (Bronze) — Cleanse All Beacons. Beacon mechanics and routing are covered in the [fast travel guide](/fast-travel/).",
+          "**44. Sat Nav** (Silver) — Find all Map Fragments.",
+          "**45. Seeking the Past** (Silver — *NEEDS NG++*) — Watch all Shell Memories. All 40 across eight shells; the Glimpse economy makes this the rarest trophy in the game.",
+          "**46. Shell Seeker** (Silver) — Unlock all Shells.",
+          "**47. Guns. Lots of Guns** (Silver) — Unlock all Sidearms.",
+          "**49. Ascension** (Bronze) — Discover the secret of the Mango. A hidden quest chain — the [side quests guide](/side-quests/) walks the NPC chains it ties into.",
+          "**50. This is Not an Achievement** (Gold) — Complete Mortal Shell II. Awarded for finishing the game's ending."
+        ],
+      },
+      {
+        anchor: "secrets",
+        heading: "Quests and secrets (3 achievements)",
+        paragraphs: [
+          "The oddballs that don't fit anywhere else — none are missable, but all are easy to never encounter."
+        ],
+        bullets: [
+          "**18. Heavy Metal** (Silver) — Play all Lute Tracks in the Game. The Troubadour's Lute and its tracks are covered in the [sidearms guide](/sidearms/) — post-patch, its doubled damage makes this grind build-relevant too.",
+          "**41. Feed Me** (Bronze) — Cause Egon to pass away. Part of the frog-feeding chain in the [side quests guide](/side-quests/).",
+          "**51. Bag Holder** (Bronze) — 'You've mastered nothing and this is your reward. Pretty pointless, eh?' Complete the Baghead interaction chain southwest of Gloomshade Grove Beacon (through the Bone Gates to Desolate Peak): sit with him, keep answering Yes, refuse to give him items, and sit once more to trigger the joke ending. Reload after the credits — you respawn at the nearby Beacon."
+        ],
+      },
+      {
+        anchor: "platinum",
+        heading: "Platinum (1 achievement)",
+        paragraphs: ["One trophy above it all:"],
+        bullets: [
+          "**52. No Lifer** (Platinum) — Unlock All Trophies for Mortal Shell II. No DLC required."
+        ],
+      },
+      {
+        anchor: "flags",
+        heading: "Reading the flags — what actually bites",
+        paragraphs: [
+          "The list above is deliberately calm: 49 of 53 trophies are simply earned by playing thoroughly, and the endgame free-roam window rescues almost every collectible. Only four entries need forward planning, and each links to a page that plans it for you: the three missables are prologue-and-first-boss work ([missable content checklist](/missable-content/)), the glitched Ova trophy is a first-playthrough-only commitment until patched ([Ova locations](/ova-locations/)), and Seeking the Past is a two-and-a-bit playthrough Glimpse budget ([strategy guide](/achievements-guide/))."
+        ],
+      },
+    ],
+    pending: {
+      heading: "List maintenance notes",
+      intro: "Kept honest about what this page can and cannot claim:",
+      items: [
+        "Descriptions are the official unlock wording as transcribed by PowerPyx (August 2026); Steam's own achievements page was unreachable at last review, so global rarity percentages are cited on the strategy guide from its August 27 verification instead",
+        "Whether Balance Patch 1 or later hotfixes lifted the Bring My Ova Back to Me first-playthrough restriction — tracked on the patch notes page",
+        "The numbered order above follows PowerPyx's table; Steam's list order may differ cosmetically but the set of 53 is confirmed"
+      ],
+    },
+    related: [
+      { label: "Achievement Strategy Guide", href: "/achievements-guide/" },
+      { label: "Missable Content", href: "/missable-content/" },
+      { label: "Ova Locations", href: "/ova-locations/" },
+      { label: "Patch Notes", href: "/patch-notes/" }
+    ],
+    sources: [
+      {
+        name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
+        url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/"
+      }
+    ],
+    reviewedOn: "August 28, 2026",
+    datePublished: "2026-08-28",
+  },
+
+  {
     slug: "patch-notes",
     metaTitle: "Mortal Shell 2 Patch Notes: Balance Patch 1 & Update History",
     metaDescription:
