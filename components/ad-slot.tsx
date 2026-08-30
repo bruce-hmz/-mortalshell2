@@ -48,48 +48,62 @@ const AD_SCRIPT = `(function () {
   }
   var eu = isEuVisitor();
 
-  var mounted = false;
+  var bannerMounted = false;
+  var nativeMounted = false;
   function mount() {
-    if (mounted) return;
-    mounted = true;
-    var slot = document.getElementById('ad-slot');
-    if (!slot) return;
-    // Reserve the banner's space in the same layout pass to avoid post-consent CLS.
-    slot.classList.add('is-reserved');
+    if (!bannerMounted) {
+      var bannerSlot = document.getElementById('ad-slot-banner');
+      if (bannerSlot) {
+        bannerMounted = true;
+        // Reserve the banner's space in the same layout pass to avoid post-consent CLS.
+        bannerSlot.classList.add('is-reserved');
 
-    // 300x250 banner — isolated iframe because its invoke.js uses document.write
-    var f = document.createElement('iframe');
-    f.width = 300;
-    f.height = 250;
-    f.title = 'advertisement';
-    f.setAttribute('scrolling', 'no');
-    f.setAttribute('frameborder', '0');
-    f.srcdoc =
-      '<scr' + 'ipt>atOptions={"key":"e3bbb1d69d507e22005e57f8026990a6","format":"iframe","height":250,"width":300,"params":{}};</scr' +
-      'ipt><scr' +
-      'ipt src="https://www.highrevenueformat.com/e3bbb1d69d507e22005e57f8026990a6/invoke.js"></scr' +
-      'ipt>';
-    slot.appendChild(f);
+        // 300x250 banner - isolated iframe because its invoke.js uses document.write
+        var f = document.createElement('iframe');
+        f.width = 300;
+        f.height = 250;
+        f.title = 'advertisement';
+        f.setAttribute('scrolling', 'no');
+        f.setAttribute('frameborder', '0');
+        f.srcdoc =
+          '<scr' + 'ipt>atOptions={"key":"e3bbb1d69d507e22005e57f8026990a6","format":"iframe","height":250,"width":300,"params":{}};</scr' +
+          'ipt><scr' +
+          'ipt src="https://www.highrevenueformat.com/e3bbb1d69d507e22005e57f8026990a6/invoke.js"></scr' +
+          'ipt>';
+        bannerSlot.appendChild(f);
+      }
+    }
 
-    // native banner — fills its container div via DOM, safe to inject directly
-    var nContainer = document.createElement('div');
-    nContainer.id = 'container-8d1131d675af043db70e754330030179';
-    slot.appendChild(nContainer);
-    var s = document.createElement('script');
-    s.async = true;
-    s.setAttribute('data-cfasync', 'false');
-    s.src = 'https://pl30903113.profitableratecpmnetwork.com/8d1131d675af043db70e754330030179/invoke.js';
-    slot.appendChild(s);
+    if (!nativeMounted) {
+      var nativeSlot = document.getElementById('ad-slot-native');
+      if (nativeSlot) {
+        nativeMounted = true;
+        // native banner - fills its container div via DOM, safe to inject directly
+        var nContainer = document.createElement('div');
+        nContainer.id = 'container-8d1131d675af043db70e754330030179';
+        nativeSlot.appendChild(nContainer);
+        var s = document.createElement('script');
+        s.async = true;
+        s.setAttribute('data-cfasync', 'false');
+        s.src = 'https://pl30903113.profitableratecpmnetwork.com/8d1131d675af043db70e754330030179/invoke.js';
+        nativeSlot.appendChild(s);
+      }
+    }
   }
   function unmount() {
-    if (!mounted) return;
-    mounted = false;
+    if (!bannerMounted && !nativeMounted) return;
+    bannerMounted = false;
+    nativeMounted = false;
     // Already-loaded ad scripts cannot be fully unloaded, but removing their
     // DOM stops any further impressions and collapses the reserved space.
-    var slot = document.getElementById('ad-slot');
-    if (slot) {
-      slot.classList.remove('is-reserved');
-      while (slot.lastChild) slot.removeChild(slot.lastChild);
+    var bannerSlot = document.getElementById('ad-slot-banner');
+    if (bannerSlot) {
+      bannerSlot.classList.remove('is-reserved');
+      while (bannerSlot.lastChild) bannerSlot.removeChild(bannerSlot.lastChild);
+    }
+    var nativeSlot = document.getElementById('ad-slot-native');
+    if (nativeSlot) {
+      while (nativeSlot.lastChild) nativeSlot.removeChild(nativeSlot.lastChild);
     }
   }
 
@@ -97,7 +111,7 @@ const AD_SCRIPT = `(function () {
   try {
     choice = localStorage.getItem('mortalshell2-consent-v1');
   } catch (e) {
-    // storage unavailable — fall back to the region default below
+    // storage unavailable - fall back to the region default below
   }
   // In opt-in regions 'essential' always wins and EU/EEA-style visitors must
   // have explicitly chosen 'all'. Everyone else gets ads on by default and
@@ -111,11 +125,27 @@ const AD_SCRIPT = `(function () {
   });
 })();`;
 
-export function AdSlot() {
+function AdScript() {
+  return <script dangerouslySetInnerHTML={{ __html: AD_SCRIPT }} />;
+}
+
+export function AdBanner({ className }: { className?: string }) {
   return (
-    <div className="ad-slot" id="ad-slot">
+    <div
+      className={className ? "ad-slot " + className : "ad-slot"}
+      id="ad-slot-banner"
+    >
       <span className="ad-slot__label">Advertisement</span>
-      <script dangerouslySetInnerHTML={{ __html: AD_SCRIPT }} />
+      <AdScript />
+    </div>
+  );
+}
+
+export function AdNative() {
+  return (
+    <div className="ad-slot ad-slot--native" id="ad-slot-native">
+      <span className="ad-slot__label">Advertisement</span>
+      <AdScript />
     </div>
   );
 }

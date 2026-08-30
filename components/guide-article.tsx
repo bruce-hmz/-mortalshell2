@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import type { GuidePage } from "@/content/pages";
+import { AdNative } from "@/components/ad-slot";
 import { LAST_REVIEWED, RELEASE_DATE } from "@/content/pages";
 import { SITE_URL } from "@/lib/site";
 import { VideoFacade } from "./video-facade";
@@ -182,6 +183,8 @@ export function GuideArticle({ page }: { page: GuidePage }) {
                 {renderInline(paragraph)}
               </p>
             ))}
+
+            <AdNative />
 
             {page.blocks.map((block) => (
               <section

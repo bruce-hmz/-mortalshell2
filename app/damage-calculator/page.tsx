@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DamageCalculator } from "@/components/damage-calculator";
+import { AdNative } from "@/components/ad-slot";
 import {
   POISE_ENTRIES,
   TARFORGE_LADDER,
@@ -165,6 +166,8 @@ export default function DamageCalculatorPage() {
               all eight, and the <Link href="/best-build/">best build guide</Link>{" "}
               pairs them with shells and sidearms.
             </p>
+
+            <AdNative />
 
             <DamageCalculator />
 

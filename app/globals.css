@@ -1224,6 +1224,35 @@ a:hover {
   min-height: 300px;
 }
 
+/* Above-the-fold slot under the sticky header: tight spacing so the
+   300x250 creative starts within the first viewport on desktop. */
+.ad-slot--top {
+  max-width: 720px;
+  margin: 16px auto 0;
+}
+
+.ad-slot--top.is-reserved {
+  min-height: 280px;
+}
+
+/* Footer slot keeps the original relaxed spacing. */
+.ad-slot--footer {
+  margin: 48px auto 40px;
+}
+
+/* In-article native slot: no fixed min-height, the creative fills itself. */
+.ad-slot--native.is-reserved,
+.ad-slot--native {
+  min-height: 0;
+}
+
+.ad-slot--native.is-reserved {
+  display: block;
+  margin: 32px 0;
+  padding: 0;
+  text-align: left;
+}
+
 .ad-slot__label {
   display: block;
   font-family: var(--font-mono);
