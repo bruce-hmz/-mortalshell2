@@ -6,3 +6,7 @@ next-env.d.ts
 .DS_Store
 .omx/
 .vercel
+
+# local research state (do not commit)
+.research/
+automation/
