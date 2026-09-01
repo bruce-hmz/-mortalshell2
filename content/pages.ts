@@ -60,21 +60,21 @@ export const guidePages: GuidePage[] = [
     slug: "achievements/seeking-the-past",
     metaTitle: "Mortal Shell 2 Seeking the Past Trophy: All 40 Shell Memories (1.9% Rarity)",
     metaDescription:
-      "How to earn Mortal Shell 2's rarest trophy: the 40 Shell Memories explained — the must-watch rule, the 216-Glimpse budget across three playthroughs, and the known 38/40 counter stall.",
+      "How to earn Mortal Shell 2's rarest trophy: the 40 Shell Memories explained — the must-watch rule, the post-Week-1 Glimpse economy that rewrote the budget, and the known 38/40 counter stall.",
     cardBlurb:
-      "The rarest trophy's verification chain: must-watch memories, the three-run Glimpse budget, and the 38/40 stall workaround.",
+      "The rarest trophy's verification chain: must-watch memories, the post-patch Glimpse budget, and the 38/40 stall workaround.",
     h1: "Mortal Shell 2 Seeking the Past — Every Shell Memory, Watched Properly",
     eyebrow: "Achievements",
     intro: [
-      "Seeking the Past is Mortal Shell II's rarest achievement — **1.9%** of Steam players hold it, against a 1.3% rate for the platinum itself. Its official condition is just 'Watch all Shell Memories': **40 memories, five per shell, across all eight shells**. What makes it rare is not difficulty but logistics — unlocking every memory requires raising all eight shells to maximum Bond Tier 4, which costs **27 Glimpse per shell and 216 Glimpse in total**, more than two full playthroughs reliably fund. PowerPyx's roadmap puts the real price at two complete runs plus at least a partial third (NG++).",
-      "This page is the verification chain: how the gating works, why watching counts but unlocking alone does not, how to budget Glimpse per run, and what to do when the tracker stalls — a failure mode PowerPyx commenters were still reporting fresh this week. For where this sits in the full 53-trophy plan, see the [achievement strategy guide](/achievements-guide/) and the [full achievements list](/achievements/).",
+      "Seeking the Past is Mortal Shell II's rarest achievement — **1.9%** of Steam players hold it, against a 1.3% rate for the platinum itself. Its official condition is just 'Watch all Shell Memories': **40 memories, five per shell, across all eight shells**. What makes it rare is not difficulty but logistics — unlocking every memory requires raising all eight shells to maximum Bond Tier 4, which costs **27 Glimpse per shell and 216 Glimpse in total** — launch-era math that priced the trophy at two complete runs plus a partial third (NG++, per PowerPyx's roadmap). The Week 1 Update (August 29, 2026) removed that ceiling: **Glimpses are no longer finite**, so a single thorough playthrough can now fund all eight bond trees.",
+      "This page is the verification chain: how the gating works, why watching counts but unlocking alone does not, how the Glimpse budget reads after the economy change, and what to do when the tracker stalls — a failure mode PowerPyx commenters were still reporting fresh this week. For where this sits in the full 53-trophy plan, see the [achievement strategy guide](/achievements-guide/) and the [full achievements list](/achievements/).",
     ],
     blocks: [
       {
         anchor: "gating",
         heading: "How the 40 memories are gated",
         paragraphs: [
-          "Memories are bought, not found. Each shell's bond tree tops out at Tier 4, and all five of that shell's memories become available there. The Shellkeeper (Sester Genessa's bond menu) is where Glimpse converts into bond levels — and where each memory is then viewed. PowerPyx's trophy entry prices it exactly: 27 Glimpse raises one shell to the maximum, so the full eight-shell sweep costs 216. A single playthrough funds roughly three shells to max, which is why the trophy structurally cannot be done in one run.",
+          "Memories are bought, not found. Each shell's bond tree tops out at Tier 4, and all five of that shell's memories become available there. The Shellkeeper (Sester Genessa's bond menu) is where Glimpse converts into bond levels — and where each memory is then viewed. PowerPyx's trophy entry prices it exactly: 27 Glimpse raises one shell to the maximum, so the full eight-shell sweep costs 216. A single playthrough used to fund roughly three shells to max — which is why every launch-era guide priced this trophy across multiple runs; since the Week 1 Update removed the Glimpse cap, the full sweep is fundable in one.",
         ],
       },
       {
@@ -87,15 +87,16 @@ export const guidePages: GuidePage[] = [
       },
       {
         anchor: "budget",
-        heading: "The Glimpse budget, run by run",
+        heading: "The Glimpse budget after the economy change",
         paragraphs: [
-          "PowerPyx's roadmap names three income lines per playthrough, and all three recur in NG+ cycles:",
+          "PowerPyx's roadmap names three income lines per playthrough, and all three still work — they just matter less now that the ceiling is gone:",
         ],
         bullets: [
           "**Cleanse every Beacon again** — Glimpse rewards repeat each cycle, which makes the Beacon network your primary income in runs two and three (the cleansing habit doubles as the So Fresh, So Clean trophy; routing lives in the [fast travel guide](/fast-travel/)).",
           "**Grab the loose Glimpse caches near Beacons** — a handful sits within a short walk of the network; easy to miss in run one when inventory pressure feels low.",
           "**Visit every original shell location at night** — worth an extra **8 Glimpse per shell location per playthrough** when the time-of-day is shifted; with eight locations that is a meaningful flat bonus each cycle, and the [night mode guide](/night-mode/) covers how the toggle works.",
-          "With one playthrough reliably funding about three maxed shells (81 of the 216 total), the official expectation is two full runs plus a partial third — you finish the last shells' trees and views early in run three and are done before the credits.",
+          "**Use the Week 1 income lines** — the update added sources launch players never had: **Glimpse Stones** that wear down as you defeat enemies and break into Glimpses, additional Glimpse rewards in the gloom siphon, and Merrick's expanded stock.",
+          "The old budget — one run funding about three maxed shells (81 of the 216 total), two full runs plus a partial third to finish — described the pre-patch economy. With Glimpses no longer finite, all eight bond trees fit inside a single thorough playthrough; the multi-run structure is now the fallback for a save that is already deep in NG+, not the plan.",
         ],
       },
       {
@@ -103,19 +104,19 @@ export const guidePages: GuidePage[] = [
         heading: "The 38/40 stall — a known, still-open bug",
         paragraphs: [
           "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs.",
-          "Status against the current patch: Playstack's official Balance Patch 1 notes (August 20) contain no memory, bond, or trophy fixes — their only Glimpse line is a refund of map costs into the Shell Keeper's alcove in Blackmarrow. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
+          "Status against the current patches: neither Playstack's Balance Patch 1 notes (August 20) nor the Week 1 Update notes (August 29) contain a memory, bond, or trophy fix — the Week 1 changelog's only Glimpse lines are the economy un-cap and the new respec item. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
         ],
       },
       {
         anchor: "checklist",
-        heading: "The three-run checklist",
+        heading: "The checklist, post-cap",
         paragraphs: [
-          "The whole trophy collapses into one discipline per run:",
+          "With the Glimpse ceiling gone, the whole trophy collapses into one disciplined run — or one disciplined continuation of the run you're already in:",
         ],
         bullets: [
-          "**Run 1 (story focus):** max the three shells your build touches anyway; watch all five memories of each the moment it hits Tier 4. Bank the night-pickup habit early — shell locations at night, 8 Glimpse each.",
-          "**Run 2 (NG+, Glimpse focus):** re-cleanse all Beacons first, sweep the loose caches, re-run the night pickups, and max the next three shells with their full memory views.",
-          "**Run 3 (NG++, cleanup):** the partial run — fund and finish the last two shells, watch their ten memories, and the trophy pops before you are anywhere near the ending. If the counter stalls, reboot and re-watch before anything drastic.",
+          "**Fresh run:** max each shell's bond tree as your build touches it — the un-capped economy funds all eight; watch all five memories of each the moment it hits Tier 4. Bank the night-pickup habit early — shell locations at night, 8 Glimpse each.",
+          "**Already mid-save (pre-patch economy):** nothing is lost. Cleanse Beacons again, sweep the caches, and lean on the new income — Glimpse Stones, gloom-siphon rewards, Merrick's stock — to finish the remaining trees in this run instead of waiting for NG+.",
+          "**If the counter stalls:** reboot and re-watch before anything drastic — see the bug section above.",
         ],
       },
       {
@@ -123,9 +124,10 @@ export const guidePages: GuidePage[] = [
         heading: "FAQ",
         paragraphs: [],
         bullets: [
-          "**Why can't this be done in one playthrough?** The math: 216 Glimpse needed, roughly 81 fundable per run even with perfect routing. Two full runs get you most of the way; the remainder spills into a third.",
-          "**Is the trophy still bugged?** The stall reports are recent (August 23 and 27) and no patch has addressed them. Relaunch-and-rewatch is the only community-verified stopgap.",
-          "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — which is exactly why the per-run checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
+          "**Does this still take multiple playthroughs?** Not by economy. The Week 1 Update (August 29) made Glimpses non-finite, so all eight shells can be maxed in a single save; PowerPyx's two-runs-plus-NG++ roadmap describes the pre-patch economy. The must-watch discipline is unchanged.",
+          "**Is the trophy still bugged?** The stall reports are recent (August 23 and 27) and no patch has addressed them — the Week 1 Update notes contain no memory or trophy fix either. Relaunch-and-rewatch is the only community-verified stopgap.",
+          "**Does using Mether's Severance (the new respec) affect memory tracking?** Unverified. The Week 1 notes describe the Glimpse refund but say nothing about whether a shell's watched memories stay counted after its bond is severed. Until that is confirmed, watch a shell's five memories before severing its bond rather than after.",
+          "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — which is exactly why the checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
           "**Does this trophy share a root cause with the Ova tracker bug?** Unknown. Both are count-to-complete trackers misbehaving (the Ova one currently locks its trophy out of NG+ entirely — see the [Ova locations page](/ova-locations/)), but no developer statement connects them.",
         ],
       },
@@ -134,10 +136,10 @@ export const guidePages: GuidePage[] = [
       heading: "Open verification items",
       intro: "What this page genuinely does not know yet:",
       items: [
-        "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement found in PowerPyx's roadmap, its comments, or Balance Patch 1's notes",
-        "Whether memory-view progress persists across NG+ cycles on the same save (the checklist assumes per-shell completion early precisely because this is unconfirmed)",
-        "Exact Glimpse payouts per Beacon cleanse per cycle — PowerPyx describes the income lines qualitatively; per-Beacon numbers have not been published",
-      ],
+      "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement in PowerPyx's roadmap or comments, and neither Balance Patch 1 nor the Week 1 Update notes address it",
+      "Whether a Shell's watched memories stay counted after its bond is severed with Mether's Severance — the Week 1 notes are silent; the FAQ advises watching before severing until confirmed",
+      "Exact Glimpse payouts per Beacon cleanse per cycle — PowerPyx describes the income lines qualitatively; per-Beacon numbers have not been published",
+    ],
     },
     related: [
       { label: "Achievements List", href: "/achievements/" },
@@ -152,11 +154,15 @@ export const guidePages: GuidePage[] = [
         url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
       },
       {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
+      {
         name: "Balance Patch 1 — Mortal Shell II Steam announcement (Playstack, August 20, 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/",
       },
     ],
-    reviewedOn: "August 28, 2026",
+    reviewedOn: "September 2, 2026",
     datePublished: "2026-08-28",
   },
 
@@ -175,7 +181,7 @@ export const guidePages: GuidePage[] = [
     h1: "Mortal Shell 2 Achievements — The Full List of 53",
     eyebrow: "Achievements",
     intro: [
-      "Every Mortal Shell II achievement in one list: the official name and unlock condition for all **53 trophies** — 41 Bronze, 10 Silver, 1 Gold, and 1 Platinum — transcribed from PowerPyx's full trophy guide (August 2026) and grouped by what they ask of you. Three are missable, one is glitched as of Balance Patch 1, and one demands New Game++; each carries its flag inline so you can scan the list before it costs you.",
+      "Every Mortal Shell II achievement in one list: the official name and unlock condition for all **53 trophies** — 41 Bronze, 10 Silver, 1 Gold, and 1 Platinum — transcribed from PowerPyx's full trophy guide (August 2026) and grouped by what they ask of you. Three are missable, one is glitched as of Balance Patch 1, and one used to demand New Game++ until the Week 1 Update un-capped the Glimpse economy; each carries its flag inline so you can scan the list before it costs you. One trap sits outside the numbered list: the **Slayer Seal disables Steam achievements** while equipped — see the flags section below.",
       "This page is the reference list. For the order to earn them in — the rare-first route, the Glimpse math behind Seeking the Past, and the efficient three-playthrough plan — use the [achievement strategy guide](/achievements-guide/) alongside it. Rarity percentages cited there were checked against Steam's official global stats on August 27, 2026; the descriptions here follow the official unlock wording.",
     ],
     blocks: [
@@ -265,7 +271,7 @@ export const guidePages: GuidePage[] = [
           "**40. Over 9000** (Silver) — Max out a Weapon at the Tarforge (+16; the upgrade math is in the [weapons guide](/weapons/)).",
           "**42. So Fresh, So Clean** (Bronze) — Cleanse All Beacons. Beacon mechanics and routing are covered in the [fast travel guide](/fast-travel/).",
           "**44. Sat Nav** (Silver) — Find all Map Fragments.",
-          "**45. Seeking the Past** (Silver — *NEEDS NG++*) — Watch all Shell Memories. All 40 across eight shells; the Glimpse economy makes this the rarest trophy in the game.",
+          "**45. Seeking the Past** (Silver) — Watch all Shell Memories. All 40 across eight shells; launch-era Glimpse scarcity made this the rarest trophy in the game, but the Week 1 Update un-capped the economy, so a single-run finish is now plausible.",
           "**46. Shell Seeker** (Silver) — Unlock all Shells.",
           "**47. Guns. Lots of Guns** (Silver) — Unlock all Sidearms.",
           "**49. Ascension** (Bronze) — Discover the secret of the Mango. A hidden quest chain — the [side quests guide](/side-quests/) walks the NPC chains it ties into.",
@@ -296,7 +302,8 @@ export const guidePages: GuidePage[] = [
         anchor: "flags",
         heading: "Reading the flags — what actually bites",
         paragraphs: [
-          "The list above is deliberately calm: 49 of 53 trophies are simply earned by playing thoroughly, and the endgame free-roam window rescues almost every collectible. Only four entries need forward planning, and each links to a page that plans it for you: the three missables are prologue-and-first-boss work ([missable content checklist](/missable-content/)), the glitched Ova trophy is a first-playthrough-only commitment until patched ([Ova locations](/ova-locations/)), and Seeking the Past is a two-and-a-bit playthrough Glimpse budget ([strategy guide](/achievements-guide/))."
+          "The list above is deliberately calm: 49 of 53 trophies are simply earned by playing thoroughly, and the endgame free-roam window rescues almost every collectible. Only four entries need forward planning, and each links to a page that plans it for you: the three missables are prologue-and-first-boss work ([missable content checklist](/missable-content/)), the glitched Ova trophy is a first-playthrough-only commitment until patched ([Ova locations](/ova-locations/)), and Seeking the Past is a Glimpse budget the Week 1 Update just made dramatically cheaper — a single-run finish is now plausible ([strategy guide](/achievements-guide/)).",
+          "One warning that isn't a trophy flag at all: **the Slayer Seal disables achievements**. The game's optional 'easy mode' seal locks Steam achievements for that save — developers confirmed the behavior and told Rock Paper Shotgun they 'didn't intend to lock everybody out', and nothing in the Week 1 Update notes (August 29) changes it. If the seal is on and you care about trophies, switch it off before investing hours.",
         ],
       },
     ],
@@ -305,7 +312,8 @@ export const guidePages: GuidePage[] = [
       intro: "Kept honest about what this page can and cannot claim:",
       items: [
         "Descriptions are the official unlock wording as transcribed by PowerPyx (August 2026); Steam's own achievements page was unreachable at last review, so global rarity percentages are cited on the strategy guide from its August 27 verification instead",
-        "Whether Balance Patch 1 or later hotfixes lifted the Bring My Ova Back to Me first-playthrough restriction — tracked on the patch notes page",
+        "Whether Balance Patch 1, the Week 1 Update, or later hotfixes lifted the Bring My Ova Back to Me first-playthrough restriction — neither patch's notes mention it; tracked on the patch notes page",
+        "Whether a future patch re-enables achievements on saves that used the Slayer Seal — dev comments say the lockout wasn't intended, but no reversal has shipped",
         "The numbered order above follows PowerPyx's table; Steam's list order may differ cosmetically but the set of 53 is confirmed"
       ],
     },
@@ -319,9 +327,17 @@ export const guidePages: GuidePage[] = [
       {
         name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
         url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/"
+      },
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 devs on the Slayer Seal achievement lockout (August 24, 2026)",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-slayer-seal-achievements"
+      },
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852"
       }
     ],
-    reviewedOn: "August 28, 2026",
+    reviewedOn: "September 2, 2026",
     datePublished: "2026-08-28",
   },
 
@@ -674,23 +690,39 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "farming-guide",
-    metaTitle: "Mortal Shell 2 Farming Guide: Gloom and Coin After Balance Patch 1",
+    metaTitle: "Mortal Shell 2 Farming Guide: Gloom, Coin & Glimpse After Week 1 Update",
     metaDescription:
-      "Where to farm Gloom and Coin in Mortal Shell 2 after Balance Patch 1: the Sunken Village sheep loop, Mushroom Village Gate's 2,000-Gloom elite, Mammon's doubled gold, and the Tarforge math that decides what you actually need.",
+      "Where to farm Gloom, Coin and Glimpse in Mortal Shell 2 after the Week 1 Update: the un-capped Glimpse/Tarcore economy, Glimpse Stones, the Sunken Village sheep loop, Mammon's doubled gold, and the Tarforge math that decides what you actually need.",
     cardBlurb:
-      "Three Beacon loops for Gloom, four methods for Coin, and the patch math that decides how much you really need before grinding.",
+      "Three Beacon loops for Gloom, four methods for Coin, and the Week 1 economy changes that decide how much you really need before grinding.",
     heroImage: {
       src: "/img/site-2.jpg",
       alt: "Mortal Shell II key art with a knight standing before a ruined bridge",
       caption: "Official key art — Cold Symmetry / Playstack",
     },
-    h1: "Mortal Shell 2 Farming Guide — Gloom and Coin After Balance Patch 1",
+    h1: "Mortal Shell 2 Farming Guide — Gloom, Coin & Glimpse After the Week 1 Update",
     eyebrow: "Economy",
     intro: [
-      "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. This page ranks the loops actually worth your time under the new numbers, plus what each currency buys so you know when to stop grinding.",
-      "Farm data and setting tips were verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with patch-economy figures quoted directly from Playstack's official Balance Patch 1 notes on Steam. Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+      "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. The Week 1 Update (August 29) went further and broke the economy's central constraint: **Glimpses and Tarcores are no longer finite**. This page ranks the loops actually worth your time under the current numbers, plus what each currency buys so you know when to stop grinding.",
+      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 2, 2026). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
     ],
     blocks: [
+      {
+        heading: "What the Week 1 Update changed about the economy",
+        anchor: "week-1-economy",
+        paragraphs: [
+          "The Week 1 Update dismantled the scarcity model every launch guide (including this one) was built on. Per Playstack's official notes:",
+        ],
+        bullets: [
+          "**Glimpses and Tarcores are no longer finite** — Playstack's own framing: this 'allow[s] all shells and Tarstones to be upgraded in a single playthrough.' Every 'save your Glimpse for the right shell' instinct is obsolete; spend freely.",
+          "**Glimpse Stone** — a new item that wears down as you defeat enemies, then breaks into Glimpses: passive Glimpse income that simply did not exist at launch.",
+          "**Fragile Tarstones** — the new breakable stone class yields a tarcore when it breaks, certain enemies now drop them, several dungeons reward them, and Merrick sells them. Tarstones in general now yield more tarcores when broken (saves that leveled Tarstones pre-patch found a compensatory cache in their inventory).",
+          "**Merrick's stock expanded** — Glimpse Stones, Egon's Stones, and Tarcores once you have gathered enough Ova; Tarstones and Mether's Severance (the respec item) also restock there as you progress. The Collector now carries Tarcores as well.",
+          "**Chests revised** — dungeon reward chests across the first two regions were revised, reward placement in Mammon updated, missing arena-dungeon rewards restored, and some world chests replaced with straightforward pickups.",
+          "**Gloom siphon pays Glimpse now** — additional rewards including Glimpses were added to the siphon. The flip side: **mini-Beacons no longer award a Glimpse**.",
+          "One exploit died with the patch: the Week 1 notes fixed 'an infinite Ossinite farm', so the top of the weapon-material ladder is back to honest farming.",
+        ],
+      },
       {
         heading: "What Balance Patch 1 changed about farming",
         paragraphs: [
@@ -730,30 +762,30 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Where the money actually goes",
         paragraphs: [
-          "Grinding without a target wastes an evening. The honest accounting: the Tarforge materials ladder (Ventrium through Ossinite) plus its Coin bill up to +25 comes to roughly 185,650 Coin in total per our weapons guide, but almost nobody pays that in one playthrough — pick your carry weapon and fund just its tiers. Levels from Beacon Gloom scale steeply; GamingBolt's farming numbers matter most in the 20-40 stretch where the Sunken Village and Mushroom Village Gate loops live. And shell bond upgrades eat **Glimpse**, not Gloom — 27 per shell to max, per our achievement guide — which is why Beacon cleanses (one of the few Glimpse sources) stay non-negotiable even on pure farm runs.",
+          "Grinding without a target wastes an evening. The honest accounting: the Tarforge materials ladder (Ventrium through Ossinite) plus its Coin bill up to +25 comes to roughly 185,650 Coin in total per our weapons guide, but almost nobody pays that in one playthrough — pick your carry weapon and fund just its tiers. Levels from Beacon Gloom scale steeply; GamingBolt's farming numbers matter most in the 20-40 stretch where the Sunken Village and Mushroom Village Gate loops live. And shell bond upgrades eat **Glimpse**, not Gloom — 27 per shell to max, per our achievement guide. Beacon cleanses used to be one of the only Glimpse sources; the Week 1 Update added several more (Glimpse Stones, siphon rewards, Merrick's stock) and removed the ceiling, so Glimpse is now a grind-by-choice, not a rationed currency.",
         ],
         bullets: [
           "**Gloom** — level-ups at any Beacon; cheaper post-patch Tarforge smelts",
           "**Coin** — vendor stock, map markers, and the Tarforge's material ladder",
-          "**Glimpse** — shell bonds only (27 per shell); farm via Beacon cleanses and night-bonus pickups",
+          "**Glimpse** — shell bonds only (27 per shell); Beacon cleanses and night pickups, plus the Week 1 sources: Glimpse Stones, gloom-siphon rewards, and Merrick's stock",
           "**Ova** — Beacon-cleanse collectibles, never purchased; see the Ova locations page",
         ],
       },
       {
         heading: "Settings and Tarstones that pay for themselves",
         paragraphs: [
-          "Two loadout choices compound every loop above. First, enable **Auto Pick Up Gold** in the settings — GamingBolt flags it as the single biggest anti-tedium toggle, eliminating the per-drop pouch chase entirely. Second, slot the right Tarstone before an intentional farm: **Gloombound Stone** boosts Gloom-per-kill (its four levels each add a few percentage points), while **Justiciar's Stone** does the same for Coin drops. Both matter enough that GamingBolt recommends equipping them at the start of any dedicated run rather than mid-loop.",
-          "Night Mode adds a **20% Gloom gain bonus** if your skills can carry the harder enemies — a late-game amplifier, not an early option. And one spending note: The Collector, the night merchant, sells Tarstones and Glimpses near the Abandoned Outpost Beacon after dark, so leftover Coin converts to bond progress if you'd rather skip the Glimpse grind entirely.",
+          "Two loadout choices compound every loop above. First, enable **Auto Pick Up Gold** in the settings — GamingBolt flags it as the single biggest anti-tedium toggle, eliminating the per-drop pouch chase entirely. Second, slot the right Tarstone before an intentional farm: **Gloombound Stone** boosts Gloom-per-kill (its four levels each add a few percentage points), while **Justiciar's Stone** does the same for Coin drops. Both matter enough that GamingBolt recommends equipping them at the start of any dedicated run rather than mid-loop — and note the Week 1 change: both stones are now **Fragile**, meaning they wear down and break, in exchange for increased passive effects and on-break bonuses. Treat them as consumables to re-acquire for dedicated sessions (enemies, dungeons, and Merrick all supply the fragile line) instead of permanent fixtures.",
+          "Night Mode adds a **20% Gloom gain bonus** if your skills can carry the harder enemies — a late-game amplifier, not an early option. And one spending note: The Collector, the night merchant, still sells Tarstones and Glimpses near the Abandoned Outpost Beacon after dark, and now carries Tarcores as well — leftover Coin converts to bond progress or forge materials if you'd rather skip the grind.",
         ],
       },
     ],
     pending: {
       heading: "Still being verified",
       intro:
-        "Economy numbers shifted under the patch and some community figures haven't been re-tested publicly:",
+        "Economy numbers shifted under two patches and some community figures haven't been re-tested publicly:",
       items: [
         "Whether Egon's 10,000-to-20,000 Gloom refund (Castigator's Keep) survives as a farm post-cap — KosGames reports the day-one patch capped the doubling sharply, and no retest has pinned the current ceiling",
-        "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table",
+        "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table (the Week 1 Update added siphon Glimpse but published no numbers)",
         "Whether Mammon's doubled gold stacks with the Justiciar's Stone bonus additively or multiplicatively",
         "Hidden Nave chest Gloom amounts per chest — Game8 confirms the menu-reset method but not the per-chest payout",
       ],
@@ -763,6 +795,7 @@ export const guidePages: GuidePage[] = [
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Side Quests", href: "/side-quests/" },
       { label: "Achievement Guide", href: "/achievements-guide/" },
+      { label: "Patch Notes", href: "/patch-notes/" },
     ],
     sources: [
       {
@@ -774,6 +807,10 @@ export const guidePages: GuidePage[] = [
         url: "https://gamingbolt.com/mortal-shell-2-guide-best-coin-farming-methods-how-to-get-gold-fast",
       },
       {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
+      {
         name: "Balance Patch 1 — Patch Notes (Playstack, official Steam announcement thread)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
       },
@@ -782,7 +819,7 @@ export const guidePages: GuidePage[] = [
         url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
       },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 2, 2026",
     datePublished: "2026-08-29",
   },
   {
@@ -946,8 +983,8 @@ export const guidePages: GuidePage[] = [
     h1: "Mortal Shell 2 Achievement Guide — Rare Ones First",
     eyebrow: "Achievements",
     intro: [
-      "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But two things still punish the unprepared: exactly three achievements are missable, and the single rarest one (Seeking the Past, **1.9%** of players per Steam) quietly demands enough Glimpse income to reach New Game++.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -958,7 +995,8 @@ export const guidePages: GuidePage[] = [
         bullets: [
           "**3 missable:** Mid Summer? (83.2% — high rate because most players accept naturally), No You Still Can't Win (13.0%), Peter's Perfect Parry (4.2%)",
           "**1 glitched:** Bring My Ova Back to Me (15.7%) — currently earnable only in a first playthrough; see its section below",
-          "**Needs NG++:** Seeking the Past (1.9%, Watch all Shell Memories) — the only achievement requiring more than one playthrough by design",
+          "**Glimpse grind:** Seeking the Past (1.9%, Watch all Shell Memories) — priced at two runs plus NG++ by launch-era guides, but the Week 1 Update made Glimpse non-finite, so a single-run finish is now plausible",
+          "**Achievement lockout:** the Slayer Seal — the optional 'easy mode' — disables Steam achievements while equipped (developer-confirmed; see the FAQ below)",
           "**Post-game safe:** everything else, including all shells (17.5% Shell Seeker), weapons (18.8% Lord of War), sidearms (17.0% Guns. Lots of Guns), Tarstones (6.0% Stoned), Beacons (7.8% So Fresh, So Clean), and Map Fragments (19.0% Sat Nav)",
         ],
       },
@@ -966,8 +1004,8 @@ export const guidePages: GuidePage[] = [
         heading: "Seeking the Past (1.9%) — the rarest trophy, explained properly",
         paragraphs: [
           "Seeking the Past requires watching all 40 Shell Memories — five per shell across all eight shells. The rule almost every generic guide gets wrong: memories are unlocked by spending Glimpse at the Shellkeeper, but unlocking alone does not count. Each one must be selected and **viewed from the Shellkeeper bond menu**, even though every shell forces you through one memory during its natural bond progression. The very first memory has its own easier trophy (Haunting Times, 68.1%), which is where most players discover the distinction.",
-          "The Glimpse economy decides how many runs this takes. Raising one shell to maximum Bond Tier 4 costs **27 Glimpse**; all eight shells cost a cumulative **216 Glimpse**, and a single playthrough reliably funds only about three maxed shells. That math pushes Seeking the Past into a minimum of roughly two full playthroughs plus a partial third (NG++). Two income rules per run: cleanse every Beacon again (Glimpse rewards recur), grab the handful of loose Glimpse caches sitting near Beacons, and visit each original shell location at night once per playthrough for an extra **8 Glimpse** each cycle.",
-          "Known bug behavior as of August 2026: PowerPyx commenters and Steam discussions report the counter stalling at 38/40 with no unwatched memories left, and one player saw it pop after restarting the game mid-dungeon. Developers are reportedly aware. Nothing was fixed via Balance Patch 1 notes we could verify — if your tracker wedges below 40/40 after viewing everything, reboot the game first, then finish that shell's bond menu entry again before starting a fresh run.",
+          "The Glimpse economy used to decide how many runs this took. Raising one shell to maximum Bond Tier 4 costs **27 Glimpse**; all eight shells cost a cumulative **216 Glimpse**, and a launch-era playthrough reliably funded only about three maxed shells — which is where the two-full-runs-plus-a-partial-third (NG++) roadmap came from. The Week 1 Update (August 29, 2026) removed the ceiling: **Glimpses are no longer finite**, so all eight bond trees fit inside one thorough playthrough, with new income lines on top — **Glimpse Stones** that wear down as you defeat enemies and break into Glimpses, additional Glimpse in the gloom siphon, and Merrick's expanded stock. The per-run income habits still speed things up: cleanse every Beacon, grab the handful of loose Glimpse caches near Beacons, and visit each original shell location at night once per playthrough for an extra **8 Glimpse** each.",
+          "Known bug behavior as of August 2026: PowerPyx commenters and Steam discussions report the counter stalling at 38/40 with no unwatched memories left, and one player saw it pop after restarting the game mid-dungeon. Developers are reportedly aware. Nothing in the Balance Patch 1 or Week 1 Update notes we could verify addresses it — if your tracker wedges below 40/40 after viewing everything, reboot the game first, then finish that shell's bond menu entry again before starting a fresh run.",
         ],
       },
       {
@@ -1002,13 +1040,14 @@ export const guidePages: GuidePage[] = [
         ],
         bullets: [
           "**Playthrough 1:** secure the three missables in the prologue and Prisoners' Domain; cleanse all 49 Beacons while collecting Ova as you go (serves So Fresh So Clean at 7.8%, Stoned at 6.0%, Sat Nav at 19.0%, Bring My Ova at 15.7%); find Mether's Flesh and complete the Mango cup ritual for Ascension (16.7%); max one shell's bond (Decked Out, 37.1%); push one weapon to +16 (Over 9000, 24.7%). Endgame free-roam mops up anything left before you trigger NG+ via the Siphon.",
-          "**Playthroughs 2-3:** spend Glimpse on remaining shells' bond trees, re-cleanse Beacons each cycle, night-pickup the shell locations' bonus Glimpse (8 per cycle), and view every memory in the bond menus. Both Shell Seeker (17.5%) and Guns. Lots of Guns (17.0%) fall somewhere along these runs if the roster survived run one.",
+          "**Playthroughs 2-3 (now optional):** since the Week 1 Update removed the Glimpse cap, the remaining shells' bond trees and memory views can all happen inside run one — these cycles are only for a save that chose to defer them. If you do run them: re-cleanse Beacons each cycle, night-pickup the shell locations' bonus Glimpse (8 per cycle), and view every memory in the bond menus. Both Shell Seeker (17.5%) and Guns. Lots of Guns (17.0%) fall somewhere along the way if the roster survived run one.",
         ],
       },
       {
         heading: "FAQ quick hits",
         paragraphs: [
           "**Does Night (increased difficulty mode) affect trophies?** No — the in-game Night toggle raises enemy pressure but is required for certain content like night-only Glimpse pickups, and no achievement demands clearing bosses under it specifically.",
+          "**Does the Slayer Seal affect achievements?** Yes — equipping it disables Steam achievements for that save. Developers confirmed the lockout and told Rock Paper Shotgun they 'didn't intend to lock everybody out'; nothing in the Week 1 Update notes (August 29) changes it. If the seal is on and you care about the platinum, switch it off before pushing deeper.",
           "**Is Ascension the 196-Ova trophy?** No — they are separate entries. Ascension (16.7%, Discover the secret of the Mango) ties to the hidden Mango sanctuary quest; Bring My Ova Back to Me (15.7%) is the Ova-completion one. Community confusion between the two is common because their rates sit close together.",
           "**How long is a full completion?** PowerPyx estimates **40-60 hours** at a 6/10 difficulty rating, with roughly 85% of that being one thorough first playthrough plus two lighter Glimpse-farming cycles.",
         ],
@@ -1019,8 +1058,9 @@ export const guidePages: GuidePage[] = [
       intro:
         "This hub ships anchored to official Steam stats and PowerPyx's roadmap — open about what isn't pinned down yet:",
       items: [
-        "Whether Balance Patch 1 (or later hotfixes) lifted the Bring My Ova Back to Me first-playthrough bug — no visible change in patch documentation yet",
+        "Whether Balance Patch 1, the Week 1 Update, or later hotfixes lifted the Bring My Ova Back to Me first-playthrough bug — neither patch's notes mention it",
         "Exact Glimpse-per-cycle totals beyond Beacon cleanse rewards (night-bonus 8-per-location figure is community-transcribed, not dev-confirmed)",
+        "Whether a patch will re-enable achievements on saves that used the Slayer Seal — dev comments say the lockout wasn't intended, but no reversal has shipped",
         "Whether the Seeking the Past 38/40 stall shares a root cause with the Bring My Ova tracker bug",
       ],
     },
@@ -1029,6 +1069,7 @@ export const guidePages: GuidePage[] = [
       { label: "Missable Content", href: "/missable-content/" },
       { label: "Shells Guide", href: "/shells/" },
       { label: "Weapons Guide", href: "/weapons/" },
+      { label: "Patch Notes", href: "/patch-notes/" },
     ],
     sources: [
       {
@@ -1039,8 +1080,16 @@ export const guidePages: GuidePage[] = [
         name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
         url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
       },
+      {
+        name: "Rock Paper Shotgun — Mortal Shell 2 devs on the Slayer Seal achievement lockout (August 24, 2026)",
+        url: "https://www.rockpapershotgun.com/mortal-shell-2-slayer-seal-achievements",
+      },
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 2, 2026",
     datePublished: "2026-08-27",
   },
   {
@@ -1939,7 +1988,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Bosses",
     intro: [
       "Mortal Shell II's critical path runs through ten major bosses guarding the Corrupted Gates, spread across nine regions from Disciple's Pass to the Faded Citadel and beyond. This page lists all ten in the recommended encounter order, with where each fight happens and what it pays out.",
-      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide. The per-boss strategies below were written against Rock Paper Shotgun's 45-boss compendium, updated August 25, 2026.",
+      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide. The per-boss strategies below were written against Rock Paper Shotgun's 45-boss compendium, updated August 25, 2026, and re-checked against Playstack's official Week 1 Update notes (August 29, 2026; reviewed September 2, 2026) — the patch changed several of these fights, and every changed fight carries a dated note inline plus a summary in the first block.",
     ],
     blocks: [
       {
@@ -1979,6 +2028,20 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "What the Week 1 Update changed about these fights",
+        anchor: "week-1-bosses",
+        paragraphs: [
+          "The Week 1 Update (live August 29, 2026) gave most bosses a general polish pass and changed four of the fights below in ways that matter for strategy. Per Playstack's official notes:",
+        ],
+        bullets: [
+          "**Zmey, the Unbidden** — the tail grab no longer takes both your Shell and Harbinger from 100 to 0 in one hit (Playstack: 'We heard some of you don't like getting one-shotted'). **In Night Mode it is still on.** His ring waves now align to the ground properly, and his elemental stomps have new effects.",
+          "**The Monolith** — a 'nasty bug' that dealt double damage on certain hits is fixed, and the laser and spin attacks now have consistent, readable timings instead of spamming (the spam was itself a bug).",
+          "**Hexapod** — the area attack deals considerably more splash damage now; the arena is smaller and its beacon light is lit by default, which makes the fight far easier to read; one attack was retimed to be fairer, and he can no longer wedge himself into the environment during his dive.",
+          "**The Warden and Urrig, the Executioner** — both reworked, with retuned attacks, new ice attacks, and corrected effects; Urrig's spin now gives a proper warning that it cannot be parried.",
+          "Across the rest of the roster: arena navigation repairs for Droeg and Sir Isaac, a finished walk animation and retimed bite for the Lost Child, and a game-wide riposte pass — player riposte damage now scales with enemy health, so it keeps up properly in the late game, NG+, and Night Mode.",
+        ],
+      },
+      {
         heading: "Magdalena, the Lady of the Woods strategy",
         paragraphs: [
           "Arena and gimmick: she fights from a rocket-powered mobility scooter, driving through the arena and doing fiery donuts while flames pour from the vehicle's back. Summonable Smert helps little here — plan to carry the fight yourself.",
@@ -2010,14 +2073,14 @@ export const guidePages: GuidePage[] = [
         heading: "Hexapod strategy",
         paragraphs: [
           "Arena and gimmick: an alien arthropod in Withered Shoals that rewards a very specific loadout — its own shell's memories hint at it. Fire **Proxima's Triarch Repeater** nonstop; stack Deadeye or Marksman stones (crit damage/chance) with the Rupturing Stone so critical shots apply Break, steadily feeding you riposte windows without ever closing distance.",
-          "Late fight adjustments: at low health the Hexapod speeds up, dives into the arena water, and rushdowns — reopen distance and resume firing, jumping into melee only when cornered. Pure melee builds clear it too, but respect the **unblockable grab**; it's the one mistake the arena doesn't forgive.",
+          "Late fight adjustments: at low health the Hexapod speeds up, dives into the arena water, and rushdowns — reopen distance and resume firing, jumping into melee only when cornered. Pure melee builds clear it too, but respect the **unblockable grab**; it's the one mistake the arena doesn't forgive. **Week 1 Update (August 29):** the arena is smaller and its beacon light is lit by default, which makes the fight far easier to read — but his area attack now deals considerably more splash damage, so respect the range you're keeping.",
         ],
       },
       {
         heading: "The Warden strategy",
         paragraphs: [
           "Arena and gimmick: a cramped circular pit at Citadel of Penance where nearly every axe swing is **unblockable** — this is a dodge-and-punish fight by design, and wall-behinds-you awareness matters more than normal.",
-          "The tell: his signature is **four rapid spin-flings** of the burning axe; survive the sequence and you get a guaranteed punish window after the fourth blow. Damage-over-time carries the attrition battle — apply **Burn or Poison via Tarstones** to his huge health pool, and reuse the Nameless Captive toolkit that interrupts: passive **Grisha Remnant** summons plus the Infused Stone thrown weapon to buy breathing room between spins.",
+          "The tell: his signature is **four rapid spin-flings** of the burning axe; survive the sequence and you get a guaranteed punish window after the fourth blow. Damage-over-time carries the attrition battle — apply **Burn or Poison via Tarstones** to his huge health pool, and reuse the Nameless Captive toolkit that interrupts: passive **Grisha Remnant** summons plus the Infused Stone thrown weapon to buy breathing room between spins. **Week 1 Update (August 29):** the Warden was reworked with retuned attacks and new ice attacks — if you learned this fight pre-patch, expect some new answers alongside the old rhythm.",
         ],
       },
       {
@@ -2031,7 +2094,7 @@ export const guidePages: GuidePage[] = [
         heading: "Monolith strategy",
         paragraphs: [
           "The wall: widely rated the game's worst fight — Day-one overtuned, briefly nerfed, still brutal. Its ground slams have absurd tracking; answer them with **parries or Hardening** timed for i-frames rather than trying to outrun the targeting. The central fleshy mass swing is parryable too.",
-          "After your first riposte it rolls and fires **lasers**: tracked beams plus swinging arcs. The counterintuitive core skill — dodge **into** the arcs, never away, cutting through with i-frames, then sprint to its back where lasers haven't extended yet and unload there. Phase three adds top-spin attacks, an **unblockable airborne drop** (dodge at the last second), and the accelerating death-spiral arc show — lock the rhythm down and accept it takes attempts. Corner yourself and the camera will kill you; fight center-arena. Thrown weapons have been observed glitching the lasers off temporarily — abuse anything cheap, this fight deserves it.",
+          "After your first riposte it rolls and fires **lasers**: tracked beams plus swinging arcs. The counterintuitive core skill — dodge **into** the arcs, never away, cutting through with i-frames, then sprint to its back where lasers haven't extended yet and unload there. Phase three adds top-spin attacks, an **unblockable airborne drop** (dodge at the last second), and the accelerating death-spiral arc show — lock the rhythm down and accept it takes attempts. Corner yourself and the camera will kill you; fight center-arena. Thrown weapons have been observed glitching the lasers off temporarily — abuse anything cheap, this fight deserves it. **Week 1 Update (August 29):** a double-damage bug on certain hits is fixed and the laser/spin timings are now consistent and readable (the old spamming was a bug) — still brutal, but no longer cheating.",
         ],
       },
       {
@@ -2051,8 +2114,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Zmey, the Unbidden strategy",
         paragraphs: [
-          "The final exam: obscene health, a far-reaching **unblockable tail impale** that pins you for a follow-up butt slam capable of knocking you out of (or ending) your run, delayed fire breath, and post-riposte **AoE flame waves** that must be dashed into — getting clipped inflicts **Cosmic Disease**, locking you out of re-shelling and every skill and Tarstone.",
-          "The shape of the win: stand under him and work the lower body, timing guards against the foot stamps; when he leaps back and raises the blade-throw, dodge immediately (your summoned companions rarely draw that specific throw — assume it's coming for you). Pack the **Seedbearer's Scripture** as your active if you've completed the Night Mode Forgotten Tower gland quest — triggered on-hit, it cures Cosmic Disease *and* floors Zmey for a free punish. And if the mountain won't move: the **Slayer Seal** exists precisely for fights like this, no shame attached.",
+          "The final exam: obscene health, a far-reaching **unblockable tail impale** that pins you for a follow-up butt slam capable of knocking you out of (or ending) your run, delayed fire breath, and post-riposte **AoE flame waves** that must be dashed into — getting clipped inflicts **Cosmic Disease**, locking you out of re-shelling and every skill and Tarstone. **Week 1 Update (August 29):** the tail grab no longer takes both Shell and Harbinger from 100-0 — except in Night Mode, where it still does — and the ring waves now align to the ground properly instead of floating.",
+          "The shape of the win: stand under him and work the lower body, timing guards against the foot stamps; when he leaps back and raises the blade-throw, dodge immediately (your summoned companions rarely draw that specific throw — assume it's coming for you). Pack the **Seedbearer's Scripture** as your active if you've completed the Night Mode Forgotten Tower gland quest — triggered on-hit, it cures Cosmic Disease *and* floors Zmey for a free punish. And if the mountain won't move: the **Slayer Seal** exists precisely for fights like this, no shame attached — but know the price first: equipping it disables Steam achievements (developer-confirmed in August 2026), so trophy runs need to win this fight without it.",
         ],
       },
       {
@@ -2074,6 +2137,7 @@ export const guidePages: GuidePage[] = [
       { label: "All Shells", href: "/shells/" },
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Walkthrough", href: "/walkthrough/" },
+      { label: "Patch Notes", href: "/patch-notes/" },
     ],
     sources: [
       {
@@ -2088,8 +2152,12 @@ export const guidePages: GuidePage[] = [
         name: "GameSpot — Mortal Shell 2 Boss Guide",
         url: "https://www.gamespot.com/articles/mortal-shell-2-boss-guide/1100-6524311/",
       },
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 2, 2026",
   },
   {
     slug: "tips",
