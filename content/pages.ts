@@ -327,11 +327,11 @@ export const guidePages: GuidePage[] = [
 
   {
     slug: "patch-notes",
-    metaTitle: "Mortal Shell 2 Patch Notes: Balance Patch 1 & Update History",
+    metaTitle: "Mortal Shell 2 Patch Notes: Week 1 Update & Balance Patch 1",
     metaDescription:
-      "Mortal Shell 2 update history: Balance Patch 1 in full (weapon buffs, economy, boss nerfs), the Advanced-Access crash hotfixes, and Playstack's roadmap for what ships next.",
+      "Mortal Shell 2 update history: the Week 1 Update in full (shell respec, economy un-cap, new day-only Beacons, boss fixes), Balance Patch 1 annotated, and the crash-hotfix timeline.",
     cardBlurb:
-      "Every update in one place: Balance Patch 1 changes, crash hotfixes, and what Playstack ships next.",
+      "Every update in one place: the Week 1 Update, Balance Patch 1 changes, crash hotfixes, and what ships next.",
     heroImage: {
       src: "/img/site-7.jpg",
       alt: "Mortal Shell II key art showing a knight before a monumental ruined structure",
@@ -341,9 +341,38 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official Balance Patch 1 announcement thread (August 20, 2026) and the site's crash-fix reporting; last reviewed August 28, 2026.",
+      "Verified against Playstack's official Week 1 Update announcement (August 29, 2026) and the Balance Patch 1 announcement thread (August 20, 2026); last reviewed September 1, 2026.",
     ],
     blocks: [
+      {
+        anchor: "week-1-update",
+        heading: "Week 1 Update — August 29, 2026",
+        paragraphs: [
+          "One week after full launch, Playstack shipped its first major post-launch patch — and it is the largest update so far: new items, an economy un-cap, a shell respec, new Beacons, a full riposte overhaul, and sweeping boss and weapon reworks. The complete published list, section by section:",
+        ],
+        bullets: [
+          "**Economy un-cap** — \"Glimpses and Tarcores are no longer finite resources, allowing all shells and Tarstones to be upgraded in a single playthrough\"; saves that leveled Tarstones pre-patch find a compensatory cache of Tarcores in their inventory",
+          "**Shell respec: Mether's Severance** — a new item given to [Zhirelle, the shell keeper](/shells/): in exchange she severs your bond with a Shell, resetting it and refunding every spent Glimpse; Tarstones and Mether's Severance can also be purchased from Merrick and restock as you progress — this reshapes the [trophy budgeting math](/achievements-guide/)",
+          "**New items** — Fragile Tarstones (a new Tarstone class that breaks when durability runs out, yielding a tarcore; not unique, found multiple times per playthrough), Glimpse Stone (wears down as you defeat enemies, then breaks into Glimpses), and Egon's Stone (revive at a dungeon's entrance; when it breaks it prevents Gloom loss for that death); Justicar's Stone and Gloombound Stone are now Fragile with increased passives and on-break effects, and existing copies were converted",
+          "**New Beacons** — new Beacons have appeared \"throughout Fainweald and Mammon\", but are **only active during the day**; the notes publish no count, and Mini-Beacons no longer award a Glimpse — what this does to the travel network and the [49-Beacon catalog](/fast-travel/)",
+          "**Weapons** — the Great Martyr's Blade damage buff \"didn't actually make it in the last patch\" and shipped here instead, \"even stronger\"; Obsidian Hammer received a full balance pass and \"hits substantially harder\"; heavy weapons in general got a poise and damage pass; the Salvaged Trebuchaxe's Tarred Fragment was redesigned (officially \"simultaneously overpowered and broken\"); Axatana's ability now grants invulnerability frames and inflicts Fragile stacks; Weltcap is stronger in both active and passive forms — the [weapons guide](/weapons/) is re-anchored accordingly",
+          "**Riposte overhaul** — player riposte damage now scales with enemy health, so executions keep up in late game, NG+, and [Night Mode](/night-mode/); invulnerability windows last through the end of the animation; many recoveries end sooner; a calculation rewrite fixed ripostes applying twice or not at all",
+          "**Bosses** — Zmey's tail grab no longer takes both Shell and Harbinger from 100-0 (\"In night mode it's ON, though\") and his ring waves align to the ground; the Monolith's double-damage bug is fixed with readable laser/spin timings; Hexapod's arena is smaller with its beacon lit by default and its splash damage raised; the Warden and Urrig are reworked with new ice attacks, and Urrig's unparryable spin now gives a proper warning; the Lost Child no longer launches anyone across the arena — updated notes per boss in the [boss guide](/bosses/)",
+          "**Shells** — Smert can destroy projectiles while in permanent fight stance; Eredrim's Shoulder Bash no longer permanently stows your weapon; Proxima's hook-shot and Biosampler fixes; Genesa's dashes fixed including corrupted — [best build pairings](/best-build/) shift with the heavy-weapon buffs",
+          "**Merrick, chests, and rewards** — Merrick's stock expands (Glimpse Stones, Egon's Stones, and Tarcores once you have gathered enough Ova); the Collector now carries Tarcores; dungeon reward chests across the first two regions were revised, Mammon's reward placement updated, and missing arena-dungeon rewards restored; the gloom siphon gained additional rewards including Glimpses — route implications tracked in the [farming guide](/farming-guide/)",
+          "**Softlocks and saves** — an interrupted save can no longer destroy your save file; Vatra's Temple's permanent lockout is fixed (a prior [missable-content warning](/missable-content/), now resolved); softlocks fixed in Lazlo's Rekindle, the post-Gragu barkeep talk, Hilga's Cauldron, and declining a Shell-unlock cutscene",
+          "**Stuck spots** — the closed castle gates, the opening-region church, the sunken-village house, the Castigator's Keep wall, the snow approach to Droeg's arena, and the hole in Eredrim's castle jail are all fixed, with collision holes patched across the first two regions — the [stuck-spot FAQ](/tips/) gains patch statuses",
+          "**Performance and options** — fewer enemies in the busiest areas; the shader-compilation hitch now happens in the menu; frame generation is reworked (applies after a reload, no longer activates before the world loads, NVIDIA frame gen on a much wider card range); a new Geometry Budgets graphics option; a crash diagnostics option — details for the [performance guide](/performance-fix/)",
+        ],
+      },
+      {
+        anchor: "what-week-1-changed",
+        heading: "What the Week 1 Update changes for players",
+        paragraphs: [
+          "The economy un-cap is the headline for completionists: maxing every shell's bond and every Tarstone in one playthrough is no longer a two-run project, and Mether's Severance makes build experimentation refundable instead of permanent. Anything on this site that budgeted Glimpse as a scarce resource is being re-checked against the new math, starting with the [achievements guide](/achievements-guide/) and the [farming routes](/farming-guide/).",
+          "The day-only Beacons give the world clock its first mechanical bite — a cleanse run through Fainweald or Mammon now pays attention to daylight. And if you were avoiding the final boss over the tail-grab one-shot: it is gone on standard difficulty, but [Night Mode](/night-mode/) keeps it on, exactly as the notes say.",
+        ],
+      },
       {
         anchor: "balance-patch-1",
         heading: "Balance Patch 1 — August 20, 2026",
@@ -380,7 +409,7 @@ export const guidePages: GuidePage[] = [
         anchor: "roadmap",
         heading: "What Playstack says ships next",
         paragraphs: [
-          "In the Balance Patch 1 announcement, Playstack states: \"While we have a bigger patch in the works, which has to be thoroughly tested... Planned future updates will see extensions to popular game features such as Night Mode, Tarstones, PP Items, and more.\" Nothing in that line carries a date — treat it as directional. When the bigger patch lands, its changes will be verified against the official notes and added here, with affected guide pages re-checked the same way Balance Patch 1 pages were.",
+          "In the Balance Patch 1 announcement, Playstack states: \"While we have a bigger patch in the works, which has to be thoroughly tested... Planned future updates will see extensions to popular game features such as Night Mode, Tarstones, PP Items, and more.\" Nothing in that line carries a date — treat it as directional. That \"bigger patch\" has since shipped as the [Week 1 Update](#week-1-update), documented above; the Night Mode / Tarstones / PP Item extensions it previews remain unshipped, and when they land their changes will be verified against the official notes the same way.",
         ],
       },
       {
@@ -395,11 +424,11 @@ export const guidePages: GuidePage[] = [
     ],
     pending: {
       heading: "Still being verified",
-      intro: "Open questions on the update trail as of August 28, 2026:",
+      intro: "Open questions on the update trail as of September 1, 2026:",
       items: [
-        "Exact console rollout dates for Balance Patch 1",
-        "Contents of the \"bigger patch\" Playstack says is being tested",
-        "Whether any hotfix has addressed the eel-type enemy hitbox reports",
+        "Exact console rollout dates for the Week 1 Update (PC went live August 29)",
+        "Official count and locations of the Week 1 Update's new day-only Beacons — the notes name no number; player estimates say 10+",
+        "Whether any hotfix has addressed the eel-type enemy hitbox reports (the Week 1 notes fixed weak-point projectile registration but name no eel-specific fix)",
       ],
     },
     related: [
@@ -407,8 +436,14 @@ export const guidePages: GuidePage[] = [
       { label: "Best Build", href: "/best-build/" },
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Sidearms Guide", href: "/sidearms/" },
+      { label: "Fast Travel", href: "/fast-travel/" },
+      { label: "Farming Guide", href: "/farming-guide/" },
     ],
     sources: [
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
       {
         name: "Balance Patch 1 — Mortal Shell II Steam announcement (Playstack)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
@@ -418,7 +453,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270",
       },
     ],
-    reviewedOn: "August 28, 2026",
+    reviewedOn: "September 1, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -1715,7 +1750,7 @@ export const guidePages: GuidePage[] = [
    slug: "weapons",
     metaTitle: "Mortal Shell 2 Weapons: Upgrades & Posture Breaks",
     metaDescription:
-      "All 8 Mortal Shell 2 weapons and sidearms, annotated through Balance Patch 1: buff callouts, Tarforge cost ladder to +25, and the eel-hitbox sidearm bug FAQ.",
+      "All 8 Mortal Shell 2 weapons and sidearms, annotated through the Week 1 Update: the Martyr's Blade buff correction, Obsidian Hammer's rework, Tarforge cost ladder to +25, and the eel-hitbox sidearm bug FAQ.",
     cardBlurb:
       "Melee blades, ranged sidearms, and the posture system that turns stagger into executions.",
     heroImage: {
@@ -1729,19 +1764,35 @@ export const guidePages: GuidePage[] = [
       "Mortal Shell II's arsenal spans close-quarters melee blades and ranged projectile sidearms, both feeding into one posture system. This page covers every weapon mechanic officially confirmed so far.",
       "Fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 20, 2026), and the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026).",
+        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 20, 2026), the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026), and the Week 1 Update balance lines added from Playstack's official announcement (August 29, 2026; reviewed September 1, 2026).",
     ],
     blocks: [
       {
         heading: "What Balance Patch 1 changed about weapons",
         paragraphs: [
-          "Playstack's first balance patch materially reshuffles weapon advice — four of its lines touch this arsenal directly. If your weapon assumptions predate August 25, re-read the notes below: two names received damage buffs large enough to change tier-list arguments, two sidearms lost the resolve floors that used to gate their fire rate, and the forge economy got dramatically cheaper.",
+          "Playstack's first balance patch materially reshuffles weapon advice — four of its lines touch this arsenal directly. One caveat surfaced a week later: the Great Martyr's Blade buff announced here did not actually ship with this patch (Playstack's own Week 1 admission — see the next section). If your weapon assumptions predate the Week 1 Update, re-read the notes below: two sidearms lost the resolve floors that used to gate their fire rate, and the forge economy got dramatically cheaper.",
         ],
         bullets: [
-          "**Great Martyr's Blade +20% attack damage** — already the heavy hitter of Proxima Lightning builds; the lead widens",
+          "**Great Martyr's Blade +20% attack damage** — announced for this patch but \"didn't actually make it in the last patch\"; the real, stronger buff shipped in the Week 1 Update (below). The Proxima Lightning pick stands either way",
           "**Troubadour's Lute +100% attack damage** — the support-flavored pick doubled its damage; re-check it before dismissing it as a meme",
           "**Caged Hystrix & Triarch Repeater: resolve minimums removed** — both now fire at any resolve level instead of holding fire below a threshold, which changes sidearm budgeting in long boss fights",
           "**Tarforge smelting −75% Gloom** — mid-run weapon swapping becomes cheap experimentation rather than an NG+-length commitment",
+        ],
+      },
+      {
+        heading: "What the Week 1 Update changed about weapons",
+        paragraphs: [
+          "The Week 1 Update (live August 29, 2026) is the largest balance pass since launch, and it corrects this page's record in the process: the Martyr's Blade buff the Balance Patch 1 notes promised arrived here instead — heavier. Per Playstack's official notes:",
+        ],
+        bullets: [
+          "**Great Martyr's Blade deals more damage — for real this time** — official wording: \"It was a pity it didn't actually make it in the last patch, to make up for it, it's even stronger now.\" The +20% figure above describes what was announced for August 20; the shipped buff landed August 29 at a higher value (exact percentage not published)",
+          "**Obsidian Hammer — full balance pass** — it \"now hits substantially harder\"; the brutalist chunk of obsidianite graduates from curiosity pick",
+          "**Heavy weapons in general — poise and damage pass** — the whole heavyweight class trends up, which [best build pairings](/best-build/) lean into",
+          "**Salvaged Trebuchaxe: Tarred Fragment redesigned** — officially \"simultaneously overpowered and broken\"; its signature fragment works differently now",
+          "**Axatana — the ability now grants invulnerability frames and inflicts Fragile stacks**, and its combat Tarstone active triggers correctly",
+          "**Weltcap is stronger in both its active and passive forms**",
+          "**Riposte overhaul (all weapons)** — player riposte damage now scales with enemy health, so executions keep up in late game, NG+, and [Night Mode](/night-mode/); invulnerability windows last through the end of the animation; many recoveries hand control back sooner",
+          "**Enemy aggression and disengage ranges retuned** — mid-fight weapon pacing from the launch window shifts slightly across the board",
         ],
       },
       {
@@ -1798,6 +1849,7 @@ export const guidePages: GuidePage[] = [
           "**Total bill:** a full +0 → +25 journey consumes **185,650 Coin** alongside the material ladder",
           "**Damage curve:** shared across all eight weapons — ×1.00 at +0 rising to ×1.80 at +16, while stagger-type stats keep climbing to ×2.00 at +20; the only per-weapon exception is Great Martyr's Blade's Guard Meter multiplier",
           "**Post-patch discount:** smelting costs dropped 75% under Balance Patch 1, so the real Gloom price is far kinder than launch-era guides told you",
+          "**New stone class (Week 1):** Fragile Tarstones wear down as you use them and break — dropping a tarcore when they do — and are not unique, so multiple can be found per playthrough; Tarstones also now yield more tarcores when broken, and pre-patch saves received a compensatory cache",
         ],
       },
       {
@@ -1832,7 +1884,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Do sidearms pass through eel-type enemies on purpose?",
         paragraphs: [
-          "It reads like a bug, not design. Steam threads report **Triarch Repeater shots phasing through the heads of eel-type enemies** — projectiles visibly connect but deal no damage — with similar echoes appearing across player reviews around launch. Until a patch note says otherwise, treat ranged hits on serpentine models as unreliable and switch to melee rather than wasting resolve on refused hitboxes.",
+          "It reads like a bug, not design. Steam threads report **Triarch Repeater shots phasing through the heads of eel-type enemies** — projectiles visibly connect but deal no damage — with similar echoes appearing across player reviews around launch. The Week 1 Update fixed several projectile-registration bugs (weak-point hits and wrong-target picks among them) but named no eel-specific fix, so until a patch note says otherwise, treat ranged hits on serpentine models as unreliable and switch to melee rather than wasting resolve on refused hitboxes.",
           "If your sidearm seems to stop working entirely, rule out the other usual suspects first: post-patch there is no resolve floor left on Caged Hystrix or Triarch Repeater (both fire at any resolve level), so a gun refusing to fire is more likely animation lock or ammo state than the removed threshold mechanic.",
         ],
       },
@@ -1850,8 +1902,13 @@ export const guidePages: GuidePage[] = [
       { label: "Best Build", href: "/best-build/" },
       { label: "Mortal Shell 2 Tips", href: "/tips/" },
       { label: "All Shells", href: "/shells/" },
+      { label: "Patch Notes", href: "/patch-notes/" },
     ],
     sources: [
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
       {
         name: "Mortal Shell II on Steam (Playstack)",
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
@@ -1869,7 +1926,7 @@ export const guidePages: GuidePage[] = [
         url: "https://mortalshelldb.com/forge",
       },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 1, 2026",
   },
   {
     slug: "bosses",
@@ -2611,9 +2668,22 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Progression",
     intro: [
       "Fast travel in Mortal Shell II is not a spell you learn or a questline you finish — it is the Beacon network you build yourself. Every region hides corrupted checkpoints that become the travel map's pins as you cleanse them, and by launch week players were asking the same question across Steam and YouTube: where exactly does fast travel start?",
-      "This page covers the mechanic end to end: what Beacons do before and after cleansing, how to trigger the Mether's Breath travel menu, every one of the 49 Beacon locations ordered by region, and the completion stakes — none of them are missable. Everything below was verified against PowerPyx's Beacon compendium and the Fextralife wiki on August 27, 2026.",
+      "This page covers the mechanic end to end: what Beacons do before and after cleansing, how to trigger the Mether's Breath travel menu, every one of the 49 Beacon locations ordered by region, and the completion stakes — none of them are missable. Everything below was verified against PowerPyx's Beacon compendium and the Fextralife wiki on August 27, 2026. The Week 1 Update (August 29, 2026) has since added new day-only Beacons in Fainweald and Mammon — covered in the first section below; the 49-node catalog documents the verified launch baseline, re-checked September 1, 2026.",
     ],
     blocks: [
+      {
+        anchor: "week-1-beacons",
+        heading: "Week 1 Update: new day-only Beacons",
+        paragraphs: [
+          "The Week 1 Update added new Beacons \"throughout Fainweald and Mammon\" — and gave them a twist no launch Beacon had: they are **only active during the day**. The official notes publish no count, and the region-by-region catalog below is the launch build's 49-node list; player reports put the additions at 10 or more, but that figure is a community estimate, not a confirmed number. This page keeps the 49 count — including its title — until an updated compendium pins the new total down; the [patch notes page](/patch-notes/) carries the full Week 1 changelog.",
+        ],
+        bullets: [
+          "**New Beacons, day-only** — spread across Fainweald and the Ruins of Mammon; they only work in daylight, so cleanse-route planning now touches the in-game clock for the first time",
+          "**Mini-Beacons no longer award a Glimpse** — the smallest Beacon payouts just shrank; what that does to Glimpse income is tracked in the [farming guide](/farming-guide/)",
+          "**Dungeon shortcut** — a teleporter now appears in one dungeon after the Grisha pit fight, removing the walk back entirely",
+          "**Count pending** — the title and the 49-node table below stay at the verified launch baseline until the new total is confirmed; the day-only Beacons are additive exploration content, not replacements",
+        ],
+      },
       {
         heading: "Fast travel runs through Beacons",
         paragraphs: [
@@ -2655,7 +2725,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "All 49 Beacon locations by region",
         paragraphs: [
-          "PowerPyx catalogs 49 Beacons worldwide, grouped below by the region each sits in and numbered the way the Mether's Breath menu lists them. Three arrive pre-cleansed when you find them: Marrow Keep, Widow's Overlook, and Outskirts of Mammon.",
+          "PowerPyx catalogs 49 Beacons worldwide, grouped below by the region each sits in and numbered the way the Mether's Breath menu lists them. Three arrive pre-cleansed when you find them: Marrow Keep, Widow's Overlook, and Outskirts of Mammon. (Launch-baseline catalog: the Week 1 Update's new day-only Beacons are not yet in this table — see the first section above.)",
         ],
         bullets: [
           "Marrow Keep — Marrow Keep (#1), the hub itself.",
@@ -2676,6 +2746,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Completionists get a safety net the rest of the game doesn't always offer: none of the 49 Beacons can be missed. PowerPyx confirms you can still find and cleanse anything left over after the final boss, during the free-roam window before you choose to enter New Game+.",
           "The math behind the cleanup: only 46 of 49 show progress on the trophy tracker, because three are already cleansed the moment you discover them. Cleansing everything is required for the So Fresh, So Clean achievement — and since Beacons are where the Ova live, finishing them also serves the companion collection achievement attached to those rewards.",
+          "One open question from the patch: whether the Week 1 Update's new day-only Beacons count toward the So Fresh, So Clean cleanse requirement is not confirmed yet. Completionists chasing the full roster should watch the [patch notes page](/patch-notes/) until that is pinned down.",
         ],
       },
       {
@@ -2694,8 +2765,10 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Still being verified",
       intro:
-        "Two behaviors and one naming discrepancy were not pinned down by the sources checked this week:",
+        "Beacon-count items from the Week 1 Update plus two behaviors and one naming discrepancy that sources have not pinned down:",
       items: [
+        "Official count and locations of the Week 1 Update's new day-only Beacons in Fainweald and Mammon (player estimates say 10+; unconfirmed — this page's title and table update once verified)",
+        "Whether the new day-only Beacons count toward the So Fresh, So Clean cleanse requirement",
         "Whether the Mether's Breath menu shows corrupted Beacons as locked entries or hides them entirely until cleansed",
         "Whether fast travel carries any resource cost or usage limit (none is described by PowerPyx or Fextralife)",
         "Spelling: PowerPyx writes the endgame region as 'The Unfound Path'; this site keeps 'The Unfounded Path', the form used by the walkthrough sources — the same late-game zone either way",
@@ -2706,8 +2779,13 @@ export const guidePages: GuidePage[] = [
       { label: "Beginner Guide", href: "/beginner-guide/" },
       { label: "Boss Guide", href: "/bosses/" },
       { label: "Best Builds", href: "/best-build/" },
+      { label: "Patch Notes", href: "/patch-notes/" },
     ],
     sources: [
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
       {
         name: "PowerPyx — Mortal Shell 2 All Beacon Locations",
         url: "https://www.powerpyx.com/mortal-shell-2-all-beacon-locations/",
@@ -2717,7 +2795,7 @@ export const guidePages: GuidePage[] = [
         url: "https://mortalshell2.wiki.fextralife.com/Beacons",
       },
     ],
-     reviewedOn: "August 27, 2026",
+     reviewedOn: "September 1, 2026",
      datePublished: "2026-08-27",
    },
   {
