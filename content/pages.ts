@@ -984,7 +984,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, and the Baghead NG+ trap was added September 3, 2026 from Steam bug reports. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -997,6 +997,7 @@ export const guidePages: GuidePage[] = [
           "**1 glitched:** Bring My Ova Back to Me (15.7%) — currently earnable only in a first playthrough; see its section below",
           "**Glimpse grind:** Seeking the Past (1.9%, Watch all Shell Memories) — priced at two runs plus NG++ by launch-era guides, but the Week 1 Update made Glimpse non-finite, so a single-run finish is now plausible",
           "**Achievement lockout:** the Slayer Seal — the optional 'easy mode' — disables Steam achievements while equipped (developer-confirmed; see the FAQ below)",
+          "**1 NG+ trap:** Bag Holder (23.5%) — carrying Baghead's Special Moonshine into NG+ blocks his quest chain, and the game has no item-drop (see the FAQ below)",
           "**Post-game safe:** everything else, including all shells (17.5% Shell Seeker), weapons (18.8% Lord of War), sidearms (17.0% Guns. Lots of Guns), Tarstones (6.0% Stoned), Beacons (7.8% So Fresh, So Clean), and Map Fragments (19.0% Sat Nav)",
         ],
       },
@@ -1048,6 +1049,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "**Does Night (increased difficulty mode) affect trophies?** No — the in-game Night toggle raises enemy pressure but is required for certain content like night-only Glimpse pickups, and no achievement demands clearing bosses under it specifically.",
           "**Does the Slayer Seal affect achievements?** Yes — equipping it disables Steam achievements for that save. Developers confirmed the lockout and told Rock Paper Shotgun they 'didn't intend to lock everybody out'; nothing in the Week 1 Update notes (August 29) changes it. If the seal is on and you care about the platinum, switch it off before pushing deeper.",
+          "**Does the Baghead chain break in NG+?** It can. Players who kept the Special Moonshine from their first playthrough report that Baghead's quest will not continue in NG+ while the bottle sits in the inventory — and the game has no drop function, so Bag Holder (23.5%) locks on that save. Return the moonshine to its place (or finish his chain) during the endgame free-roam window before you commit to NG+; community reports also tie one of the Week 1 questline cosmetics to the same lockout. The full entry lives in the [missable content guide](/missable-content/).",
           "**Is Ascension the 196-Ova trophy?** No — they are separate entries. Ascension (16.7%, Discover the secret of the Mango) ties to the hidden Mango sanctuary quest; Bring My Ova Back to Me (15.7%) is the Ova-completion one. Community confusion between the two is common because their rates sit close together.",
           "**How long is a full completion?** PowerPyx estimates **40-60 hours** at a 6/10 difficulty rating, with roughly 85% of that being one thorough first playthrough plus two lighter Glimpse-farming cycles.",
         ],
@@ -1077,6 +1079,10 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/stats/2584270/achievements",
       },
       {
+        name: "Steam Discussions — Softlock Baghead achievement thread (August 29, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581680955258937465/",
+      },
+      {
         name: "PowerPyx — Mortal Shell 2 Trophy Guide & Roadmap",
         url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
       },
@@ -1089,7 +1095,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
     ],
-    reviewedOn: "September 2, 2026",
+    reviewedOn: "September 3, 2026",
     datePublished: "2026-08-27",
   },
   {
@@ -1365,9 +1371,9 @@ export const guidePages: GuidePage[] = [
     slug: "best-build",
     metaTitle: "Mortal Shell 2 Best Build: Shell, Weapon & Sidearm Combos",
     metaDescription:
-      "The best build for every Mortal Shell 2 shell after Balance Patch 1: per-shell weapon, sidearm, and seal loadouts, plus the patch changes that shift each one.",
+      "The best build for every Mortal Shell 2 shell after the Week 1 Update: per-shell weapon, sidearm, and seal loadouts, plus the patch changes — infinite Glimpses, Shell respec, weapon buffs — that shift each one.",
     cardBlurb:
-      "Post-patch build picks for all eight shells — what Balance Patch 1 changed and how to read it.",
+      "Post-patch build picks for all eight shells — what the Week 1 Update changed and how to read it.",
     heroImage: {
       src: "/img/site-2.jpg",
       alt: "Mortal Shell II key art: an armored warrior bearing a sword against a burning backdrop",
@@ -1377,17 +1383,32 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Builds",
     intro: [
       "Builds in Mortal Shell II are built from two confirmed pillars: which of the eight shells you possess, and how your combat loop generates and spends resolve. This page explains both, then records the community's launch-build consensus — clearly attributed, because it is an opinion, not a verified fact.",
-      "The build tables below follow Game8's launch guide; this page was rechecked on August 27, 2026 against Playstack's official Balance Patch 1 notes (live since August 20), which buffed key weapons, cut Tarforge smelt costs, and rebalanced enemy health. The patch facts in the boxes below come straight from those notes.",
+      "The build tables below follow Game8's launch guide; this page was rechecked on September 3, 2026 against Playstack's official Week 1 Update notes (live since August 29) on top of Balance Patch 1 (August 20), which buffed key weapons, cut Tarforge smelt costs, and rebalanced enemy health. The patch facts in the boxes below come straight from those official notes.",
     ],
     blocks: [
       {
+        heading: "What the Week 1 Update changed for builds (August 29)",
+        paragraphs: [
+          "The Week 1 Update is now the reference patch for build decisions, and its headline is economic: Glimpses and Tarcores are no longer finite resources, so every shell and every Tarstone can be fully upgraded inside a single playthrough. Alongside that, a new respec item — Mether's Severance, sold by Merrick — is given to Zhirelle, the shell keeper, who severs your bond with a Shell, resets it, and refunds every spent Glimpse (the full how-to is in the FAQ below). The commitment risk the launch meta was built around is simply gone: a 'wrong' shell investment is now a refundable detour.",
+          "The weapon board moved too. Per the official notes: the Obsidian Hammer received a full balance pass and now hits substantially harder; the Great Martyr's Blade damage buff that was announced for Balance Patch 1 did not actually ship in that patch — Week 1 delivered it 'even stronger' instead; heavy weapons in general took a poise and damage pass (good news for Eredrim's Iconoclast plan); Axatana's weapon ability now grants invulnerability frames and inflicts Fragile stacks, and its combat Tarstone active triggers correctly (a real lift for the Genesa and Lazlo picks); the Salvaged Trebuchaxe's Tarred Fragment was redesigned after being 'simultaneously overpowered and broken', so Tiel's signature pairing needs a fresh look; and Weltcap is stronger in both its active and passive forms. Ripostes received a full scaling pass — Rock Paper Shotgun's read: the update is 'making riposte damage scaling actually work', which puts riposte back on the menu as a damage verb rather than a trap.",
+        ],
+        bullets: [
+          "Glimpses and Tarcores are no longer finite — all shells and Tarstones upgrade in one playthrough",
+          "Mether's Severance respec: buy from Merrick, give to Zhirelle — Shell resets, every spent Glimpse refunded",
+          "Obsidian Hammer hits substantially harder; Great Martyr's Blade's buff shipped here, even stronger than announced",
+          "Heavy weapons: poise and damage pass — Eredrim frontloaders scale with it",
+          "Axatana ability grants i-frames + Fragile stacks; Trebuchaxe Tarred Fragment redesigned; Weltcap stronger",
+          "Ripostes: full scaling pass — viable damage again",
+        ],
+      },
+      {
         heading: "What Balance Patch 1 changed for builds (August 20)",
         paragraphs: [
-          "Four patch lines matter when picking a build. Weapons: Great Martyr's Blade attack damage is up 20%, Troubadour's Lute attack damage is up 100%, Caged Hystrix and Triarch Repeater no longer have minimum resolve requirements to fire, and light attacks track better on Axatana, Black Needle, and Clockwork Scythe. Economy: Tarforge smelting costs 75% less Gloom, gold drops are significantly increased (enemies in Mammon drop double), and shell map locations now cost Gloom instead of Glimpses — refunds wait in the Shell Keeper's alcove in Blackmarrow. Enemies: beta health values were restored, cutting boss damage and health across the board (The Lost Child takes 15% less health and 10% less damage; Monolith 10% less health and 19% less damage, with some attacks retimed).",
+          "Four patch lines matter when picking a build. Weapons: Great Martyr's Blade attack damage was announced up 20%, Troubadour's Lute attack damage is up 100%, Caged Hystrix and Triarch Repeater no longer have minimum resolve requirements to fire, and light attacks track better on Axatana, Black Needle, and Clockwork Scythe. (One correction from later notes: the Martyr's Blade buff did not actually ship in this patch — Week 1 delivered it, stronger.) Economy: Tarforge smelting costs 75% less Gloom, gold drops are significantly increased (enemies in Mammon drop double), and shell map locations now cost Gloom instead of Glimpses — refunds wait in the Shell Keeper's alcove in Blackmarrow. Enemies: beta health values were restored, cutting boss damage and health across the board (The Lost Child takes 15% less health and 10% less damage; Monolith 10% less health and 19% less damage, with some attacks retimed).",
           "Read together, that shifts builds toward the buffed weapons and cheaper experimentation. The Martyr's Blade Lightning setup gains flat damage; repeater sidearms lose their resolve floor, so casters can spend resolve on defense without starving their sidearm; smelting being cheap makes swapping weapons mid-run a plan instead of a punishment; and Mammon's doubled gold funds Tarstone work faster. Full nerf math per enemy lives in the patch discussion linked at the bottom of this page.",
         ],
         bullets: [
-          "Great Martyr's Blade +20% attack damage — Proxima setups scale directly",
+          "Great Martyr's Blade +20% attack damage as announced — the buff actually shipped in Week 1, stronger (Proxima setups scale directly)",
           "Troubadour's Lute +100% attack damage — watch this slot",
           "Caged Hystrix / Triarch Repeater: no minimum resolve to fire",
           "Tarforge smelt costs −75% Gloom; swapping weapons mid-run is cheap now",
@@ -1412,7 +1433,7 @@ export const guidePages: GuidePage[] = [
           "Game8's walkthrough team (guide updated August 19, 2026, against the launch build) publishes a best build for each of the eight shells, pairing a weapon, a sidearm, and a seal with each shell's ability kit. Balance Patch 1 touched several of these picks — the patch notes under each line show what changed. Their base picks, summarized:",
         ],
         bullets: [
-          "Tiel — Axe and Dagger + Salvaged Trebuchaxe: guaranteed critical strikes via the Critical Role ability",
+          "Tiel — Axe and Dagger + Salvaged Trebuchaxe: guaranteed critical strikes via the Critical Role ability (Trebuchaxe's Tarred Fragment was redesigned in Week 1 — retest before committing)",
           "Proxima (Lightning) — Great Martyr's Blade + Triarch Repeater: Biosampler inflicts Stasis and Lightning stacks for burst — [full Proxima build guide](/best-proxima-build/)",
           "Eredrim — The Iconoclast + Forgotten Crossbow: wears down enemy Break gauges and controls groups",
           "Gragu — Axe and Dagger + Triarch Repeater: high critical damage stacked on Revered Heart buffs",
@@ -1433,7 +1454,7 @@ export const guidePages: GuidePage[] = [
         heading: "Your first build of the run",
         paragraphs: [
           "The opening hours hand you the pieces in a sensible order. The Iconoclast arrives in the prologue, and Tiel and Proxima are the first shells most players find in Fainweald — which means the Lightning Proxima setup (Great Martyr's Blade plus Triarch Repeater) and crit-focused Tiel are realistic early targets, even though their best-in-slot parts take longer to assemble.",
-          "Balance Patch 1 makes both early targets hit harder. The Martyr's Blade in the Proxima setup carries a flat +20% damage buff, and with no minimum resolve to fire, the Triarch Repeater stops competing with your defensive skills for resolve — fire it freely while keeping your guard funded.",
+          "The patches since launch make both early targets hit harder. The Martyr's Blade in the Proxima setup carries the Week 1 damage buff — stronger than the +20% originally announced — and with no minimum resolve to fire, the Triarch Repeater stops competing with your defensive skills for resolve — fire it freely while keeping your guard funded.",
           "Until then, the core principles hold: aggression generates resolve, resolve funds defense, and posture breaks create your execute windows. Any shell and any weapon played inside that loop will carry you through the first dungeons while you collect the parts for the loadout you actually want.",
         ],
       },
@@ -1442,6 +1463,14 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Two economic changes reshape how aggressively you can iterate on builds. Tarforge smelting now costs 75% less Gloom, so re-speccing a weapon or shifting to a different upgrade path mid-run is a reasonable move rather than an NG+-length grind; Playstack framed it as letting players switch weapons without hours of grinding through repeated runs. Gold drops also rose significantly across the board, with Mammon enemies dropping double — which pairs well with Lazlo's Royal Crypt stomping grounds if you need coin for Tarstone work fast.",
           "The practical takeaway for builders: test more builds per hour of play. The cost of a wrong pick dropped alongside the buff table above, so treat the first half of the campaign as cheap experimentation instead of commitment.",
+          "The Week 1 Update (August 29) pushed the same direction further. Glimpses and Tarcores are no longer finite, Tarstones yield more Tarcores when broken, and both Tarstones and the Mether's Severance respec item restock at Merrick as you progress. The BP1 levers above still apply — smelting is 75% off and Mammon pays double gold — but the ceiling they worked against is gone, so the experimentation window is no longer just the first half of the campaign.",
+        ],
+      },
+      {
+        heading: "How do I respec my Shell in Mortal Shell 2?",
+        paragraphs: [
+          "Since the Week 1 Update (August 29, 2026), respec runs through an item called Mether's Severance: buy it from Merrick, then give it to Zhirelle, the shell keeper. In exchange she severs your bond with that Shell — the Shell resets and every Glimpse you spent on it comes back. Merrick restocks the item as you progress through the game.",
+          "This changes build strategy as much as any damage number. Because Glimpses are no longer finite either, testing a different Shell's build no longer destroys the upgrade tree you already built: respec out, pump the next Shell, and switch back later if the grass wasn't greener. The old advice to 'pick once and commit' is obsolete — pick, test, and let the refund absorb the mistake.",
         ],
       },
       {
@@ -1459,9 +1488,10 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Pending launch verification",
       intro:
-        "Build rankings move fast in week one:",
+        "Build rankings move fast in patch season — this page now reflects the Week 1 Update (August 29):",
       items: [
-        "Second attributed build source for cross-comparison against Game8's picks",
+        "Second attributed build source for cross-comparison against Game8's picks — especially a tier re-derivation under the infinite-Glimpse economy",
+        "Whether the unannounced ~1 GB update deployed September 2, 2026 (official notes not yet published) touches build-relevant numbers",
         "Whether console versions of Balance Patch 1 (PC live since August 20) ship with any additional tuning",
         "Troubadour's Lute build pairings worth revisiting after its +100% damage buff",
       ],
@@ -1473,6 +1503,10 @@ export const guidePages: GuidePage[] = [
       { label: "Beginner Guide", href: "/beginner-guide/" },
     ],
     sources: [
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
       {
         name: "Balance Patch 1 — Patch Notes (Playstack, official Steam announcement thread)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
@@ -1486,6 +1520,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
       },
     ],
+    reviewedOn: "September 3, 2026",
   },
   {
     slug: "walkthrough",
@@ -2306,15 +2341,15 @@ export const guidePages: GuidePage[] = [
     slug: "performance-fix",
     metaTitle: "Mortal Shell 2 Crash Fix: Crashing, Stuttering, Black Screen",
     metaDescription:
-      "Fix Mortal Shell 2 crashing on load: the official Hotfix 1 crash fix, the save-file workaround, the shader cache fix, and stuttering settings for PC.",
+      "Fix Mortal Shell 2 crashing, stuttering, and frame generation problems: Hotfix 1, the save-file workaround, the shader cache fix, post-Week-1 framegen and save-backup guidance, and PC settings.",
     cardBlurb:
-      "Every confirmed crash fix: the launch hotfix, the save-file workaround, and the shader cache fix for stuttering and full lock-ups.",
+      "Every confirmed crash fix — plus what the Week 1 Update changed about frame generation, freezes, and your save files.",
     h1: "Mortal Shell 2 Crash Fix",
     eyebrow: "Troubleshooting",
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
-      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, stuttering lives in the shader cache change and the attributed settings, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release.",
+      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, and a game that won't launch at all starts with the requirements check.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 3, 2026 against the Week 1 Update notes (August 29) and post-patch player reports.",
     ],
     blocks: [
       {
@@ -2350,6 +2385,22 @@ export const guidePages: GuidePage[] = [
         bullets: [
           "NVIDIA Control Panel > 3D Settings > Shader Cache Size > Unlimited",
           "AMD owners: the equivalent setting lives in AMD Software",
+        ],
+      },
+      {
+        heading: "After the Week 1 Update (August 29): frame gen, freezes, and your saves",
+        paragraphs: [
+          "The Week 1 Update reworked frame generation by Playstack's own notes: it now applies only after a reload, no longer activates before the world has loaded, and NVIDIA frame generation now covers a much wider range of cards. The same patch added a Geometry Budgets graphics option and a crash diagnostics option, moved the shader-compilation hitch into the main menu, and reduced enemy counts in the busiest areas. On paper, that is a straight improvement for the problems on this page.",
+          "The community picture one week in is rougher. In the pinned Week 1 discussion thread, multiple players report frame generation broken after updating — including one who had uninstalled mods, toggled frame gen off and on, and restarted repeatedly without fixing it — and others describe severe freezes and frame drops on hardware that ran a stable 120–140 FPS before the patch: down to 80, dipping to 20, with freezes lasting up to 20 seconds.",
+          "What to actually do, in order: fully quit and relaunch first, because the reworked frame generation only applies after a reload and an old session can run half-applied; confirm the patch fully downloaded; then disable frame generation and play without it while the reports are unresolved — that is the only framegen state with consistent community confirmation behind it right now. Keep the shader cache fix above for lock-ups, try the new crash diagnostics option if crashes persist, and when you report, include your build number (pause menu, bottom right) in the bug-report thread so Playstack can triage it.",
+          "Save files deserve their own caution. The Week 1 notes do contain one official save improvement — an interrupted save can no longer destroy your save file — but the same pinned thread carries reports of save files disappearing entirely after the update, and no official recovery path has been announced. The prevention is manual: copy the SaveGames folder at \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames somewhere safe before installing any update, and if a save vanishes after a patch, restore that folder copy before doing anything else.",
+          "Playstack also deployed a further ~1 GB update on September 2, 2026 without published patch notes; whether it addresses the framegen, freeze, or save reports below is unconfirmed, and this page rechecks when official notes land.",
+        ],
+        bullets: [
+          "Official (Week 1 notes): frame gen reworked — applies after a reload, wider NVIDIA card support; new Geometry Budgets and crash diagnostics options",
+          "Community reports (pinned Week 1 thread): framegen still broken for some players even after clean restarts; freezes dropping rigs from 120–140 FPS to 20",
+          "Workaround-first: quit fully, relaunch, then disable frame generation until an official fix lands",
+          "Saves: back up \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames before installing any update",
         ],
       },
       {
@@ -2433,6 +2484,18 @@ export const guidePages: GuidePage[] = [
           "No screen-tearing fix has been officially confirmed. The attributed guidance is to disable the in-game V-Sync and cap the frame rate externally — for example at 60 FPS — so a single governor handles frame pacing. Change one setting at a time and re-test after each.",
         ],
       },
+      {
+        heading: "Did the Week 1 Update break frame generation?",
+        paragraphs: [
+          "It broke for some players, yes. The Week 1 Update officially reworked frame generation (it now applies after a reload, and NVIDIA frame gen covers a much wider card range), but the pinned Week 1 discussion thread collects multiple reports of frame generation not working after updating — including from a player with mods uninstalled who toggled it off and on and restarted repeatedly. There is no official fix announcement yet. Until one lands: fully quit and relaunch (the rework only applies after a reload), confirm the patch downloaded completely, and if it still misbehaves, play with frame generation disabled. A further update deployed September 2 without notes — its contents are unconfirmed.",
+        ],
+      },
+      {
+        heading: "Mortal Shell 2 save file disappeared after the update — what now?",
+        paragraphs: [
+          "Reports of saves vanishing after the Week 1 Update exist in the pinned Week 1 thread, and no official recovery path has been announced — the patch's only official save fix is that an interrupted save can no longer destroy the file. Before patching (always), copy \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames to a safe location; if a save disappears right after an update, restore that folder copy before relaunching. If you have no backup, report it in the bug-report thread with your build number — do not start overwriting saves first.",
+        ],
+      },
     ],
     communityNote: {
       heading: "Further settings worth trying (attributed)",
@@ -2440,11 +2503,12 @@ export const guidePages: GuidePage[] = [
       attribution: "LagoFast performance guide, updated August 16, 2026",
     },
     pending: {
-      heading: "Pending launch verification",
+      heading: "Pending verification",
       intro:
-        "Rechecked August 28, 2026 against Playstack's Balance Patch 1 notes: Hotfix 1 remains the current crash fix, and no launch-day stability patch superseded it. Still open:",
+        "Rechecked September 3, 2026 against the Week 1 Update notes (August 29) and the pinned post-patch discussion thread. Still open:",
       items: [
-        "Whether the promised rapid balance & crash fix patch (Playstack, Balance Patch 1 announcement) lands cleanly — it will be verified here when it ships",
+        "Official patch notes for the ~1 GB update deployed September 2, 2026 — when they land, this page verifies whether the framegen, freeze, and save reports are addressed",
+        "An official fix or workaround for the frame-generation breakage reported after Week 1",
         "A permanent fix note for the Keyboard Bindings crash (the workaround above is temporary)",
         "Recommended PC requirements — Steam currently lists minimum only",
         "Official word on Xbox Series S crash reports near the forgotten crossbow area (player-reported, collected by Playstack)",
@@ -2456,6 +2520,14 @@ export const guidePages: GuidePage[] = [
       { label: "Best Build", href: "/best-build/" },
     ],
     sources: [
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
+      {
+        name: "PINNED: The Week 1 Patch — details (Steam Discussions, post-patch reports)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581680955258892870/",
+      },
       {
         name: "Mortal Shell II Steam news (Playstack)",
         url: "https://store.steampowered.com/news/app/2584270",
@@ -2473,7 +2545,7 @@ export const guidePages: GuidePage[] = [
         url: "https://www.lagofast.com/en/blog/mortal-shell-2-stuttering-fps-drops/",
       },
     ],
-    reviewedOn: "August 28, 2026",
+    reviewedOn: "September 3, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -2877,7 +2949,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Completion",
     intro: [
       "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
-      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion linked below.",
     ],
     blocks: [
       {
@@ -2889,6 +2961,7 @@ export const guidePages: GuidePage[] = [
           "**Mid Summer?** — accept Marigold's flower crown during the prologue walk to your first Shell. Ignore her once and it is gone for that playthrough.",
           "**No, You Still Can't Win** — reduce the tutorial Tar Golem to zero health. The game casts it as an unwinnable fight; winning ends the tutorial fight immediately, and the Golem never appears again in any playthrough including NG+.",
           "**Peter's Perfect Parry** — Perfect Guard every hit of a specific head-spin variant from The Nameless Captive while wearing the Untarnished Seal. If he dies before you land it, the save moves past the encounter permanently.",
+          "**NG+ trap, not first-run missable:** Baghead's Special Moonshine — carry the bottle into New Game+ and the Bag Holder trophy locks on that save; the endgame free-roam window is the time to deal with it (see the Baghead section below).",
         ],
       },
       {
@@ -2937,6 +3010,13 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "The NG+ trap: Baghead's Special Moonshine",
+        paragraphs: [
+          "A fourth entry behaves like a missable even though Bag Holder is formally a post-game-safe trophy. Per an August 29 Steam bug report — with a matching complaint in the pinned Week 1 thread — players who picked up the Special Moonshine (the bottle Baghead covets, found near the Illusionist's Cache) in their first playthrough and did not return it to its place cannot finish Baghead's chain in NG+: the quest refuses to continue while a Special Moonshine sits in the inventory, because his chain only proceeds from an empty-handed start. Mortal Shell II has no way to drop items, so the bottle is stuck there — and Bag Holder (23.5%) locks on that save. The bug reporter could only fix it with external save editing.",
+          "The rule that costs nothing: settle the moonshine before entering NG+. During the endgame free-roam window, either finish Baghead's chain outright — the full script is in the [side quests guide](/side-quests/) — or return the Special Moonshine to its place. Community reports also tie one of the Week 1 Update's two new questline cosmetics to this chain, with players who entered NG+ early asking for it retroactively — one more reason to keep your first save Baghead-clean before you commit.",
+        ],
+      },
+      {
         heading: "What carries over vs what starts fresh in New Game+",
         paragraphs: [
           "Understanding carryover determines whether 'missing' something actually matters:",
@@ -2961,6 +3041,8 @@ export const guidePages: GuidePage[] = [
       items: [
         "Exact trigger (if any) behind player reports of the flower crown disappearing mid-campaign",
         "Whether the Bring My Ova NG+ bug has been fixed by Balance Patch 1 — PowerPyx's warning predates it and has not visibly changed",
+        "Whether a patch resets the Special Moonshine on NG+ transition or otherwise unblocks Baghead's chain — the bug report requests exactly that",
+        "Which Week 1 questline cosmetic ties to the Baghead chain, per community reports, and whether locked-out players get it retroactively",
       ],
     },
     related: [
@@ -2975,6 +3057,10 @@ export const guidePages: GuidePage[] = [
         url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
       },
       {
+        name: "Steam Discussions — Softlock Baghead achievement thread (August 29, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581680955258937465/",
+      },
+      {
         name: "Steam Discussions — Flower crown thread (Playstack forum)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178549011/",
       },
@@ -2987,7 +3073,7 @@ export const guidePages: GuidePage[] = [
         url: "https://gmtreks.com/mortal-shell-2/page/01M098T01E73M7CEN55T07PWFY",
       },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 3, 2026",
     datePublished: "2026-08-27",
   },
 ];
