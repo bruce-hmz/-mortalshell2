@@ -357,7 +357,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official Week 1 Update announcement (August 29, 2026) and the Balance Patch 1 announcement thread (August 20, 2026); last reviewed September 1, 2026.",
+      "Verified against Playstack's official Week 1 Update announcement (August 29, 2026) and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 4, 2026.",
     ],
     blocks: [
       {
@@ -387,6 +387,28 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "The economy un-cap is the headline for completionists: maxing every shell's bond and every Tarstone in one playthrough is no longer a two-run project, and Mether's Severance makes build experimentation refundable instead of permanent. Anything on this site that budgeted Glimpse as a scarce resource is being re-checked against the new math, starting with the [achievements guide](/achievements-guide/) and the [farming routes](/farming-guide/).",
           "The day-only Beacons give the world clock its first mechanical bite — a cleanse run through Fainweald or Mammon now pays attention to daylight. And if you were avoiding the final boss over the tail-grab one-shot: it is gone on standard difficulty, but [Night Mode](/night-mode/) keeps it on, exactly as the notes say.",
+        ],
+      },
+      {
+        anchor: "pc-hotfix-september",
+        heading: "PC Hotfix — September 1, 2026 (~1 GB)",
+        paragraphs: [
+          "Around September 1, 2026 — while the [Week 1 Update](#week-1-update) was still going through console certification, per the developer's own note — Cold Symmetry shipped a PC-only hotfix (a ~1 GB download by player reports) with no announcement on Steam News. The official fix list went up on the developer's Reddit and Discord channels instead, and the text below is that official note as quoted verbatim by players in the game's Steam discussions (two threads, identical wording, linked in the sources). Since the notes were scattered across three platforms, this page consolidates them:",
+        ],
+        bullets: [
+          "**Devout and Pre-Order Shell Shades** not appearing for some players",
+          "**World map** failing to open when playing with FSR",
+          "**Citadel Annex giant spider** traversal",
+          "**Certain enemies** not reacting to the player",
+          "**Several collision areas**",
+          "**Lens flare and Minibeacon** visual issues",
+        ],
+      },
+      {
+        anchor: "hotfix-not-cover",
+        heading: "Did the September 1 PC hotfix fix frame generation, crashes, or saves?",
+        paragraphs: [
+          "No — the hotfix list contains no frame generation, freeze/crash, or save-file fixes, and players in the quote threads explicitly flagged that absence. It also does not touch the eel-type sidearm hitbox reports, which answers this page's own open question below: still no eel-specific fix. Those technical issues remain tracked, with workarounds and save-backup steps, in the [performance fix guide](/performance-fix/).",
         ],
       },
       {
@@ -434,17 +456,17 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "**Do console players have Balance Patch 1 yet?** The patch went live on PC first; Playstack's announcement says it was \"coming to PlayStation 5 and Xbox Series shortly\". Check your platform's update history for the current rollout state.",
           "**Are the enemy nerfs retroactive to NG+?** The announcement phrases enemy changes as flat restorations to beta HP values, not difficulty-mode-specific multipliers — the beta-restoration line applies across the game, while the patch-preview language (\"live on PC and coming to PlayStation 5 and Xbox Series shortly\") is about platform rollout, not difficulty tiers.",
-          "**Where are the official notes posted?** Playstack's announcements live in the game's official Steam community hub — the Balance Patch 1 thread is linked in this page's sources. Console patch histories appear on each platform's official channels.",
+          "**Where are the official notes posted?** Usually the game's official Steam community hub — the Balance Patch 1 thread and the Week 1 Update announcement are linked in this page's sources. The September 1 PC hotfix is the exception so far: its fix list was posted on Reddit and Discord only, never as a Steam News entry, which is exactly why this page consolidates every update in one place. Console patch histories appear on each platform's official channels.",
         ],
       },
     ],
     pending: {
       heading: "Still being verified",
-      intro: "Open questions on the update trail as of September 1, 2026:",
+      intro: "Open questions on the update trail as of September 4, 2026:",
       items: [
-        "Exact console rollout dates for the Week 1 Update (PC went live August 29)",
+        "Exact console rollout dates for the Week 1 Update (PC went live August 29; the developer's September 1 hotfix note says the Week 1 patch was still in certification for consoles at that date)",
         "Official count and locations of the Week 1 Update's new day-only Beacons — the notes name no number; player estimates say 10+",
-        "Whether any hotfix has addressed the eel-type enemy hitbox reports (the Week 1 notes fixed weak-point projectile registration but name no eel-specific fix)",
+        "Official Steam News entry for the September 1 PC hotfix — the fix list was posted on Reddit and Discord only; if Playstack publishes it as a Steam announcement, this page will link it",
       ],
     },
     related: [
@@ -461,6 +483,10 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
       {
+        name: "Steam Discussions — “1 GB update?” thread carrying the official September 1 PC hotfix note text, as posted on the developer's Reddit/Discord (quoted verbatim, OP dated September 1, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681246928686311/",
+      },
+      {
         name: "Balance Patch 1 — Mortal Shell II Steam announcement (Playstack)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
       },
@@ -469,7 +495,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270",
       },
     ],
-    reviewedOn: "September 1, 2026",
+    reviewedOn: "September 4, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -1712,9 +1738,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Classes",
     intro: [
       "Shells are Mortal Shell II's answer to classes: the forgotten bodies of eight lost warriors, scattered across the world, each one waiting to be possessed and mastered. This page collects everything officially confirmed about them so far.",
-      "Fact-checked against the official Steam page and the developer's website on " +
-        LAST_REVIEWED +
-        ".",
+      "Fact-checked against the official Steam page and the developer's website on August 17, 2026; the three player-question FAQs below (Harros, Genessa's shade, Lazlo's heat) were added September 4, 2026 from the Steam discussion threads linked in the sources.",
     ],
     blocks: [
       {
@@ -1723,6 +1747,13 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "The launch build's eight possessable shells are Tiel, Proxima, Eredrim, Gragu, Smert, Sester Genessa, Lazlo, and Sariel. A ninth figure, Harros, appears as the vassal who helps you during the prologue — he is not counted among the eight lost warriors your Harbinger ultimately inhabits.",
           "Two of the shells, Gragu and Sester Genessa, are first encountered as living NPCs rather than corpses — Gragu drinking at the One Legged Wolf Tavern, Genessa running combat training in Marrow Keep. The rest are found out in the world, usually behind a boss fight or a ritual.",
+        ],
+      },
+      {
+        anchor: "save-harros",
+        heading: "Can you save Harros or keep his shell?",
+        paragraphs: [
+          "No. Players hoping to preserve him get a firm answer in the Steam discussions (September 2026): Harros dies as part of the story, and there is no way to save him or claim his body. He is the vassal who fights beside you in the prologue, not one of the eight lost warriors listed above — no dialogue choice or hidden step turns him into a playable shell.",
         ],
       },
       {
@@ -1759,12 +1790,26 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "genessa-shade-second-form",
+        heading: "Why doesn't my Shell Shade show on Sester Genessa's second form?",
+        paragraphs: [
+          "Shell Shades applied to Sester Genessa do not carry over to her Stray second form. Several players confirmed this in the Steam discussions (September 2026) and read it as design behavior rather than a bug — one regretted spending a Blackmarrow key on the shade for exactly that reason. Note this is separate from the display bug that stopped some Devout and Pre-Order Shell Shades from appearing at all; that one was fixed by the September 1 PC hotfix (see the [patch notes](/patch-notes/)), while the second-form behavior stands.",
+        ],
+      },
+      {
         anchor: "guarded-bodies",
         heading: "Eredrim, Smert, Lazlo: the guarded bodies",
         paragraphs: [
           "Eredrim is the knight waiting in the Citadel of Penance, the heavily patrolled keep of western Fainweald. From the citadel's own beacon, drop from the courtyard into the pit, follow the circular lower passage past burstable eggs until you spot the lift near the air current, and ride it into the central arena — the Warden who killed Eredrim long ago is the price of the shell.",
           "Smert's ritual is the strangest sight of the eight. From the Outskirts of Nochte Beacon turn left up the slope into Prophet's Rest: three cultist groups chant over circular pits of red liquid, with Smert's body on a stone slab beside them. Clear the three groups (RPS notes the Troubadour's Lute can turn them on each other) and the screen glows red when the shell is claimable.",
           "Lazlo lies in the Royal Crypt of Mammon behind Vellen, High Lord of Mammon. From the High Lord's Courtyard Beacon ride the air current up, dodge the rolling Knight of Mammon on the way down into the dark crypt, and put Vellen down — Lazlo's body is in the chamber just beyond.",
+        ],
+      },
+      {
+        anchor: "lazlo-heat-drain",
+        heading: "Does Lazlo's heat bar drain once it's full?",
+        paragraphs: [
+          "No — once Lazlo's heat gauge fills it stops draining and stays at full until you re-use his ability, per the players who answered exactly this question in the Steam discussions (a five-reply thread from late August 2026). The replies read the behavior as intended, and it is the backbone of the common passive Lazlo setup: reach max heat, leave the ability alone, and build around the shell while its gauge stays pinned. For how that pairs with weapons, sidearms, and seals, see the [best build guide](/best-build/).",
         ],
       },
       {
@@ -1819,6 +1864,18 @@ export const guidePages: GuidePage[] = [
         url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
       },
       {
+        name: "Steam Discussions — “Any way to save the Harros shell?” thread (September 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840559954/",
+      },
+      {
+        name: "Steam Discussions — Genessa Shell Shade vs. her second form thread (September 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681246928699834/",
+      },
+      {
+        name: "Steam Discussions — Lazlo max heat mechanic thread (August 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581680955259000069/",
+      },
+      {
         name: "Balance Patch 1 — Mortal Shell II Steam announcement",
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
       },
@@ -1827,7 +1884,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
       },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 4, 2026",
     datePublished: "2026-08-20",
   },
  {
@@ -2949,7 +3006,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Completion",
     intro: [
       "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
-      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion linked below.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, and the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026.",
     ],
     blocks: [
       {
@@ -3017,6 +3074,17 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Patched since launch: lockouts and chests the Week 1 Update resolved",
+        paragraphs: [
+          "The missable-content picture shifts with every patch, and the Week 1 Update (August 29) retired several completionist worries that older guides still warn about — all per the official notes, cross-checked in our [patch notes](/patch-notes/):",
+        ],
+        bullets: [
+          "**Vatra's Temple can no longer softlock your save** — the update fixed the bug that locked players out of the game permanently after exploring the temple, and repaired its gates that could strand your Gloom somewhere unreachable",
+          "**Problematic chests were reset** — the notes confirm \"some problematic chests have been reset\", a chest that destroyed itself was fixed, several chests that became unreliable after loading a save now work, and dungeon reward chests across the first two regions were revised",
+          "**Justicar's Stone and Gloombound Stone are no longer unique** — both were converted to Fragile Tarstones, and Fragile Tarstones \"can be found multiple times during a playthrough\" (Merrick also sells them), so neither pickup carries once-per-run weight anymore",
+        ],
+      },
+      {
         heading: "What carries over vs what starts fresh in New Game+",
         paragraphs: [
           "Understanding carryover determines whether 'missing' something actually matters:",
@@ -3040,8 +3108,8 @@ export const guidePages: GuidePage[] = [
         "Open questions we could not pin down from fetched sources this week:",
       items: [
         "Exact trigger (if any) behind player reports of the flower crown disappearing mid-campaign",
-        "Whether the Bring My Ova NG+ bug has been fixed by Balance Patch 1 — PowerPyx's warning predates it and has not visibly changed",
-        "Whether a patch resets the Special Moonshine on NG+ transition or otherwise unblocks Baghead's chain — the bug report requests exactly that",
+        "Whether the Bring My Ova NG+ bug has been fixed — PowerPyx's warning predates Balance Patch 1 and has not visibly changed, and the Week 1 Update (August 29) notes name no Ova fix either (checked September 4, 2026)",
+        "Whether a patch resets the Special Moonshine on NG+ transition or otherwise unblocks Baghead's chain — the bug report requests exactly that, and the Week 1 notes (which fixed Baghead's ending unlocking early) name no moonshine reset",
         "Which Week 1 questline cosmetic ties to the Baghead chain, per community reports, and whether locked-out players get it retroactively",
       ],
     },
@@ -3072,8 +3140,12 @@ export const guidePages: GuidePage[] = [
         name: "GameTrek — Mortal Shell 2 Trophies",
         url: "https://gmtreks.com/mortal-shell-2/page/01M098T01E73M7CEN55T07PWFY",
       },
+      {
+        name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026) — source for the Vatra's Temple, chest-reset, and Fragile Tarstone fixes",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
+      },
     ],
-    reviewedOn: "September 3, 2026",
+    reviewedOn: "September 4, 2026",
     datePublished: "2026-08-27",
   },
 ];
