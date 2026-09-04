@@ -1010,7 +1010,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, and the Baghead NG+ trap was added September 3, 2026 from Steam bug reports. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, and the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -1061,6 +1061,13 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Is the Finish the Fight achievement bugged?",
+        paragraphs: [
+          "Finish the Fight — the kill achievement for the final boss — can fail to unlock even when the boss goes down, and the Steam bug-board thread on it (15+ replies) explains why: the kill only registers if the boss's health reaches **exactly zero before the death cutscene takes over**. When the boss starts its ultimate attack at low health, the cutscene can swallow the kill and the achievement never fires — which is why players are split on whether to call it bugged or just brutally timed.",
+          "The repeatable workaround players confirm: hold your **ranged charges in reserve for the finishing blow**. A ranged hit that drops the health bar to zero counts even while the boss is mid-air in its ultimate, so saving sidearm ammo for the kill window sidesteps the cutscene problem entirely. If a cutscene does lock in without the achievement popping, players report force-closing the game (Alt+F4) and reloading from before the attempt rather than letting the save advance. The fight itself, start to finish, is mapped in the [boss guide](/bosses/).",
+        ],
+      },
+      {
         heading: "Efficient order of operations",
         paragraphs: [
           "One disciplined pass covers nearly everything; only Seeking the Past legitimately needs repeats.",
@@ -1105,6 +1112,10 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/stats/2584270/achievements",
       },
       {
+        name: "Steam Discussions (bug board) — \"Finish the Fight\" achievement, bugged but is still achievable",
+        url: "https://steamcommunity.com/app/2584270/discussions/2/563659002336173025/",
+      },
+      {
         name: "Steam Discussions — Softlock Baghead achievement thread (August 29, 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581680955258937465/",
       },
@@ -1121,7 +1132,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
     ],
-    reviewedOn: "September 3, 2026",
+    reviewedOn: "September 5, 2026",
     datePublished: "2026-08-27",
   },
   {
@@ -2405,8 +2416,8 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Troubleshooting",
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
-      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 3, 2026 against the Week 1 Update notes (August 29) and post-patch player reports.",
+      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, and a game that won't launch at all starts with the requirements check.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads.",
     ],
     blocks: [
       {
@@ -2448,16 +2459,30 @@ export const guidePages: GuidePage[] = [
         heading: "After the Week 1 Update (August 29): frame gen, freezes, and your saves",
         paragraphs: [
           "The Week 1 Update reworked frame generation by Playstack's own notes: it now applies only after a reload, no longer activates before the world has loaded, and NVIDIA frame generation now covers a much wider range of cards. The same patch added a Geometry Budgets graphics option and a crash diagnostics option, moved the shader-compilation hitch into the main menu, and reduced enemy counts in the busiest areas. On paper, that is a straight improvement for the problems on this page.",
-          "The community picture one week in is rougher. In the pinned Week 1 discussion thread, multiple players report frame generation broken after updating — including one who had uninstalled mods, toggled frame gen off and on, and restarted repeatedly without fixing it — and others describe severe freezes and frame drops on hardware that ran a stable 120–140 FPS before the patch: down to 80, dipping to 20, with freezes lasting up to 20 seconds.",
+          "The community picture one week in is rougher. In the pinned Week 1 discussion thread, multiple players report frame generation broken after updating — including one who had uninstalled mods, toggled frame gen off and on, and restarted repeatedly without fixing it — and others describe severe freezes and frame drops on hardware that ran a stable 120–140 FPS before the patch: down to 80, dipping to 20, with freezes lasting up to 20 seconds. A third independent report adds a driver-level wrinkle: the NVIDIA app lists the game but refuses to change its settings (the shipping executable sits in a directory the app doesn't recognize), with frame gen dead after the patch.",
           "What to actually do, in order: fully quit and relaunch first, because the reworked frame generation only applies after a reload and an old session can run half-applied; confirm the patch fully downloaded; then disable frame generation and play without it while the reports are unresolved — that is the only framegen state with consistent community confirmation behind it right now. Keep the shader cache fix above for lock-ups, try the new crash diagnostics option if crashes persist, and when you report, include your build number (pause menu, bottom right) in the bug-report thread so Playstack can triage it.",
           "Save files deserve their own caution. The Week 1 notes do contain one official save improvement — an interrupted save can no longer destroy your save file — but the same pinned thread carries reports of save files disappearing entirely after the update, and no official recovery path has been announced. The prevention is manual: copy the SaveGames folder at \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames somewhere safe before installing any update, and if a save vanishes after a patch, restore that folder copy before doing anything else.",
-          "Playstack also deployed a further ~1 GB update on September 2, 2026 without published patch notes; whether it addresses the framegen, freeze, or save reports below is unconfirmed, and this page rechecks when official notes land.",
+          "Playstack also shipped a ~1 GB PC hotfix on September 1, 2026. Its official notes were posted on the developer's Reddit and Discord rather than Steam News, and they list six fixes — Devout/Pre-Order Shell Shades, the FSR world-map problem, Citadel Annex spider traversal, enemies not reacting, collision areas, and Minibeacon visuals — with nothing for frame generation, freezes, crashes, or saves. The full entry is on the [patch notes page](/patch-notes/).",
         ],
         bullets: [
           "Official (Week 1 notes): frame gen reworked — applies after a reload, wider NVIDIA card support; new Geometry Budgets and crash diagnostics options",
           "Community reports (pinned Week 1 thread): framegen still broken for some players even after clean restarts; freezes dropping rigs from 120–140 FPS to 20",
+          "Official (September 1 hotfix notes): six fixes, none of them framegen, freeze, crash, or save related",
           "Workaround-first: quit fully, relaunch, then disable frame generation until an official fix lands",
           "Saves: back up \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames before installing any update",
+        ],
+      },
+      {
+        heading: "Random crashes that survive every patch: what the community has confirmed",
+        paragraphs: [
+          "Past the officially confirmed crashes above sits a bigger cluster: random crashes reported since launch that no patch has eliminated. The game's largest active Steam discussion — \"Am I the only one being plagued by crashes?\", 140+ replies and flagged answered — collects the pattern: hard lock-ups that take the whole PC down with no error text, crashes on alt-tab, and reports persisting \"even after the updates\". The community has not agreed on a cause — several repliers report zero crashes on comparable hardware — but a handful of workarounds now have confirmed successes attached, and the September 1 hotfix explicitly did not touch this cluster.",
+        ],
+        bullets: [
+          "**Lower graphics settings and turn off ray tracing** — the one player-confirmed fix so far: crashes stopped entirely after this change on a rig that had run max settings smoothly",
+          "**Cap the frame rate at 60 and keep frame generation off** — the standard advice across the crash threads, pairing the framegen workaround above with a strict cap",
+          "**Start at 1080p Lowest and step up** — crash sufferers report beginning at the floor and raising one setting at a time to find what their build tolerates",
+          "**DDU driver resets and stress-testing the rig** — recurring advice for the hard-freeze variant; attributed suggestions, not confirmed fixes",
+          "Save files: players in the crash threads report crashes corrupting saves — one counts three corrupted saves from crashes alone, four including the beta — which makes the backup routine in the Week 1 section above the only documented protection",
         ],
       },
       {
@@ -2478,7 +2503,7 @@ export const guidePages: GuidePage[] = [
         heading: "Compiling shaders: why the stutter happens and what the cache does",
         paragraphs: [
           "Much of Mortal Shell 2's mid-fight stutter points at the same underlying shader-compilation behavior the lock-up fix addresses: when the game meets visual effects it has not compiled yet, that compilation lands in the middle of play as a hitch. The fix with the strongest support is the same one Playstack's community manager recommends for lock-ups — set Shader Cache Size to Unlimited in the NVIDIA Control Panel (or the AMD Software equivalent) so compiled shaders are kept instead of being recompiled.",
-          "LagoFast additionally lists the community-reported -UseFixedTimeStep Steam launch option as a thing to try for shader stutter. That one is community-reported only — it is not an official recommendation, so weigh it accordingly.",
+          "LagoFast additionally lists the community-reported -UseFixedTimeStep Steam launch option as a thing to try for shader stutter. That one is community-reported only — it is not an official recommendation, so weigh it accordingly. The forum's own pinned [PC NVIDIA] stutter thread makes the same cache recommendation as Fix 3 — clear the shader cache and raise its size — and a separate thread asks why the game reserves so much space for shaders in the first place; both point at the same lever.",
         ],
       },
       {
@@ -2508,7 +2533,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "How do you stop Mortal Shell 2 from crashing?",
         paragraphs: [
-          "Install Hotfix 1 — it is now a standard patch on the default branch, so a normal update applies it. If the crash happens when opening Keyboard Bindings, delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav as described in Fix 2. For full lock-ups, set Shader Cache Size to Unlimited in the NVIDIA Control Panel (Fix 3). Apply one change at a time and re-test after each, so you know which fix your crash actually responded to.",
+          "Install Hotfix 1 — it is now a standard patch on the default branch, so a normal update applies it. If the crash happens when opening Keyboard Bindings, delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav as described in Fix 2. For full lock-ups, set Shader Cache Size to Unlimited in the NVIDIA Control Panel (Fix 3). If random crashes survive all of that, the crash threads' one player-confirmed success is lowering graphics settings and turning off ray tracing. Apply one change at a time and re-test after each, so you know which fix your crash actually responded to.",
         ],
       },
       {
@@ -2544,7 +2569,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Did the Week 1 Update break frame generation?",
         paragraphs: [
-          "It broke for some players, yes. The Week 1 Update officially reworked frame generation (it now applies after a reload, and NVIDIA frame gen covers a much wider card range), but the pinned Week 1 discussion thread collects multiple reports of frame generation not working after updating — including from a player with mods uninstalled who toggled it off and on and restarted repeatedly. There is no official fix announcement yet. Until one lands: fully quit and relaunch (the rework only applies after a reload), confirm the patch downloaded completely, and if it still misbehaves, play with frame generation disabled. A further update deployed September 2 without notes — its contents are unconfirmed.",
+          "It broke for some players, yes. The Week 1 Update officially reworked frame generation (it now applies after a reload, and NVIDIA frame gen covers a much wider card range), but the pinned Week 1 discussion thread collects multiple reports of frame generation not working after updating — including from a player with mods uninstalled who toggled it off and on and restarted repeatedly. There is no official fix announcement yet. Until one lands: fully quit and relaunch (the rework only applies after a reload), confirm the patch downloaded completely, and if it still misbehaves, play with frame generation disabled. The September 1 PC hotfix did not touch frame generation — its six fixes, listed on the [patch notes page](/patch-notes/), are all visual and traversal items — so the workaround stands.",
         ],
       },
       {
@@ -2562,9 +2587,9 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Pending verification",
       intro:
-        "Rechecked September 3, 2026 against the Week 1 Update notes (August 29) and the pinned post-patch discussion thread. Still open:",
+        "Rechecked September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. Still open:",
       items: [
-        "Official patch notes for the ~1 GB update deployed September 2, 2026 — when they land, this page verifies whether the framegen, freeze, and save reports are addressed",
+        "An official fix or acknowledgment for the random-crash cluster — the game's largest active Steam thread — and whether the crash-linked save-corruption reports share its cause",
         "An official fix or workaround for the frame-generation breakage reported after Week 1",
         "A permanent fix note for the Keyboard Bindings crash (the workaround above is temporary)",
         "Recommended PC requirements — Steam currently lists minimum only",
@@ -2586,6 +2611,18 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/0/581680955258892870/",
       },
       {
+        name: "Steam Discussions — \"Am I the only one being plagued by crashes?\" (the game's largest active thread)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178353028/",
+      },
+      {
+        name: "Steam Discussions — \"Game still crashes\" (crash-to-save-corruption reports)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840625385/",
+      },
+      {
+        name: "Steam Discussions — \"Nvidia Framegen doenst work after Patch.\"",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840630817/",
+      },
+      {
         name: "Mortal Shell II Steam news (Playstack)",
         url: "https://store.steampowered.com/news/app/2584270",
       },
@@ -2602,7 +2639,7 @@ export const guidePages: GuidePage[] = [
         url: "https://www.lagofast.com/en/blog/mortal-shell-2-stuttering-fps-drops/",
       },
     ],
-    reviewedOn: "September 3, 2026",
+    reviewedOn: "September 5, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -2865,7 +2902,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Progression",
     intro: [
       "Fast travel in Mortal Shell II is not a spell you learn or a questline you finish — it is the Beacon network you build yourself. Every region hides corrupted checkpoints that become the travel map's pins as you cleanse them, and by launch week players were asking the same question across Steam and YouTube: where exactly does fast travel start?",
-      "This page covers the mechanic end to end: what Beacons do before and after cleansing, how to trigger the Mether's Breath travel menu, every one of the 49 Beacon locations ordered by region, and the completion stakes — none of them are missable. Everything below was verified against PowerPyx's Beacon compendium and the Fextralife wiki on August 27, 2026. The Week 1 Update (August 29, 2026) has since added new day-only Beacons in Fainweald and Mammon — covered in the first section below; the 49-node catalog documents the verified launch baseline, re-checked September 1, 2026.",
+      "This page covers the mechanic end to end: what Beacons do before and after cleansing, how to trigger the Mether's Breath travel menu, every one of the 49 Beacon locations ordered by region, and the completion stakes — none of them are missable. Everything below was verified against PowerPyx's Beacon compendium and the Fextralife wiki on August 27, 2026. The Week 1 Update (August 29, 2026) has since added new day-only Beacons in Fainweald and Mammon — covered in the first section below; the 49-node catalog documents the verified launch baseline, re-checked September 1, 2026, and the Beacon-revitalization FAQ was added September 5, 2026 from post-patch Steam reports.",
     ],
     blocks: [
       {
@@ -2958,6 +2995,13 @@ export const guidePages: GuidePage[] = [
           "You're standing at a Beacon that is still corrupted — or trying to travel from somewhere that isn't a Beacon at all. An uncleansed node gives you rest, healing, and a respawn point, but no destinations. Step inside and clear its dungeon first; once cleansed, the travel options appear in that node's menu, and the Return to Marrow Keep option is the fastest way home from anywhere the network reaches.",
         ],
       },
+      {
+        heading: "Why can't I revitalize some Beacons?",
+        paragraphs: [
+          "Post-patch, almost every \"this Beacon won't respond\" report comes down to one of two things — and neither is a bug. First, the Beacons the Week 1 Update added throughout Fainweald and the Ruins of Mammon are **day-only by official design**: at night they sit inert, and they come to life in daylight (see the Week 1 section at the top of this page). If the node you're trying to revitalize is in either region, wait for the in-game morning and try again. Second, some Beacon sites are already cleansed before you reach them — the player reports that prompted this FAQ single out spots like the Revenant-graves Beacon and nodes in the snowy regions that can't be interacted with — and a pre-cleansed Beacon has nothing left to revitalize. If it's already lit and serving you as a travel node, it's done.",
+          "If neither applies — the node is a normal cleansable Beacon, the sun is up, and it still refuses the interaction — treat it as a genuine bug: report it on the Steam bug board with a screenshot (the original reports include them), and check the [patch notes page](/patch-notes/) in case a future hotfix addresses it.",
+        ],
+      },
     ],
     pending: {
       heading: "Still being verified",
@@ -2988,11 +3032,15 @@ export const guidePages: GuidePage[] = [
         url: "https://www.powerpyx.com/mortal-shell-2-all-beacon-locations/",
       },
       {
+        name: "Steam Discussions — \"some Beacons i cant Revitalize\" (September 2, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681246928682193/",
+      },
+      {
         name: "Fextralife Wiki — Mortal Shell 2 Beacons",
         url: "https://mortalshell2.wiki.fextralife.com/Beacons",
       },
     ],
-     reviewedOn: "September 1, 2026",
+     reviewedOn: "September 5, 2026",
      datePublished: "2026-08-27",
    },
   {
