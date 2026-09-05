@@ -730,7 +730,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Economy",
     intro: [
       "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. The Week 1 Update (August 29) went further and broke the economy's central constraint: **Glimpses and Tarcores are no longer finite**. This page ranks the loops actually worth your time under the current numbers, plus what each currency buys so you know when to stop grinding.",
-      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports. Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes. Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
     ],
     blocks: [
       {
@@ -814,8 +814,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Can you recover Gloom you lost when you die?",
         paragraphs: [
-          "Partially — and the smart play is to never need the answer. When you die, your unbanked Gloom drops where you fell, and players have been learning the hard way that the pile doesn't always wait around: the latest report on the Steam forums describes losing **20,000+ Gloom twice** (a bridge jump, then an enemy kill), finding the dropped pile had vanished from the map entirely, and getting no working recovery method — shooting the floor and the sky included. Treat dropped Gloom as at-risk: spend it down at a Beacon before risky jumps and boss attempts instead of hauling a big pile around.",
-          "The real fix arrived with the Week 1 Update: the **Egon's Stone**, a Fragile Tarstone that revives you at the dungeon entrance — and when it breaks, the death it covered costs you **no Gloom at all** (per Playstack's official notes). Merrick stocks them once you've gathered enough Ova, so carry one into any area that's been killing you. It's consumable insurance, not a permanent ward — which is exactly why it pairs well with the fragility economy above.",
+          "Yes — walk back to your corpse, and since the September 5 update the game actively helps you do it. When you die, your unbanked Gloom drops on your corpse (the developers' own patch notes use exactly that phrasing), and before that update the pile didn't always wait around: a Steam forums report from the days prior describes losing **20,000+ Gloom twice** (a bridge jump, then an enemy kill), finding the dropped pile had vanished from the map entirely, and getting no working recovery method — shooting the floor and the sky included. The September 5 update answered that complaint directly, improving the logic around Gloom drops on death to make lost Gloom easier to retrieve. The old advice still pays, though: spend down at a Beacon before risky jumps and boss attempts instead of hauling a big pile around.",
+          "Two pieces of insurance on top. The Week 1 Update's **Egon's Stone** is a Fragile Tarstone that revives you at the dungeon entrance — and when it breaks, the death it covered costs you **no Gloom at all** (per Playstack's official notes). Merrick stocks them once you've gathered enough Ova, so carry one into any area that's been killing you. And if you run a **Gloombound Stone** for the boosted Gloom-per-kill, the September 5 patch stopped it losing durability when you recover Gloom from your own corpse — so farming the recovery no longer grinds the stone down.",
         ],
       },
     ],
@@ -828,7 +828,7 @@ export const guidePages: GuidePage[] = [
         "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table (the Week 1 Update added siphon Glimpse but published no numbers)",
         "Whether Mammon's doubled gold stacks with the Justiciar's Stone bonus additively or multiplicatively",
         "Hidden Nave chest Gloom amounts per chest — Game8 confirms the menu-reset method but not the per-chest payout",
-        "Whether dropped-on-death Gloom can vanish permanently — reported repeatedly on the Steam forums with no confirmed recovery method (carry an Egon's Stone meanwhile)",
+        "Whether dropped-on-death Gloom can still vanish in edge cases — the September 5 update improved corpse-retrieval logic, but whether the pre-patch vanishing reports are fully fixed is unconfirmed (carry an Egon's Stone meanwhile)",
       ],
     },
     related: [
@@ -870,6 +870,10 @@ export const guidePages: GuidePage[] = [
       {
         name: "Steam Discussions — 'Lost Gloom' (dropped-on-death Gloom vanishing)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840628348/",
+      },
+      {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
       },
     ],
     reviewedOn: "September 6, 2026",
