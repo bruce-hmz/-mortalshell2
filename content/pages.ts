@@ -718,9 +718,9 @@ export const guidePages: GuidePage[] = [
     slug: "farming-guide",
     metaTitle: "Mortal Shell 2 Farming Guide: Gloom, Coin & Glimpse After Week 1 Update",
     metaDescription:
-      "Where to farm Gloom, Coin and Glimpse in Mortal Shell 2 after the Week 1 Update: the un-capped Glimpse/Tarcore economy, Glimpse Stones, the Sunken Village sheep loop, Mammon's doubled gold, and the Tarforge math that decides what you actually need.",
+      "Where to farm Gloom, Coin and Glimpse in Mortal Shell 2 after the Week 1 Update: the un-capped Glimpse/Tarcore economy, the Sunken Village sheep loop, Mammon's doubled gold, where Ossinite actually drops, and the Tarforge math that decides what you actually need.",
     cardBlurb:
-      "Three Beacon loops for Gloom, four methods for Coin, and the Week 1 economy changes that decide how much you really need before grinding.",
+      "Three Beacon loops for Gloom, four methods for Coin, the Ossinite loop at Withered Shoals, and the Week 1 economy changes that decide how much you really need before grinding.",
     heroImage: {
       src: "/img/site-2.jpg",
       alt: "Mortal Shell II key art with a knight standing before a ruined bridge",
@@ -730,7 +730,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Economy",
     intro: [
       "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. The Week 1 Update (August 29) went further and broke the economy's central constraint: **Glimpses and Tarcores are no longer finite**. This page ranks the loops actually worth your time under the current numbers, plus what each currency buys so you know when to stop grinding.",
-      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 2, 2026). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports. Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
     ],
     blocks: [
       {
@@ -786,6 +786,13 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Where to farm Ossinite (the top of the material ladder)",
+        paragraphs: [
+          "Ossinite is the high-tier Tarforge material every endgame weapon ask feeds on, and it's the one currency question the loops above don't answer — unlike Gloom or Coin, it doesn't fall out of every kill. Per the Fextralife wiki, the reliable source is **Withered Shoals**, the area past the Gate of Mammon (the gate out of Marrow's west/southwest side). The loop: fast travel to the **Ossinite Falls Beacon**, sweep the fixed spawn points around the falls, rest to reset, and run it again — the same Beacon-rest rhythm as the Gloom routes above. Our [weapons guide](/weapons/) has the full Tarforge cost table so you know exactly how many loops you need.",
+          "Two caveats before you commit an evening. Game8's materials guide argues Ossinite may only drop **reliably in NG+**, since the dependable route wants the Muredean Actuator and other late progression — treat your first-playthrough Ossinite income as trickle, not flood. And skip the 'infinite Ossinite farm' videos still floating around YouTube: the Week 1 Update fixed exactly that exploit (see the economy block above), so the Beacon loop is the honest route.",
+        ],
+      },
+      {
         heading: "Where the money actually goes",
         paragraphs: [
           "Grinding without a target wastes an evening. The honest accounting: the Tarforge materials ladder (Ventrium through Ossinite) plus its Coin bill up to +25 comes to roughly 185,650 Coin in total per our weapons guide, but almost nobody pays that in one playthrough — pick your carry weapon and fund just its tiers. Levels from Beacon Gloom scale steeply; GamingBolt's farming numbers matter most in the 20-40 stretch where the Sunken Village and Mushroom Village Gate loops live. And shell bond upgrades eat **Glimpse**, not Gloom — 27 per shell to max, per our achievement guide. Beacon cleanses used to be one of the only Glimpse sources; the Week 1 Update added several more (Glimpse Stones, siphon rewards, Merrick's stock) and removed the ceiling, so Glimpse is now a grind-by-choice, not a rationed currency.",
@@ -804,6 +811,13 @@ export const guidePages: GuidePage[] = [
           "Night Mode adds a **20% Gloom gain bonus** if your skills can carry the harder enemies — a late-game amplifier, not an early option. And one spending note: The Collector, the night merchant, still sells Tarstones and Glimpses near the Abandoned Outpost Beacon after dark, and now carries Tarcores as well — leftover Coin converts to bond progress or forge materials if you'd rather skip the grind.",
         ],
       },
+      {
+        heading: "Can you recover Gloom you lost when you die?",
+        paragraphs: [
+          "Partially — and the smart play is to never need the answer. When you die, your unbanked Gloom drops where you fell, and players have been learning the hard way that the pile doesn't always wait around: the latest report on the Steam forums describes losing **20,000+ Gloom twice** (a bridge jump, then an enemy kill), finding the dropped pile had vanished from the map entirely, and getting no working recovery method — shooting the floor and the sky included. Treat dropped Gloom as at-risk: spend it down at a Beacon before risky jumps and boss attempts instead of hauling a big pile around.",
+          "The real fix arrived with the Week 1 Update: the **Egon's Stone**, a Fragile Tarstone that revives you at the dungeon entrance — and when it breaks, the death it covered costs you **no Gloom at all** (per Playstack's official notes). Merrick stocks them once you've gathered enough Ova, so carry one into any area that's been killing you. It's consumable insurance, not a permanent ward — which is exactly why it pairs well with the fragility economy above.",
+        ],
+      },
     ],
     pending: {
       heading: "Still being verified",
@@ -814,6 +828,7 @@ export const guidePages: GuidePage[] = [
         "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table (the Week 1 Update added siphon Glimpse but published no numbers)",
         "Whether Mammon's doubled gold stacks with the Justiciar's Stone bonus additively or multiplicatively",
         "Hidden Nave chest Gloom amounts per chest — Game8 confirms the menu-reset method but not the per-chest payout",
+        "Whether dropped-on-death Gloom can vanish permanently — reported repeatedly on the Steam forums with no confirmed recovery method (carry an Egon's Stone meanwhile)",
       ],
     },
     related: [
@@ -844,8 +859,20 @@ export const guidePages: GuidePage[] = [
         name: "Game8 — Mortal Shell 2 Complete Walkthrough",
         url: "https://game8.co/games/Mortal-Shell-2/archives/614504",
       },
+      {
+        name: "Fextralife Wiki — Withered Shoals (Ossinite source area)",
+        url: "https://mortalshell2.wiki.fextralife.com/Withered_Shoals",
+      },
+      {
+        name: "Game8 — Mortal Shell 2 Upgrade Materials (Ossinite NG+ caveat)",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/617742",
+      },
+      {
+        name: "Steam Discussions — 'Lost Gloom' (dropped-on-death Gloom vanishing)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840628348/",
+      },
     ],
-    reviewedOn: "September 2, 2026",
+    reviewedOn: "September 6, 2026",
     datePublished: "2026-08-29",
   },
   {
@@ -2082,24 +2109,25 @@ export const guidePages: GuidePage[] = [
   },
   {
     slug: "bosses",
-    metaTitle: "Mortal Shell 2 Bosses: All 10 Major Bosses in Order",
+    metaTitle: "Mortal Shell 2 Bosses: All 11 Major Bosses in Order",
     metaDescription:
-      "All 10 Mortal Shell 2 major bosses in order, with location, payout, and a phase-by-phase strategy for every fight, from Magdalena to Zmey.",
+      "All 11 Mortal Shell 2 main bosses in order, with location, payout, and a phase-by-phase strategy for every fight, from the Tar Golem to Zmey.",
     cardBlurb:
-      "All 10 major bosses in order, their regions, and which fights pay out shells and weapons.",
+      "All 11 main bosses in order, their regions, and which fights pay out shells and weapons.",
     h1: "Mortal Shell 2 Bosses",
     eyebrow: "Bosses",
     intro: [
-      "Mortal Shell II's critical path runs through ten major bosses guarding the Corrupted Gates, spread across nine regions from Disciple's Pass to the Faded Citadel and beyond. This page lists all ten in the recommended encounter order, with where each fight happens and what it pays out.",
-      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide. The per-boss strategies below were written against Rock Paper Shotgun's 45-boss compendium, updated August 25, 2026, and re-checked against Playstack's official Week 1 Update notes (August 29, 2026; reviewed September 2, 2026) — the patch changed several of these fights, and every changed fight carries a dated note inline plus a summary in the first block.",
+      "Mortal Shell II's critical path runs through eleven main bosses guarding the Corrupted Gates, spread across nine regions from Disciple's Pass to the Faded Citadel and beyond. This page lists all eleven in the recommended encounter order, with where each fight happens and what it pays out.",
+      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide. The per-boss strategies below were written against Rock Paper Shotgun's 45-boss compendium, updated August 25, 2026, and re-checked against Playstack's official Week 1 Update notes (August 29, 2026; reviewed September 6, 2026) — the patch changed several of these fights, and every changed fight carries a dated note inline plus a summary in the first block. On September 6 the Zmey strategy block was rebuilt against the active Steam discussion of that fight, and the roster was corrected to PowerPyx's eleven-main-boss count (Game8's route order retained, with the Tar Golem added).",
     ],
     blocks: [
       {
-        heading: "All 10 major bosses in order",
+        heading: "All 11 main bosses in order",
         paragraphs: [
-          "Game8's recommended encounter order, with each boss's location:",
+          "PowerPyx's main-boss roster counts eleven; the order below follows Game8's recommended route (starting from Magdalena), with each boss's location:",
         ],
         bullets: [
+          "Tar Golem — past the Disciple's Grotto in Disciple's Pass; Game8 files it as an optional encounter while PowerPyx counts it among the main bosses — it drops Vatra's Seal either way",
           "Magdalena, the Lady of the Woods — Magdalena's Glade in the Glutted Mire",
           "The Lost Child — past the Sanguine Shoreline Beacon",
           "The Nameless Captive — Prisoners' Domain, beyond the Executioner's Pulpit Beacon",
@@ -2109,13 +2137,13 @@ export const guidePages: GuidePage[] = [
           "Monolith — near the Obsidian Vault Beacon",
           "Malborn Offspring — near the Faithful's Shelter Beacon",
           "Orrem, the Discarded Golem — near the Bridge of Procession Beacon",
-          "Zmey, the Unbidden — The Hidden Nave Beacon, at The Unfounded Path (GameSpot's guide lists Zmey as the final boss)",
+          "Zmey, the Unbidden — The Hidden Nave Beacon, at The Unfounded Path (GameSpot's guide lists Zmey as the final boss; PowerPyx writes the region 'The Unfound Path')",
         ],
       },
       {
         heading: "The nine regions",
         paragraphs: [
-          "Bosses are spread across Disciple's Pass, Fainweald, Glutted Mire, Sanguine Caverns, Ruins of Mammon, Prisoners' Domain, Withered Shoals, Conquered Temple, and Faded Citadel, with the endgame encounters waiting along The Unfounded Path. Beyond the ten majors, the world is thick with optional bosses and minibosses — Game8's compendium counts 44 boss encounters in total, with some of them missable.",
+          "Bosses are spread across Disciple's Pass, Fainweald, Glutted Mire, Sanguine Caverns, Ruins of Mammon, Prisoners' Domain, Withered Shoals, Conquered Temple, and Faded Citadel, with the endgame encounters waiting along The Unfounded Path. Beyond the eleven mains, the world is thick with optional bosses and minibosses — Game8's compendium counts 44 boss encounters in total, with some of them missable.",
         ],
       },
       {
@@ -2127,7 +2155,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Rewards worth planning around",
         paragraphs: [
-          "Per Game8's boss tables, the majors pay out boss-specific mementos and stones — Magdalena drops her Memento, the Lost Child the Lost Clotstone, the Nameless Captive the Captive's Scabstone — alongside hefty Gloom sums that scale from the 11,000s in the Glutted Mire to the 65,000s at the end of the path. Two optional fights matter just as much for build planners: the Tar Golem past the Disciple's Grotto drops Vatra's Seal (half of the strongest build setups), and the Great Arbiter of Flesh near Widow's Overlook drops the Arbiter's Prize stone that recurs across game8's recommended loadouts.",
+          "Per Game8's boss tables, the majors pay out boss-specific mementos and stones — Magdalena drops her Memento, the Lost Child the Lost Clotstone, the Nameless Captive the Captive's Scabstone — alongside hefty Gloom sums that scale from the 11,000s in the Glutted Mire to the 65,000s at the end of the path. Two fights a short detour off the critical path matter just as much for build planners: the Tar Golem rostered above drops Vatra's Seal (half of the strongest build setups), and the Great Arbiter of Flesh near Widow's Overlook drops the Arbiter's Prize stone that recurs across game8's recommended loadouts.",
         ],
       },
       {
@@ -2219,6 +2247,9 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "The final exam: obscene health, a far-reaching **unblockable tail impale** that pins you for a follow-up butt slam capable of knocking you out of (or ending) your run, delayed fire breath, and post-riposte **AoE flame waves** that must be dashed into — getting clipped inflicts **Cosmic Disease**, locking you out of re-shelling and every skill and Tarstone. **Week 1 Update (August 29):** the tail grab no longer takes both Shell and Harbinger from 100-0 — except in Night Mode, where it still does — and the ring waves now align to the ground properly instead of floating.",
           "The shape of the win: stand under him and work the lower body, timing guards against the foot stamps; when he leaps back and raises the blade-throw, dodge immediately (your summoned companions rarely draw that specific throw — assume it's coming for you). Pack the **Seedbearer's Scripture** as your active if you've completed the Night Mode Forgotten Tower gland quest — triggered on-hit, it cures Cosmic Disease *and* floors Zmey for a free punish. And if the mountain won't move: the **Slayer Seal** exists precisely for fights like this, no shame attached — but know the price first: equipping it disables Steam achievements (developer-confirmed in August 2026), so trophy runs need to win this fight without it.",
+          "Where to stand and what to swing: Game8's take is that his **sides** are the safest footing — his front eats you with breath and blade throws, his rear with the tail. Players who've ground out the fight also report that hugging his legs and attacking **non-stop** denies his ranged flame attacks entirely, a pressure style that wants fast weapons (Axe, Dagger, Axatana — with a **Duality Tarstone** if you run the Axatana). The move that ends most attempts is the **helicopter spin**, and it has two versions with opposite answers: the **vertical ten-spin** cannot be parried, so sprint out of range and let it finish; the **horizontal spin** is fully parriable — and parrying every one of its hits is its own achievement hunt, if you're the stubborn type.",
+          "Phase two is where runs actually die, and rarely to the sword: players report the **burn effect stacks** through the second phase — tick after tick after tick — until a healthy Shell melts without a single clean hit landing. The most-repeated piece of community advice for this fight is simply to **freeze the boss**: it's the top answer in the biggest current Steam thread on Zmey, with video guides attached, so if your loadout can inflict freeze, build around it. His mid-fight **projectile barrage** draws the same kind of grief ('but the balls? So many') — respect it as a positioning problem, not a damage window.",
+          "Two footnotes for the end of the road. If you'd rather skip the exam entirely, a speed-kill route circulating on the Steam forums drops him in about **fifteen seconds, damage-free**, built on **Escalation 3/3** and **Deathmark 3/3** (a YouTube guide does the steering). And mind the kill itself: the [Finish the Fight achievement](/achievements-guide/) only counts if his HP reaches exactly **zero before the death cutscene** takes over — an ultimate started at low health can eat the kill, so save your ranged charges for the finisher.",
         ],
       },
       {
@@ -2234,6 +2265,8 @@ export const guidePages: GuidePage[] = [
       items: [
         "Second-source confirmation of the 44 total boss count",
         "Optional boss and miniboss roster per region",
+        "A Tar Golem strategy block — the roster's eleventh main boss (per PowerPyx) has no strategy section yet",
+        "Name and unlock conditions of the achievement for parrying every hit of Zmey's horizontal spin",
       ],
     },
     related: [
@@ -2248,6 +2281,14 @@ export const guidePages: GuidePage[] = [
         url: "https://game8.co/games/Mortal-Shell-2/archives/614453",
       },
       {
+        name: "PowerPyx — Mortal Shell 2 Boss Guide (All Main Bosses)",
+        url: "https://www.powerpyx.com/mortal-shell-2-boss-guide-all-main-bosses/",
+      },
+      {
+        name: "Game8 — Zmey, the Unbidden Boss Guide",
+        url: "https://game8.co/games/Mortal-Shell-2/archives/616314",
+      },
+      {
         name: "Rock Paper Shotgun — All 45 bosses in Mortal Shell 2 (per-boss strategies)",
         url: "https://www.rockpapershotgun.com/mortal-shell-2-all-bosses",
       },
@@ -2259,8 +2300,20 @@ export const guidePages: GuidePage[] = [
         name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
+      {
+        name: "Steam Discussions — 'Im not beating this final boss' (community Zmey strategies, incl. freeze)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840650982/",
+      },
+      {
+        name: "Steam Discussions — 'Bro with a sword for a face' (Zmey helicopter-spin parry split)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840702741/",
+      },
+      {
+        name: "Steam Discussions — The final boss in 15 seconds (Escalation 3/3 + Deathmark 3/3 build)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581680955259021896/",
+      },
     ],
-    reviewedOn: "September 2, 2026",
+    reviewedOn: "September 6, 2026",
   },
   {
     slug: "tips",
