@@ -343,11 +343,11 @@ export const guidePages: GuidePage[] = [
 
   {
     slug: "patch-notes",
-    metaTitle: "Mortal Shell 2 Patch Notes: Week 1 Update & Balance Patch 1",
+    metaTitle: "Mortal Shell 2 Patch Notes: September Update, Week 1 & Balance Patch 1",
     metaDescription:
-      "Mortal Shell 2 update history: the Week 1 Update in full (shell respec, economy un-cap, new day-only Beacons, boss fixes), Balance Patch 1 annotated, and the crash-hotfix timeline.",
+      "Mortal Shell 2 update history: the September 5 update in full (Adaptive Difficulty, Baghead NG+ fix, crash fixes), the Week 1 Update (shell respec, economy un-cap, day-only Beacons), Balance Patch 1 annotated, and the hotfix timeline.",
     cardBlurb:
-      "Every update in one place: the Week 1 Update, Balance Patch 1 changes, crash hotfixes, and what ships next.",
+      "Every update in one place: the September 5 Adaptive Difficulty patch, the Week 1 Update, Balance Patch 1, and what ships next.",
     heroImage: {
       src: "/img/site-7.jpg",
       alt: "Mortal Shell II key art showing a knight before a monumental ruined structure",
@@ -357,9 +357,37 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official Week 1 Update announcement (August 29, 2026) and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 4, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 7, 2026.",
     ],
     blocks: [
+      {
+        anchor: "update-september-5",
+        heading: "New Update Out Now — September 5, 2026: Adaptive Difficulty (Experimental)",
+        paragraphs: [
+          "The 'bigger patch' Playstack teased in the Balance Patch 1 roadmap shipped on September 5, 2026 (official Steam News post, 14:13 UTC) — and its headline is Adaptive Difficulty, an experimental optional setting that adjusts enemy strength in both directions based on how you play. It is off by default and can be toggled any time under **Game > Game Settings > Adaptive Difficulty**; per the official notes it responds 'to what you defeat and where you die', and any adjustment also relaxes on its own over time, so the game settles back toward its standard balance once your play changes. The complete published list, section by section:",
+        ],
+        bullets: [
+          "**Adaptive Difficulty — winning pushes back** — enemies gain damage, health, and break resist ('they hit harder, take longer to bring down and are more difficult to stagger'), and this 'does not stop at the standard difficulty': keep clearing encounters without dying and enemies 'scale well past the toughest the game was originally built to be', climbing for as long as you keep winning — the full mechanics, the community's split reaction, and the open measurement questions are in our [Adaptive Difficulty explainer](/tips/)",
+          "**Adaptive Difficulty — struggling gives ground** — enemies weaken across the same three values, with a one-shot-protection cap: 'no single attack can take more than a set fraction of your health bar, meaning you cannot be killed outright from full health'",
+          "**Adaptive Difficulty — boundaries** — reductions never apply during [Night Mode](/night-mode/), 'which can still be pushed harder but will never be made easier'; and nothing is displayed on screen when the game adjusts in either direction ('we will develop this in the future')",
+          "**Parry and riposte** — consecutive parries with the Infinite Seal now have a wider window into the wind-up animation ('allowing a string of incoming hits to be parried instead of only the first one'), and status effects can now be applied to enemies while they are getting back to their feet after a riposte",
+          "**Shells** — Sariel's Thornfall now works in enclosed spaces, prioritises locked-on targets, and hits moving targets; Agonize no longer requires full pain; Affliction now shares damage to all cursed enemies and inflicts curse on non-cursed ones; Genessa's Augmentation can no longer produce infinite resolve gain or infinite Faithful Doubles — what this does to the [best build pairings](/best-build/) and the [shell roster](/shells/) is being tracked as the meta settles",
+          "**Weapons, items, and balance** — 'Improved the logic around Gloom drops on death, making it easier for players to retrieve their lost Gloom' (the [farming guide's](/farming-guide/) death-loss FAQ is updated accordingly); Fragile Tarstones now properly grant Tarcores when they break; the Gloombound Stone no longer loses durability when recovering Gloom from your own corpse; Leech stacks can no longer be saved and reapplied on top of themselves (health exploit closed); Grisha Summons can no longer be hit by player projectiles, freeze along with everything else under Smert's Miracle, and perform fewer attacks; the Axe & Dagger running-attack animation improved",
+          "**Bosses and enemies** — collision improved on the Lost Child ('helping prevent the player from getting stuck inside him or being launched into the air'); the Harpy's frenzied attacks now correctly connect; more enemy types can be summoned by the Cursed Child's Summoning Stone; enemies caught in bear traps attack again; Grisha Hunters keep their weapons when you return to their camp; sheep no longer flicker and the swamp Beacon's bats returned — per-boss notes in the [boss guide](/bosses/)",
+          "**Baghead NG+ lockout fixed** — the notes list 'Fixed an issue where the player could become locked out of Baghead's Quest in NG+' — the [missable content guide](/missable-content/) NG+ trap section is updated with what the fix does and does not cover",
+          "**More fixes** — the Citadel Annex spider traversal is refixed; falling through the ground when leaving dungeons and getting trapped in lift geometry in a late-game area are fixed; Malborn Offspring can no longer turn invulnerable when attacked during its phase transition; Genessa's trainer no longer breaks if first approached while corrupted; a late-game boss arena no longer stays locked after the fight; cursed enemies can no longer loop; blood masks and beards on various shells, Shell Summon handshakes, and Untarnished Seal timing cleaned up; Ruk no longer addresses Genessa as the Harbinger, Zhirelle comments on the Marrow Keep corruption, and Merrick's opening greeting behaves",
+          "**Interface and platform** — smaller Beacons now show their own icons in the Mether's Breath fast-travel menu; damage numbers no longer cap at 999 and display up to 9,999; pause-menu options have clearer highlighting; on PS5, opening a system pop-up no longer pauses the game (the screenshot function works)",
+          "**Performance and stability** — volumetric fog no longer excessively dense on lower global illumination settings; storm-cloud and stun-lighting performance, Droeg's explosion effects, and the player lighting rig optimised — and under 'Crashes and Stability' the notes claim only 'several crash fixes and optimisations', with no itemized list; whether they clear the community's crash cluster is the open watch item in the [performance fix guide](/performance-fix/)",
+        ],
+      },
+      {
+        anchor: "what-september-5-changed",
+        heading: "What the September 5 update changes for players",
+        paragraphs: [
+          "Adaptive Difficulty is a dial, not an easy mode — and the first days of reaction confirm both directions matter. Struggling players get a floor: eased enemies cannot one-shot you from full health, whatever else the scaling does. Winning players get a ceiling that keeps rising for as long as they keep winning, which some veterans are deliberately using to push the game past its hardest vanilla state — while critics of the easing side already call eased enemies damage sponges. It is experimental, so expect the measurement questions (global or per-region scaling, boss scaling, decay speed) to take time; our [tips guide](/tips/) carries the explainer and the currently open questions.",
+          "The rest of the list matters for completion and comfort runs alike: the Baghead NG+ lockout is officially fixed (whether saves that were already stuck are revived is not stated in the notes), death is less costly now that dropped Gloom is easier to retrieve and the Gloombound Stone stops wearing down on corpse recovery, and the crash-fix claims are being watched against the community's crash cluster. The developer posted the update 'on PC, with PS5 and Xbox Series coming later today' — no separate console-rollout confirmation has been posted since, so console players should check their platform's update history. Section-level updates as they land: [shell builds](/shells/), [farming routes](/farming-guide/), [missable content](/missable-content/), [performance workarounds](/performance-fix/).",
+        ],
+      },
       {
         anchor: "week-1-update",
         heading: "Week 1 Update — August 29, 2026",
@@ -447,7 +475,7 @@ export const guidePages: GuidePage[] = [
         anchor: "roadmap",
         heading: "What Playstack says ships next",
         paragraphs: [
-          "In the Balance Patch 1 announcement, Playstack states: \"While we have a bigger patch in the works, which has to be thoroughly tested... Planned future updates will see extensions to popular game features such as Night Mode, Tarstones, PP Items, and more.\" Nothing in that line carries a date — treat it as directional. That \"bigger patch\" has since shipped as the [Week 1 Update](#week-1-update), documented above; the Night Mode / Tarstones / PP Item extensions it previews remain unshipped, and when they land their changes will be verified against the official notes the same way.",
+          "In the Balance Patch 1 announcement, Playstack states: \"While we have a bigger patch in the works, which has to be thoroughly tested... Planned future updates will see extensions to popular game features such as Night Mode, Tarstones, PP Items, and more.\" Nothing in that line carries a date — treat it as directional. That \"bigger patch\" has since shipped as the September 5 \"New Update Out Now\" [documented above](#update-september-5), with Adaptive Difficulty as its experimental centerpiece; the roadmap's Night Mode / Tarstones / PP Item extensions remain unshipped as full feature work (the Tarstones line got its first delivery early — the Fragile Tarstones from the Week 1 Update, which the September 5 patch fixed to properly grant Tarcores), and when the rest lands their changes will be verified against the official notes the same way.",
         ],
       },
       {
@@ -462,15 +490,17 @@ export const guidePages: GuidePage[] = [
     ],
     pending: {
       heading: "Still being verified",
-      intro: "Open questions on the update trail as of September 4, 2026:",
+      intro: "Open questions on the update trail as of September 7, 2026:",
       items: [
-        "Exact console rollout dates for the Week 1 Update (PC went live August 29; the developer's September 1 hotfix note says the Week 1 patch was still in certification for consoles at that date)",
+        "Console rollout completion for the September 5 patch — the developer posted it 'on PC, with PS5 and Xbox Series coming later today' (September 5), but no standalone console-availability announcement has followed; check your platform's update history",
+        "Whether the September 5 patch's 'several crash fixes and optimisations' clear the community's crash cluster — the [performance fix guide](/performance-fix/) workarounds stand until players confirm one way or the other",
+        "Exact console rollout dates for the Week 1 Update (PC went live August 29; PS5 players reported the Week 1 content arriving as v1.000.008 around September 3, but neither platform has an official completion confirmation)",
         "Official count and locations of the Week 1 Update's new day-only Beacons — the notes name no number; player estimates say 10+",
-        "Official Steam News entry for the September 1 PC hotfix — the fix list was posted on Reddit and Discord only; if Playstack publishes it as a Steam announcement, this page will link it",
       ],
     },
     related: [
       { label: "Performance Fix", href: "/performance-fix/" },
+      { label: "Tips (Adaptive Difficulty)", href: "/tips/" },
       { label: "Best Build", href: "/best-build/" },
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Sidearms Guide", href: "/sidearms/" },
@@ -478,6 +508,14 @@ export const guidePages: GuidePage[] = [
       { label: "Farming Guide", href: "/farming-guide/" },
     ],
     sources: [
+      {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
+      },
+      {
+        name: "Steam Discussions — September 5 patch discussion thread (official-notes mirror; dev quote on console rollout timing)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355213340/",
+      },
       {
         name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
@@ -495,7 +533,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270",
       },
     ],
-    reviewedOn: "September 4, 2026",
+    reviewedOn: "September 7, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -1041,7 +1079,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, and the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -1054,7 +1092,7 @@ export const guidePages: GuidePage[] = [
           "**1 glitched:** Bring My Ova Back to Me (15.7%) — currently earnable only in a first playthrough; see its section below",
           "**Glimpse grind:** Seeking the Past (1.9%, Watch all Shell Memories) — priced at two runs plus NG++ by launch-era guides, but the Week 1 Update made Glimpse non-finite, so a single-run finish is now plausible",
           "**Achievement lockout:** the Slayer Seal — the optional 'easy mode' — disables Steam achievements while equipped (developer-confirmed; see the FAQ below)",
-          "**1 NG+ trap:** Bag Holder (23.5%) — carrying Baghead's Special Moonshine into NG+ blocks his quest chain, and the game has no item-drop (see the FAQ below)",
+          "**1 NG+ trap (patched September 5):** Bag Holder (23.5%) — carrying Baghead's Special Moonshine into NG+ used to block his quest chain, and the game has no item-drop; the September 5 patch officially fixed the NG+ lockout (see the FAQ below)",
           "**Post-game safe:** everything else, including all shells (17.5% Shell Seeker), weapons (18.8% Lord of War), sidearms (17.0% Guns. Lots of Guns), Tarstones (6.0% Stoned), Beacons (7.8% So Fresh, So Clean), and Map Fragments (19.0% Sat Nav)",
         ],
       },
@@ -1113,7 +1151,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "**Does Night (increased difficulty mode) affect trophies?** No — the in-game Night toggle raises enemy pressure but is required for certain content like night-only Glimpse pickups, and no achievement demands clearing bosses under it specifically.",
           "**Does the Slayer Seal affect achievements?** Yes — equipping it disables Steam achievements for that save. Developers confirmed the lockout and told Rock Paper Shotgun they 'didn't intend to lock everybody out'; nothing in the Week 1 Update notes (August 29) changes it. If the seal is on and you care about the platinum, switch it off before pushing deeper.",
-          "**Does the Baghead chain break in NG+?** It can. Players who kept the Special Moonshine from their first playthrough report that Baghead's quest will not continue in NG+ while the bottle sits in the inventory — and the game has no drop function, so Bag Holder (23.5%) locks on that save. Return the moonshine to its place (or finish his chain) during the endgame free-roam window before you commit to NG+; community reports also tie one of the Week 1 questline cosmetics to the same lockout. The full entry lives in the [missable content guide](/missable-content/).",
+          "**Does the Baghead chain break in NG+?** It could — and it is now officially fixed. Players who kept the Special Moonshine from their first playthrough found Baghead's quest would not continue in NG+ while the bottle sat in the inventory, and the game has no drop function, so Bag Holder (23.5%) locked on that save. The September 5 patch lists the fix directly — 'Fixed an issue where the player could become locked out of Baghead's Quest in NG+' — though the notes do not say whether saves that were already stuck get unblocked; if you are currently locked out, install the update and try the chain again before resorting to save editing. Returning the moonshine to its place (or finishing his chain) during the endgame free-roam window still costs nothing and remains the safe route; community reports also tie one of the Week 1 questline cosmetics to this chain. The full entry lives in the [missable content guide](/missable-content/).",
           "**Is Ascension the 196-Ova trophy?** No — they are separate entries. Ascension (16.7%, Discover the secret of the Mango) ties to the hidden Mango sanctuary quest; Bring My Ova Back to Me (15.7%) is the Ova-completion one. Community confusion between the two is common because their rates sit close together.",
           "**How long is a full completion?** PowerPyx estimates **40-60 hours** at a 6/10 difficulty rating, with roughly 85% of that being one thorough first playthrough plus two lighter Glimpse-farming cycles.",
         ],
@@ -1162,8 +1200,12 @@ export const guidePages: GuidePage[] = [
         name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
+      {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026) — official Baghead NG+ lockout fix",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
+      },
     ],
-    reviewedOn: "September 5, 2026",
+    reviewedOn: "September 7, 2026",
     datePublished: "2026-08-27",
   },
   {
@@ -2323,7 +2365,7 @@ export const guidePages: GuidePage[] = [
     slug: "tips",
     metaTitle: "Mortal Shell 2 Tips: Resolve, Combat & Dungeon Secrets",
     metaDescription:
-      "Mortal Shell 2 tips: a 0.3-second parry window you can train, posture-break math, bear-trap survival, escape steps when geometry eats you, and boss-prep habits.",
+      "Mortal Shell 2 tips: a 0.3-second parry window you can train, how Adaptive Difficulty really scales, posture-break math, bear-trap survival, escape steps when geometry eats you, and boss-prep habits.",
     cardBlurb:
       "Resolve is earned in melee — and dungeons are branching mazes that reward wandering.",
     heroImage: {
@@ -2337,7 +2379,7 @@ export const guidePages: GuidePage[] = [
       "The best Mortal Shell II tips follow from two confirmed systems: resolve, the currency your aggression earns, and dungeons built as non-linear branching mazes. Master both and the early game opens up.",
       "Mechanics were verified against the official Steam page on " +
         LAST_REVIEWED +
-        "; boss-preparation habits and shell details below are attributed to Game8's launch guides, checked August 20, 2026.",
+        "; boss-preparation habits and shell details below are attributed to Game8's launch guides, checked August 20, 2026. The Adaptive Difficulty section reflects Playstack's official September 5 update notes, checked September 7, 2026.",
     ],
     blocks: [
       {
@@ -2400,6 +2442,15 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Should you turn on Adaptive Difficulty?",
+        paragraphs: [
+          "Adaptive Difficulty is the experimental setting the September 5 patch added, and it is off by default: turn it on or off any time under **Game > Game Settings > Adaptive Difficulty**. Once on, it adjusts enemy damage, health, and break resist in both directions, 'responding to what you defeat and where you die' — and any adjustment relaxes on its own over time, so the game settles back toward its standard balance once how you play changes.",
+          "The two directions are not symmetric. If you are winning, the game pushes back without a cap: enemies 'scale well past the toughest the game was originally built to be' and 'keep climbing for as long as you keep winning', per the official notes. If you are struggling, the game gives ground — enemies weaken across the same three values, but with a floor: a cap applies 'so that no single attack can take more than a set fraction of your health bar', meaning you cannot be killed outright from full health while the system eases. One hard boundary: reductions never apply during [Night Mode](/night-mode/), which can still be pushed harder but will never be made easier.",
+          "Nothing on screen tells you the game is adjusting ('we will develop this in the future', say the notes) — which is why early players went measuring instead. One Steam tester recorded enemies taking roughly **95% of a crushing blow** after a streak of kills: a 5% ease you would never feel in the moment, but real in the numbers. The bigger mechanics questions were all still unanswered days after the feature shipped: whether the scaling is global or per-region (kill 100 enemies up north — do the south's strong enemies get buffed?), whether bosses and minibosses scale from mob kills at all, and how quickly adjustments decay.",
+          "So should you turn it on? The community splits in both directions, which is the honest sign of a dial. Struggling against a wall: it is the only official system that eases the game under you, with the one-shot floor as a safety net. Finding the game too easy after the balance patches: veterans are reporting the opposite use — one thanked the developers for letting them 'get the game's original difficulty back to how it was on August 17 and maybe make it even harder than that'. Critics of the easing side call eased enemies 'damage sponges' and feel punished for playing well; the counter-argument is that it is optional, off by default, and explicitly experimental. Treat it as a difficulty dial you own rather than a mode — and expect it to evolve, which we track in the [patch notes](/patch-notes/).",
+        ],
+      },
+      {
         heading: "Bear traps: survive them without losing runs",
         paragraphs: [
           "Invisible bear traps are among the most complained-about design choices since launch — Steam players describe stepping on chained traps they could not see while kiting enemies, eating heavy damage plus a stagger at the worst possible moment. Three habits neutralize most of that damage:",
@@ -2429,6 +2480,7 @@ export const guidePages: GuidePage[] = [
       intro: "Benchmarked on this page once the final build is available:",
       items: [
         "Optimal parry timing frames per shell",
+        "Adaptive Difficulty's open mechanics — global-vs-per-region scaling, whether bosses scale from mob kills, and decay math (all unanswered in the official notes; the community measurement threads are being watched)",
       ],
     },
     related: [
@@ -2436,11 +2488,29 @@ export const guidePages: GuidePage[] = [
       { label: "Weapons Guide", href: "/weapons/" },
       { label: "Walkthrough", href: "/walkthrough/" },
       { label: "Performance Fix", href: "/performance-fix/" },
+      { label: "Patch Notes", href: "/patch-notes/" },
+      { label: "Night Mode", href: "/night-mode/" },
     ],
     sources: [
       {
         name: "Mortal Shell II on Steam (Playstack)",
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
+      },
+      {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026) — official Adaptive Difficulty notes",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
+      },
+      {
+        name: "Steam Discussions — 'Adaptive Experience' community measurement thread (September 5, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355227272/",
+      },
+      {
+        name: "Steam Discussions — 'I don't think Adaptive Difficulty is worth spending dev time on' (September 5, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355216659/",
+      },
+      {
+        name: "Steam Discussions — Adaptive Difficulty praise thread ('Thank you so much', September 5, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355227913/",
       },
       {
         name: "Official Mortal Shell website (Cold Symmetry)",
@@ -2459,7 +2529,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/discussions/",
       },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 7, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -3111,7 +3181,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Completion",
     intro: [
       "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
-      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, and the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, and the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026.",
     ],
     blocks: [
       {
@@ -3123,7 +3193,7 @@ export const guidePages: GuidePage[] = [
           "**Mid Summer?** — accept Marigold's flower crown during the prologue walk to your first Shell. Ignore her once and it is gone for that playthrough.",
           "**No, You Still Can't Win** — reduce the tutorial Tar Golem to zero health. The game casts it as an unwinnable fight; winning ends the tutorial fight immediately, and the Golem never appears again in any playthrough including NG+.",
           "**Peter's Perfect Parry** — Perfect Guard every hit of a specific head-spin variant from The Nameless Captive while wearing the Untarnished Seal. If he dies before you land it, the save moves past the encounter permanently.",
-          "**NG+ trap, not first-run missable:** Baghead's Special Moonshine — carry the bottle into New Game+ and the Bag Holder trophy locks on that save; the endgame free-roam window is the time to deal with it (see the Baghead section below).",
+          "**NG+ trap, patched September 5:** Baghead's Special Moonshine — carrying the bottle into New Game+ used to lock the Bag Holder trophy on that save; the September 5 patch officially fixed the NG+ lockout, and settling the moonshine before NG+ still costs nothing (see the Baghead section below).",
         ],
       },
       {
@@ -3175,6 +3245,7 @@ export const guidePages: GuidePage[] = [
         heading: "The NG+ trap: Baghead's Special Moonshine",
         paragraphs: [
           "A fourth entry behaves like a missable even though Bag Holder is formally a post-game-safe trophy. Per an August 29 Steam bug report — with a matching complaint in the pinned Week 1 thread — players who picked up the Special Moonshine (the bottle Baghead covets, found near the Illusionist's Cache) in their first playthrough and did not return it to its place cannot finish Baghead's chain in NG+: the quest refuses to continue while a Special Moonshine sits in the inventory, because his chain only proceeds from an empty-handed start. Mortal Shell II has no way to drop items, so the bottle is stuck there — and Bag Holder (23.5%) locks on that save. The bug reporter could only fix it with external save editing.",
+          "That changed on September 5, 2026: the official patch notes list 'Fixed an issue where the player could become locked out of Baghead's Quest in NG+' — the trap is fixed at the source (see our [patch notes](/patch-notes/)). What the note does not say is whether saves that were already stuck get unblocked; if you are currently locked out, install the update and try Baghead's chain again before resorting to save editing. The rule below still costs nothing, and going forward it is what keeps you clear of the window the fix covers.",
           "The rule that costs nothing: settle the moonshine before entering NG+. During the endgame free-roam window, either finish Baghead's chain outright — the full script is in the [side quests guide](/side-quests/) — or return the Special Moonshine to its place. Community reports also tie one of the Week 1 Update's two new questline cosmetics to this chain, with players who entered NG+ early asking for it retroactively — one more reason to keep your first save Baghead-clean before you commit.",
         ],
       },
@@ -3214,7 +3285,7 @@ export const guidePages: GuidePage[] = [
       items: [
         "Exact trigger (if any) behind player reports of the flower crown disappearing mid-campaign",
         "Whether the Bring My Ova NG+ bug has been fixed — PowerPyx's warning predates Balance Patch 1 and has not visibly changed, and the Week 1 Update (August 29) notes name no Ova fix either (checked September 4, 2026)",
-        "Whether a patch resets the Special Moonshine on NG+ transition or otherwise unblocks Baghead's chain — the bug report requests exactly that, and the Week 1 notes (which fixed Baghead's ending unlocking early) name no moonshine reset",
+        "Whether the September 5 Baghead fix retroactively unblocks saves that were already stuck in NG+ — the official note confirms the lockout is fixed going forward but says nothing about existing broken saves (stuck players should update and retry before resorting to save editing)",
         "Which Week 1 questline cosmetic ties to the Baghead chain, per community reports, and whether locked-out players get it retroactively",
       ],
     },
@@ -3249,8 +3320,12 @@ export const guidePages: GuidePage[] = [
         name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026) — source for the Vatra's Temple, chest-reset, and Fragile Tarstone fixes",
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
+      {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026) — official Baghead NG+ lockout fix",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
+      },
     ],
-    reviewedOn: "September 4, 2026",
+    reviewedOn: "September 7, 2026",
     datePublished: "2026-08-27",
   },
 ];
