@@ -103,8 +103,8 @@ export const guidePages: GuidePage[] = [
         anchor: "bug",
         heading: "The 38/40 stall — a known, still-open bug",
         paragraphs: [
-          "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs.",
-          "Status against the current patches: neither Playstack's Balance Patch 1 notes (August 20) nor the Week 1 Update notes (August 29) contain a memory, bond, or trophy fix — the Week 1 changelog's only Glimpse lines are the economy un-cap and the new respec item. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
+          "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs. The same failure mode has its own Steam thread ('Seeking the Past Achievement?', running since August 30): players stuck at **39/40** with no in-game way to even see which memory is missing, and a recurring culprit — Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory, which multiple players report watching without the counter ever registering it until they re-watch it.",
+          "Status against the current patches: neither Playstack's Balance Patch 1 notes (August 20), the Week 1 Update notes (August 29), nor the September 5 update notes contain a memory, bond, or trophy fix — the Week 1 changelog's only Glimpse lines are the economy un-cap and the new respec item. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
         ],
       },
       {
@@ -125,7 +125,8 @@ export const guidePages: GuidePage[] = [
         paragraphs: [],
         bullets: [
           "**Does this still take multiple playthroughs?** Not by economy. The Week 1 Update (August 29) made Glimpses non-finite, so all eight shells can be maxed in a single save; PowerPyx's two-runs-plus-NG++ roadmap describes the pre-patch economy. The must-watch discipline is unchanged.",
-          "**Is the trophy still bugged?** The stall reports are recent (August 23 and 27) and no patch has addressed them — the Week 1 Update notes contain no memory or trophy fix either. Relaunch-and-rewatch is the only community-verified stopgap.",
+          "**Stuck at 39/40 with no way to tell which memory is missing?** There is no in-game per-memory tracker — but the community's recurring culprit is **Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory**: multiple Steam players report watching it without the counter registering. Relaunch, then re-watch Lazlo's five bond-menu memories to force the credit (the same remedy as the stall above).",
+          "**Is the trophy still bugged?** The stall reports are recent (August 23 and 27, plus the still-active 39/40 Steam thread) and no patch has addressed them — the Week 1 (August 29) and September 5 update notes contain no memory or trophy fix either. Relaunch-and-rewatch is the only community-verified stopgap.",
           "**Does using Mether's Severance (the new respec) affect memory tracking?** Unverified. The Week 1 notes describe the Glimpse refund but say nothing about whether a shell's watched memories stay counted after its bond is severed. Until that is confirmed, watch a shell's five memories before severing its bond rather than after.",
           "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — which is exactly why the checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
           "**Does this trophy share a root cause with the Ova tracker bug?** Unknown. Both are count-to-complete trackers misbehaving (the Ova one currently locks its trophy out of NG+ entirely — see the [Ova locations page](/ova-locations/)), but no developer statement connects them.",
@@ -136,7 +137,7 @@ export const guidePages: GuidePage[] = [
       heading: "Open verification items",
       intro: "What this page genuinely does not know yet:",
       items: [
-      "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement in PowerPyx's roadmap or comments, and neither Balance Patch 1 nor the Week 1 Update notes address it",
+      "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement in PowerPyx's roadmap or comments, and neither Balance Patch 1, the Week 1 Update, nor the September 5 update notes address it (the community-attributed Lazlo 'The Prisoner' display bug is a player-side observation, not a developer confirmation)",
       "Whether a Shell's watched memories stay counted after its bond is severed with Mether's Severance — the Week 1 notes are silent; the FAQ advises watching before severing until confirmed",
       "Exact Glimpse payouts per Beacon cleanse per cycle — PowerPyx describes the income lines qualitatively; per-Beacon numbers have not been published",
     ],
@@ -161,8 +162,12 @@ export const guidePages: GuidePage[] = [
         name: "Balance Patch 1 — Mortal Shell II Steam announcement (Playstack, August 20, 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/",
       },
+      {
+        name: "Steam Discussions — 'Seeking the Past Achievement?' thread (39/40 reports and the Lazlo 'The Prisoner' display bug, August 30 – September 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581680955258992292/",
+      },
     ],
-    reviewedOn: "September 2, 2026",
+    reviewedOn: "September 8, 2026",
     datePublished: "2026-08-28",
   },
 
@@ -3181,7 +3186,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Completion",
     intro: [
       "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
-      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, and the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026, and the preorder/beta-skin and NG+-trigger FAQs added on September 8, 2026 from the Steam skin and NG+ threads.",
     ],
     blocks: [
       {
@@ -3261,6 +3266,13 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "How do you get the skeleton harbinger skin — and do beta skins survive an uninstall?",
+        paragraphs: [
+          "The skeleton harbinger skin is the **preorder bonus** — that is the entire unlock. When a player asked exactly this on the game's Steam board after finding nothing on YouTube, the in-thread answer, confirmed by multiple owners, was simply the preorder: there is no quest, drop, or in-game pickup involved in getting it.",
+          "Beta skins ride on **ownership, not installation**: the beta only needs to stay in your Steam library for its skins to remain yours — it does not have to stay installed. That is the community's working answer to the \"uninstalled the Beta and lost beta skin\" report. One caveat inherited from beta players: some beta loot differed from the release build, so an item you remember from the beta may not sit in the same place in release — one sought-after item turned up in the release build inside the Holding Cells dungeon.",
+        ],
+      },
+      {
         heading: "What carries over vs what starts fresh in New Game+",
         paragraphs: [
           "Understanding carryover determines whether 'missing' something actually matters:",
@@ -3275,6 +3287,13 @@ export const guidePages: GuidePage[] = [
         heading: "Can I still get missed content after beating the game?",
         paragraphs: [
           "Mostly yes. After the final boss, a free-roam window opens before you commit to NG+: any Beacon still corrupted can be cleansed there, and every shell, weapon, sidearm, and Tarstone remains collectible. What free-roam cannot restore is anything tied to the prologue itself — Marigold's crown offer and the Tar Golem tutorial duel do not re-run — plus the bugged all-Ova trophy if you have already entered NG+. Anything genuinely lost costs only a fresh save slot, since trophy progress is shared across saves."
+        ],
+      },
+      {
+        heading: "When does NG+ start — and can you clean up first?",
+        paragraphs: [
+          "New Game+ is not automatic: it starts when you make the choice in the **Ova storage room**. The game warns you before you commit — the choice explicitly says it ends the current playthrough and starts NG+ — and until then the world stays open, which is what makes the endgame free-roam window above your cleanup window: Beacons, shells, weapons, Baghead's moonshine, all of it can still be finished before the choice. That matters doubly for the [all-Ova trophy](/ova-locations/), which is currently first-playthrough-only.",
+          "Once you commit, NG+ begins with you spawning back in the **main Ova room**. One question nobody has answered yet: whether an accidental NG+ entry can be reverted — a September 2 Steam thread asking exactly that has gone unanswered. Treat the Ova-room choice as final, and don't make it until your cleanup is genuinely done.",
         ],
       },
     ],
@@ -3324,8 +3343,16 @@ export const guidePages: GuidePage[] = [
         name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026) — official Baghead NG+ lockout fix",
         url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
       },
+      {
+        name: "Steam Discussions — 'How do i aqquire the skeleton harbinger skin?' (preorder-bonus answer, September 2026) plus the beta-skin and played-the-beta threads",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355312859/",
+      },
+      {
+        name: "Steam Discussions — 'Trigger for NG+' (Ova storage room choice, warning, and cleanup window, September 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355311014/",
+      },
     ],
-    reviewedOn: "September 7, 2026",
+    reviewedOn: "September 8, 2026",
     datePublished: "2026-08-27",
   },
 ];
