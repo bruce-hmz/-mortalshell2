@@ -103,7 +103,7 @@ export const guidePages: GuidePage[] = [
         anchor: "bug",
         heading: "The 38/40 stall — a known, still-open bug",
         paragraphs: [
-          "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs. The same failure mode has its own Steam thread ('Seeking the Past Achievement?', running since August 30): players stuck at **39/40** with no in-game way to even see which memory is missing, and a recurring culprit — Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory, which multiple players report watching without the counter ever registering it until they re-watch it.",
+          "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs. The same failure mode has its own Steam thread ('Seeking the Past Achievement?', running since August 30): players stuck at **39/40** with no in-game way to even see which memory is missing, and a recurring culprit — Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory, which multiple players report watching without the counter ever registering it until they re-watch it. A second named culprit surfaced on September 8 (single report, no replies yet): a player stuck at 39/40 pins it on **Genessa's fifth and final memory**, which won't unlock despite a maxed bond — talking to her only offers four of the five memories to view. Like the Lazlo case it reads as a registration/display problem rather than missing content, and the same relaunch-and-re-watch remedy is the only stopgap.",
           "Status against the current patches: neither Playstack's Balance Patch 1 notes (August 20), the Week 1 Update notes (August 29), nor the September 5 update notes contain a memory, bond, or trophy fix — the Week 1 changelog's only Glimpse lines are the economy un-cap and the new respec item. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
         ],
       },
@@ -125,7 +125,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [],
         bullets: [
           "**Does this still take multiple playthroughs?** Not by economy. The Week 1 Update (August 29) made Glimpses non-finite, so all eight shells can be maxed in a single save; PowerPyx's two-runs-plus-NG++ roadmap describes the pre-patch economy. The must-watch discipline is unchanged.",
-          "**Stuck at 39/40 with no way to tell which memory is missing?** There is no in-game per-memory tracker — but the community's recurring culprit is **Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory**: multiple Steam players report watching it without the counter registering. Relaunch, then re-watch Lazlo's five bond-menu memories to force the credit (the same remedy as the stall above).",
+          "**Stuck at 39/40 with no way to tell which memory is missing?** There is no in-game per-memory tracker — but the community has named two culprits. The recurring one is **Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory**: multiple Steam players report watching it without the counter registering. A second reported case (single report, September 8) is **Genessa's fifth memory** — bond maxed, but her menu only offers four of the five to view. Relaunch, then re-watch the affected shell's five bond-menu memories to force the credit (the same remedy as the stall above).",
           "**Is the trophy still bugged?** The stall reports are recent (August 23 and 27, plus the still-active 39/40 Steam thread) and no patch has addressed them — the Week 1 (August 29) and September 5 update notes contain no memory or trophy fix either. Relaunch-and-rewatch is the only community-verified stopgap.",
           "**Does using Mether's Severance (the new respec) affect memory tracking?** Unverified. The Week 1 notes describe the Glimpse refund but say nothing about whether a shell's watched memories stay counted after its bond is severed. Until that is confirmed, watch a shell's five memories before severing its bond rather than after.",
           "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — which is exactly why the checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
@@ -137,7 +137,7 @@ export const guidePages: GuidePage[] = [
       heading: "Open verification items",
       intro: "What this page genuinely does not know yet:",
       items: [
-      "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement in PowerPyx's roadmap or comments, and neither Balance Patch 1, the Week 1 Update, nor the September 5 update notes address it (the community-attributed Lazlo 'The Prisoner' display bug is a player-side observation, not a developer confirmation)",
+      "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement in PowerPyx's roadmap or comments, and neither Balance Patch 1, the Week 1 Update, nor the September 5 update notes address it (the community-attributed Lazlo 'The Prisoner' and Genessa fifth-memory display bugs are player-side observations, not developer confirmations)",
       "Whether a Shell's watched memories stay counted after its bond is severed with Mether's Severance — the Week 1 notes are silent; the FAQ advises watching before severing until confirmed",
       "Exact Glimpse payouts per Beacon cleanse per cycle — PowerPyx describes the income lines qualitatively; per-Beacon numbers have not been published",
     ],
@@ -166,8 +166,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — 'Seeking the Past Achievement?' thread (39/40 reports and the Lazlo 'The Prisoner' display bug, August 30 – September 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581680955258992292/",
       },
+      {
+        name: "Steam Discussions — '39/40 shell memories for \"seeking the past\" trophy' thread (Genessa fifth-memory report, September 8, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681621355384881/",
+      },
     ],
-    reviewedOn: "September 8, 2026",
+    reviewedOn: "September 9, 2026",
     datePublished: "2026-08-28",
   },
 
@@ -1498,9 +1502,22 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Builds",
     intro: [
       "Builds in Mortal Shell II are built from two confirmed pillars: which of the eight shells you possess, and how your combat loop generates and spends resolve. This page explains both, then records the community's launch-build consensus — clearly attributed, because it is an opinion, not a verified fact.",
-      "The build tables below follow Game8's launch guide; this page was rechecked on September 3, 2026 against Playstack's official Week 1 Update notes (live since August 29) on top of Balance Patch 1 (August 20), which buffed key weapons, cut Tarforge smelt costs, and rebalanced enemy health. The patch facts in the boxes below come straight from those official notes.",
+      "The build tables below follow Game8's launch guide; this page was rechecked on September 9, 2026 against Playstack's official September 5 update notes, the Week 1 Update notes (live since August 29), and Balance Patch 1 (August 20), which buffed key weapons, cut Tarforge smelt costs, and rebalanced enemy health. The patch facts in the boxes below come straight from those official notes.",
     ],
     blocks: [
+      {
+        heading: "What the September 5 update changed for builds",
+        paragraphs: [
+          "The September 5 \"New Update Out Now\" patch (1.3 GB) is the first balance pass aimed at the shells themselves rather than the arsenal, and it pulls the two most-discussed kits in opposite directions. Per Playstack's official notes, **Sariel received a broad buff package**: Thornfall now works in enclosed spaces, prioritises your locked-on target, and hits moving targets — undoing the threading conditions that made it whiff in tight fights; Agonize no longer requires you to be at full pain to fire; and Affliction now shares its damage and spreads curse to enemies that are not cursed yet. **Sester Genessa's Augmentation was nerfed** in the same patch: it no longer produces infinite resolve or infinite Faithful Doubles, so the infinite-clone engine some launch builds were built around is gone by design.",
+          "The nerf landed with rough edges, per the first post-patch reports on Steam's Bug Reports board (September 8 — player-reported, unverified, one thread each): Faithful Doubles reportedly lose their AI and despawn after a single strike instead of three while the Grisha Remnant is equipped, with normal behavior returning once the item comes off; Wandering Doppelgangers reportedly vanish right after going airborne or killing an enemy; one player measuring the +20% clone-duration perk got 33 seconds where 36 were expected alongside the +8-second perk; and the clone cooldown bar reportedly runs regardless of upgrades. One Genessa player also reports new post-patch crashes while playing the shell. Nothing here is confirmed as intended or scheduled for a fix, so treat Genessa's clone kit as wait-and-see rather than build-around until a hotfix or patch note settles it — the [patch notes page](/patch-notes/) tracks that, and the [shells guide](/shells/) covers what each kit does.",
+        ],
+        bullets: [
+          "Sariel buffed: Thornfall works in enclosed spaces, prioritises locked-on targets, and hits moving targets",
+          "Agonize no longer requires full pain; Affliction shares damage and spreads curse to uncursed enemies",
+          "Genessa's Augmentation nerfed: no infinite resolve, no infinite Faithful Doubles",
+          "Post-nerf Genessa bug reports (unverified, September 8): Doubles break with the Grisha Remnant (one strike instead of three), Doppelgangers vanish after airborne kills, duration perk under-delivers",
+        ],
+      },
       {
         heading: "What the Week 1 Update changed for builds (August 29)",
         paragraphs: [
@@ -1619,6 +1636,18 @@ export const guidePages: GuidePage[] = [
     ],
     sources: [
       {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
+      },
+      {
+        name: "Steam Discussions — 'The clones and Genesa's abilities are completely glitchy' thread (post–September 5 Genessa bug reports, September 8, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681621355384337/",
+      },
+      {
+        name: "Steam Discussions — 'Game crashing and Genessa bugs' thread (Grisha Remnant Doubles behavior, September 8, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681298840564172/",
+      },
+      {
         name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
@@ -1635,7 +1664,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
       },
     ],
-    reviewedOn: "September 3, 2026",
+    reviewedOn: "September 9, 2026",
   },
   {
     slug: "walkthrough",
@@ -1827,7 +1856,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Classes",
     intro: [
       "Shells are Mortal Shell II's answer to classes: the forgotten bodies of eight lost warriors, scattered across the world, each one waiting to be possessed and mastered. This page collects everything officially confirmed about them so far.",
-      "Fact-checked against the official Steam page and the developer's website on August 17, 2026; the three player-question FAQs below (Harros, Genessa's shade, Lazlo's heat) were added September 4, 2026 from the Steam discussion threads linked in the sources.",
+      "Fact-checked against the official Steam page and the developer's website on August 17, 2026; the three player-question FAQs below (Harros, Genessa's shade, Lazlo's heat) were added September 4, 2026 from the Steam discussion threads linked in the sources, and the September 5 shell-balance section was added September 9, 2026 from Playstack's official update notes and the post-patch Steam threads.",
     ],
     blocks: [
       {
@@ -1925,6 +1954,14 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "september-5-shell-changes",
+        heading: "Sariel and Genessa after the September 5 update",
+        paragraphs: [
+          "Playstack's September 5 update (the \"New Update Out Now\" patch) is the first patch to re-balance two of the eight shells directly. **Sariel took the buff**: his Thornfall now works in enclosed spaces, prioritises the enemy you have locked on, and hits moving targets; Agonize no longer requires you to be at full pain; and Affliction now shares its damage and spreads curse to enemies that are not cursed yet — per the official notes, a straight upgrade to his damage-over-time playstyle. **Sester Genessa took the nerf**: her Augmentation no longer grants infinite resolve or infinite Faithful Doubles, closing out the infinite-clone engine that some launch builds were built around.",
+          "The nerf has thrown errors of its own, per the first post-patch reports on Steam's Bug Reports board (September 8 — player-reported, unverified, one thread each): Faithful Doubles reportedly lose their AI and despawn after a single strike instead of three while the Grisha Remnant is equipped, returning to normal once the item comes off; Wandering Doppelgangers reportedly vanish immediately after going airborne or securing a kill; one player measuring the +20% clone-duration perk got 33 seconds where 36 were expected alongside the +8-second perk; and one Genessa player reports new post-patch crashes while playing the shell. Until a hotfix or patch note says what is intended, treat Genessa's clone kit as in flux — her shell unlock and censer quest above are unaffected. The [patch notes page](/patch-notes/) tracks when that changes.",
+        ],
+      },
+      {
         anchor: "best-shell",
         heading: "Which shell is the best class in Mortal Shell 2?",
         paragraphs: [
@@ -1969,11 +2006,23 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489108/",
       },
       {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
+      },
+      {
+        name: "Steam Discussions — 'The clones and Genesa's abilities are completely glitchy' thread (post–September 5 Genessa bug reports, September 8, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681621355384337/",
+      },
+      {
+        name: "Steam Discussions — 'Game crashing and Genessa bugs' thread (Grisha Remnant Doubles behavior, September 8, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681298840564172/",
+      },
+      {
         name: "Mortal Shell II on Steam (Playstack)",
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
       },
     ],
-    reviewedOn: "September 4, 2026",
+    reviewedOn: "September 9, 2026",
     datePublished: "2026-08-20",
   },
  {
@@ -1994,7 +2043,7 @@ export const guidePages: GuidePage[] = [
       "Mortal Shell II's arsenal spans close-quarters melee blades and ranged projectile sidearms, both feeding into one posture system. This page covers every weapon mechanic officially confirmed so far.",
       "Fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 20, 2026), the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026), and the Week 1 Update balance lines added from Playstack's official announcement (August 29, 2026; reviewed September 1, 2026).",
+        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 20, 2026), the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026), the Week 1 Update balance lines added from Playstack's official announcement (August 29, 2026; reviewed September 1, 2026), and the blacksmith-cost FAQ added September 9, 2026 from the Steam thread linked in the sources.",
     ],
     blocks: [
       {
@@ -2083,6 +2132,12 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Does killing the blacksmith double your upgrade costs?",
+        paragraphs: [
+          "No. It's a fair soulslike worry — the Steam players asking this exact question note that 'everything doubles' is what the first game's lore and the genre's shopkeeper rules taught them to expect. But in Mortal Shell II the blacksmith's death is a scripted story event, and when it happens, upgrade costs stay exactly the same — no doubling, no penalty to your Tarforge bill. So if the plot takes him from you, your weapon upgrade budget is untouched — and it is already 75% kinder than launch pricing thanks to [Balance Patch 1's smelting cut](/patch-notes/).",
+        ],
+      },
+      {
         heading: "The eight sidearms",
         paragraphs: [
           "The ranged half of the arsenal holds eight sidearms, and per PowerPyx's locations guide they mirror the melee roster's rules: Naylesshotte (your first), Forgotten Crossbow, Salvaged Trebuchaxe, Troubadour's Lute, Triarch Repeater, Ballistazooka, Cursed Child, and Caged Hystrix. Collecting all eight unlocks the trophy \u201cGuns. Lots of Guns\u201d, none are missable, and Merrick in Marrow Keep sells their map markers like he does for weapons. The build guide shows which sidearm each shell's loadout prefers.",
@@ -2136,6 +2191,10 @@ export const guidePages: GuidePage[] = [
     ],
     sources: [
       {
+        name: "Steam Discussions — 'Does killing a blacksmith double the cost of upgrades?' thread (September 5, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840701009/",
+      },
+      {
         name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
       },
@@ -2156,7 +2215,7 @@ export const guidePages: GuidePage[] = [
         url: "https://mortalshelldb.com/forge",
       },
     ],
-    reviewedOn: "September 1, 2026",
+    reviewedOn: "September 9, 2026",
   },
   {
     slug: "bosses",

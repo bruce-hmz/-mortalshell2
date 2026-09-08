@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "mortal shell 2 all weapons",
     "mortal shell 2 weapon upgrades",
     "mortal shell 2 ranged weapons",
+    "mortal shell 2 blacksmith upgrade cost",
   ],
   alternates: { canonical: "/weapons/" },
   openGraph: {
