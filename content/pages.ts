@@ -366,7 +366,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official announcements on Steam News — the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 7, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 10, 2026.",
     ],
     blocks: [
       {
@@ -502,7 +502,7 @@ export const guidePages: GuidePage[] = [
       intro: "Open questions on the update trail as of September 7, 2026:",
       items: [
         "Console rollout completion for the September 5 patch — the developer posted it 'on PC, with PS5 and Xbox Series coming later today' (September 5), but no standalone console-availability announcement has followed; check your platform's update history",
-        "Whether the September 5 patch's 'several crash fixes and optimisations' clear the community's crash cluster — the [performance fix guide](/performance-fix/) workarounds stand until players confirm one way or the other",
+        "Whether the September 5 patch's 'several crash fixes and optimisations' clear the community's crash cluster — the first two post-patch counter-reports (September 7–8) stood unconfirmed and unrefuted as of September 9; the [performance fix guide](/performance-fix/) carries the status, and its workarounds stand either way",
         "Exact console rollout dates for the Week 1 Update (PC went live August 29; PS5 players reported the Week 1 content arriving as v1.000.008 around September 3, but neither platform has an official completion confirmation)",
         "Official count and locations of the Week 1 Update's new day-only Beacons — the notes name no number; player estimates say 10+",
       ],
@@ -542,7 +542,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270",
       },
     ],
-    reviewedOn: "September 7, 2026",
+    reviewedOn: "September 10, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -1245,7 +1245,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "How many Ova are in Mortal Shell 2?",
         paragraphs: [
-          "196 — and the collection is tracked by its own achievement, **Bring My Ova Back to Me**, which Steam records at a **15.7%** unlock rate. (Ascension at 16.7% looks similar but is actually the hidden Mango-secret trophy — see our [achievement guide](/achievements-guide/) for why the two are frequently confused.) Per community help threads the count includes only Ova obtained through Beacon cleansing; boss payouts like Magdalena's famous 26-Ova purse feed the same economy but don't add collection slots beyond what the Beacons hold. If your count stalls below 196, an uncleansed Beacon somewhere is why, not a missed field pickup.",
+          "196 — and the collection is tracked by its own achievement, **Bring My Ova Back to Me**, which Steam records at a **15.7%** unlock rate. (Ascension at 16.7% looks similar but is actually the hidden Mango-secret trophy — see our [achievement guide](/achievements-guide/) for why the two are frequently confused.) Per community help threads the count includes only Ova obtained through Beacon cleansing; boss payouts like Magdalena's famous 26-Ova purse feed the same economy but don't add collection slots beyond what the Beacons hold. If your count stalls below 196, an uncleansed Beacon somewhere is why, not a missed field pickup. And if the world itself seems sealed — corruption walls that refuse to break — that is the gate system working as designed: the [walkthrough's mid-game section](/walkthrough/#corruption-walls-six-gates) explains which cleanses drop the walls.",
         ],
       },
       {
@@ -1686,7 +1686,7 @@ export const guidePages: GuidePage[] = [
         "), and it drops you into its interconnected world with a map and zero hand-holding. This walkthrough gives you the order: every step from the end of the tutorial to the gates of the Ruins of Mammon — which beacon to activate first, which gate to cleanse next, where each boss waits, and which detours pay off.",
       "The route below follows AltChar's complete progression guide (published August 17, 2026), with encounter specifics corroborated against Rock Paper Shotgun's 45-boss compendium (updated August 25, 2026). The world-structure overview was originally fact-checked against the official Steam page on " +
         LAST_REVIEWED +
-        ". Notes on the game's later regions and final area are marked as still being built out.",
+        ". Notes on the game's later regions and final area are marked as still being built out. The mid-game corruption-gate section was added on September 10, 2026 from Fextralife's Endgame and Northeast Gate wiki pages, answering a cluster of stuck-player threads on Steam.",
     ],
     blocks: [
       {
@@ -1749,6 +1749,16 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "The Ruins of Mammon land you at the **Outskirts of Mammon Beacon**, and the common soldiers patrolling outside are the region's difficulty check: if they pressure you, go farm first. AltChar recommends arriving around **level 20 or higher**. Mammon's pattern compresses to what you've practiced: pick an area, fight through to its corrupted gate, cleanse it. Only two gates exist here.",
           "Before triggering the endgame, finish your collection sweep. Shell positions can be bought from **Zhirelle in Marrow Keep** if any remain hidden — though AltChar advises holding off until your Glimpse is mostly spent on upgrades you actually want, since shells aren't going anywhere and the free-roam window after the final boss keeps every non-prologue pickup available (see the [missable content checklist](/missable-content/)). With both gates down and every shell claimed, return to Marrow Keep to trigger the endgame sequence.",
+        ],
+      },
+      {
+        anchor: "corruption-walls-six-gates",
+        heading: "Stuck behind corruption walls in Mortal Shell 2?",
+        paragraphs: [
+          "A cluster of September Steam threads follows the same scary shape: a player with nearly everything collected — shells, weapons, Beacons, map fragments, in one case even the all-Beacons achievement — clears **Captive's End** in Prisoners' Domain or picks up **Lazlo's shell**, and then finds corruption walls sealing the way forward, with map question marks sitting unreachable and the snow areas looking permanently out of reach. At least one player quit to menu and restarted their save over it. This is not a softlock: corruption walls are the world's region gates, and they stand until their region's Corrupted Gate is cleansed.",
+          "The mechanic, per Fextralife's Northeast Gate walkthrough and Endgame pages: each **Corrupted Gate** is a gated area you enter, explore to its boss, kill the boss, and reclaim the Ovas from — and that cleanse is what brings a region's corruption walls down. Fextralife counts **six corrupted gates in total** across Fainweald and the Ruins of Mammon, and some walls additionally stay up until you hold **Mether's Breath**, the boss-gated cleansing/cleansed-travel ability from Step 4. Its endgame page states the finish line plainly: the last section of the game stays blocked \"until you defeat all 6 bosses in each gate and cleanse their respective beacons, taking their numerous Ova. From that moment on, you are in the endgame.\"",
+          "So the mid-game checklist when the world walls you in: find whichever gate you haven't cleansed yet (a wall with no cleanse route usually means its gate sits in a region you haven't opened, or you don't hold Mether's Breath yet), keep banking Ova at the Marrow Keep siphon — every gate cleanse pays Ova, and the [Ova locations guide](/ova-locations/) keeps the full accounting — and stop worrying about the snow: the snow areas are the **endgame, not missable content**. When the sixth gate falls, Undermether appears and the path opens beneath Marrow Keep's Ova-room staircase: Monolith, Malborn Offspring, and Orrem the Golem, then **Zmey the Unbidden**, the Foul Passenger, and the player-timed Mether's End ending — where more collected Ova improves your odds on the trip. Per-fight tactics for that whole chain are in the [boss guide](/bosses/).",
+          "One genuine bug face lives in the same cluster: a single report describes a corruption-vine wall spawning **behind** the player in the two-sarcophagi area before Lazlo's shell spot — uncleansable, unbreakable, no way around, and it cost the player a quit-to-menu and a save reload. Bug or mechanic is unclear from one thread, so before you touch your own save, check the [missable content guide](/missable-content/): shells, Beacons, and weapons are not missable, and the post-final-boss free-roam window exists precisely so a restart never has to be the answer.",
         ],
       },
       {
@@ -1832,11 +1842,19 @@ export const guidePages: GuidePage[] = [
         url: "https://www.altchar.com/guides/mortal-shell-2-the-complete-progression-guide-aDaUv0P7BNa7",
       },
       {
+        name: "Fextralife Wiki — Endgame (the six-gate unlock condition)",
+        url: "https://mortalshell2.wiki.fextralife.com/Endgame",
+      },
+      {
+        name: "Fextralife Wiki — Walkthrough: Northeast Gate, The First Steps (corruption-wall cleanse mechanic)",
+        url: "https://mortalshell2.wiki.fextralife.com/Walkthrough_-_Northeast_Gate:_The_First_Steps",
+      },
+      {
         name: "Rock Paper Shotgun — Mortal Shell 2 shell locations",
         url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
       },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 10, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -2026,10 +2044,10 @@ export const guidePages: GuidePage[] = [
     datePublished: "2026-08-20",
   },
  {
-   slug: "weapons",
+    slug: "weapons",
     metaTitle: "Mortal Shell 2 Weapons: Upgrades & Posture Breaks",
     metaDescription:
-      "All 8 Mortal Shell 2 weapons and sidearms, annotated through the Week 1 Update: the Martyr's Blade buff correction, Obsidian Hammer's rework, Tarforge cost ladder to +25, and the eel-hitbox sidearm bug FAQ.",
+      "All 8 Mortal Shell 2 weapons and sidearms, annotated through the Week 1 Update: the Martyr's Blade buff correction, Obsidian Hammer's rework, Tarforge cost ladder to +25, the tarstone XP-stall FAQ, and the eel-hitbox sidearm bug FAQ.",
     cardBlurb:
       "Melee blades, ranged sidearms, and the posture system that turns stagger into executions.",
     heroImage: {
@@ -2043,7 +2061,7 @@ export const guidePages: GuidePage[] = [
       "Mortal Shell II's arsenal spans close-quarters melee blades and ranged projectile sidearms, both feeding into one posture system. This page covers every weapon mechanic officially confirmed so far.",
       "Fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 20, 2026), the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026), the Week 1 Update balance lines added from Playstack's official announcement (August 29, 2026; reviewed September 1, 2026), and the blacksmith-cost FAQ added September 9, 2026 from the Steam thread linked in the sources.",
+        "; Balance Patch 1 effects annotated per Playstack's official patch notes (August 20, 2026), the Tarforge cost ladder verified against mortalshelldb's forge data (August 25, 2026), the Week 1 Update balance lines added from Playstack's official announcement (August 29, 2026; reviewed September 1, 2026), the blacksmith-cost FAQ added September 9, 2026, and the tarstone XP-stall FAQ added September 10, 2026 — each from the Steam threads linked in the sources.",
     ],
     blocks: [
       {
@@ -2132,6 +2150,14 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Why won't my Tarstones gain experience?",
+        paragraphs: [
+          "If a Tarstone's experience bar dies after a level or two and never moves again, you are not imagining it — tarstone leveling stalls are the most-reported weapon-system problem right now. Three separate threads hit the game's Bug Reports board within two days (September 8–9), and moderators **pinned the largest one** to the top of the board — the closest thing to an official \"we see it too\" short of a patch note. The reported pattern: a stone levels once, then gains no further experience no matter what you kill; one player's stall hit right after that first level-up, and the stone also stopped appearing in Franz's menu; another player reports the stall blocking a **permanent-infusion unlock**; a restart temporarily revived progress for one player and then never worked again, and another suspects already-maxed stones sitting in your equipment are involved.",
+          "Patch status: the September 5 update fixed Fragile Tarstones — they now properly grant Tarcores when they break (see the [patch notes](/patch-notes/)) — but says nothing about experience or leveling stalls, so no fix has shipped for this one yet.",
+          "One lead is circulating **unconfirmed**: a reply in a related thread claims the player had missed a tarstone upgrade key item until reaching their fourth gate area — which would make some stalls a missing-prerequisite problem rather than a bug. No wiki or official source currently confirms that item or its role, so treat it as something to check, not an answer. Beyond that, the honest state is: no confirmed cause and no confirmed fix yet — add your case to the pinned thread with your build number (pause menu, bottom right) and watch the patch notes for a tarstone line.",
+        ],
+      },
+      {
         heading: "Does killing the blacksmith double your upgrade costs?",
         paragraphs: [
           "No. It's a fair soulslike worry — the Steam players asking this exact question note that 'everything doubles' is what the first game's lore and the genre's shopkeeper rules taught them to expect. But in Mortal Shell II the blacksmith's death is a scripted story event, and when it happens, upgrade costs stay exactly the same — no doubling, no penalty to your Tarforge bill. So if the plot takes him from you, your weapon upgrade budget is untouched — and it is already 75% kinder than launch pricing thanks to [Balance Patch 1's smelting cut](/patch-notes/).",
@@ -2191,6 +2217,10 @@ export const guidePages: GuidePage[] = [
     ],
     sources: [
       {
+        name: "Steam Discussions — 'Tarstones not leveling' (moderator-pinned Bug Reports thread, September 8–9, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/582805931178368634/",
+      },
+      {
         name: "Steam Discussions — 'Does killing a blacksmith double the cost of upgrades?' thread (September 5, 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840701009/",
       },
@@ -2215,7 +2245,7 @@ export const guidePages: GuidePage[] = [
         url: "https://mortalshelldb.com/forge",
       },
     ],
-    reviewedOn: "September 9, 2026",
+    reviewedOn: "September 10, 2026",
   },
   {
     slug: "bosses",
@@ -2608,7 +2638,7 @@ export const guidePages: GuidePage[] = [
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
       "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below.",
     ],
     blocks: [
       {
@@ -2667,6 +2697,7 @@ export const guidePages: GuidePage[] = [
         heading: "Random crashes that survive every patch: what the community has confirmed",
         paragraphs: [
           "Past the officially confirmed crashes above sits a bigger cluster: random crashes reported since launch that no patch has eliminated. The game's largest active Steam discussion — \"Am I the only one being plagued by crashes?\", 140+ replies and flagged answered — collects the pattern: hard lock-ups that take the whole PC down with no error text, crashes on alt-tab, and reports persisting \"even after the updates\". The community has not agreed on a cause — several repliers report zero crashes on comparable hardware — but a handful of workarounds now have confirmed successes attached, and the September 1 hotfix explicitly did not touch this cluster.",
+          "September 5 patch status: the update claims only \"several crash fixes and optimisations\" with no itemized list, and as of September 9 its post-patch record is two unconfirmed Bug Reports threads — crashes every 5–10 minutes on an Intel Arc B580 rig that ran crash-free before the update, and crashes tied to Genessa encounters — with no confirmation or rebuttal from other players in either direction. The claim stays unverified here: this page makes no fixed-or-broken call until a confirmation wave or an itemized fix list lands.",
         ],
         bullets: [
           "**Lower graphics settings and turn off ray tracing** — the one player-confirmed fix so far: crashes stopped entirely after this change on a rig that had run max settings smoothly",
@@ -2681,6 +2712,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "For stuttering and frame drops specifically, the settings-level fix with the strongest support is the shader cache change above — LagoFast independently calls it the most effective fix for the game's stuttering. Beyond that, everything else is attributed opinion rather than official guidance: the settings box on this page collects LagoFast's additional suggestions — disabling in-game V-Sync, capping the frame rate externally, a High Performance power plan, lower Shadow Quality, DLSS/FSR in Balanced mode, and a community-reported launch option — with full attribution so you can weigh them yourself.",
           "One million people played the beta across Steam, PS5 and Xbox — announced by the development team on August 17 — so launch-week reports cover an enormous range of hardware. Treat any single settings list, including LagoFast's, as a starting point to test rather than a guarantee.",
+          "One new face in the September 8 bug reports: a single player describes performance degrading progressively after roughly half an hour of play — stutter that eventually reaches the audio — with restarts not preventing recurrence. It is one unconfirmed report, and its reporter ties it to no specific patch.",
         ],
       },
       {
@@ -2778,8 +2810,9 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Pending verification",
       intro:
-        "Rechecked September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. Still open:",
+        "Rechecked September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads; rechecked again September 10, 2026 against the September 5 update notes and the first post-patch reports. Still open:",
       items: [
+        "Whether the September 5 patch's unitemized 'crash fixes and optimisations' actually changed the crash cluster — the two post-patch reports above stand unconfirmed and unrefuted as of September 9",
         "An official fix or acknowledgment for the random-crash cluster — the game's largest active Steam thread — and whether the crash-linked save-corruption reports share its cause",
         "An official fix or workaround for the frame-generation breakage reported after Week 1",
         "A permanent fix note for the Keyboard Bindings crash (the workaround above is temporary)",
@@ -2793,6 +2826,22 @@ export const guidePages: GuidePage[] = [
       { label: "Best Build", href: "/best-build/" },
     ],
     sources: [
+      {
+        name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
+      },
+      {
+        name: "Steam Discussions — 'constant crashes after recent update' (post-September-5 counter-report, Bug Reports)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681621355406856/",
+      },
+      {
+        name: "Steam Discussions — 'Game crashing and Genessa bugs' (post-September-5 counter-report)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681298840564172/",
+      },
+      {
+        name: "Steam Discussions — 'Game progressively starts to lag/stutter' (September 8, single report)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681621355471773/",
+      },
       {
         name: "The Week 1 Update is Available Now — Mortal Shell II Steam announcement (Playstack, August 29, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842212951305852",
@@ -2830,7 +2879,7 @@ export const guidePages: GuidePage[] = [
         url: "https://www.lagofast.com/en/blog/mortal-shell-2-stuttering-fps-drops/",
       },
     ],
-    reviewedOn: "September 5, 2026",
+    reviewedOn: "September 10, 2026",
     datePublished: "2026-08-20",
   },
   {

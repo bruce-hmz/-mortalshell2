@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "mortal shell 2 weapon upgrades",
     "mortal shell 2 ranged weapons",
     "mortal shell 2 blacksmith upgrade cost",
+    "mortal shell 2 tarstone not gaining experience",
   ],
   alternates: { canonical: "/weapons/" },
   openGraph: {

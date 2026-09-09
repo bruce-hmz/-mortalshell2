@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "mortal shell 2 full walkthrough",
     "mortal shell 2 progression guide",
     "mortal shell 2 chapter guide",
+    "mortal shell 2 corruption walls",
   ],
   alternates: { canonical: "/walkthrough/" },
   openGraph: {
