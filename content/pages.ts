@@ -2471,9 +2471,9 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Mechanics",
     intro: [
       "The best Mortal Shell II tips follow from two confirmed systems: resolve, the currency your aggression earns, and dungeons built as non-linear branching mazes. Master both and the early game opens up.",
-      "Mechanics were verified against the official Steam page on " +
+        "Mechanics were verified against the official Steam page on " +
         LAST_REVIEWED +
-        "; boss-preparation habits and shell details below are attributed to Game8's launch guides, checked August 20, 2026. The Adaptive Difficulty section reflects Playstack's official September 5 update notes, checked September 7, 2026.",
+        "; boss-preparation habits and shell details below are attributed to Game8's launch guides, checked August 20, 2026. The Adaptive Difficulty section reflects Playstack's official September 5 update notes, checked September 7, 2026. The parry-achievement section reflects the same September 5 patch notes plus the Fextralife trophy guide and a September 8 Steam thread, checked September 10, 2026.",
     ],
     blocks: [
       {
@@ -2526,6 +2526,14 @@ export const guidePages: GuidePage[] = [
           "Community testing on Steam converges on a rough figure worth planning around: the parry animation needs about 0.3 seconds before its active frames, and some of the game's fastest combo strings re-touch you in less time than that. This is why parrying feels unfair against certain enemies while feeling trivial against others — the attack's tell, not your reflexes, decides whether 0.3 seconds is enough.",
           "The drill that follows from the number: pick one enemy archetype per session (Fainweald soldiers are ideal), and for that session do not dodge — every incoming attack gets exactly one committed attempt at a timed Perfect Guard or an eat-the-hit reset. Twenty minutes of this converts vague 'parry when it feels right' into concrete per-enemy tells you can name. Perfect Guard timing is also fully compatible with aggressive play: a landed guard preserves your posture position and feeds the same resolve economy described above.",
           "Per-archetype frame data is still being measured — that precision lives in this page's pending list rather than pretending it is settled science.",
+        ],
+      },
+      {
+        heading: "How do you get the Peter's Perfect Parry achievement?",
+        paragraphs: [
+          "It is a parry exam. Peter's Perfect Parry asks for a Perfect Guard on every hit of The Nameless Captive's head-spin attack while you are wearing the Untarnished Seal — a Bronze trophy sitting at 4.2% ownership, and the subject of a 14-reply Steam thread whose opener admits to feeling like quitting over it. Players there complain the captive 'changes trajectory if you don't dodge at the perfect moment' and snaps back into range mid-string. That frustration is the 0.3-second drill above in its hardest form: same skill, tighter tells. His whole fight is a parry gauntlet by design — the [boss guide](/bosses/) maps his rhythm phase by phase.",
+          "Two setup facts decide the attempt before it starts. He spawns once per run, and the Untarnished Seal is mandatory — guards without it do not count even when the parry itself lands. Put the seal on before the encounter; there is no backfill once the save moves past him. The [missable content checklist](/missable-content/) carries the full setup, and the [achievements guide](/achievements-guide/) has the exact criteria and rarity context.",
+          "One thing the September 5 patch changed in your favor: consecutive parries with the Infinite Seal — the parry-focused seal from the keep's sparring trials — now have a wider window that reaches into the wind-up animation, so a string of incoming hits can be parried instead of only the first one. Status effects also now apply while an enemy recovers from a riposte, so a landed parry pays harder than it used to. The trophy's own seal requirement is unchanged.",
         ],
       },
       {
@@ -2622,8 +2630,16 @@ export const guidePages: GuidePage[] = [
         name: "Mortal Shell II Steam Community Discussions (community timing and bug reports)",
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/discussions/",
       },
+      {
+        name: "Steam Discussions — 'Peter's perfect parry' achievement tips thread (September 8, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355311320/",
+      },
+      {
+        name: "Fextralife Wiki — Mortal Shell 2 Trophy and Achievement Guide",
+        url: "https://mortalshell2.wiki.fextralife.com/Trophy+and+Achievement+Guide",
+      },
     ],
-    reviewedOn: "September 7, 2026",
+    reviewedOn: "September 11, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -3330,7 +3346,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "The hardest entry on the missable list. During the second phase of **The Nameless Captive** fight (Prisoners' Domain), at half health he performs a fast 7-hit spinning head attack; sometime afterward he uses a slower, opposite-direction variant — again seven consecutive spins, but reversed. You must Perfect Guard all seven hits of that reversed variant, with the Untarnished Seal equipped in your seal slot.",
           "Two failure modes exist: dying before you ever see the reversed spin (it is random within phase two), or killing him too fast between phase-two attempts. He only spawns once per playthrough, so prepare properly rather than winging it.",
-          "**Recommended approach:** unlock Untarnished Seal first if you don't have it, practice the regular 7-spin timing on earlier phase-two attempts, and bring a tanky shell like Eredrim so a single mistimed guard doesn't end the run. The seal requirement is mandatory — guards without it do not count even if the parry itself lands.",
+          "**Recommended approach:** unlock Untarnished Seal first if you don't have it, practice the regular 7-spin timing on earlier phase-two attempts (the [parry training drill](/tips/) is built for exactly this), and bring a tanky shell like Eredrim so a single mistimed guard doesn't end the run. The seal requirement is mandatory — guards without it do not count even if the parry itself lands.",
         ],
       },
       {

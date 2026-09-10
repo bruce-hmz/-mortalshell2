@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "mortal shell 2 combat tips",
     "mortal shell 2 parry tips",
     "mortal shell 2 resolve tips",
+    "mortal shell 2 peter's perfect parry",
   ],
   alternates: { canonical: "/tips/" },
   openGraph: {
