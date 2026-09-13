@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     "mortal shell 2 all bosses",
     "mortal shell 2 boss list",
     "mortal shell 2 final boss",
+    "mortal shell 2 monolith boss",
+    "mortal shell 2 droeg the conquerer",
   ],
   alternates: { canonical: "/bosses/" },
   openGraph: {

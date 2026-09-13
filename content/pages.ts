@@ -2258,7 +2258,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Bosses",
     intro: [
       "Mortal Shell II's critical path runs through eleven main bosses guarding the Corrupted Gates, spread across nine regions from Disciple's Pass to the Faded Citadel and beyond. This page lists all eleven in the recommended encounter order, with where each fight happens and what it pays out.",
-      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide. The per-boss strategies below were written against Rock Paper Shotgun's 45-boss compendium, updated August 25, 2026, and re-checked against Playstack's official Week 1 Update notes (August 29, 2026; reviewed September 6, 2026) — the patch changed several of these fights, and every changed fight carries a dated note inline plus a summary in the first block. On September 6 the Zmey strategy block was rebuilt against the active Steam discussion of that fight, and the roster was corrected to PowerPyx's eleven-main-boss count (Game8's route order retained, with the Tar Golem added).",
+      "The roster was verified on August 20, 2026 (launch day) against Game8's boss compendium and GameSpot's boss guide. The per-boss strategies below were written against Rock Paper Shotgun's 45-boss compendium, updated August 25, 2026, and re-checked against Playstack's official Week 1 Update notes (August 29, 2026; reviewed September 6, 2026) — the patch changed several of these fights, and every changed fight carries a dated note inline plus a summary in the first block. On September 6 the Zmey strategy block was rebuilt against the active Steam discussion of that fight, and the roster was corrected to PowerPyx's eleven-main-boss count (Game8's route order retained, with the Tar Golem added). On September 14 the Monolith and Droeg strategy blocks were rebuilt the same way — against the active Steam threads on those fights, with Fextralife's bosses index supplying Droeg's identity lines.",
     ],
     blocks: [
       {
@@ -2336,8 +2336,9 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Droeg, the Conquerer strategy",
         paragraphs: [
-          "Arena and gimmick: a frost giant whose club punishes panic — counterintuitively, staying **close** is safer than mid-range, where his swings track best. Kneeling club combos invite parries; watch the stomp; the **club slam** is unblockable and must be dodged.",
-          "The real killer arrives after your first riposte: he begins raining **flaming ice balls** that track and deal enormous damage — arguably deadlier than the club all fight. Never stand still, dodge on their descent, and equip anti-Frozen insurance (**Martyr's Ash** as your active item, fired the moment phase two starts) because being frozen mid-slam is how runs end.",
+          "Arena and gimmick: Conquered Temple's gate boss — Fextralife's index describes him as a put-back-together ancient ruler — and a frost giant whose club punishes panic: counterintuitively, staying **close** is safer than mid-range, where his swings track best. Kneeling club combos invite parries; watch the stomp; the **club slam** is unblockable and must be dodged. Budget for the Frost, not just the club — the fight's identity is cold damage layered on everything else, so anti-Frozen prep is load-bearing rather than optional.",
+          "The real killer arrives after your first riposte: he begins raining **flaming ice skulls** that home onto you and deal enormous damage — arguably deadlier than the club all fight. Never stand still, dodge on their descent, and equip anti-Frozen insurance (**Martyr's Ash** as your active item, fired the moment phase two starts) because being frozen mid-slam is how runs end.",
+          "One arena warning worth knowing before it kills you: players report the camera can randomly lose its focus lock on the boss in big arenas — this skull rain is one of the named death spots (Orrem's phase two is the other). If your lock drops mid-volley, re-center manually instead of trusting the camera to recover; it's a community-reported bug rather than a hidden mechanic, so assume it can happen any attempt.",
         ],
       },
       {
@@ -2364,8 +2365,10 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Monolith strategy",
         paragraphs: [
-          "The wall: widely rated the game's worst fight — Day-one overtuned, briefly nerfed, still brutal. Its ground slams have absurd tracking; answer them with **parries or Hardening** timed for i-frames rather than trying to outrun the targeting. The central fleshy mass swing is parryable too.",
-          "After your first riposte it rolls and fires **lasers**: tracked beams plus swinging arcs. The counterintuitive core skill — dodge **into** the arcs, never away, cutting through with i-frames, then sprint to its back where lasers haven't extended yet and unload there. Phase three adds top-spin attacks, an **unblockable airborne drop** (dodge at the last second), and the accelerating death-spiral arc show — lock the rhythm down and accept it takes attempts. Corner yourself and the camera will kill you; fight center-arena. Thrown weapons have been observed glitching the lasers off temporarily — abuse anything cheap, this fight deserves it. **Week 1 Update (August 29):** a double-damage bug on certain hits is fixed and the laser/spin timings are now consistent and readable (the old spamming was a bug) — still brutal, but no longer cheating.",
+          "The wall: widely rated the game's worst fight — day-one overtuned, briefly nerfed, still brutal, and still the loudest boss complaint on the Steam forums, where a 23-reply \"The Monolith sucks\" thread (the second Monolith gripe in a week) vents about the spin-and-laser show looping through his final stretch of health with barely a damage window between. Its ground slams have absurd tracking; answer them with **parries or Hardening** timed for i-frames rather than trying to outrun the targeting. The central fleshy mass swing is parryable too, and the thread's posture-breaking answer is **Eredrim** — his Shoulder Bash is the tool players reach for to crack the Monolith's posture bar ([shell pairings](/shells/) if you want the matching build).",
+          "After your first riposte it rolls and fires **lasers**: tracked beams plus swinging arcs. The counterintuitive core skill — dodge **into** the arcs, never away, cutting through with i-frames — lines up with the thread's own read of the fight: the beams sweep **front-only**, so the punish lives at its **backside**, where the lasers haven't extended. One resource rule from the same discussion: when the lasers chain into spam there is no heal window inside the sequence — **plan heals between volleys**, not mid-chain.",
+          "Phase three adds top-spin attacks, an **unblockable airborne drop** (dodge at the last second), and the accelerating death-spiral arc show players in the thread call the **disco-laser phase** — read as RNG-flavored by the people grinding it. Lock the rhythm down and accept it takes attempts. Corner yourself and the camera will kill you; fight center-arena. Thrown weapons have been observed glitching the lasers off temporarily — abuse anything cheap, this fight deserves it. **Week 1 Update (August 29):** a double-damage bug on certain hits is fixed and the laser/spin timings are now consistent and readable (the old spamming was a bug) — still brutal, but no longer cheating.",
+          "Two parting notes from players who've stopped losing to it. Build-wise, the **Salvaged Trebuchaxe**'s heavy spin-shot paired with Genessa clone support — worth \"two extra lives,\" in the thread's phrasing — reportedly melts stationary phase-transition bosses like this one ([weapons guide](/weapons/)). And the thread isn't unanimous: one counterpoint's summary is \"bosses nerfed a lot, now ok\" — if the wall reads more unfair than brutal, the [Adaptive Difficulty FAQ](/tips/) covers the official assist dial.",
         ],
       },
       {
@@ -2452,8 +2455,20 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — The final boss in 15 seconds (Escalation 3/3 + Deathmark 3/3 build)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581680955259021896/",
       },
+      {
+        name: "Steam Discussions — 'The Monolith sucks' (community Monolith strategies and complaints)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582806239606524074/",
+      },
+      {
+        name: "Fextralife — Mortal Shell 2 Wiki, Bosses index (Droeg identity and Frost/skull profile)",
+        url: "https://mortalshell2.wiki.fextralife.com/Bosses",
+      },
+      {
+        name: "Steam Discussions — 'Losing focus on bosses in big arenas' (Bug board: arena camera-focus reports, Droeg/Orrem)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/564793434686156605/",
+      },
     ],
-    reviewedOn: "September 6, 2026",
+    reviewedOn: "September 14, 2026",
   },
   {
     slug: "tips",
