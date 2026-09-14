@@ -1088,7 +1088,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. The Ova section gained the community prologue-skip co-factor reports on September 15, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -1136,6 +1136,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Collecting all 196 Ova should be a straightforward Beacon-sweeping task (the [Ova locations page](/ova-locations/) maps the route), but a recent patch introduced a bug: PowerPyx reports the achievement can currently pop only in a first playthrough. Crossing into NG+ with unfinished cleanup risks a permanently dead save for this entry until a fix lands.",
           "Sooner or later the developers will patch this — at which point the restriction presumably lifts and normal NG+ collection resumes. Until an update note says otherwise, treat every post-boss 26-Ova Beacon payout as first-run-critical and do not send Ova through the Marrow Keep Siphon's ending prompt without a finished count.",
+          "One community factor sits alongside the NG+ rule: a PS5 bug report (v1.000.007) links skipping the prologue to this trophy wedging at 99%, with So Fresh, So Clean stuck on the same save — but a counter-case wedged at 193/194 on the tracker explicitly never skipped the prologue. Treat the skip as one reported co-factor rather than a confirmed cause; the first-playthrough rule above is still the only guidance with consistent reporting behind it.",
         ],
       },
       {
@@ -1202,6 +1203,14 @@ export const guidePages: GuidePage[] = [
         url: "https://www.powerpyx.com/mortal-shell-2-trophy-guide-roadmap/",
       },
       {
+        name: "Steam Discussions — PS5 trophy bug report: Ova + Prologue Skip (Bring My Ova Back to Me at 99%, v1.000.007)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582806239606696990/",
+      },
+      {
+        name: "Steam Discussions — Bring My Ova bugged at 193/194 without skipping the prologue (September 2, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840568928/",
+      },
+      {
         name: "Rock Paper Shotgun — Mortal Shell 2 devs on the Slayer Seal achievement lockout (August 24, 2026)",
         url: "https://www.rockpapershotgun.com/mortal-shell-2-slayer-seal-achievements",
       },
@@ -1214,7 +1223,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
       },
     ],
-    reviewedOn: "September 7, 2026",
+    reviewedOn: "September 15, 2026",
     datePublished: "2026-08-27",
   },
   {
@@ -2669,7 +2678,7 @@ export const guidePages: GuidePage[] = [
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
       "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround.",
     ],
     blocks: [
       {
@@ -2713,7 +2722,7 @@ export const guidePages: GuidePage[] = [
           "The Week 1 Update reworked frame generation by Playstack's own notes: it now applies only after a reload, no longer activates before the world has loaded, and NVIDIA frame generation now covers a much wider range of cards. The same patch added a Geometry Budgets graphics option and a crash diagnostics option, moved the shader-compilation hitch into the main menu, and reduced enemy counts in the busiest areas. On paper, that is a straight improvement for the problems on this page.",
           "The community picture one week in is rougher. In the pinned Week 1 discussion thread, multiple players report frame generation broken after updating — including one who had uninstalled mods, toggled frame gen off and on, and restarted repeatedly without fixing it — and others describe severe freezes and frame drops on hardware that ran a stable 120–140 FPS before the patch: down to 80, dipping to 20, with freezes lasting up to 20 seconds. A third independent report adds a driver-level wrinkle: the NVIDIA app lists the game but refuses to change its settings (the shipping executable sits in a directory the app doesn't recognize), with frame gen dead after the patch.",
           "What to actually do, in order: fully quit and relaunch first, because the reworked frame generation only applies after a reload and an old session can run half-applied; confirm the patch fully downloaded; then disable frame generation and play without it while the reports are unresolved — that is the only framegen state with consistent community confirmation behind it right now. Keep the shader cache fix above for lock-ups, try the new crash diagnostics option if crashes persist, and when you report, include your build number (pause menu, bottom right) in the bug-report thread so Playstack can triage it.",
-          "Save files deserve their own caution. The Week 1 notes do contain one official save improvement — an interrupted save can no longer destroy your save file — but the same pinned thread carries reports of save files disappearing entirely after the update, and no official recovery path has been announced. The prevention is manual: copy the SaveGames folder at \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames somewhere safe before installing any update, and if a save vanishes after a patch, restore that folder copy before doing anything else.",
+          "Save files deserve their own caution. The Week 1 notes contain one official save improvement — an interrupted save can no longer destroy your save file — but reports of saves vanishing entirely have continued since, including wipes right after a crash. There is now an official recovery path: Playstack's pinned Known Issues post lists a missing-saves workaround built on the automatic WorldState_Backup save file — full steps in the save FAQ at the bottom of this page. The prevention stays manual: copy the SaveGames folder at \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames somewhere safe before installing any update, and if a save vanishes after a patch, restore that folder copy before doing anything else.",
           "Playstack also shipped a ~1 GB PC hotfix on September 1, 2026. Its official notes were posted on the developer's Reddit and Discord rather than Steam News, and they list six fixes — Devout/Pre-Order Shell Shades, the FSR world-map problem, Citadel Annex spider traversal, enemies not reacting, collision areas, and Minibeacon visuals — with nothing for frame generation, freezes, crashes, or saves. The full entry is on the [patch notes page](/patch-notes/).",
         ],
         bullets: [
@@ -2829,7 +2838,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Mortal Shell 2 save file disappeared after the update — what now?",
         paragraphs: [
-          "Reports of saves vanishing after the Week 1 Update exist in the pinned Week 1 thread, and no official recovery path has been announced — the patch's only official save fix is that an interrupted save can no longer destroy the file. Before patching (always), copy \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames to a safe location; if a save disappears right after an update, restore that folder copy before relaunching. If you have no backup, report it in the bug-report thread with your build number — do not start overwriting saves first.",
+          "Start with the official recovery path. Playstack's pinned Known Issues post (last edited September 3, 2026) lists a missing-saves workaround: in \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames, rename WorldState_Backup_0_[N].sav — the [N] is a number — to WorldState_0.sav and relaunch the game. If your settings were affected too, the same post says to delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav from that folder, and the save itself can also be re-downloaded from Steam's remote storage page (store.steampowered.com/account/remotestorage). Playstack has also replied \"we are aware and are looking into this\" on a player's save-wipe report, so the bug is officially acknowledged.",
+          "Two caveats before you rely on it: the rename only works when a WorldState_Backup file actually exists — at least one wiped player reports their SaveGames folder held no backup file at all, only Steam Cloud files, leaving the workaround unavailable in that case — and it is no substitute for your own backup. Copy the SaveGames folder somewhere safe before every update; if a save disappears right after one, restore your folder copy before relaunching. If you have neither a backup nor a WorldState_Backup file, report it in the bug-report thread with your build number — do not start overwriting saves first.",
         ],
       },
     ],
@@ -2848,6 +2858,7 @@ export const guidePages: GuidePage[] = [
         "An official fix or workaround for the frame-generation breakage reported after Week 1",
         "A permanent fix note for the Keyboard Bindings crash (the workaround above is temporary)",
         "Recommended PC requirements — Steam currently lists minimum only",
+        "A recovery path for wiped saves that have no WorldState_Backup file — the official workaround presumes the backup exists, and at least one wiped player reports only Steam Cloud files in the folder",
         "Official word on Xbox Series S crash reports near the forgotten crossbow area (player-reported, collected by Playstack)",
       ],
     },
@@ -2886,6 +2897,14 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178353028/",
       },
       {
+        name: "PINNED: How to Report a Bug and Known Issues (Playstack, Steam Discussions) — official Missing Saves workaround",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/418424310691110842/",
+      },
+      {
+        name: "Steam Discussions — \"Save File Deleted\" (save-wipe report with the official \"aware and looking into\" reply)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/582806239606735952/",
+      },
+      {
         name: "Steam Discussions — \"Game still crashes\" (crash-to-save-corruption reports)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581681298840625385/",
       },
@@ -2910,7 +2929,7 @@ export const guidePages: GuidePage[] = [
         url: "https://www.lagofast.com/en/blog/mortal-shell-2-stuttering-fps-drops/",
       },
     ],
-    reviewedOn: "September 10, 2026",
+    reviewedOn: "September 15, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -3325,7 +3344,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Completion",
     intro: [
       "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
-      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026, and the preorder/beta-skin and NG+-trigger FAQs added on September 8, 2026 from the Steam skin and NG+ threads.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026, and the preorder/beta-skin and NG+-trigger FAQs added on September 8, 2026 from the Steam skin and NG+ threads. A September 15, 2026 status note on the post-patch skin-loss reports was added to the skins FAQ.",
     ],
     blocks: [
       {
@@ -3409,6 +3428,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "The skeleton harbinger skin is the **preorder bonus** — that is the entire unlock. When a player asked exactly this on the game's Steam board after finding nothing on YouTube, the in-thread answer, confirmed by multiple owners, was simply the preorder: there is no quest, drop, or in-game pickup involved in getting it.",
           "Beta skins ride on **ownership, not installation**: the beta only needs to stay in your Steam library for its skins to remain yours — it does not have to stay installed. That is the community's working answer to the \"uninstalled the Beta and lost beta skin\" report. One caveat inherited from beta players: some beta loot differed from the release build, so an item you remember from the beta may not sit in the same place in release — one sought-after item turned up in the release build inside the Holding Cells dungeon.",
+          "One warning has surfaced since: a fresh wave of community reports ties owned skins to patch damage. The September 1 hotfix officially fixed Devout/Pre-Order Shell Shades, but since September 8 players have reported all DLC skins gone from selection after starting NG+ (\"skins I paid for\"), a Devout Edition copy unable to change the base Harbinger's shade, Obsidian and preorder skins invisible after \"the 2 latest patches\", and a streamer clip of the wrong skin applying after death. The developer's Known Issues pin lists no skins entry, so this stays a community-reported pattern rather than an official bug list: if your skins vanish, try the standard basics first — restore licenses, verify game files, reinstall — and treat any fixed-or-broken verdict as premature until Playstack acknowledges it.",
         ],
       },
       {
@@ -3487,11 +3507,23 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355312859/",
       },
       {
+        name: "Steam Discussions — 'DLC is broken' (patch-attributed Obsidian/preorder skin loss, September 11, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/564793434686221223/",
+      },
+      {
+        name: "Steam Discussions — 'Still can't change my harbinger shade' (Devout Edition base-skin shade, September 11, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681925126622186/",
+      },
+      {
+        name: "Steam Discussions — 'No Achievements + No Skins' (NG+ DLC-skins-gone report, September 8, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581681621355397199/",
+      },
+      {
         name: "Steam Discussions — 'Trigger for NG+' (Ova storage room choice, warning, and cleanup window, September 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355311014/",
       },
     ],
-    reviewedOn: "September 8, 2026",
+    reviewedOn: "September 15, 2026",
     datePublished: "2026-08-27",
   },
 ];
