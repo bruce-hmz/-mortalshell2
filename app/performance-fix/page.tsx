@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "mortal shell 2 stuttering fix",
     "mortal shell 2 won't launch",
     "mortal shell 2 black screen",
+    "mortal shell 2 falling loop",
+    "mortal shell 2 softlock",
   ],
   alternates: { canonical: "/performance-fix/" },
   openGraph: {

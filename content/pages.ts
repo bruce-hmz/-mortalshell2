@@ -2677,8 +2677,8 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Troubleshooting",
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
-      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround.",
+      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, a falling loop or a locked arena is the bottom FAQ of this page, and a game that won't launch at all starts with the requirements check.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads.",
     ],
     blocks: [
       {
@@ -2842,6 +2842,13 @@ export const guidePages: GuidePage[] = [
           "Two caveats before you rely on it: the rename only works when a WorldState_Backup file actually exists — at least one wiped player reports their SaveGames folder held no backup file at all, only Steam Cloud files, leaving the workaround unavailable in that case — and it is no substitute for your own backup. Copy the SaveGames folder somewhere safe before every update; if a save disappears right after one, restore your folder copy before relaunching. If you have neither a backup nor a WorldState_Backup file, report it in the bug-report thread with your build number — do not start overwriting saves first.",
         ],
       },
+      {
+        heading: "Stuck in a falling loop or a locked arena?",
+        paragraphs: [
+          "The newest movement blocker in Bug Reports is the falling loop: a player who died in the Holding Cells well dungeon got dropped into a permanent falling loop by the Egon's Stone revive teleport, with no load spot to catch them. Two escapes are on record in that thread, neither official. First, the \"return to the hub\" item breaks the loop but costs all of your currently-carried Gloom — the same loss as dying, so the spend-down-at-a-Beacon habit from the [farming guide's death-loss answer](/farming-guide/) is worth keeping between risky dungeons. Second, one player reports a shader-cache reset cleared the loop for them; the step-by-step lives in the forum's pinned [PC NVIDIA] shader thread (sources below), the same cache lever as Fix 3 above.",
+          "Arena locks are the other shape, with two September reports. Re-entering the royal tomb whose boss fight unlocks the Lazlo shell after patching — with the boss killed before the patch — raises thorn walls that seal the arena with no exit, because the thorns don't register the boss as already dead. That report has a matching reply and no fix, so the only prevention is not re-entering a tomb you have already cleared. The softer variant self-resolves: a player softlocked by the corruption wall right after picking up the Lazlo shell reports a quit-and-restart cleared the wall. Until fixes land, a restart is the fallback for every case here.",
+        ],
+      },
     ],
     communityNote: {
       heading: "Further settings worth trying (attributed)",
@@ -2860,6 +2867,7 @@ export const guidePages: GuidePage[] = [
         "Recommended PC requirements — Steam currently lists minimum only",
         "A recovery path for wiped saves that have no WorldState_Backup file — the official workaround presumes the backup exists, and at least one wiped player reports only Steam Cloud files in the folder",
         "Official word on Xbox Series S crash reports near the forgotten crossbow area (player-reported, collected by Playstack)",
+        "A fix or official escape for the royal-tomb re-entry arena lock — thorn walls that don't register a boss killed before the patch (reported September 14, no confirmed way out)",
       ],
     },
     related: [
@@ -2928,8 +2936,24 @@ export const guidePages: GuidePage[] = [
         name: "LagoFast — Mortal Shell 2 stuttering & FPS drops guide",
         url: "https://www.lagofast.com/en/blog/mortal-shell-2-stuttering-fps-drops/",
       },
+      {
+        name: "Steam Discussions — 'Falling loop' (Holding Cells well; hub-item and shader-cache escapes)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/564793434686102091/",
+      },
+      {
+        name: "PINNED: [PC NVIDIA] Potential fix for stutters, performance issues, lags & broken shaders (shader-cache reset instructions)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178601506/",
+      },
+      {
+        name: "Steam Discussions — 'Mammon royal tomb bug - closed exit.' (re-entry arena lock after patching, boss killed pre-patch)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581680955259127878/",
+      },
+      {
+        name: "Steam Discussions — 'Got soft locked after picking up the Lazlo Shell' (corruption-wall softlock cleared by quit-and-restart)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/564793766239677011/",
+      },
     ],
-    reviewedOn: "September 15, 2026",
+    reviewedOn: "September 16, 2026",
     datePublished: "2026-08-20",
   },
   {
