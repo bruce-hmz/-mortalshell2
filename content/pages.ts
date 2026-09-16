@@ -60,7 +60,7 @@ export const guidePages: GuidePage[] = [
     slug: "achievements/seeking-the-past",
     metaTitle: "Mortal Shell 2 Seeking the Past Trophy: All 40 Shell Memories (1.9% Rarity)",
     metaDescription:
-      "How to earn Mortal Shell 2's rarest trophy: the 40 Shell Memories explained — the must-watch rule, the post-Week-1 Glimpse economy that rewrote the budget, and the known 38/40 counter stall.",
+      "How to earn Mortal Shell 2's rarest trophy: the 40 Shell Memories explained — the must-watch rule, the officially acknowledged NG+ break and its in-order rewatch fix, the post-Week-1 Glimpse economy, and the known 38/40 counter stall.",
     cardBlurb:
       "The rarest trophy's verification chain: must-watch memories, the post-patch Glimpse budget, and the 38/40 stall workaround.",
     h1: "Mortal Shell 2 Seeking the Past — Every Shell Memory, Watched Properly",
@@ -105,6 +105,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs. The same failure mode has its own Steam thread ('Seeking the Past Achievement?', running since August 30): players stuck at **39/40** with no in-game way to even see which memory is missing, and a recurring culprit — Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory, which multiple players report watching without the counter ever registering it until they re-watch it. A second named culprit surfaced on September 8 (single report, no replies yet): a player stuck at 39/40 pins it on **Genessa's fifth and final memory**, which won't unlock despite a maxed bond — talking to her only offers four of the five memories to view. Like the Lazlo case it reads as a registration/display problem rather than missing content; note that the re-watch remedy below is confirmed for the Lazlo case only — for the Genessa case it is unconfirmed, but it remains the only stopgap anyone has.",
           "Status against the current patches: neither Playstack's Balance Patch 1 notes (August 20), the Week 1 Update notes (August 29), nor the September 5 update notes contain a memory, bond, or trophy fix — the Week 1 changelog's only Glimpse lines are the economy un-cap and the new respec item. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
+          "One official acknowledgment now exists, and it names a trigger. Playstack's pinned \"How to Report a Bug and Known Issues\" post (edited September 3, 2026) lists Seeking the Past under achievements not unlocking: \"Can break when going into NG+, potential fix by rewatching all memories in order.\" That line carries two facts the walkthrough-style guides keep missing: crossing into NG+ can break the trophy on an otherwise-complete save, and the publisher's own suggested remedy is a full in-order re-watch of all 40 memories — broader than the per-shell re-watch stopgap above. The pin does not say which order counts: whether it means the order you unlocked or watched the memories, or the shells' roster order, is stated nowhere official. Watch order is the community's working assumption — unverified — so start there and treat any specific order as a guess until a popped report confirms it. A second fresh face (September 16, 11 replies): an NG++ player reports Genessa's own shell memories stuck at 2/5 with the bond maxed, and the official reply there cross-references this trophy directly — asking when it stuck and whether the player \"did receive the Seeking the Past Achievement\" — which ties Genessa's memory progression and the trophy to one mechanism. If her menu stops offering memories to watch, that thread is the one to watch.",
         ],
       },
       {
@@ -125,10 +126,10 @@ export const guidePages: GuidePage[] = [
         paragraphs: [],
         bullets: [
           "**Does this still take multiple playthroughs?** Not by economy. The Week 1 Update (August 29) made Glimpses non-finite, so all eight shells can be maxed in a single save; PowerPyx's two-runs-plus-NG++ roadmap describes the pre-patch economy. The must-watch discipline is unchanged.",
-          "**Stuck at 39/40 with no way to tell which memory is missing?** There is no in-game per-memory tracker — but the community has named two culprits. The recurring one is **Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory**: multiple Steam players report watching it without the counter registering. A second reported case (single report, September 8) is **Genessa's fifth memory** — bond maxed, but her menu only offers four of the five to view. Relaunch, then re-watch the affected shell's five bond-menu memories — the remedy confirmed for the Lazlo case; for the Genessa case it is unconfirmed, but it is the only stopgap anyone has (the same remedy as the stall above).",
-          "**Is the trophy still bugged?** The stall reports are recent (August 23 and 27, plus the still-active 39/40 Steam thread) and no patch has addressed them — the Week 1 (August 29) and September 5 update notes contain no memory or trophy fix either. Relaunch-and-rewatch is the only community-verified stopgap.",
+          "**Stuck at 39/40 with no way to tell which memory is missing?** There is no in-game per-memory tracker — but the community has named two culprits. The recurring one is **Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory**: multiple Steam players report watching it without the counter registering. A second reported case (single report, September 8) is **Genessa's fifth memory** — bond maxed, but her menu only offers four of the five to view. Relaunch, then re-watch the affected shell's five bond-menu memories — the remedy confirmed for the Lazlo case; for the Genessa case it is unconfirmed, but it is the only stopgap anyone has (the same remedy as the stall above). If the per-shell re-watch doesn't pop it — or you have already crossed an NG+ boundary — escalate to the Known Issues pin's remedy: re-watch all 40 memories in order (the bug section covers what \"in order\" does and doesn't pin down).",
+          "**Is the trophy still bugged?** Yes, and it is now officially acknowledged. Playstack's pinned Known Issues post (edited September 3) lists Seeking the Past as able to \"break when going into NG+, potential fix by rewatching all memories in order\" — that is a suggested workaround, not a shipped patch fix; the Week 1 (August 29) and September 5 update notes contain no memory or trophy fix, and no popped confirmations of the pin's remedy have landed yet. For a mid-save stall, relaunch-and-rewatch remains the community-verified stopgap.",
           "**Does using Mether's Severance (the new respec) affect memory tracking?** Unverified. The Week 1 notes describe the Glimpse refund but say nothing about whether a shell's watched memories stay counted after its bond is severed. Until that is confirmed, watch a shell's five memories before severing its bond rather than after.",
-          "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — which is exactly why the checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
+          "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — but the Known Issues pin's NG+ warning above is the first official signal that NG+ boundaries and this trophy's tracking interact badly, which is exactly why the checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
           "**Does this trophy share a root cause with the Ova tracker bug?** Unknown. Both are count-to-complete trackers misbehaving (the Ova one currently locks its trophy out of NG+ entirely — see the [Ova locations page](/ova-locations/)), but no developer statement connects them.",
         ],
       },
@@ -137,7 +138,7 @@ export const guidePages: GuidePage[] = [
       heading: "Open verification items",
       intro: "What this page genuinely does not know yet:",
       items: [
-      "Whether the 38/40 stall has a confirmed developer fix or root cause — no statement in PowerPyx's roadmap or comments, and neither Balance Patch 1, the Week 1 Update, nor the September 5 update notes address it (the community-attributed Lazlo 'The Prisoner' and Genessa fifth-memory display bugs are player-side observations, not developer confirmations)",
+      "Whether the pin's \"rewatch all memories in order\" remedy actually pops a broken trophy — the Known Issues pin (September 3 edit) is official acknowledgment of the NG+ break, but it is a suggested workaround, not a shipped patch fix, and no popped-confirmation report has landed (the community-attributed Lazlo 'The Prisoner' and Genessa fifth-memory display bugs remain player-side observations; the Genessa-memories-stuck thread's official reply is still gathering details)",
       "Whether a Shell's watched memories stay counted after its bond is severed with Mether's Severance — the Week 1 notes are silent; the FAQ advises watching before severing until confirmed",
       "Exact Glimpse payouts per Beacon cleanse per cycle — PowerPyx describes the income lines qualitatively; per-Beacon numbers have not been published",
     ],
@@ -170,8 +171,20 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — '39/40 shell memories for \"seeking the past\" trophy' thread (Genessa fifth-memory report, September 8, 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/3/581681621355384881/",
       },
+      {
+        name: "PINNED: How to Report a Bug and Known Issues (Playstack, Steam Discussions, edited September 3, 2026) — Seeking the Past NG+ break entry",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/418424310691110842/",
+      },
+      {
+        name: "Steam Discussions — 'Achievement bug?' (39/40 with all memories watched, September 15, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/569297668062338205/",
+      },
+      {
+        name: "Steam Discussions — \"Genessa's shell memories stucked 2/5\" (NG++ report; official reply cross-references the trophy)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581680664978549626/",
+      },
     ],
-    reviewedOn: "September 9, 2026",
+    reviewedOn: "September 17, 2026",
     datePublished: "2026-08-28",
   },
 
@@ -777,7 +790,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Economy",
     intro: [
       "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. The Week 1 Update (August 29) went further and broke the economy's central constraint: **Glimpses and Tarcores are no longer finite**. This page ranks the loops actually worth your time under the current numbers, plus what each currency buys so you know when to stop grinding.",
-      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes. Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes — and re-reconciled on September 17, 2026 against the September 14 hotfix window's Egon's Stone gloom-loss regression (see the death-loss FAQ at the bottom). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
     ],
     blocks: [
       {
@@ -863,6 +876,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Yes — walk back to your corpse, and since the September 5 update the game actively helps you do it. When you die, your unbanked Gloom drops on your corpse (the developers' own patch notes use exactly that phrasing), and before that update the pile didn't always wait around: a Steam forums report from the days prior describes losing **20,000+ Gloom twice** (a bridge jump, then an enemy kill), finding the dropped pile had vanished from the map entirely, and getting no working recovery method — shooting the floor and the sky included. The September 5 update answered that complaint directly, improving the logic around Gloom drops on death to make lost Gloom easier to retrieve. The old advice still pays, though: spend down at a Beacon before risky jumps and boss attempts instead of hauling a big pile around.",
           "Two pieces of insurance on top. The Week 1 Update's **Egon's Stone** is a Fragile Tarstone that revives you at the dungeon entrance — and when it breaks, the death it covered costs you **no Gloom at all** (per Playstack's official notes). Merrick stocks them once you've gathered enough Ova, so carry one into any area that's been killing you. And if you run a **Gloombound Stone** for the boosted Gloom-per-kill, the September 5 patch stopped it losing durability when you recover Gloom from your own corpse — so farming the recovery no longer grinds the stone down.",
+          "**Regression warning, September 14 hotfix window:** since that hotfix, dropped Gloom can vanish outright after any death. Three separate Steam threads inside the first days after the patch describe dying anywhere, walking back to the exact spot, and finding nothing — and the reports share one common factor: the **Egon's Stone**. Playstack has acknowledged it thread-side: \"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\" (official reply in the \"Cannot find gloom after dying\" thread; the two other threads have official replies asking which Tarstones the victim ran, and the answer was Egon's Stone both times). Until a fix ships, the practical call is the reverse of the insurance above: don't carry the Egon's Stone into risky content, and spend your Gloom down at a Beacon before anything that can kill you — vanished piles have stayed vanished. The September 14 notes' other Egon's Stone lines (an exploit fix, dungeons not loading after the stone) do not list this loss issue, and the same stone sits at the center of the falling-loop bug whose escape FAQ lives on the [performance fix guide](/performance-fix/).",
         ],
       },
     ],
@@ -875,7 +889,7 @@ export const guidePages: GuidePage[] = [
         "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table (the Week 1 Update added siphon Glimpse but published no numbers)",
         "Whether Mammon's doubled gold stacks with the Justiciar's Stone bonus additively or multiplicatively",
         "Hidden Nave chest Gloom amounts per chest — Game8 confirms the menu-reset method but not the per-chest payout",
-        "Whether dropped-on-death Gloom can still vanish in edge cases — the September 5 update improved corpse-retrieval logic, but whether the pre-patch vanishing reports are fully fixed is unconfirmed (carry an Egon's Stone meanwhile)",
+        "When the Egon's Stone gloom-loss regression gets a fix — vanishing dropped Gloom after any death is officially acknowledged as happening \"with this equipped\" and is under investigation; the September 14 hotfix's other Egon's Stone lines do not list it (spend down at Beacons and skip carrying the stone meanwhile)",
       ],
     },
     related: [
@@ -922,8 +936,24 @@ export const guidePages: GuidePage[] = [
         name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
       },
+      {
+        name: "Steam Discussions — 'Gloom Disappearing' (post-hotfix regression hub, official reply asking which Tarstones)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/564793766239730836/",
+      },
+      {
+        name: "Steam Discussions — 'Cannot find gloom after dying (no falls)' (official Egon's Stone acknowledgment)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/564793766239767158/",
+      },
+      {
+        name: "Steam Discussions — 'BUG. Cant retrive my gloom after death. Any death, not only falling.' (third regression report)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/564793766239738743/",
+      },
+      {
+        name: "'New Hotfix out now' — Mortal Shell II Steam announcement (Playstack, September 14, 2026)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702759",
+      },
     ],
-    reviewedOn: "September 6, 2026",
+    reviewedOn: "September 17, 2026",
     datePublished: "2026-08-29",
   },
   {
@@ -2678,7 +2708,7 @@ export const guidePages: GuidePage[] = [
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
       "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, a falling loop or a locked arena is the bottom FAQ of this page, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads. A September 17, 2026 pass added the cost-free quit-to-menu escape and the September 14 hotfix's patch status to that FAQ.",
     ],
     blocks: [
       {
@@ -2845,8 +2875,9 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Stuck in a falling loop or a locked arena?",
         paragraphs: [
-          "The newest movement blocker in Bug Reports is the falling loop: a player who died in the Holding Cells well dungeon got dropped into a permanent falling loop by the Egon's Stone revive teleport, with no load spot to catch them. Two escapes are on record in that thread, neither official. First, the \"return to the hub\" item breaks the loop but costs all of your currently-carried Gloom — the same loss as dying, so the spend-down-at-a-Beacon habit from the [farming guide's death-loss answer](/farming-guide/) is worth keeping between risky dungeons. Second, one player reports a shader-cache reset cleared the loop for them; the step-by-step lives in the forum's pinned [PC NVIDIA] shader thread (sources below), the same cache lever as Fix 3 above.",
+          "The newest movement blocker in Bug Reports is the falling loop: a player who died in the Holding Cells well dungeon got dropped into a permanent falling loop by the Egon's Stone revive teleport, with no load spot to catch them. Three escapes are on record in that thread, none official. First, the \"return to the hub\" item breaks the loop but costs all of your currently-carried Gloom — the same loss as dying, so the spend-down-at-a-Beacon habit from the [farming guide's death-loss answer](/farming-guide/) is worth keeping between risky dungeons. Second, one player reports a shader-cache reset cleared the loop for them; the step-by-step lives in the forum's pinned [PC NVIDIA] shader thread (sources below), the same cache lever as Fix 3 above. Third, the cheapest one: a later reply confirms you can just quit to the main menu and continue — the game spawns you back at the start of the dungeon normally, with no Gloom cost and no settings change.",
           "Arena locks are the other shape, with two September reports. Re-entering the royal tomb whose boss fight unlocks the Lazlo shell after patching — with the boss killed before the patch — raises thorn walls that seal the arena with no exit, because the thorns don't register the boss as already dead. That report has a matching reply and no fix, so the only prevention is not re-entering a tomb you have already cleared. The softer variant self-resolves: a player softlocked by the corruption wall right after picking up the Lazlo shell reports a quit-and-restart cleared the wall. Until fixes land, a restart is the fallback for every case here.",
+          "Patch status (September 14 hotfix): the hotfix notes list \"Fixed dungeons not loading correctly after using Egon's Stone\" — the falling loop's trigger — and \"Fixed issue that could trap players in the dungeon after claiming Lazlo\", which is the corruption-wall shape. On a fully updated client both locks are therefore expected fixed, which reframes the escapes above as the fallback for un-updated clients and for whatever the notes don't cover. Community confirmation is still thin, so treat \"expected\" as exactly that — and if you still hit a loop or a lock after updating, report it in the bug threads with your build number. The royal-tomb re-entry lock has no named hotfix line; whether the hotfix's dungeon fixes caught it too is unconfirmed (tracked in the pending box below).",
         ],
       },
     ],
@@ -2867,7 +2898,7 @@ export const guidePages: GuidePage[] = [
         "Recommended PC requirements — Steam currently lists minimum only",
         "A recovery path for wiped saves that have no WorldState_Backup file — the official workaround presumes the backup exists, and at least one wiped player reports only Steam Cloud files in the folder",
         "Official word on Xbox Series S crash reports near the forgotten crossbow area (player-reported, collected by Playstack)",
-        "A fix or official escape for the royal-tomb re-entry arena lock — thorn walls that don't register a boss killed before the patch (reported September 14, no confirmed way out)",
+        "A fix or official escape for the royal-tomb re-entry arena lock — thorn walls that don't register a boss killed before the patch (reported September 14; the September 14 hotfix shipped dungeon-trap fixes, but no note names this lock and no community confirmation has landed either way)",
       ],
     },
     related: [
@@ -2952,8 +2983,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — 'Got soft locked after picking up the Lazlo Shell' (corruption-wall softlock cleared by quit-and-restart)",
         url: "https://steamcommunity.com/app/2584270/discussions/3/564793766239677011/",
       },
+      {
+        name: "'New Hotfix out now' — Mortal Shell II Steam announcement (Playstack, September 14, 2026; Egon's Stone dungeon-loading and Lazlo dungeon-trap fixes)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702759",
+      },
     ],
-    reviewedOn: "September 16, 2026",
+    reviewedOn: "September 17, 2026",
     datePublished: "2026-08-20",
   },
   {
