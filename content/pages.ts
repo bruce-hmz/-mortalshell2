@@ -1541,7 +1541,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Builds",
     intro: [
       "Builds in Mortal Shell II are built from two confirmed pillars: which of the eight shells you possess, and how your combat loop generates and spends resolve. This page explains both, then records the community's launch-build consensus — clearly attributed, because it is an opinion, not a verified fact.",
-      "The build tables below follow Game8's launch guide; this page was rechecked on September 9, 2026 against Playstack's official September 5 update notes, the Week 1 Update notes (live since August 29), and Balance Patch 1 (August 20), which buffed key weapons, cut Tarforge smelt costs, and rebalanced enemy health. The patch facts in the boxes below come straight from those official notes.",
+      "The build tables below follow Game8's launch guide; this page was rechecked on September 9, 2026 against Playstack's official September 5 update notes, the Week 1 Update notes (live since August 29), and Balance Patch 1 (August 20), which buffed key weapons, cut Tarforge smelt costs, and rebalanced enemy health. The patch facts in the boxes below come straight from those official notes. A September 18, 2026 pass updated the respec FAQ below for the September 14 hotfix, which allows Mether's Severance at the Genessa trainer.",
     ],
     blocks: [
       {
@@ -1565,7 +1565,7 @@ export const guidePages: GuidePage[] = [
         ],
         bullets: [
           "Glimpses and Tarcores are no longer finite — all shells and Tarstones upgrade in one playthrough",
-          "Mether's Severance respec: buy from Merrick, give to Zhirelle — Shell resets, every spent Glimpse refunded",
+          "Mether's Severance respec: buy from Merrick, give to Zhirelle (or, since the September 14 hotfix, use it at the Genessa trainer) — Shell resets, every spent Glimpse refunded",
           "Obsidian Hammer hits substantially harder; Great Martyr's Blade's buff shipped here, even stronger than announced",
           "Heavy weapons: poise and damage pass — Eredrim frontloaders scale with it",
           "Axatana ability grants i-frames + Fragile stacks; Trebuchaxe Tarred Fragment redesigned; Weltcap stronger",
@@ -1640,7 +1640,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "How do I respec my Shell in Mortal Shell 2?",
         paragraphs: [
-          "Since the Week 1 Update (August 29, 2026), respec runs through an item called Mether's Severance: buy it from Merrick, then give it to Zhirelle, the shell keeper. In exchange she severs your bond with that Shell — the Shell resets and every Glimpse you spent on it comes back. Merrick restocks the item as you progress through the game.",
+          "Since the Week 1 Update (August 29, 2026), respec runs through an item called Mether's Severance: buy it from Merrick, then give it to Zhirelle, the shell keeper. In exchange she severs your bond with that Shell — the Shell resets and every Glimpse you spent on it comes back. Merrick restocks the item as you progress through the game. Since the September 14 hotfix there is a second place to do it: the hotfix notes list \"Mether's Severance can now be used at Genessa trainer\", so Sester Genessa's menu accepts the item too.",
+          "One caveat on that Genessa route, current as of September 18, 2026: a post-hotfix report on Steam's Bug Reports board describes canceling the severance menu at Genessa (B/Esc/No) hard-locking every menu action until the game is restarted. The developer's reply asks whether it affects the Genessa trainer alone or all Shells — no fix or scope answer has landed yet. Until it is resolved, save your game before using Mether's Severance at the Genessa trainer; the Zhirelle route has no such report. Playstack's update timeline is tracked on the [patch notes page](/patch-notes/).",
           "This changes build strategy as much as any damage number. Because Glimpses are no longer finite either, testing a different Shell's build no longer destroys the upgrade tree you already built: respec out, pump the next Shell, and switch back later if the grass wasn't greener. The old advice to 'pick once and commit' is obsolete — pick, test, and let the refund absorb the mistake.",
         ],
       },
@@ -1659,12 +1660,13 @@ export const guidePages: GuidePage[] = [
     pending: {
       heading: "Pending launch verification",
       intro:
-        "Build rankings move fast in patch season — this page now reflects the Week 1 Update (August 29):",
+        "Build rankings move fast in patch season — this page now reflects the Week 1 Update (August 29) and the September 14 hotfix:",
       items: [
         "Second attributed build source for cross-comparison against Game8's picks — especially a tier re-derivation under the infinite-Glimpse economy",
         "Whether the unannounced ~1 GB update deployed September 2, 2026 (official notes not yet published) touches build-relevant numbers",
         "Whether console versions of Balance Patch 1 (PC live since August 20) ship with any additional tuning",
         "Troubadour's Lute build pairings worth revisiting after its +100% damage buff",
+        "Whether canceling the severance menu at the Genessa trainer gets a fix or a scope answer (Genessa-only vs all Shells) — the hardlock report flagged in the respec FAQ above",
       ],
     },
     related: [
@@ -1674,6 +1676,14 @@ export const guidePages: GuidePage[] = [
       { label: "Beginner Guide", href: "/beginner-guide/" },
     ],
     sources: [
+      {
+        name: "'New Hotfix out now' — Mortal Shell II Steam announcement (Playstack, September 14, 2026)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702759",
+      },
+      {
+        name: "Steam Discussions — 'Shell Severance menu for Genessa is Bugged' thread (post-hotfix severance-menu hardlock report, September 16, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/564793766239741034/",
+      },
       {
         name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
@@ -1703,7 +1713,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
       },
     ],
-    reviewedOn: "September 9, 2026",
+    reviewedOn: "September 18, 2026",
   },
   {
     slug: "walkthrough",
