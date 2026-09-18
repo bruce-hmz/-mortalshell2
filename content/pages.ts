@@ -365,11 +365,11 @@ export const guidePages: GuidePage[] = [
 
   {
     slug: "patch-notes",
-    metaTitle: "Mortal Shell 2 Patch Notes: September Update, Week 1 & Balance Patch 1",
+    metaTitle: "Mortal Shell 2 Patch Notes: Hotfixes, September Update, Week 1 & Balance Patch 1",
     metaDescription:
-      "Mortal Shell 2 update history: the September 5 update in full (Adaptive Difficulty, Baghead NG+ fix, crash fixes), the Week 1 Update (shell respec, economy un-cap, day-only Beacons), Balance Patch 1 annotated, and the hotfix timeline.",
+      "Mortal Shell 2 update history: the September 14 hotfix (Egon's Stone fixes, Genessa respec, stability), the September 5 Adaptive Difficulty update, the Week 1 Update, Balance Patch 1, and the hotfix timeline.",
     cardBlurb:
-      "Every update in one place: the September 5 Adaptive Difficulty patch, the Week 1 Update, Balance Patch 1, and what ships next.",
+      "Every update in one place: the September 14 hotfix, the September 5 Adaptive Difficulty patch, the Week 1 Update, Balance Patch 1, and what ships next.",
     heroImage: {
       src: "/img/site-7.jpg",
       alt: "Mortal Shell II key art showing a knight before a monumental ruined structure",
@@ -379,9 +379,32 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official announcements on Steam News — the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 10, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 19, 2026.",
     ],
     blocks: [
+      {
+        anchor: "hotfix-september-14",
+        heading: "New Hotfix — September 14, 2026 (PC, PS5, Xbox Series)",
+        paragraphs: [
+          "Playstack's first patch since the September 5 update went out on September 14, 2026 (official Steam News post, 19:05 UTC) as a cross-platform bug-fix pass — no balance retuning, no new items, about two dozen fix lines, and for the first time a post-launch patch landing on PC, PS5, and Xbox Series at once. The complete published list, grouped as the notes group it:",
+        ],
+        bullets: [
+          "**Shells** — Proxima no longer gets stuck in the Biosampler animation; the infinite glitch on Lazlo's Temperament perk is fixed",
+          "**Items & Stones** — Mether's Severance can now be used at the Genessa trainer (caveat below); the Colossus Stone's ability can be canceled mid-execution; Justiciar Stone durability issues fixed; the Gloombound Stone no longer loses durability to Gloom sources other than enemies; the Egon's Stone Gloom exploit is closed; and the line with the most gameplay impact — dungeons 'not loading correctly after using Egon's Stone' are fixed, the trigger chain behind the falling-loop reports in the [performance fix guide](/performance-fix/); spawning and targeting issues with the Grisha Remnant and the Summon Stone fixed",
+          "**Enemies & Bosses** — the Hexapod's diving attack no longer occurs after death; several frozen-enemy-and-boss issues fixed; the Twin Sester fight can no longer be left after she spawns; Starved Harridan no longer gets stuck and dies — per-boss context in the [boss guide](/bosses/)",
+          "**NPCs** — Zhirelle now interacts with the player in NG+; the multiple-Muttons hub spawn is fixed; certain NPCs can no longer be damaged by sidearms; Genessa's dialogue and training tutorials cleaned up",
+          "**Environment & World** — Citadel Annex traversal camera fixed; death-volume issues in the Ashen Cathedral biome fixed; the bug that 'could trap players in the dungeon after claiming Lazlo' is fixed; burn and stasis environmental hazards now use their correct values; several collision and geometry issues fixed",
+          "**Stability** — the notes' entire stability section is one line, 'Crash and game stability improvements', with no itemized list; whether it dents the community's crash cluster is the standing watch item in the [performance fix guide](/performance-fix/)",
+        ],
+      },
+      {
+        anchor: "what-hotfix-september-14-changed",
+        heading: "What the September 14 hotfix does not fix",
+        paragraphs: [
+          "Two absences matter as much as the fixes. The first is the post-hotfix **Gloom-loss regression**: since September 14 players report dropped Gloom disappearing on death — the reports cluster around carrying the Egon's Stone — and the developer has acknowledged it in the Steam discussions (\"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\") without shipping a fix in these notes; the Egon's Stone Gloom-exploit line above is a separate exploit fix, not this. What to do in the meantime is covered in the [farming guide](/farming-guide/).",
+          "The second is a bug the hotfix's own new feature drew: using Mether's Severance at the Genessa trainer and canceling the confirmation menu (B/Esc/No) can hard-lock every menu action until you restart, per a Steam bug report the developer responded to the same day — save your game before using Severance there. The full caveat sits in the respec FAQ on the [best build guide](/best-build/).",
+        ],
+      },
       {
         anchor: "update-september-5",
         heading: "New Update Out Now — September 5, 2026: Adaptive Difficulty (Experimental)",
@@ -512,11 +535,11 @@ export const guidePages: GuidePage[] = [
     ],
     pending: {
       heading: "Still being verified",
-      intro: "Open questions on the update trail as of September 7, 2026:",
+      intro: "Open questions on the update trail as of September 19, 2026:",
       items: [
-        "Console rollout completion for the September 5 patch — the developer posted it 'on PC, with PS5 and Xbox Series coming later today' (September 5), but no standalone console-availability announcement has followed; check your platform's update history",
-        "Whether the September 5 patch's 'several crash fixes and optimisations' clear the community's crash cluster — the first two post-patch counter-reports (September 7–8) stood unconfirmed and unrefuted as of September 9; the [performance fix guide](/performance-fix/) carries the status, and its workarounds stand either way",
-        "Exact console rollout dates for the Week 1 Update (PC went live August 29; PS5 players reported the Week 1 content arriving as v1.000.008 around September 3, but neither platform has an official completion confirmation)",
+        "The official Gloom-loss fix — Playstack has acknowledged Gloom disappearing while carrying the Egon's Stone since the September 14 hotfix and says it is 'looking into it'; no fix has shipped yet. Current guidance is in the [farming guide](/farming-guide/)",
+        "Whether the September 5 patch's 'several crash fixes and optimisations' — joined on September 14 by the hotfix's one-line 'crash and game stability improvements' — clear the community's crash cluster; counter-reports have continued past both patches. The [performance fix guide](/performance-fix/) carries the status, and its workarounds stand either way",
+        "Zmey's Night Mode balance — the September 14 hotfix leaves Night Mode untouched, and a Steam thread on Zmey's Night difficulty reached 18 replies by September 18 with no developer response; an official reply or a Night-balance fix would trigger a Zmey Night update in the [boss guide](/bosses/)",
         "Official count and locations of the Week 1 Update's new day-only Beacons — the notes name no number; player estimates say 10+",
       ],
     },
@@ -530,6 +553,10 @@ export const guidePages: GuidePage[] = [
       { label: "Farming Guide", href: "/farming-guide/" },
     ],
     sources: [
+      {
+        name: "'New Hotfix out now' — Mortal Shell II Steam announcement (Playstack, September 14, 2026)",
+        url: "https://store.steampowered.com/news/app/2584270/view/1843481262702759",
+      },
       {
         name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
@@ -555,7 +582,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270",
       },
     ],
-    reviewedOn: "September 10, 2026",
+    reviewedOn: "September 19, 2026",
     datePublished: "2026-08-28",
   },
   {
