@@ -817,7 +817,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Economy",
     intro: [
       "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. The Week 1 Update (August 29) went further and broke the economy's central constraint: **Glimpses and Tarcores are no longer finite**. This page ranks the loops actually worth your time under the current numbers, plus what each currency buys so you know when to stop grinding.",
-      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes — and re-reconciled on September 17, 2026 against the September 14 hotfix window's Egon's Stone gloom-loss regression (see the death-loss FAQ at the bottom). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes — and re-reconciled on September 17, 2026 against the September 14 hotfix window's Egon's Stone gloom-loss regression, with the community's unequip workaround folded in on September 21, 2026 (see the death-loss FAQ at the bottom). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
     ],
     blocks: [
       {
@@ -903,7 +903,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Yes — walk back to your corpse, and since the September 5 update the game actively helps you do it. When you die, your unbanked Gloom drops on your corpse (the developers' own patch notes use exactly that phrasing), and before that update the pile didn't always wait around: a Steam forums report from the days prior describes losing **20,000+ Gloom twice** (a bridge jump, then an enemy kill), finding the dropped pile had vanished from the map entirely, and getting no working recovery method — shooting the floor and the sky included. The September 5 update answered that complaint directly, improving the logic around Gloom drops on death to make lost Gloom easier to retrieve. The old advice still pays, though: spend down at a Beacon before risky jumps and boss attempts instead of hauling a big pile around.",
           "Two pieces of insurance on top. The Week 1 Update's **Egon's Stone** is a Fragile Tarstone that revives you at the dungeon entrance — and when it breaks, the death it covered costs you **no Gloom at all** (per Playstack's official notes). Merrick stocks them once you've gathered enough Ova, so carry one into any area that's been killing you. And if you run a **Gloombound Stone** for the boosted Gloom-per-kill, the September 5 patch stopped it losing durability when you recover Gloom from your own corpse — so farming the recovery no longer grinds the stone down.",
-          "**Regression warning, September 14 hotfix window:** since that hotfix, dropped Gloom can vanish outright after any death. Three separate Steam threads inside the first days after the patch describe dying anywhere, walking back to the exact spot, and finding nothing — and the reports share one common factor: the **Egon's Stone**. Playstack has acknowledged it thread-side: \"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\" (official reply in the \"Cannot find gloom after dying\" thread; the two other threads have official replies asking which Tarstones the victim ran, and the answer was Egon's Stone both times). Until a fix ships, the practical call is the reverse of the insurance above: don't carry the Egon's Stone into risky content, and spend your Gloom down at a Beacon before anything that can kill you — vanished piles have stayed vanished. The September 14 notes' other Egon's Stone lines (an exploit fix, dungeons not loading after the stone) do not list this loss issue, and the same stone sits at the center of the falling-loop bug whose escape FAQ lives on the [performance fix guide](/performance-fix/).",
+          "**Regression warning, September 14 hotfix window:** since that hotfix, dropped Gloom can vanish outright after any death. Three separate Steam threads inside the first days after the patch describe dying anywhere, walking back to the exact spot, and finding nothing — and the reports share one common factor: the **Egon's Stone**. Playstack has acknowledged it thread-side: \"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\" (official reply in the \"Cannot find gloom after dying\" thread; the two other threads have official replies asking which Tarstones the victim ran, and the answer was Egon's Stone both times). Until a fix ships, use the workaround the community has since consolidated across several threads: **unequip the Egon's Stone** — the dungeon-revive stone — and don't use the item until an official fix lands; with the stone off, players report dropped Gloom appearing on the ground where you die again, as it did before the hotfix. Spend your Gloom down at a Beacon before anything that can kill you regardless — vanished piles have stayed vanished. Playstack's pinned Known Issues post lists the gloom-disappearing bug without a cause or workaround and asks affected players to report it with character-view and map-view screenshots; if a pile vanishes on you, that is the report to file. The September 14 notes' other Egon's Stone lines (an exploit fix, dungeons not loading after the stone) do not list this loss issue, and the same stone sits at the center of the falling-loop bug whose escape FAQ lives on the [performance fix guide](/performance-fix/).",
         ],
       },
     ],
@@ -916,7 +916,7 @@ export const guidePages: GuidePage[] = [
         "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table (the Week 1 Update added siphon Glimpse but published no numbers)",
         "Whether Mammon's doubled gold stacks with the Justiciar's Stone bonus additively or multiplicatively",
         "Hidden Nave chest Gloom amounts per chest — Game8 confirms the menu-reset method but not the per-chest payout",
-        "When the Egon's Stone gloom-loss regression gets a fix — vanishing dropped Gloom after any death is officially acknowledged as happening \"with this equipped\" and is under investigation; the September 14 hotfix's other Egon's Stone lines do not list it (spend down at Beacons and skip carrying the stone meanwhile)",
+        "When the Egon's Stone gloom-loss regression gets a fix — vanishing dropped Gloom after any death is officially acknowledged as happening \"with this equipped\" and is under investigation; the September 14 hotfix's other Egon's Stone lines do not list it (unequip the stone meanwhile — the community-tested workaround in the death-loss FAQ above — and spend down at Beacons)",
       ],
     },
     related: [
@@ -979,8 +979,16 @@ export const guidePages: GuidePage[] = [
         name: "'New Hotfix out now' — Mortal Shell II Steam announcement (Playstack, September 14, 2026)",
         url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702759",
       },
+      {
+        name: "Steam Discussions — 'Lost Gloom' (Bug Reports; unequip-Egon's-Stone workaround recipe in-thread)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/569297738797296002/",
+      },
+      {
+        name: "Steam Discussions — 'Gloom getting Lost' (30,000+ losses; don't-keep-the-revive-stone advice)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/569297738797317611/",
+      },
     ],
-    reviewedOn: "September 17, 2026",
+    reviewedOn: "September 21, 2026",
     datePublished: "2026-08-29",
   },
   {
@@ -1145,7 +1153,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. The Ova section gained the community prologue-skip co-factor reports on September 15, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. The Ova section gained the community prologue-skip co-factor reports on September 15, 2026, and the zero-unlocks FAQ below gained the community's Demo-save-files fix on September 21, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -1218,6 +1226,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "**Does Night (increased difficulty mode) affect trophies?** No — the in-game Night toggle raises enemy pressure but is required for certain content like night-only Glimpse pickups, and no achievement demands clearing bosses under it specifically.",
           "**Does the Slayer Seal affect achievements?** Yes — equipping it disables Steam achievements for that save. Developers confirmed the lockout and told Rock Paper Shotgun they 'didn't intend to lock everybody out'; nothing in the Week 1 Update notes (August 29) changes it. If the seal is on and you care about the platinum, switch it off before pushing deeper.",
+          "**None of my achievements are unlocking at all — is there a fix?** The most common cause reported so far: leftover **Demo save files**. Two players who tried the demo found DEMO-named files sitting in \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames, and with those present nothing earned in the full game registered — not even the prologue trophies. Deleting every DEMO-named file from that folder and relaunching the game unlocked the entire backlog on the spot in both cases, and when one of them posted the find in the official bug thread, the publisher replied \"That will definitely help.\" So if your count is zero from the start: clear the Demo files first, then work the official Known Issues triage (confirm the game really granted nothing, check the Slayer Seal is off, run as administrator, then send your saves to support@playstack) — the pin does not list the Demo-file fix yet.",
           "**Does the Baghead chain break in NG+?** It could — and it is now officially fixed. Players who kept the Special Moonshine from their first playthrough found Baghead's quest would not continue in NG+ while the bottle sat in the inventory, and the game has no drop function, so Bag Holder (23.5%) locked on that save. The September 5 patch lists the fix directly — 'Fixed an issue where the player could become locked out of Baghead's Quest in NG+' — though the notes do not say whether saves that were already stuck get unblocked; if you are currently locked out, install the update and try the chain again before resorting to save editing. Returning the moonshine to its place (or finishing his chain) during the endgame free-roam window still costs nothing and remains the safe route; community reports also tie one of the Week 1 questline cosmetics to this chain. The full entry lives in the [missable content guide](/missable-content/).",
           "**Is Ascension the 196-Ova trophy?** No — they are separate entries. Ascension (16.7%, Discover the secret of the Mango) ties to the hidden Mango sanctuary quest; Bring My Ova Back to Me (15.7%) is the Ova-completion one. Community confusion between the two is common because their rates sit close together.",
           "**How long is a full completion?** PowerPyx estimates **40-60 hours** at a 6/10 difficulty rating, with roughly 85% of that being one thorough first playthrough plus two lighter Glimpse-farming cycles.",
@@ -1233,6 +1242,7 @@ export const guidePages: GuidePage[] = [
         "Exact Glimpse-per-cycle totals beyond Beacon cleanse rewards (night-bonus 8-per-location figure is community-transcribed, not dev-confirmed)",
         "Whether a patch will re-enable achievements on saves that used the Slayer Seal — dev comments say the lockout wasn't intended, but no reversal has shipped",
         "Whether the Seeking the Past 38/40 stall shares a root cause with the Bring My Ova tracker bug",
+        "Whether the official Known Issues pin adds the Demo-save-file fix for zero-unlock saves — both September 17 threads confirmed the workaround and the publisher endorsed it, but the pin had not listed it as of the September 19 re-read",
       ],
     },
     related: [
@@ -1279,8 +1289,16 @@ export const guidePages: GuidePage[] = [
         name: "'New Update Out Now' — Mortal Shell II Steam announcement (Playstack, September 5, 2026) — official Baghead NG+ lockout fix",
         url: "https://store.steampowered.com/news/app/2584270/view/1842846814449143",
       },
+      {
+        name: "Steam Discussions — 'achievements bug ??' (zero-unlock report; Demo-save workaround found in-thread, official endorsement)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/569297738797205306/",
+      },
+      {
+        name: "Steam Discussions — 'Achievements not unlocking (Workaround)' (independent same-day Demo-save fix)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/569297738797210084/",
+      },
     ],
-    reviewedOn: "September 15, 2026",
+    reviewedOn: "September 21, 2026",
     datePublished: "2026-08-27",
   },
   {
