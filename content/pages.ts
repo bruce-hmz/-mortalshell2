@@ -817,7 +817,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Economy",
     intro: [
       "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. The Week 1 Update (August 29) went further and broke the economy's central constraint: **Glimpses and Tarcores are no longer finite**. This page ranks the loops actually worth your time under the current numbers, plus what each currency buys so you know when to stop grinding.",
-      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes — and re-reconciled on September 17, 2026 against the September 14 hotfix window's Egon's Stone gloom-loss regression, with the community's unequip workaround folded in on September 21, 2026 (see the death-loss FAQ at the bottom). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes — and re-reconciled on September 17, 2026 against the September 14 hotfix window's Egon's Stone gloom-loss regression, with the community's unequip workaround folded in on September 21, 2026 and the developer's explicit known-bug acknowledgment naming the Egon's Stone folded in on September 23, 2026 (see the death-loss FAQ at the bottom). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
     ],
     blocks: [
       {
@@ -903,7 +903,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Yes — walk back to your corpse, and since the September 5 update the game actively helps you do it. When you die, your unbanked Gloom drops on your corpse (the developers' own patch notes use exactly that phrasing), and before that update the pile didn't always wait around: a Steam forums report from the days prior describes losing **20,000+ Gloom twice** (a bridge jump, then an enemy kill), finding the dropped pile had vanished from the map entirely, and getting no working recovery method — shooting the floor and the sky included. The September 5 update answered that complaint directly, improving the logic around Gloom drops on death to make lost Gloom easier to retrieve. The old advice still pays, though: spend down at a Beacon before risky jumps and boss attempts instead of hauling a big pile around.",
           "Two pieces of insurance on top. The Week 1 Update's **Egon's Stone** is a Fragile Tarstone that revives you at the dungeon entrance — and when it breaks, the death it covered costs you **no Gloom at all** (per Playstack's official notes). Merrick stocks them once you've gathered enough Ova, so carry one into any area that's been killing you. And if you run a **Gloombound Stone** for the boosted Gloom-per-kill, the September 5 patch stopped it losing durability when you recover Gloom from your own corpse — so farming the recovery no longer grinds the stone down.",
-          "**Regression warning, September 14 hotfix window:** since that hotfix, dropped Gloom can vanish outright after any death. Three separate Steam threads inside the first days after the patch describe dying anywhere, walking back to the exact spot, and finding nothing — and the reports share one common factor: the **Egon's Stone**. Playstack has acknowledged it thread-side: \"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\" (official reply in the \"Cannot find gloom after dying\" thread; the two other threads have official replies asking which Tarstones the victim ran, and the answer was Egon's Stone both times). Until a fix ships, use the workaround the community has since consolidated across several threads: **unequip the Egon's Stone** — the dungeon-revive stone — and don't use the item until an official fix lands; with the stone off, players report dropped Gloom appearing on the ground where you die again, as it did before the hotfix. Spend your Gloom down at a Beacon before anything that can kill you regardless — vanished piles have stayed vanished. Playstack's pinned Known Issues post lists the gloom-disappearing bug without a cause or workaround and asks affected players to report it with character-view and map-view screenshots; if a pile vanishes on you, that is the report to file. The September 14 notes' other Egon's Stone lines (an exploit fix, dungeons not loading after the stone) do not list this loss issue, and the same stone sits at the center of the falling-loop bug whose escape FAQ lives on the [performance fix guide](/performance-fix/).",
+          "**Regression warning, September 14 hotfix window:** since that hotfix, dropped Gloom can vanish outright after any death. Three separate Steam threads inside the first days after the patch describe dying anywhere, walking back to the exact spot, and finding nothing — and the reports share one common factor: the **Egon's Stone**. Playstack has acknowledged it thread-side: \"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\" (official reply in the \"Cannot find gloom after dying\" thread; the two other threads have official replies asking which Tarstones the victim ran, and the answer was Egon's Stone both times). By September 21 the acknowledgment had gone explicit: a developer reply in the \"cant get gloon back\" thread names the cause outright — \"a current known bug with the Egon's Stone\" that Playstack is \"working on fixing\" — so the workaround below is the confirmed stopgap until that fix ships, and this section will say so when it does. Until a fix ships, use the workaround the community has since consolidated across several threads: **unequip the Egon's Stone** — the dungeon-revive stone — and don't use the item until an official fix lands; with the stone off, players report dropped Gloom appearing on the ground where you die again, as it did before the hotfix. Spend your Gloom down at a Beacon before anything that can kill you regardless — vanished piles have stayed vanished. Playstack's pinned Known Issues post lists the gloom-disappearing bug without a cause or workaround and asks affected players to report it with character-view and map-view screenshots; if a pile vanishes on you, that is the report to file. The September 14 notes' other Egon's Stone lines (an exploit fix, dungeons not loading after the stone) do not list this loss issue, and the same stone sits at the center of the falling-loop bug whose escape FAQ lives on the [performance fix guide](/performance-fix/).",
         ],
       },
     ],
@@ -972,6 +972,10 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/0/564793766239767158/",
       },
       {
+        name: "Steam Discussions — 'cant get gloon back' (developer reply naming the Egon's Stone known bug, September 21, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/569297738797414322/",
+      },
+      {
         name: "Steam Discussions — 'BUG. Cant retrive my gloom after death. Any death, not only falling.' (third regression report)",
         url: "https://steamcommunity.com/app/2584270/discussions/3/564793766239738743/",
       },
@@ -988,7 +992,7 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/0/569297738797317611/",
       },
     ],
-    reviewedOn: "September 21, 2026",
+    reviewedOn: "September 23, 2026",
     datePublished: "2026-08-29",
   },
   {
@@ -1470,6 +1474,17 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "Stuck behind a corruption wall? That is a gate, not a bug",
+        paragraphs: [
+          "Sooner or later the main path goes cold and a fleshy corruption wall seals the way forward — usually right after the Lazlo shell. New players report this as a bug every few days; it is the game's level gating. Corruption walls stand over the region's Corrupted Gates, and they only drop when you cleanse that region's gates: walk in, beat the boss, reclaim the Ova, and the wall that owned it comes down.",
+          "The same logic explains the snowfield most players assume they broke: the frozen region past the last corrupted walls is endgame content, unlocked only after the gates are cleared and their Ovas reclaimed — it is ahead of you, not missing. When a wall stops you, the answer is almost never 're-download the save'; it is 'which gate in this region have I not cleansed?' The [region-by-region walkthrough](/walkthrough/) keeps the full six-gate order, and the [fast travel guide](/fast-travel/) shows how the reclaimed Ova pay for Mether's Breath.",
+        ],
+        bullets: [
+          "**The map looks broken on day one:** it is not — the world map fills in as areas unlock, so an empty early map means 'not explored yet', not 'not working'",
+          "**Walls drop per-gate, not globally:** cleanse every gate in the region before assuming the path forward is bugged",
+        ],
+      },
+      {
         heading: "Editions and when you can start",
         paragraphs: [
           "Two editions are confirmed. The Standard Edition unlocked on " +
@@ -1567,7 +1582,7 @@ export const guidePages: GuidePage[] = [
         url: "https://kotaku.com/12-tips-to-know-before-you-start-playing-mortal-shell-2-2000725388",
       },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 23, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -3458,7 +3473,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Completion",
     intro: [
       "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
-      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026, and the preorder/beta-skin and NG+-trigger FAQs added on September 8, 2026 from the Steam skin and NG+ threads. A September 15, 2026 status note on the post-patch skin-loss reports was added to the skins FAQ.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026, and the preorder/beta-skin and NG+-trigger FAQs added on September 8, 2026 from the Steam skin and NG+ threads. A September 15, 2026 status note on the post-patch skin-loss reports was added to the skins FAQ, and the accidental-NG+ revert question was answered and the Ova-room warning claim softened on September 23, 2026 from the Steam thread on entering NG+ by mistake.",
     ],
     blocks: [
       {
@@ -3565,8 +3580,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "When does NG+ start — and can you clean up first?",
         paragraphs: [
-          "New Game+ is not automatic: it starts when you make the choice in the **Ova storage room**. The game warns you before you commit — the choice explicitly says it ends the current playthrough and starts NG+ — and until then the world stays open, which is what makes the endgame free-roam window above your cleanup window: Beacons, shells, weapons, Baghead's moonshine, all of it can still be finished before the choice. That matters doubly for the [all-Ova trophy](/ova-locations/), which is currently first-playthrough-only.",
-          "Once you commit, NG+ begins with you spawning back in the **main Ova room**. One question nobody has answered yet: whether an accidental NG+ entry can be reverted — a September 2 Steam thread asking exactly that has gone unanswered. Treat the Ova-room choice as final, and don't make it until your cleanup is genuinely done.",
+          "New Game+ is not automatic: it starts when you make the choice in the **Ova storage room**. The first prompt does state that the choice ends the current playthrough and starts NG+ — but treat the Ova-room button as a **hair-trigger** anyway: a September 2026 thread on entering NG+ by mistake describes pressing **send Ova** mid-deposit and being thrown straight into NG+ with no effective confirmation, and the lone reply recalling a warning is secondhand at best. Until the choice is made the world stays open, which is what makes the endgame free-roam window above your cleanup window: Beacons, shells, weapons, Baghead's moonshine, all of it can still be finished before you commit. That matters doubly for the [all-Ova trophy](/ova-locations/), which is currently first-playthrough-only.",
+          "Once you commit, NG+ begins with you spawning back in the **main Ova room** — on the same save, not a separate slot. The question this page carried since September 2 now has a community answer: in a September 18 thread (10 replies) on entering NG+ by accident, multiple posters admit making the same send-Ova mistake, and nobody has reported a way to revert an accidental NG+. Treat the Ova-room choice as final, and don't make it until your cleanup is genuinely done.",
         ],
       },
     ],
@@ -3636,8 +3651,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — 'Trigger for NG+' (Ova storage room choice, warning, and cleanup window, September 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355311014/",
       },
+      {
+        name: "Steam Discussions — 'horrible way to go to NG+' (accidental send-Ova entry, no revert reported, September 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355246615/",
+      },
     ],
-    reviewedOn: "September 15, 2026",
+    reviewedOn: "September 23, 2026",
     datePublished: "2026-08-27",
   },
 ];
