@@ -390,8 +390,8 @@ export default function HomePage() {
             <p>
               One page per topic, each fact-checked against the launch build —
               start anywhere; every page stands alone.
-              Guides last reviewed September 21, 2026, with update coverage
-              current through the September 14 hotfix — the{" "}
+              Guides last reviewed September 26, 2026, with update coverage
+              current through the September 24 hotfix — the{" "}
               <Link href="/patch-notes/">patch notes</Link> carry the full
               history.
             </p>

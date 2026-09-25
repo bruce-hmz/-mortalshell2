@@ -367,9 +367,9 @@ export const guidePages: GuidePage[] = [
     slug: "patch-notes",
     metaTitle: "Mortal Shell 2 Patch Notes: Hotfixes, September Update, Week 1 & Balance Patch 1",
     metaDescription:
-      "Mortal Shell 2 update history: the September 14 hotfix (Egon's Stone fixes, Genessa respec, stability), the September 5 Adaptive Difficulty update, the Week 1 Update, Balance Patch 1, and the hotfix timeline.",
+      "Mortal Shell 2 update history: the September 24 hotfix (Egon's Stone fixes, trophy fixes, Low Latency Mode), the September 14 hotfix (Egon's Stone fixes, Genessa respec, stability), the September 5 Adaptive Difficulty update, the Week 1 Update, Balance Patch 1, and the hotfix timeline.",
     cardBlurb:
-      "Every update in one place: the September 14 hotfix, the September 5 Adaptive Difficulty patch, the Week 1 Update, Balance Patch 1, and what ships next.",
+      "Every update in one place: the September 24 hotfix, the September 14 hotfix, the September 5 Adaptive Difficulty patch, the Week 1 Update, Balance Patch 1, and what ships next.",
     heroImage: {
       src: "/img/site-7.jpg",
       alt: "Mortal Shell II key art showing a knight before a monumental ruined structure",
@@ -379,9 +379,31 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official announcements on Steam News — the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 19, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 26, 2026.",
     ],
     blocks: [
+      {
+        anchor: "hotfix-september-24",
+        heading: "New Hotfix — September 24, 2026 (PC, PS5, Xbox Series)",
+        paragraphs: [
+          "Playstack's second post-September-5 patch went out on September 24, 2026 (official Steam News post, 22:20 UTC; PS5 builds report version 1.000.011) — a broad bug-fix pass with a small balance component and one new performance option. Its headline work closes out the two most-reported bug clusters of the past ten days: the Egon's Stone issues and a pair of trophy blockers. The complete published list, grouped as the notes group it:",
+        ],
+        bullets: [
+          "**Major bug fixes — Egon's Stone** — the two headline lines: \"Fixed dungeons not loading correctly when using Egon's Stone\" (the render-void bug behind the falling-loop reports in the [performance fix guide](/performance-fix/)) and \"Fixed Egon's Stone removing Gloom dropped in the open world\" (the dropped-Gloom-vanishing regression documented since September 14 — what it means for your farming routes is in the [farming guide](/farming-guide/))",
+          "**Major bug fixes — trophies** — \"Fixed trophy/achievement issues with Seeking the Past and Bring My Ova Back to Me\", unblocking two of the game's most-reported completion bugs (walkthroughs: [Seeking the Past](/achievements/seeking-the-past/), [Ova locations](/ova-locations/))",
+          "**Major bug fixes — everything else** — elevator lifts no longer let players fall through when walking into walls; Orrem, the Reclaimed no longer dies instantly; enemies no longer aggro early during miniboss fights; the soft lock from cancelling Mether's Severance with a gamepad is fixed; Stray Genessa is interactable again after Severance; Genessa's Faithful Doubles works with the Lost Clotstone; the Clockwork Scythe's elemental effects behave; Harbinger shades and masks display in the level-up tab again; a sheep-attack loop is fixed; the Slayer Seal no longer goes unresponsive; and Lazlo's legs stop clipping",
+          "**Enemies and bosses** — the final boss's fire-ring attacks are tweaked (a balance change, not a fix for the shell/weapon-vanish reports — the [boss guide](/bosses/) carries that player-reported caveat); the Warden receives jump-timing, trigger-box and positioning fixes plus general adjustments; and the Hexapod gets an arena-push fix",
+          "**Adaptive Difficulty UI** — the setting gains UI tier support, new indicator icons, and a more visible night-mode icon; the mechanics themselves are unchanged (the [Adaptive Difficulty explainer](/tips/) stands)",
+          "**Optimization** — a new **Low Latency Mode** option ships (built on NVIDIA Reflex and AMD Anti-Lag 2), the VSync tooltip is corrected when frame generation is active, and the hub receives shadow and texture optimizations — settings-page context in the [performance fix guide](/performance-fix/)",
+        ],
+      },
+      {
+        anchor: "what-hotfix-september-24-changed",
+        heading: "What the September 24 hotfix does not fix",
+        paragraphs: [
+          "Three absences to know about. First, the **final-boss shell/weapon disappearance reports** are not on the list — the fire-ring entry is a balance tweak, not a fix, and no patch line addresses the vanishing shell or weapons (the caveat and its workarounds sit in the [boss guide](/bosses/)). Second, the **Demo-save achievements** situation remains untouched. Third, the roadmap's Night Mode / Tarstones / PP-item extensions are still unshipped. One more nuance: the gloom fix line scopes to drops **in the open world**, and neither Egon's Stone line says anything about Gloom already lost before the patch — details in the [farming guide](/farming-guide/).",
+        ],
+      },
       {
         anchor: "hotfix-september-14",
         heading: "New Hotfix — September 14, 2026 (PC, PS5, Xbox Series)",
@@ -535,9 +557,9 @@ export const guidePages: GuidePage[] = [
     ],
     pending: {
       heading: "Still being verified",
-      intro: "Open questions on the update trail as of September 19, 2026:",
+      intro: "Open questions on the update trail as of September 26, 2026:",
       items: [
-        "The official Gloom-loss fix — Playstack has acknowledged Gloom disappearing while carrying the Egon's Stone since the September 14 hotfix and says it is 'looking into it'; no fix has shipped yet. Current guidance is in the [farming guide](/farming-guide/)",
+        "Whether the September 24 hotfix's Egon's Stone gloom fix holds everywhere — the fix note scopes to drops \"in the open world\", and the notes say nothing about restoring Gloom already lost; post-patch community confirmation is the watch item in the [farming guide](/farming-guide/)",
         "Whether the September 5 patch's 'several crash fixes and optimisations' — joined on September 14 by the hotfix's one-line 'crash and game stability improvements' — clear the community's crash cluster; counter-reports have continued past both patches. The [performance fix guide](/performance-fix/) carries the status, and its workarounds stand either way",
         "Zmey's Night Mode balance — the September 14 hotfix leaves Night Mode untouched, and a Steam thread on Zmey's Night difficulty reached 18 replies by September 18 with no developer response; an official reply or a Night-balance fix would trigger a Zmey Night update in the [boss guide](/bosses/)",
         "Official count and locations of the Week 1 Update's new day-only Beacons — the notes name no number; player estimates say 10+",
@@ -553,6 +575,10 @@ export const guidePages: GuidePage[] = [
       { label: "Farming Guide", href: "/farming-guide/" },
     ],
     sources: [
+      {
+        name: "'Hotfix Live Now' — Mortal Shell II Steam announcement (Playstack, September 24, 2026)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
+      },
       {
         name: "'New Hotfix out now' — Mortal Shell II Steam announcement (Playstack, September 14, 2026)",
         url: "https://store.steampowered.com/news/app/2584270/view/1843481262702759",
@@ -582,7 +608,7 @@ export const guidePages: GuidePage[] = [
         url: "https://store.steampowered.com/news/app/2584270",
       },
     ],
-    reviewedOn: "September 19, 2026",
+    reviewedOn: "September 26, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -817,7 +843,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Economy",
     intro: [
       "Everything in Fallgrimm costs something: levels eat Gloom, weapons eat Coin and materials, and the Tarforge happily consumes both. Most launch-era farm routes were calibrated to the old economy — then Balance Patch 1 (August 20) cut Tarforge smelting costs by 75%, significantly raised gold drops, and made Mammon enemies pay double. The Week 1 Update (August 29) went further and broke the economy's central constraint: **Glimpses and Tarcores are no longer finite**. This page ranks the loops actually worth your time under the current numbers, plus what each currency buys so you know when to stop grinding.",
-      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes — and re-reconciled on September 17, 2026 against the September 14 hotfix window's Egon's Stone gloom-loss regression, with the community's unequip workaround folded in on September 21, 2026 and the developer's explicit known-bug acknowledgment naming the Egon's Stone folded in on September 23, 2026 (see the death-loss FAQ at the bottom). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
+      "Loop data was verified on August 27, 2026 against GamingBolt's dedicated Gloom and Coin farming guides (both published post-launch on August 21), with Balance Patch 1 figures quoted from Playstack's official notes and the Week 1 economy changes quoted from Playstack's official Week 1 Update announcement (August 29, 2026; reviewed September 6, 2026). The Ossinite sourcing and the death-loss guidance were added September 6 from the wiki/Game8 materials documentation and current Steam forum reports, with the death-loss answer reconciled the same day against the official September 5 update notes — and re-reconciled on September 17, 2026 against the September 14 hotfix window's Egon's Stone gloom-loss regression, with the community's unequip workaround folded in on September 21, 2026, the developer's explicit known-bug acknowledgment naming the Egon's Stone folded in on September 23, 2026, and the official fix for both Egon's Stone bug faces — gloom loss and dungeon loading, shipped September 24 — folded in on September 26, 2026 (see the death-loss FAQ at the bottom). Loop mechanics tie back to how Beacon resting works — covered in the [fast travel guide](/fast-travel/) — and every currency sink is cross-referenced in our [weapons guide](/weapons/).",
     ],
     blocks: [
       {
@@ -903,7 +929,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Yes — walk back to your corpse, and since the September 5 update the game actively helps you do it. When you die, your unbanked Gloom drops on your corpse (the developers' own patch notes use exactly that phrasing), and before that update the pile didn't always wait around: a Steam forums report from the days prior describes losing **20,000+ Gloom twice** (a bridge jump, then an enemy kill), finding the dropped pile had vanished from the map entirely, and getting no working recovery method — shooting the floor and the sky included. The September 5 update answered that complaint directly, improving the logic around Gloom drops on death to make lost Gloom easier to retrieve. The old advice still pays, though: spend down at a Beacon before risky jumps and boss attempts instead of hauling a big pile around.",
           "Two pieces of insurance on top. The Week 1 Update's **Egon's Stone** is a Fragile Tarstone that revives you at the dungeon entrance — and when it breaks, the death it covered costs you **no Gloom at all** (per Playstack's official notes). Merrick stocks them once you've gathered enough Ova, so carry one into any area that's been killing you. And if you run a **Gloombound Stone** for the boosted Gloom-per-kill, the September 5 patch stopped it losing durability when you recover Gloom from your own corpse — so farming the recovery no longer grinds the stone down.",
-          "**Regression warning, September 14 hotfix window:** since that hotfix, dropped Gloom can vanish outright after any death. Three separate Steam threads inside the first days after the patch describe dying anywhere, walking back to the exact spot, and finding nothing — and the reports share one common factor: the **Egon's Stone**. Playstack has acknowledged it thread-side: \"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\" (official reply in the \"Cannot find gloom after dying\" thread; the two other threads have official replies asking which Tarstones the victim ran, and the answer was Egon's Stone both times). By September 21 the acknowledgment had gone explicit: a developer reply in the \"cant get gloon back\" thread names the cause outright — \"a current known bug with the Egon's Stone\" that Playstack is \"working on fixing\" — so the workaround below is the confirmed stopgap until that fix ships, and this section will say so when it does. Until a fix ships, use the workaround the community has since consolidated across several threads: **unequip the Egon's Stone** — the dungeon-revive stone — and don't use the item until an official fix lands; with the stone off, players report dropped Gloom appearing on the ground where you die again, as it did before the hotfix. Spend your Gloom down at a Beacon before anything that can kill you regardless — vanished piles have stayed vanished. Playstack's pinned Known Issues post lists the gloom-disappearing bug without a cause or workaround and asks affected players to report it with character-view and map-view screenshots; if a pile vanishes on you, that is the report to file. The September 14 notes' other Egon's Stone lines (an exploit fix, dungeons not loading after the stone) do not list this loss issue, and the same stone sits at the center of the falling-loop bug whose escape FAQ lives on the [performance fix guide](/performance-fix/).",
+          "**Fixed in the September 24 hotfix:** the Egon's Stone gloom-loss bug this section spent September documenting is officially fixed. The hotfix notes list \"Fixed Egon's Stone removing Gloom dropped in the open world\" — the vanished-pile bug — alongside \"Fixed dungeons not loading correctly when using Egon's Stone\", the dungeon render-void face from the same report cluster (a structured-reproduction thread had drawn an official \"we are aware of this issue ... I have logged your repro steps to the team\" reply on top of the acknowledgments below). The unequip workaround is no longer needed with the patch installed; it is kept here for the record: **unequip the Egon's Stone** — the dungeon-revive stone — and dropped Gloom appears on the ground where you die again, as players reported it did before the regression. Two fine-print notes: the gloom fix line scopes to drops **in the open world**, and neither line promises anything about restoring Gloom already lost to the bug — piles that vanished before the patch should be written off, so the spend-down-at-a-Beacon habit stays worth keeping. The original warning, for the record: from the September 14 hotfix onward, three separate Steam threads described dying anywhere, walking back to the exact spot, and finding nothing — with the **Egon's Stone** the common factor. Playstack acknowledged it thread-side (\"If you are using the Egon's Stone we are experiencing issues with losing gloom with this equipped and looking into it\" — official reply in the \"Cannot find gloom after dying\" thread; the two other threads have official replies asking which Tarstones the victim ran, and the answer was Egon's Stone both times), then by September 21 named the cause outright in the \"cant get gloon back\" thread — \"a current known bug with the Egon's Stone\" that Playstack was \"working on fixing\" — while the pinned Known Issues post carried the gloom-disappearing entry without a cause or workaround. The same stone sits at the center of the falling-loop bug whose escape FAQ lives on the [performance fix guide](/performance-fix/).",
         ],
       },
     ],
@@ -916,7 +942,6 @@ export const guidePages: GuidePage[] = [
         "Exact Glimpse payout per Beacon cleanse — totals vary by node and no source has published a complete table (the Week 1 Update added siphon Glimpse but published no numbers)",
         "Whether Mammon's doubled gold stacks with the Justiciar's Stone bonus additively or multiplicatively",
         "Hidden Nave chest Gloom amounts per chest — Game8 confirms the menu-reset method but not the per-chest payout",
-        "When the Egon's Stone gloom-loss regression gets a fix — vanishing dropped Gloom after any death is officially acknowledged as happening \"with this equipped\" and is under investigation; the September 14 hotfix's other Egon's Stone lines do not list it (unequip the stone meanwhile — the community-tested workaround in the death-loss FAQ above — and spend down at Beacons)",
       ],
     },
     related: [
@@ -991,8 +1016,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — 'Gloom getting Lost' (30,000+ losses; don't-keep-the-revive-stone advice)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/569297738797317611/",
       },
+      {
+        name: "'Hotfix Live Now' — Mortal Shell II Steam announcement (Playstack, September 24, 2026; fixes both Egon's Stone faces)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
+      },
     ],
-    reviewedOn: "September 23, 2026",
+    reviewedOn: "September 26, 2026",
     datePublished: "2026-08-29",
   },
   {
@@ -2502,6 +2531,7 @@ export const guidePages: GuidePage[] = [
           "Where to stand and what to swing: Game8's take is that his **sides** are the safest footing — his front eats you with breath and blade throws, his rear with the tail. Players who've ground out the fight also report that hugging his legs and attacking **non-stop** denies his ranged flame attacks entirely, a pressure style that wants fast weapons (Axe, Dagger, Axatana — with a **Duality Tarstone** if you run the Axatana). The move that ends most attempts is the **helicopter spin**, and it has two versions with opposite answers: the **vertical ten-spin** cannot be parried, so sprint out of range and let it finish; the **horizontal spin** is fully parriable — and parrying every one of its hits is its own achievement hunt, if you're the stubborn type.",
           "Phase two is where runs actually die, and rarely to the sword: players report the **burn effect stacks** through the second phase — tick after tick after tick — until a healthy Shell melts without a single clean hit landing. The most-repeated piece of community advice for this fight is simply to **freeze the boss**: it's the top answer in the biggest current Steam thread on Zmey, with video guides attached, so if your loadout can inflict freeze, build around it. His mid-fight **projectile barrage** draws the same kind of grief ('but the balls? So many') — respect it as a positioning problem, not a damage window.",
           "Two footnotes for the end of the road. If you'd rather skip the exam entirely, a speed-kill route circulating on the Steam forums drops him in about **fifteen seconds, damage-free**, built on **Escalation 3/3** and **Deathmark 3/3** (a YouTube guide does the steering). And mind the kill itself: the [Finish the Fight achievement](/achievements-guide/) only counts if his HP reaches exactly **zero before the death cutscene** takes over — an ultimate started at low health can eat the kill, so save your ranged charges for the finisher.",
+          "One caveat before you commit an evening to him. Some players report the shell or weapons vanishing mid-fight — across several Steam threads, the family includes losing **both shell and weapon to a single hit**, the phase-two shell never spawning as the solid pickup it is supposed to leave behind, the Harbinger turning into a weaponless \"lifeless form\", a wrong-weapon variant appearing after a knockdown, and the boss himself becoming temporarily untargetable or immune. None of it is officially acknowledged for this fight — the pinned Known Issues list carries only a generic \"Bosses despawning\" line, and the September 24 hotfix's [final-boss entry](/patch-notes/) is a fire-ring balance tweak, not a fix — so treat this as a player-reported bug. If it hits you, the community's outs are leaving and re-entering the fight or reloading your save; players struck by the missing phase-two shell report a full restart as the only reliable reset.",
         ],
       },
       {
@@ -2565,6 +2595,10 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/0/581680955259021896/",
       },
       {
+        name: "Steam Discussions — Zmey phase-2 shell loss thread (final-boss shell/weapon-vanish family reports)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581683203528524363/",
+      },
+      {
         name: "Steam Discussions — 'The Monolith sucks' (community Monolith strategies and complaints)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/582806239606524074/",
       },
@@ -2577,7 +2611,7 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/3/564793434686156605/",
       },
     ],
-    reviewedOn: "September 14, 2026",
+    reviewedOn: "September 26, 2026",
   },
   {
     slug: "tips",
