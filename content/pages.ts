@@ -2812,7 +2812,7 @@ export const guidePages: GuidePage[] = [
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
       "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, a falling loop or a locked arena is the bottom FAQ of this page, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads. A September 17, 2026 pass added the cost-free quit-to-menu escape and the September 14 hotfix's patch status to that FAQ.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads. A September 17, 2026 pass added the cost-free quit-to-menu escape and the September 14 hotfix's patch status to that FAQ. A September 27, 2026 pass folded in the September 24 hotfix's performance surface — the new Low Latency Mode option, the D3D12-queue crash-class report, and the official missing-save support channel in the save FAQ below.",
     ],
     blocks: [
       {
@@ -2872,6 +2872,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Past the officially confirmed crashes above sits a bigger cluster: random crashes reported since launch that no patch has eliminated. The game's largest active Steam discussion — \"Am I the only one being plagued by crashes?\", 140+ replies and flagged answered — collects the pattern: hard lock-ups that take the whole PC down with no error text, crashes on alt-tab, and reports persisting \"even after the updates\". The community has not agreed on a cause — several repliers report zero crashes on comparable hardware — but a handful of workarounds now have confirmed successes attached, and the September 1 hotfix explicitly did not touch this cluster.",
           "September 5 patch status: the update claims only \"several crash fixes and optimisations\" with no itemized list, and as of September 9 its post-patch record is two unconfirmed Bug Reports threads — crashes every 5–10 minutes on an Intel Arc B580 rig that ran crash-free before the update, and crashes tied to Genessa encounters — with no confirmation or rebuttal from other players in either direction. The claim stays unverified here: this page makes no fixed-or-broken call until a confirmation wave or an itemized fix list lands.",
+          "September 24 hotfix status: the hotfix's performance work — the new Low Latency Mode option (covered in its own section below), a corrected VSync tooltip when frame generation is active, and hub shadow and texture optimizations — plus its elevator-lift fall prevention all shipped without an itemized fix for this cluster. The cluster's current shape got a fresh data point the day before that announcement: a September 23 Bug Reports thread describes crashes roughly every 30 minutes whose Windows error stack bottoms out in D3D12, the game's DirectX 12 render interface, naming D3D12Submission.cpp and its ForEachQueue/ProcessInterruptQueue functions — a graphics-queue crash class rather than any specific in-game trigger. The thread's lone fix suggestion sits unanswered, and nothing since the patch has confirmed or cleared the cluster either way, so the workarounds below remain the only tools with confirmed successes attached.",
         ],
         bullets: [
           "**Lower graphics settings and turn off ray tracing** — the one player-confirmed fix so far: crashes stopped entirely after this change on a rig that had run max settings smoothly",
@@ -2894,6 +2895,13 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Screen tearing — horizontal tears in the image when a frame lands mid-refresh — has no officially confirmed fix in Mortal Shell 2. The attributed guidance from LagoFast runs against instinct: disable the in-game V-Sync and cap the frame rate externally instead (for example at 60 FPS via a tool like RivaTuner). The logic is to let one frame-rate governor handle pacing rather than stacking the game's own V-Sync on top of it.",
           "As with every attributed setting on this page, treat it as a test rather than a guarantee: change one thing, re-test, and keep what your hardware actually responds to.",
+        ],
+      },
+      {
+        heading: "Low Latency Mode: the September 24 hotfix's official latency option",
+        paragraphs: [
+          "The September 24 hotfix shipped Mortal Shell 2's first official latency lever: a new Low Latency Mode graphics option, built on NVIDIA Reflex on GeForce cards and AMD Anti-Lag 2 on Radeon ones — the two GPU vendors' input-latency-reduction technologies, which keep the GPU from queuing frames far ahead of the display so your inputs reach the screen sooner. If the game feels laggy on the controls rather than choppy in the frame rate, this is the settings-page lever to try first — an official one, unlike the attributed settings above it. The hub shadow and texture optimizations from the same hotfix are automatic and need no settings change.",
+          "One honest scope note: the hotfix notes announce the option alongside a corrected VSync tooltip (the tooltip previously misdescribed V-Sync while frame generation was active) and fixes that stop players falling through elevator lifts, but they claim nothing about the crash cluster or the stutter reports above. Treat Low Latency Mode like every other lever on this page — one change at a time, re-test, keep what your rig actually responds to. The complete hotfix list lives on the [patch notes page](/patch-notes/).",
         ],
       },
       {
@@ -2974,6 +2982,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Start with the official recovery path. Playstack's pinned Known Issues post (last edited September 3, 2026) lists a missing-saves workaround: in \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames, rename WorldState_Backup_0_[N].sav — the [N] is a number — to WorldState_0.sav and relaunch the game. If your settings were affected too, the same post says to delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav from that folder, and the save itself can also be re-downloaded from Steam's remote storage page (store.steampowered.com/account/remotestorage). Playstack has also replied \"we are aware and are looking into this\" on a player's save-wipe report, so the bug is officially acknowledged.",
           "Two caveats before you rely on it: the rename only works when a WorldState_Backup file actually exists — at least one wiped player reports their SaveGames folder held no backup file at all, only Steam Cloud files, leaving the workaround unavailable in that case — and it is no substitute for your own backup. Copy the SaveGames folder somewhere safe before every update; if a save disappears right after one, restore your folder copy before relaunching. If you have neither a backup nor a WorldState_Backup file, report it in the bug-report thread with your build number — do not start overwriting saves first.",
+          "There is now also an official intake channel for wiped saves. In a September 24 save-wipe thread, a Playstack reply asks affected players to zip their SaveGames folder (\\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames) and send it to the publisher — through Discord or at support@playstack.com with the subject line \"Mortal Shell II Missing Save\". The same thread adds two useful confirmations: a player who lost a save verified the rename workaround above genuinely worked for them (\"Renaming the backup was a successful workaround. It was an older save but way better than having nothing\"), and a follow-up Playstack reply asked players to \"please do make a back up while we're still looking into these issues\" — the investigation is officially ongoing. The wipe reports have not stopped either: hours after the September 24 hotfix announcement, another player reported 80+ hours and 87 levels erased by a freeze on leaving a beacon, and a separate report the same week describes a 60-hour save vanishing with Steam Cloud recovery failing — posted after an announcement is not the same as caused by the patch, and no link between the hotfix and either wipe is claimed here.",
         ],
       },
       {
@@ -3003,6 +3012,7 @@ export const guidePages: GuidePage[] = [
         "A recovery path for wiped saves that have no WorldState_Backup file — the official workaround presumes the backup exists, and at least one wiped player reports only Steam Cloud files in the folder",
         "Official word on Xbox Series S crash reports near the forgotten crossbow area (player-reported, collected by Playstack)",
         "A fix or official escape for the royal-tomb re-entry arena lock — thorn walls that don't register a boss killed before the patch (reported September 14; the September 14 hotfix shipped dungeon-trap fixes, but no note names this lock and no community confirmation has landed either way)",
+        "Whether the September 24 hotfix's performance work (Low Latency Mode, hub shadow and texture optimizations) changed the random-crash cluster — its notes itemize no crash fixes, and the D3D12-queue crash report above predates the patch by one day; no post-patch confirmation has landed either way",
       ],
     },
     related: [
@@ -3091,8 +3101,24 @@ export const guidePages: GuidePage[] = [
         name: "'New Hotfix out now' — Mortal Shell II Steam announcement (Playstack, September 14, 2026; Egon's Stone dungeon-loading and Lazlo dungeon-trap fixes)",
         url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702759",
       },
+      {
+        name: "'Hotfix Live Now' — Mortal Shell II Steam announcement (Playstack, September 24, 2026; Low Latency Mode, VSync tooltip, hub optimizations, elevator-lift fixes)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
+      },
+      {
+        name: "Steam Discussions — \"Save file corrupted\" (September 24 wipe thread with the official \"Mortal Shell II Missing Save\" support channel, the player-confirmed rename recovery, and the official backup reminder)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581683203528647583/",
+      },
+      {
+        name: "Steam Discussions — \"MS2 Completely Broken and Unplayable Now\" (60-hour vanished save, September 24, Steam Cloud recovery failed)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581683203528625607/",
+      },
+      {
+        name: "Steam Discussions — \"Multiple crashes between each other\" (September 23 Bug Reports thread, D3D12 queue crash stack)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581683203528556626/",
+      },
     ],
-    reviewedOn: "September 17, 2026",
+    reviewedOn: "September 27, 2026",
     datePublished: "2026-08-20",
   },
   {
