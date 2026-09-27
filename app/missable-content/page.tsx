@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "mortal shell 2 voltaic crown",
     "mortal shell 2 tar golem trophy",
     "mortal shell 2 skeleton harbinger skin",
+    "mortal shell 2 flayed harbinger skin",
     "mortal shell 2 ng+ trigger",
   ],
   alternates: { canonical: "/missable-content/" },

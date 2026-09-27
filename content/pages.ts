@@ -67,7 +67,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Seeking the Past is Mortal Shell II's rarest achievement — **1.9%** of Steam players hold it, against a 1.3% rate for the platinum itself. Its official condition is just 'Watch all Shell Memories': **40 memories, five per shell, across all eight shells**. What makes it rare is not difficulty but logistics — unlocking every memory requires raising all eight shells to maximum Bond Tier 4, which costs **27 Glimpse per shell and 216 Glimpse in total** — launch-era math that priced the trophy at two complete runs plus a partial third (NG++, per PowerPyx's roadmap). The Week 1 Update (August 29, 2026) removed that ceiling: **Glimpses are no longer finite**, so a single thorough playthrough can now fund all eight bond trees.",
-      "This page is the verification chain: how the gating works, why watching counts but unlocking alone does not, how the Glimpse budget reads after the economy change, and what to do when the tracker stalls — a failure mode PowerPyx commenters were still reporting fresh this week. For where this sits in the full 53-trophy plan, see the [achievement strategy guide](/achievements-guide/) and the [full achievements list](/achievements/).",
+      "This page is the verification chain: how the gating works, why watching counts but unlocking alone does not, how the Glimpse budget reads after the economy change, and what to do when the tracker stalls — a failure mode PowerPyx commenters were still reporting fresh this week. The tracker-stall bug has since been officially fixed by the September 24 hotfix — the bug section below carries the fixed status alongside the remedies that still apply to already-stuck saves (updated September 28, 2026). For where this sits in the full 53-trophy plan, see the [achievement strategy guide](/achievements-guide/) and the [full achievements list](/achievements/).",
     ],
     blocks: [
       {
@@ -101,11 +101,11 @@ export const guidePages: GuidePage[] = [
       },
       {
         anchor: "bug",
-        heading: "The 38/40 stall — a known, still-open bug",
+        heading: "The 38/40 stall — known bug, fixed by the September 24 hotfix",
         paragraphs: [
           "The tracker can wedge below the finish line. PowerPyx's comment section carried two first-hand reports in the last week alone: one player (August 23) stuck at exactly **38/40** with every memory watched and no exclamation markers left anywhere, and another (August 27) reporting the counter simply not going up. No workaround has been confirmed by developers, and the commenters' stopgap matches the community consensus: **relaunch the game and re-watch the shell's bond-menu entries** — one commenter's suggested remedy, and a restart is what another player believed popped theirs. The same failure mode has its own Steam thread ('Seeking the Past Achievement?', running since August 30): players stuck at **39/40** with no in-game way to even see which memory is missing, and a recurring culprit — Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory, which multiple players report watching without the counter ever registering it until they re-watch it. A second named culprit surfaced on September 8 (single report, no replies yet): a player stuck at 39/40 pins it on **Genessa's fifth and final memory**, which won't unlock despite a maxed bond — talking to her only offers four of the five memories to view. Like the Lazlo case it reads as a registration/display problem rather than missing content; note that the re-watch remedy below is confirmed for the Lazlo case only — for the Genessa case it is unconfirmed, but it remains the only stopgap anyone has.",
-          "Status against the current patches: neither Playstack's Balance Patch 1 notes (August 20), the Week 1 Update notes (August 29), nor the September 5 update notes contain a memory, bond, or trophy fix — the Week 1 changelog's only Glimpse lines are the economy un-cap and the new respec item. Until a patch note says otherwise, treat the stall as live, keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first. The [patch notes page](/patch-notes/) tracks when that changes.",
-          "One official acknowledgment now exists, and it names a trigger. Playstack's pinned \"How to Report a Bug and Known Issues\" post (edited September 3, 2026) lists Seeking the Past under achievements not unlocking: \"Can break when going into NG+, potential fix by rewatching all memories in order.\" That line carries two facts the walkthrough-style guides keep missing: crossing into NG+ can break the trophy on an otherwise-complete save, and the publisher's own suggested remedy is a full in-order re-watch of all 40 memories — broader than the per-shell re-watch stopgap above. The pin does not say which order counts: whether it means the order you unlocked or watched the memories, or the shells' roster order, is stated nowhere official. Watch order is the community's working assumption — unverified — so start there and treat any specific order as a guess until a popped report confirms it. A second fresh face (September 16, 11 replies): an NG++ player reports Genessa's own shell memories stuck at 2/5 with the bond maxed, and the official reply there cross-references this trophy directly — asking when it stuck and whether the player \"did receive the Seeking the Past Achievement\" — which ties Genessa's memory progression and the trophy to one mechanism. If her menu stops offering memories to watch, that thread is the one to watch.",
+          "Status against the current patches: the September 24 hotfix is the first patch action on this bug — its official notes list \"Fixed trophy/achievement issues with Seeking the Past and Bring My Ova Back to Me\" (see our [patch notes page](/patch-notes/)). That fix should stop the stall from happening on new saves; what the notes do not say is whether a counter that wedged before the update recovers with it — one player reported a counter still stuck shortly after the hotfix went live — so the remedies below stay in place for existing saves. Keep your save backed up before triggering NG+ boundaries, and do not delete a save that stalls — reboot and re-watch first.",
+          "One official acknowledgment predates the fix and names a trigger. Playstack's pinned \"How to Report a Bug and Known Issues\" post (edited September 3, 2026) lists Seeking the Past under achievements not unlocking: \"Can break when going into NG+, potential fix by rewatching all memories in order.\" That line carries two facts the walkthrough-style guides keep missing: crossing into NG+ can break the trophy on an otherwise-complete save, and the publisher's own suggested remedy is a full in-order re-watch of all 40 memories — broader than the per-shell re-watch stopgap above. The pin does not say which order counts: whether it means the order you unlocked or watched the memories, or the shells' roster order, is stated nowhere official. Watch order is the community's working assumption — unverified — so start there and treat any specific order as a guess until a popped report confirms it. A second fresh face (September 16, 11 replies): an NG++ player reports Genessa's own shell memories stuck at 2/5 with the bond maxed, and the official reply there cross-references this trophy directly — asking when it stuck and whether the player \"did receive the Seeking the Past Achievement\" — which ties Genessa's memory progression and the trophy to one mechanism. If her menu stops offering memories to watch, that thread is the one to watch.",
         ],
       },
       {
@@ -127,7 +127,7 @@ export const guidePages: GuidePage[] = [
         bullets: [
           "**Does this still take multiple playthroughs?** Not by economy. The Week 1 Update (August 29) made Glimpses non-finite, so all eight shells can be maxed in a single save; PowerPyx's two-runs-plus-NG++ roadmap describes the pre-patch economy. The must-watch discipline is unchanged.",
           "**Stuck at 39/40 with no way to tell which memory is missing?** There is no in-game per-memory tracker — but the community has named two culprits. The recurring one is **Lazlo's 'The Prisoner' (a.k.a. 'The Truth') memory**: multiple Steam players report watching it without the counter registering. A second reported case (single report, September 8) is **Genessa's fifth memory** — bond maxed, but her menu only offers four of the five to view. Relaunch, then re-watch the affected shell's five bond-menu memories — the remedy confirmed for the Lazlo case; for the Genessa case it is unconfirmed, but it is the only stopgap anyone has (the same remedy as the stall above). If the per-shell re-watch doesn't pop it — or you have already crossed an NG+ boundary — escalate to the Known Issues pin's remedy: re-watch all 40 memories in order (the bug section covers what \"in order\" does and doesn't pin down).",
-          "**Is the trophy still bugged?** Yes, and it is now officially acknowledged. Playstack's pinned Known Issues post (edited September 3) lists Seeking the Past as able to \"break when going into NG+, potential fix by rewatching all memories in order\" — that is a suggested workaround, not a shipped patch fix; the Week 1 (August 29) and September 5 update notes contain no memory or trophy fix, and no popped confirmations of the pin's remedy have landed yet. For a mid-save stall, relaunch-and-rewatch remains the community-verified stopgap.",
+          "**Is the trophy still bugged?** It was — and the September 24 hotfix officially fixes it: the notes list \"Fixed trophy/achievement issues with Seeking the Past and Bring My Ova Back to Me\". Before that, Playstack's pinned Known Issues post (edited September 3) had acknowledged the break — \"Can break when going into NG+, potential fix by rewatching all memories in order\" — as a suggested workaround rather than a shipped fix. The hotfix notes say nothing about counters that wedged before the update, and one post-fix report of a still-stuck counter exists, so if yours is already stuck: install the update, then relaunch and re-watch before anything drastic.",
           "**Does using Mether's Severance (the new respec) affect memory tracking?** Unverified. The Week 1 notes describe the Glimpse refund but say nothing about whether a shell's watched memories stay counted after its bond is severed. Until that is confirmed, watch a shell's five memories before severing its bond rather than after.",
           "**Do memory views carry over between NG+ cycles?** Unverified either way in accessible sources — but the Known Issues pin's NG+ warning above is the first official signal that NG+ boundaries and this trophy's tracking interact badly, which is exactly why the checklist has you watch each shell's five memories the moment it maxes, instead of deferring views to a final sweep.",
           "**Does this trophy share a root cause with the Ova tracker bug?** Unknown. Both are count-to-complete trackers misbehaving (the Ova one currently locks its trophy out of NG+ entirely — see the [Ova locations page](/ova-locations/)), but no developer statement connects them.",
@@ -138,7 +138,7 @@ export const guidePages: GuidePage[] = [
       heading: "Open verification items",
       intro: "What this page genuinely does not know yet:",
       items: [
-      "Whether the pin's \"rewatch all memories in order\" remedy actually pops a broken trophy — the Known Issues pin (September 3 edit) is official acknowledgment of the NG+ break, but it is a suggested workaround, not a shipped patch fix, and no popped-confirmation report has landed (the community-attributed Lazlo 'The Prisoner' and Genessa fifth-memory display bugs remain player-side observations; the Genessa-memories-stuck thread's official reply is still gathering details)",
+      "Whether counters and trophies that wedged before the September 24 hotfix recover once it is installed, or still need the re-watch remedies — the hotfix notes list the trophy fix but say nothing about existing broken saves, one post-fix report of a stuck counter exists, and the pin's \"rewatch all memories in order\" remedy never received a popped confirmation (the community-attributed Lazlo 'The Prisoner' and Genessa fifth-memory display bugs remain player-side observations; the Genessa-memories-stuck thread's official reply is still gathering details)",
       "Whether a Shell's watched memories stay counted after its bond is severed with Mether's Severance — the Week 1 notes are silent; the FAQ advises watching before severing until confirmed",
       "Exact Glimpse payouts per Beacon cleanse per cycle — PowerPyx describes the income lines qualitatively; per-Beacon numbers have not been published",
     ],
@@ -183,8 +183,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — \"Genessa's shell memories stucked 2/5\" (NG++ report; official reply cross-references the trophy)",
         url: "https://steamcommunity.com/app/2584270/discussions/3/581680664978549626/",
       },
+      {
+        name: "'Hotfix Live Now' — Mortal Shell II Steam announcement (Playstack, September 24, 2026; official Seeking the Past trophy fix)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
+      },
     ],
-    reviewedOn: "September 17, 2026",
+    reviewedOn: "September 28, 2026",
     datePublished: "2026-08-28",
   },
 
@@ -1186,7 +1190,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. The Ova section gained the community prologue-skip co-factor reports on September 15, 2026, and the zero-unlocks FAQ below gained the community's Demo-save-files fix on September 21, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. The Ova section gained the community prologue-skip co-factor reports on September 15, 2026, and the zero-unlocks FAQ below gained the community's Demo-save-files fix on September 21, 2026. The Bring My Ova and Seeking the Past bug sections were marked fixed per the September 24 hotfix notes on September 28, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -1196,7 +1200,7 @@ export const guidePages: GuidePage[] = [
         ],
         bullets: [
           "**3 missable:** Mid Summer? (83.2% — high rate because most players accept naturally), No You Still Can't Win (13.0%), Peter's Perfect Parry (4.2%)",
-          "**1 glitched:** Bring My Ova Back to Me (15.7%) — currently earnable only in a first playthrough; see its section below",
+          "**1 recently glitched (fixed September 24):** Bring My Ova Back to Me (15.7%) — the hotfix notes list a fix for its trophy issues; see its section below",
           "**Glimpse grind:** Seeking the Past (1.9%, Watch all Shell Memories) — priced at two runs plus NG++ by launch-era guides, but the Week 1 Update made Glimpse non-finite, so a single-run finish is now plausible",
           "**Achievement lockout:** the Slayer Seal — the optional 'easy mode' — disables Steam achievements while equipped (developer-confirmed; see the FAQ below)",
           "**1 NG+ trap (patched September 5):** Bag Holder (23.5%) — carrying Baghead's Special Moonshine into NG+ used to block his quest chain, and the game has no item-drop; the September 5 patch officially fixed the NG+ lockout (see the FAQ below)",
@@ -1208,7 +1212,7 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Seeking the Past requires watching all 40 Shell Memories — five per shell across all eight shells. The rule almost every generic guide gets wrong: memories are unlocked by spending Glimpse at the Shellkeeper, but unlocking alone does not count. Each one must be selected and **viewed from the Shellkeeper bond menu**, even though every shell forces you through one memory during its natural bond progression. The very first memory has its own easier trophy (Haunting Times, 68.1%), which is where most players discover the distinction.",
           "The Glimpse economy used to decide how many runs this took. Raising one shell to maximum Bond Tier 4 costs **27 Glimpse**; all eight shells cost a cumulative **216 Glimpse**, and a launch-era playthrough reliably funded only about three maxed shells — which is where the two-full-runs-plus-a-partial-third (NG++) roadmap came from. The Week 1 Update (August 29, 2026) removed the ceiling: **Glimpses are no longer finite**, so all eight bond trees fit inside one thorough playthrough, with new income lines on top — **Glimpse Stones** that wear down as you defeat enemies and break into Glimpses, additional Glimpse in the gloom siphon, and Merrick's expanded stock. The per-run income habits still speed things up: cleanse every Beacon, grab the handful of loose Glimpse caches near Beacons, and visit each original shell location at night once per playthrough for an extra **8 Glimpse** each.",
-          "Known bug behavior as of August 2026: PowerPyx commenters and Steam discussions report the counter stalling at 38/40 with no unwatched memories left, and one player saw it pop after restarting the game mid-dungeon. Developers are reportedly aware. Nothing in the Balance Patch 1 or Week 1 Update notes we could verify addresses it — if your tracker wedges below 40/40 after viewing everything, reboot the game first, then finish that shell's bond menu entry again before starting a fresh run.",
+          "Known bug behavior: PowerPyx commenters and Steam discussions reported the counter stalling at 38/40 with no unwatched memories left, and one player saw it pop after restarting the game mid-dungeon. The September 24 hotfix officially fixes the trophy — its notes list \"Fixed trophy/achievement issues with Seeking the Past and Bring My Ova Back to Me\" — but the notes do not address a save whose counter wedged before the update: if your tracker is stuck below 40/40 after viewing everything, install the hotfix, reboot the game first, then finish that shell's bond menu entry again before starting a fresh run. The dedicated [Seeking the Past page](/achievements/seeking-the-past/) carries the full verification chain.",
         ],
       },
       {
@@ -1232,8 +1236,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Bring My Ova Back to Me (15.7%) — the glitched one",
         paragraphs: [
-          "Collecting all 196 Ova should be a straightforward Beacon-sweeping task (the [Ova locations page](/ova-locations/) maps the route), but a recent patch introduced a bug: PowerPyx reports the achievement can currently pop only in a first playthrough. Crossing into NG+ with unfinished cleanup risks a permanently dead save for this entry until a fix lands.",
-          "Sooner or later the developers will patch this — at which point the restriction presumably lifts and normal NG+ collection resumes. Until an update note says otherwise, treat every post-boss 26-Ova Beacon payout as first-run-critical and do not send Ova through the Marrow Keep Siphon's ending prompt without a finished count.",
+          "Collecting all 196 Ova should be a straightforward Beacon-sweeping task (the [Ova locations page](/ova-locations/) maps the route). For most of the game's first month, a patch-era bug made that sweep first-playthrough-critical: PowerPyx reported the achievement could pop only in a first playthrough, and crossing into NG+ with unfinished cleanup risked a permanently dead save for this entry.",
+          "The developers have now patched it: the September 24 hotfix notes list \"Fixed trophy/achievement issues with Seeking the Past and Bring My Ova Back to Me\" — the first official action on this bug. What the notes do not say is whether a save that already lost the trophy to the NG+ lockout recovers with the update, so the old habit still costs nothing: treat every post-boss 26-Ova Beacon payout as a priority and do not send Ova through the Marrow Keep Siphon's ending prompt without a finished count.",
           "One community factor sits alongside the NG+ rule: a PS5 bug report (v1.000.007) links skipping the prologue to this trophy wedging at 99%, with So Fresh, So Clean stuck on the same save — but a counter-case wedged at 193/194 on the tracker explicitly never skipped the prologue. Treat the skip as one reported co-factor rather than a confirmed cause; the first-playthrough rule above is still the only guidance with consistent reporting behind it.",
         ],
       },
@@ -1271,7 +1275,7 @@ export const guidePages: GuidePage[] = [
       intro:
         "This hub ships anchored to official Steam stats and PowerPyx's roadmap — open about what isn't pinned down yet:",
       items: [
-        "Whether Balance Patch 1, the Week 1 Update, or later hotfixes lifted the Bring My Ova Back to Me first-playthrough bug — neither patch's notes mention it",
+        "Whether the September 24 hotfix unblocks saves that already lost Bring My Ova Back to Me to the NG+ bug — the fix is official, but the notes say nothing about existing broken saves",
         "Exact Glimpse-per-cycle totals beyond Beacon cleanse rewards (night-bonus 8-per-location figure is community-transcribed, not dev-confirmed)",
         "Whether a patch will re-enable achievements on saves that used the Slayer Seal — dev comments say the lockout wasn't intended, but no reversal has shipped",
         "Whether the Seeking the Past 38/40 stall shares a root cause with the Bring My Ova tracker bug",
@@ -1330,17 +1334,21 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — 'Achievements not unlocking (Workaround)' (independent same-day Demo-save fix)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/569297738797210084/",
       },
+      {
+        name: "'Hotfix Live Now' — Mortal Shell II Steam announcement (Playstack, September 24, 2026; fixes Seeking the Past + Bring My Ova Back to Me trophy issues)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
+      },
     ],
-    reviewedOn: "September 21, 2026",
+    reviewedOn: "September 28, 2026",
     datePublished: "2026-08-27",
   },
   {
     slug: "ova-locations",
     metaTitle: "Mortal Shell 2 Ova Locations: How to Collect All 196",
     metaDescription:
-      "Every Mortal Shell 2 Ova location explained: all 196 come from cleansing Beacons, six post-boss nodes pay 26 each, and the first-playthrough rule that protects the Bring My Ova Back to Me trophy.",
+      "Every Mortal Shell 2 Ova location explained: all 196 come from cleansing Beacons, six post-boss nodes pay 26 each, and the Bring My Ova Back to Me trophy's first-playthrough rule — officially fixed by the September 24 hotfix.",
     cardBlurb:
-      "Where all 196 Ova hide, which Beacons pay the biggest hauls, and the NG+ bug to respect.",
+      "Where all 196 Ova hide, which Beacons pay the biggest hauls, and the NG+ trophy bug the September 24 hotfix fixed.",
     heroImage: {
       src: "/img/site-5.jpg",
       alt: "Mortal Shell II key art with a helmeted shell facing a corrupted landscape",
@@ -1349,8 +1357,8 @@ export const guidePages: GuidePage[] = [
     h1: "Mortal Shell 2 Ova Locations",
     eyebrow: "Completion",
     intro: [
-      "There is no secret stash of 196 hidden eggs — every Ova in Mortal Shell II is a Beacon reward. Cleansing any of the game's Beacons pays out its Ova at the end of that mini-dive, so collecting all of them is a fast-travel discipline task, not a scavenger hunt. This page explains where they all are, what progress looks like, and the patch-era bug that decides when you must finish.",
-      "Totals, payout tables, and trophy rules were verified against PowerPyx's trophy guide and Beacon compendium on August 27, 2026, cross-checked against this site's own beacon research. The per-Beacon count table below fills in as those numbers are transcribed — the skeleton is open about what is verified today.",
+      "There is no secret stash of 196 hidden eggs — every Ova in Mortal Shell II is a Beacon reward. Cleansing any of the game's Beacons pays out its Ova at the end of that mini-dive, so collecting all of them is a fast-travel discipline task, not a scavenger hunt. This page explains where they all are, what progress looks like, and the patch-era trophy bug — officially fixed by the September 24 hotfix — that used to decide when you had to finish.",
+      "Totals, payout tables, and trophy rules were verified against PowerPyx's trophy guide and Beacon compendium on August 27, 2026, cross-checked against this site's own beacon research. The Bring My Ova trophy-bug sections were updated on September 28, 2026 per the September 24 hotfix's official fix. The per-Beacon count table below fills in as those numbers are transcribed — the skeleton is open about what is verified today.",
     ],
     blocks: [
       {
@@ -1394,13 +1402,13 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Can you still get all Ova in NG+?",
         paragraphs: [
-          "Treat the answer as no until a patch says otherwise. PowerPyx warns that **Bring My Ova Back to Me currently can only be earned in your first playthrough** due to a bug introduced in a recent patch — entering NG+ without finishing your cleanup can lock the trophy out on that save indefinitely. Finish all 196 before interacting with the Siphon's “Send Ova” option at the end of the game; the endgame free-roam window exists precisely so you can complete this sweep before committing.",
+          "That answer changed on September 24: the hotfix's official notes list “Fixed trophy/achievement issues with Seeking the Past and Bring My Ova Back to Me” — the first patch action on the bug PowerPyx warned about, which let **Bring My Ova Back to Me pop only in a first playthrough** and could lock it out on a save indefinitely once NG+ began. The notes do not itemize whether a save that already lost the trophy recovers with the update, so the practical rule survives as a free safety net: finish all 196 before interacting with the Siphon's “Send Ova” option at the end of the game — the endgame free-roam window exists precisely so you can complete this sweep before committing.",
         ],
       },
       {
         heading: "What is the Ascension trophy?",
         paragraphs: [
-          "Correction from an earlier draft: Ascension is **not** the Ova trophy. Steam's official stats list Ascension (16.7% unlock rate) as “Discover the secret of the Mango” — the hidden sanctuary quest behind Mether's Flesh and the Outskirts of Nochte cup ritual detailed in the [missable content guide](/missable-content/). The Ova-collection achievement is the separate **Bring My Ova Back to Me** entry covered above (15.7%, currently bugged first-playthrough-only). Both sit in the same completion neighborhood, which is why so many guides conflate them.",
+          "Correction from an earlier draft: Ascension is **not** the Ova trophy. Steam's official stats list Ascension (16.7% unlock rate) as “Discover the secret of the Mango” — the hidden sanctuary quest behind Mether's Flesh and the Outskirts of Nochte cup ritual detailed in the [missable content guide](/missable-content/). The Ova-collection achievement is the separate **Bring My Ova Back to Me** entry covered above (15.7%; its first-playthrough-only bug was officially fixed by the September 24 hotfix). Both sit in the same completion neighborhood, which is why so many guides conflate them.",
           "Its actual sibling on this route is So Fresh, So Clean (7.8%, cleanse every Beacon) — one disciplined pass serves both, and the fuller rare-first ordering plan lives in our [achievement guide](/achievements-guide/).",
         ],
       },
@@ -1416,7 +1424,7 @@ export const guidePages: GuidePage[] = [
       intro: "This page ships as a checklist skeleton — deliberately honest about what isn't pinned down yet:",
       items: [
         "Per-Beacon Ova counts for all 46 cleanse dives (structure verified; individual figures awaiting transcription)",
-        "Whether Balance Patch 1 fixed the Bring My Ova Back to Me NG+ bug — PowerPyx's warning predates it with no visible change noted yet",
+        "Whether the September 24 hotfix unblocks saves that already lost Bring My Ova Back to Me to the NG+ bug — the trophy fix is official, but existing broken saves aren't addressed in the notes",
         "Exact Mether's Breath unlock threshold (community consensus points to roughly 40-50 deposited, unconfirmed)",
       ],
     },
@@ -1435,8 +1443,12 @@ export const guidePages: GuidePage[] = [
         name: "PowerPyx — Mortal Shell 2 All Beacon Locations",
         url: "https://www.powerpyx.com/mortal-shell-2-all-beacon-locations/",
       },
+      {
+        name: "'Hotfix Live Now' — Mortal Shell II Steam announcement (Playstack, September 24, 2026; official Bring My Ova Back to Me trophy fix)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
+      },
     ],
-    reviewedOn: "August 27, 2026",
+    reviewedOn: "September 28, 2026",
     datePublished: "2026-08-27",
   },
   {
@@ -3533,7 +3545,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Completion",
     intro: [
       "Mortal Shell II is friendlier to completionists than its reputation suggests — but not completely. Only three trophies in the entire 53-trophy list are flagged missable, and every one of them can be recovered with a fresh save slot; meanwhile, several things players assume are lost forever (Beacons, Ova, shells, weapons) remain collectible even after credits roll.",
-      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026, and the preorder/beta-skin and NG+-trigger FAQs added on September 8, 2026 from the Steam skin and NG+ threads. A September 15, 2026 status note on the post-patch skin-loss reports was added to the skins FAQ, and the accidental-NG+ revert question was answered and the Ova-room warning claim softened on September 23, 2026 from the Steam thread on entering NG+ by mistake.",
+      "This page maps both sides of that line: the short list of things you can genuinely lock yourself out of, the timing windows that decide them, and the safety nets the game does provide. Everything below was verified on August 27, 2026 against PowerPyx's full trophy roadmap, the Fextralife wiki, GameTrek's trophy database, and Playstack's official Steam forum — with the Baghead NG+ trap added on September 3, 2026 from the Steam bug-report thread and pinned Week 1 discussion, the Week 1 Update's lockout/chest fixes cross-checked against the official notes on September 4, 2026, the September 5 patch's official Baghead NG+ fix folded into the Baghead section on September 7, 2026, and the preorder/beta-skin and NG+-trigger FAQs added on September 8, 2026 from the Steam skin and NG+ threads. A September 15, 2026 status note on the post-patch skin-loss reports was added to the skins FAQ, and the accidental-NG+ revert question was answered and the Ova-room warning claim softened on September 23, 2026 from the Steam thread on entering NG+ by mistake. The beta-skin FAQ gained the official recovery steps from the Steam flayed-skin thread, and the Ova-trophy sections were marked fixed per the September 24 hotfix notes, on September 28, 2026.",
     ],
     blocks: [
       {
@@ -3589,8 +3601,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "The one caveat: Bring My Ova Back to Me",
         paragraphs: [
-          "Technically not flagged missable, but currently bugged in a way that makes it behave like one: per PowerPyx's patch-era warning, **Bring My Ova Back to Me (all 196 Ova) can currently only be earned in your first playthrough** due to a bug introduced in a recent patch. Enter NG+ without finishing your Ova cleanup and the trophy may be unobtainable on that save until a fix lands.",
-          "Practical rule until this changes: treat all 196 Ova as first-playthrough-only content. Collect them before entering NG+, using the endgame free-roam window if needed; the Beacon-to-Ova mapping lives in the [fast travel guide](/fast-travel/), and boss-by-boss payouts sit in the [boss guide](/bosses/).",
+          "Technically not flagged missable, but for the game's first month it was bugged in a way that made it behave like one: per PowerPyx's patch-era warning, **Bring My Ova Back to Me (all 196 Ova) could only be earned in your first playthrough** due to a bug introduced in a recent patch — enter NG+ without finishing your Ova cleanup and the trophy could become unobtainable on that save. The September 24 hotfix officially fixes it: the notes list \"Fixed trophy/achievement issues with Seeking the Past and Bring My Ova Back to Me\", though they say nothing about saves that already lost the trophy.",
+          "Practical rule going forward: collect all 196 before entering NG+, using the endgame free-roam window if needed — with the fix live this is a safety net rather than a hard requirement, and it costs nothing. The Beacon-to-Ova mapping lives in the [fast travel guide](/fast-travel/), and boss-by-boss payouts sit in the [boss guide](/bosses/).",
         ],
       },
       {
@@ -3618,6 +3630,7 @@ export const guidePages: GuidePage[] = [
           "The skeleton harbinger skin is the **preorder bonus** — that is the entire unlock. When a player asked exactly this on the game's Steam board after finding nothing on YouTube, the in-thread answer, confirmed by multiple owners, was simply the preorder: there is no quest, drop, or in-game pickup involved in getting it.",
           "Beta skins ride on **ownership, not installation**: the beta only needs to stay in your Steam library for its skins to remain yours — it does not have to stay installed. That is the community's working answer to the \"uninstalled the Beta and lost beta skin\" report. One caveat inherited from beta players: some beta loot differed from the release build, so an item you remember from the beta may not sit in the same place in release — one sought-after item turned up in the release build inside the Holding Cells dungeon.",
           "One warning has surfaced since: a fresh wave of community reports ties owned skins to patch damage. The September 1 hotfix officially fixed Devout/Pre-Order Shell Shades, but since September 8 players have reported all DLC skins gone from selection after starting NG+ (\"skins I paid for\"), a Devout Edition copy unable to change the base Harbinger's shade, Obsidian and preorder skins invisible after \"the 2 latest patches\", and a streamer clip of the wrong skin applying after death. The developer's Known Issues pin lists no skins entry, so this stays a community-reported pattern rather than an official bug list: if your skins vanish, try the standard basics first — restore licenses, verify game files, reinstall — and treat any fixed-or-broken verdict as premature until Playstack acknowledges it.",
+          "The ownership rule now has an official answer attached, plus a recovery procedure for players whose beta skin never showed up — usually the **flayed harbinger skin**, the beta-window reward the missing-skin threads ask about by name. In the Steam thread on the missing flayed skin, a Playstack team member (liv) replied that an uninstalled beta \"may not register\": make sure the beta is added to your Steam Library, and the beta rewards register the next time you launch the main game; if that does not work, the official fallback is to reinstall the beta until around 7% and then relaunch. One player in the same thread confirmed the library step alone unlocked his missing flayed harbinger skin. One face of the thread remains open: a player who owned the beta on Steam but plays on PS5 reports no flayed skin, and that cross-platform question has no answer in the thread yet. This is one official reply plus one user confirmation — not a guarantee that every missing beta skin is recoverable.",
         ],
       },
       {
@@ -3628,19 +3641,19 @@ export const guidePages: GuidePage[] = [
         bullets: [
           "**Carries into NG+:** your level, gear, tarstone infusions, shells already unlocked, Beacons already cleansed, and trophy state for anything collected.",
           "**Does not carry:** anything tied specifically to the prologue — Marigold's crown offer and the Tar Golem tutorial fight simply do not re-run in subsequent playthroughs.",
-          "**Seeking the Past nuance:** memories must be VIEWED via the Shellkeeper bond menu (not merely unlocked), and community reports flag it as buggy in NG+ — budget extra partial runs if a memory refuses to count.",
+          "**Seeking the Past nuance:** memories must be VIEWED via the Shellkeeper bond menu (not merely unlocked). Community reports flagged it as buggy in NG+; the September 24 hotfix has since officially fixed the trophy's issues.",
         ],
       },
       {
         heading: "Can I still get missed content after beating the game?",
         paragraphs: [
-          "Mostly yes. After the final boss, a free-roam window opens before you commit to NG+: any Beacon still corrupted can be cleansed there, and every shell, weapon, sidearm, and Tarstone remains collectible. What free-roam cannot restore is anything tied to the prologue itself — Marigold's crown offer and the Tar Golem tutorial duel do not re-run — plus the bugged all-Ova trophy if you have already entered NG+. Anything genuinely lost costs only a fresh save slot, since trophy progress is shared across saves."
+          "Mostly yes. After the final boss, a free-roam window opens before you commit to NG+: any Beacon still corrupted can be cleansed there, and every shell, weapon, sidearm, and Tarstone remains collectible. What free-roam cannot restore is anything tied to the prologue itself — Marigold's crown offer and the Tar Golem tutorial duel do not re-run — plus the all-Ova trophy on a save that entered NG+ while its first-playthrough bug was live (the September 24 hotfix has since fixed the trophy's issues officially). Anything genuinely lost costs only a fresh save slot, since trophy progress is shared across saves."
         ],
       },
       {
         heading: "When does NG+ start — and can you clean up first?",
         paragraphs: [
-          "New Game+ is not automatic: it starts when you make the choice in the **Ova storage room**. The first prompt does state that the choice ends the current playthrough and starts NG+ — but treat the Ova-room button as a **hair-trigger** anyway: a September 2026 thread on entering NG+ by mistake describes pressing **send Ova** mid-deposit and being thrown straight into NG+ with no effective confirmation, and the lone reply recalling a warning is secondhand at best. Until the choice is made the world stays open, which is what makes the endgame free-roam window above your cleanup window: Beacons, shells, weapons, Baghead's moonshine, all of it can still be finished before you commit. That matters doubly for the [all-Ova trophy](/ova-locations/), which is currently first-playthrough-only.",
+          "New Game+ is not automatic: it starts when you make the choice in the **Ova storage room**. The first prompt does state that the choice ends the current playthrough and starts NG+ — but treat the Ova-room button as a **hair-trigger** anyway: a September 2026 thread on entering NG+ by mistake describes pressing **send Ova** mid-deposit and being thrown straight into NG+ with no effective confirmation, and the lone reply recalling a warning is secondhand at best. Until the choice is made the world stays open, which is what makes the endgame free-roam window above your cleanup window: Beacons, shells, weapons, Baghead's moonshine, all of it can still be finished before you commit. That matters doubly for the [all-Ova trophy](/ova-locations/) — its first-playthrough-only bug is now officially fixed by the September 24 hotfix, but the free-roam sweep before committing remains the zero-cost safety net.",
           "Once you commit, NG+ begins with you spawning back in the **main Ova room** — on the same save, not a separate slot. The question this page carried since September 2 now has a community answer: in a September 18 thread (10 replies) on entering NG+ by accident, multiple posters admit making the same send-Ova mistake, and nobody has reported a way to revert an accidental NG+. Treat the Ova-room choice as final, and don't make it until your cleanup is genuinely done.",
         ],
       },
@@ -3651,7 +3664,7 @@ export const guidePages: GuidePage[] = [
         "Open questions we could not pin down from fetched sources this week:",
       items: [
         "Exact trigger (if any) behind player reports of the flower crown disappearing mid-campaign",
-        "Whether the Bring My Ova NG+ bug has been fixed — PowerPyx's warning predates Balance Patch 1 and has not visibly changed, and the Week 1 Update (August 29) notes name no Ova fix either (checked September 4, 2026)",
+        "Whether the September 24 hotfix unblocks saves that already lost Bring My Ova Back to Me to the NG+ bug — the trophy fix is official, but the notes say nothing about existing broken saves",
         "Whether the September 5 Baghead fix retroactively unblocks saves that were already stuck in NG+ — the official note confirms the lockout is fixed going forward but says nothing about existing broken saves (stuck players should update and retry before resorting to save editing)",
         "Which Week 1 questline cosmetic ties to the Baghead chain, per community reports, and whether locked-out players get it retroactively",
       ],
@@ -3715,8 +3728,16 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — 'horrible way to go to NG+' (accidental send-Ova entry, no revert reported, September 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581681621355246615/",
       },
+      {
+        name: "Steam Discussions — 'Flayed harbinger skin' (official beta-rewards recovery steps + user-confirmed fix + open PS5 cross-platform question, thread since August 17, 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/418424310691121600/",
+      },
+      {
+        name: "'Hotfix Live Now' — Mortal Shell II Steam announcement (Playstack, September 24, 2026; official Seeking the Past + Bring My Ova Back to Me trophy fixes)",
+        url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
+      },
     ],
-    reviewedOn: "September 23, 2026",
+    reviewedOn: "September 28, 2026",
     datePublished: "2026-08-27",
   },
 ];
