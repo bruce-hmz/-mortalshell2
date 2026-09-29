@@ -383,7 +383,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 26, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 30, 2026.",
     ],
     blocks: [
       {
@@ -406,6 +406,7 @@ export const guidePages: GuidePage[] = [
         heading: "What the September 24 hotfix does not fix",
         paragraphs: [
           "Three absences to know about. First, the **final-boss shell/weapon disappearance reports** are not on the list — the fire-ring entry is a balance tweak, not a fix, and no patch line addresses the vanishing shell or weapons (the caveat and its workarounds sit in the [boss guide](/bosses/)). Second, the **Demo-save achievements** situation remains untouched. Third, the roadmap's Night Mode / Tarstones / PP-item extensions are still unshipped. One more nuance: the gloom fix line scopes to drops **in the open world**, and neither Egon's Stone line says anything about Gloom already lost before the patch — details in the [farming guide](/farming-guide/).",
+          "One more absence — reported by players, not the notes: **after the September 24 hotfix, some players report dungeon chests that can no longer be opened**. The chest sits intact in its already-opened cell, but standing in front of it gives **no interaction prompt** at all — reported so far in the Bell, Collapsed, and Feeding Grounds dungeons. The same Feeding Grounds report adds a second face: every enemy in that dungeon appears to **spawn in pairs** where walkthrough videos show single enemies, with Night Mode confirmed inactive by the reporter. This is community-reported only — not acknowledged by the devs yet and absent from the official Known Issues pin as of September 29 — and the dungeon-loading fix in the list above is a different issue (dungeons failing to load after Egon's Stone, not chests refusing to interact). Reporters tried resting at a Beacon and re-entering, plus full restarts, without clearing it: there is **no verified workaround** yet, so if a dungeon chest ignores you, nothing you did broke it — watch the official Known Issues pin or this page for an acknowledgment or fix.",
         ],
       },
       {
@@ -611,8 +612,16 @@ export const guidePages: GuidePage[] = [
         name: "Mortal Shell II Steam news hub (Playstack)",
         url: "https://store.steampowered.com/news/app/2584270",
       },
+      {
+        name: "Steam Discussions — dungeon chests cannot be opened after the September 24 hotfix (Bell + Collapsed dungeons; 'enemies duplicates' reply)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581683203528675367/",
+      },
+      {
+        name: "Steam Discussions — Feeding Grounds dungeon chest that will not interact + enemies spawning in pairs (structured bug report, build 25478144)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581683497192861825/",
+      },
     ],
-    reviewedOn: "September 26, 2026",
+    reviewedOn: "September 30, 2026",
     datePublished: "2026-08-28",
   },
   {
