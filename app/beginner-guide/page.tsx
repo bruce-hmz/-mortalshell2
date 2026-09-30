@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     "mortal shell 2 beginner guide",
     "mortal shell 2 starter guide",
     "mortal shell 2 first hours guide",
+    "mortal shell 2 shell points",
   ],
   alternates: { canonical: "/beginner-guide/" },
   openGraph: {

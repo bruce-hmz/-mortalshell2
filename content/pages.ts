@@ -383,7 +383,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed September 30, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed October 1, 2026.",
     ],
     blocks: [
       {
@@ -406,7 +406,7 @@ export const guidePages: GuidePage[] = [
         heading: "What the September 24 hotfix does not fix",
         paragraphs: [
           "Three absences to know about. First, the **final-boss shell/weapon disappearance reports** are not on the list — the fire-ring entry is a balance tweak, not a fix, and no patch line addresses the vanishing shell or weapons (the caveat and its workarounds sit in the [boss guide](/bosses/)). Second, the **Demo-save achievements** situation remains untouched. Third, the roadmap's Night Mode / Tarstones / PP-item extensions are still unshipped. One more nuance: the gloom fix line scopes to drops **in the open world**, and neither Egon's Stone line says anything about Gloom already lost before the patch — details in the [farming guide](/farming-guide/).",
-          "One more absence — reported by players, not the notes: **after the September 24 hotfix, some players report dungeon chests that can no longer be opened**. The chest sits intact in its already-opened cell, but standing in front of it gives **no interaction prompt** at all — reported so far in the Bell, Collapsed, and Feeding Grounds dungeons. The same Feeding Grounds report adds a second face: every enemy in that dungeon appears to **spawn in pairs** where walkthrough videos show single enemies, with Night Mode confirmed inactive by the reporter. This is community-reported only — not acknowledged by the devs yet and absent from the official Known Issues pin as of September 29 — and the dungeon-loading fix in the list above is a different issue (dungeons failing to load after Egon's Stone, not chests refusing to interact). Reporters tried resting at a Beacon and re-entering, plus full restarts, without clearing it: there is **no verified workaround** yet, so if a dungeon chest ignores you, nothing you did broke it — watch the official Known Issues pin or this page for an acknowledgment or fix.",
+          "One more absence — reported by players, not the notes: **after the September 24 hotfix, four players across three threads report dungeon chests that can no longer be opened**. The chest sits intact in its already-opened cell, but standing in front of it gives **no interaction prompt** at all — reported so far in the Bell, Collapsed, and Feeding Grounds dungeons, with a fourth reporter adding Waterfall Camp and Deserted Mine on September 30. The same Feeding Grounds report adds a second face: every enemy in that dungeon appears to **spawn in pairs** where walkthrough videos show single enemies, with Night Mode confirmed inactive by the reporter. One of the original reporters has since said the issue resolved itself, without describing how — an unverified self-resolution, not a workaround you can act on. This is community-reported only — not acknowledged by the devs yet and absent from the official Known Issues pin as of October 1 — and the dungeon-loading fix in the list above is a different issue (dungeons failing to load after Egon's Stone, not chests refusing to interact). Reporters tried resting at a Beacon and re-entering, plus full restarts, without clearing it: there is **no verified workaround** yet, so if a dungeon chest ignores you, nothing you did broke it — watch the official Known Issues pin or this page for an acknowledgment or fix.",
         ],
       },
       {
@@ -620,8 +620,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — Feeding Grounds dungeon chest that will not interact + enemies spawning in pairs (structured bug report, build 25478144)",
         url: "https://steamcommunity.com/app/2584270/discussions/3/581683497192861825/",
       },
+      {
+        name: "Steam Discussions — original dungeon-chest cross-post thread (fourth-reporter reply, September 30)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581683203528675203/",
+      },
     ],
-    reviewedOn: "September 30, 2026",
+    reviewedOn: "October 1, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -1480,7 +1484,7 @@ export const guidePages: GuidePage[] = [
       "Mortal Shell II rewards aggression from the very first fight. This beginner guide covers the opening hours: the resolve-driven combat loop, your first shells, the posture-break system, and the edition differences that decided when you could start playing.",
       "Core mechanics were fact-checked against the official Steam page and the developer's website on " +
         LAST_REVIEWED +
-        "; shell and weapon details were verified against the launch build on August 20, 2026, and the opening-route script was checked against Kotaku's starter-tips guide on August 27, 2026. Anything still unconfirmed is listed openly at the bottom of the page.",
+        "; shell and weapon details were verified against the launch build on August 20, 2026, and the opening-route script was checked against Kotaku's starter-tips guide on August 27, 2026. The shell-points FAQ was added on October 1, 2026, with its earn/spend mechanics checked against IGN's shells wiki; the exact award cadence is not yet officially documented and is treated as unconfirmed there. Anything still unconfirmed is listed openly at the bottom of the page.",
     ],
     blocks: [
       {
@@ -1564,6 +1568,13 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        heading: "How do shell points work?",
+        paragraphs: [
+          "Shell points are the skill points behind each shell's ability tree. You earn them by leveling the Harbinger — Gloom from kills is the leveling currency you bank at Beacons — and the Harbinger level sheet shows what the coming levels should award. You spend them on a shell's abilities in the Alteration section, where costs are tiered: the deeper the ability, the more points it takes, up to 4 for a top-tier pick, per IGN's shells wiki.",
+          "Two cautions. First, how many points each level-up actually awards is not officially documented, so treat any specific cadence formula you read — including community replies — as unconfirmed rather than fact. Second, at least one player reports getting stuck in the stray Genessa version after assigning shell points in the Alteration section — per that report, a Beacon reset and switching shells and back both failed to undo it, and no publisher reply is on record as of October 1. Assigned points you regret? Mether's Severance, the respec item at Zhirelle, severs a shell's bond and resets it — the respec FAQ on the [best build guide](/best-build/) has the full exchange.",
+        ],
+      },
+      {
         heading: "Posture damage: the execution loop",
         paragraphs: [
           "Consecutive melee strikes build posture damage on your target. Fill the invisible bar and tough enemies stagger, opening them up for critical execution strikes — the payoff rhythm the whole combat system is built around.",
@@ -1631,8 +1642,20 @@ export const guidePages: GuidePage[] = [
         name: "Kotaku — 12 Tips To Know Before You Start Playing Mortal Shell 2",
         url: "https://kotaku.com/12-tips-to-know-before-you-start-playing-mortal-shell-2-2000725388",
       },
+      {
+        name: "IGN — Mortal Shell 2 All Shells, Locations, Stats, and How to Unlock",
+        url: "https://www.ign.com/wikis/mortal-shell-2/All_Shells_-_Location,_Stats,_and_How_to_Unlock",
+      },
+      {
+        name: "Steam Discussions — Harbinger level sheet shell-points thread",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581683497192695467/",
+      },
+      {
+        name: "Steam player review — stuck-in-stray-Genessa report after shell-point assignment",
+        url: "https://steamcommunity.com/profiles/76561199114928460/recommended/2584270/",
+      },
     ],
-    reviewedOn: "September 23, 2026",
+    reviewedOn: "October 1, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -2833,7 +2856,7 @@ export const guidePages: GuidePage[] = [
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
       "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, a falling loop or a locked arena is the bottom FAQ of this page, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads. A September 17, 2026 pass added the cost-free quit-to-menu escape and the September 14 hotfix's patch status to that FAQ. A September 27, 2026 pass folded in the September 24 hotfix's performance surface — the new Low Latency Mode option, the D3D12-queue crash-class report, and the official missing-save support channel in the save FAQ below.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads. A September 17, 2026 pass added the cost-free quit-to-menu escape and the September 14 hotfix's patch status to that FAQ. A September 27, 2026 pass folded in the September 24 hotfix's performance surface — the new Low Latency Mode option, the D3D12-queue crash-class report, and the official missing-save support channel in the save FAQ below. An October 1, 2026 pass added the publisher's in-game Restore Save path to that save FAQ.",
     ],
     blocks: [
       {
@@ -3001,8 +3024,8 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Mortal Shell 2 save file disappeared after the update — what now?",
         paragraphs: [
-          "Start with the official recovery path. Playstack's pinned Known Issues post (last edited September 3, 2026) lists a missing-saves workaround: in \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames, rename WorldState_Backup_0_[N].sav — the [N] is a number — to WorldState_0.sav and relaunch the game. If your settings were affected too, the same post says to delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav from that folder, and the save itself can also be re-downloaded from Steam's remote storage page (store.steampowered.com/account/remotestorage). Playstack has also replied \"we are aware and are looking into this\" on a player's save-wipe report, so the bug is officially acknowledged.",
-          "Two caveats before you rely on it: the rename only works when a WorldState_Backup file actually exists — at least one wiped player reports their SaveGames folder held no backup file at all, only Steam Cloud files, leaving the workaround unavailable in that case — and it is no substitute for your own backup. Copy the SaveGames folder somewhere safe before every update; if a save disappears right after one, restore your folder copy before relaunching. If you have neither a backup nor a WorldState_Backup file, report it in the bug-report thread with your build number — do not start overwriting saves first.",
+          "Start with the official recovery path. Playstack's pinned Known Issues post (last edited September 3, 2026) lists a missing-saves workaround: in \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames, rename WorldState_Backup_0_[N].sav — the [N] is a number — to WorldState_0.sav and relaunch the game. If your settings were affected too, the same post says to delete EnhancedInputUserSettings.sav and SpartaGameSettings.sav from that folder, and the save itself can also be re-downloaded from Steam's remote storage page (store.steampowered.com/account/remotestorage). Playstack has also replied \"we are aware and are looking into this\" on a player's save-wipe report, so the bug is officially acknowledged. One more recovery path exists, and it comes straight from the publisher: in a September 30 reply on the same thread, a Playstack team member pointed a player to the in-game option **Main Menu > Load Game > Restore Save** — a path that appears in neither the pinned post's Missing Saves list nor Steam's remote-storage page, so treat it as a companion to the rename workaround and your own folder backup, not a guaranteed fix.",
+          "Two caveats before you rely on it: the rename only works when a WorldState_Backup file actually exists — at least one wiped player reports their SaveGames folder held no backup file at all, only Steam Cloud files, leaving the workaround unavailable in that case, and a second player on the same thread reports a recovery attempt failing outright (\"Tried doing the backup save and didn't work, game just crashed and lost my save file\") — and none of these recovery paths are a substitute for your own backup. Copy the SaveGames folder somewhere safe before every update; if a save disappears right after one, restore your folder copy before relaunching. If you have neither a backup nor a WorldState_Backup file, report it in the bug-report thread with your build number — do not start overwriting saves first.",
           "There is now also an official intake channel for wiped saves. In a September 24 save-wipe thread, a Playstack reply asks affected players to zip their SaveGames folder (\\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames) and send it to the publisher — through Discord or at support@playstack.com with the subject line \"Mortal Shell II Missing Save\". The same thread adds two useful confirmations: a player who lost a save verified the rename workaround above genuinely worked for them (\"Renaming the backup was a successful workaround. It was an older save but way better than having nothing\"), and a follow-up Playstack reply asked players to \"please do make a back up while we're still looking into these issues\" — the investigation is officially ongoing. The wipe reports have not stopped either: hours after the September 24 hotfix announcement, another player reported 80+ hours and 87 levels erased by a freeze on leaving a beacon, and a separate report the same week describes a 60-hour save vanishing with Steam Cloud recovery failing — posted after an announcement is not the same as caused by the patch, and no link between the hotfix and either wipe is claimed here.",
         ],
       },
@@ -3139,7 +3162,7 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/3/581683203528556626/",
       },
     ],
-    reviewedOn: "September 27, 2026",
+    reviewedOn: "October 1, 2026",
     datePublished: "2026-08-20",
   },
   {
