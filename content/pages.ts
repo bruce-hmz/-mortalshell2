@@ -383,7 +383,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed October 1, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed October 2, 2026.",
     ],
     blocks: [
       {
@@ -406,7 +406,7 @@ export const guidePages: GuidePage[] = [
         heading: "What the September 24 hotfix does not fix",
         paragraphs: [
           "Three absences to know about. First, the **final-boss shell/weapon disappearance reports** are not on the list — the fire-ring entry is a balance tweak, not a fix, and no patch line addresses the vanishing shell or weapons (the caveat and its workarounds sit in the [boss guide](/bosses/)). Second, the **Demo-save achievements** situation remains untouched. Third, the roadmap's Night Mode / Tarstones / PP-item extensions are still unshipped. One more nuance: the gloom fix line scopes to drops **in the open world**, and neither Egon's Stone line says anything about Gloom already lost before the patch — details in the [farming guide](/farming-guide/).",
-          "One more absence — reported by players, not the notes: **after the September 24 hotfix, four players across three threads report dungeon chests that can no longer be opened**. The chest sits intact in its already-opened cell, but standing in front of it gives **no interaction prompt** at all — reported so far in the Bell, Collapsed, and Feeding Grounds dungeons, with a fourth reporter adding Waterfall Camp and Deserted Mine on September 30. The same Feeding Grounds report adds a second face: every enemy in that dungeon appears to **spawn in pairs** where walkthrough videos show single enemies, with Night Mode confirmed inactive by the reporter. One of the original reporters has since said the issue resolved itself, without describing how — an unverified self-resolution, not a workaround you can act on. This is community-reported only — not acknowledged by the devs yet and absent from the official Known Issues pin as of October 1 — and the dungeon-loading fix in the list above is a different issue (dungeons failing to load after Egon's Stone, not chests refusing to interact). Reporters tried resting at a Beacon and re-entering, plus full restarts, without clearing it: there is **no verified workaround** yet, so if a dungeon chest ignores you, nothing you did broke it — watch the official Known Issues pin or this page for an acknowledgment or fix.",
+          "One more absence — reported by players, not the notes: **after the September 24 hotfix, four players across three threads report dungeon chests that can no longer be opened**. The chest sits intact in its already-opened cell, but standing in front of it gives **no interaction prompt** at all — reported so far in the Bell, Collapsed, and Feeding Grounds dungeons, with a fourth reporter adding Waterfall Camp and Deserted Mine on September 30. The same Feeding Grounds report adds a second face: every enemy in that dungeon appears to **spawn in pairs** where walkthrough videos show single enemies, with Night Mode confirmed inactive by the reporter. One of the original reporters has since described how it cleared for him: \"Nothing much in particular. Rebooted my PC and restarted the game. The issue was resolved.\" That is a single reporter's account, not a verified fix — and the only method anyone has named so far. This is community-reported only — not acknowledged by the devs yet and absent from the official Known Issues pin as of October 2 — and the dungeon-loading fix in the list above is a different issue (dungeons failing to load after Egon's Stone, not chests refusing to interact). Reporters tried resting at a Beacon and re-entering, plus full restarts, without clearing it: there is **no verified workaround** yet, so if a dungeon chest ignores you, nothing you did broke it — watch the official Known Issues pin or this page for an acknowledgment or fix.",
         ],
       },
       {
@@ -621,11 +621,11 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/3/581683497192861825/",
       },
       {
-        name: "Steam Discussions — original dungeon-chest cross-post thread (fourth-reporter reply, September 30)",
+        name: "Steam Discussions — original dungeon-chest cross-post thread (fourth-reporter reply, September 30; OP's stated reboot method, October 2)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/581683203528675203/",
       },
     ],
-    reviewedOn: "October 1, 2026",
+    reviewedOn: "October 2, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -2848,15 +2848,15 @@ export const guidePages: GuidePage[] = [
     slug: "performance-fix",
     metaTitle: "Mortal Shell 2 Crash Fix: Crashing, Stuttering, Black Screen",
     metaDescription:
-      "Fix Mortal Shell 2 crashing, stuttering, and frame generation problems: Hotfix 1, the save-file workaround, the shader cache fix, post-Week-1 framegen and save-backup guidance, and PC settings.",
+      "Fix Mortal Shell 2 crashing, stuttering, and frame generation problems: Hotfix 1, the save-file workaround, the shader cache fix, post-Week-1 framegen and save-backup guidance, PC settings, and the Windows-scaling fix for a capped resolution list.",
     cardBlurb:
       "Every confirmed crash fix — plus what the Week 1 Update changed about frame generation, freezes, and your save files.",
     h1: "Mortal Shell 2 Crash Fix",
     eyebrow: "Troubleshooting",
     intro: [
       "If Mortal Shell 2 keeps crashing, stutters mid-fight, or locks up on the loading screen after a death, the fixes that actually exist are collected here: the crash hotfix Playstack shipped during Advanced Access, the official save-file workaround for the Keyboard Bindings menu crash, and the shader cache change recommended for full lock-ups. Every fix is tied to its source — publisher-confirmed or independently attributed. Once the game runs clean, the [beginner guide](/beginner-guide/) covers the resolve-driven first hours and the [best build guide](/best-build/) has the per-shell loadouts.",
-      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, a falling loop or a locked arena is the bottom FAQ of this page, and a game that won't launch at all starts with the requirements check.",
-      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads. A September 17, 2026 pass added the cost-free quit-to-menu escape and the September 14 hotfix's patch status to that FAQ. A September 27, 2026 pass folded in the September 24 hotfix's performance surface — the new Low Latency Mode option, the D3D12-queue crash-class report, and the official missing-save support channel in the save FAQ below. An October 1, 2026 pass added the publisher's in-game Restore Save path to that save FAQ.",
+      "Skim by symptom: keeps crashing starts at Fix 1, a crash when rebinding keys is Fix 2, a lock-up on the loading screen after death is Fix 3, random crashes that survive every patch live in the community-confirmed crashes section, stuttering lives in the shader cache change and the attributed settings, a resolution list capped below the monitor's native height points at Windows display scaling (its own section under the tearing fix), frame generation that misbehaves since the Week 1 Update and save-file worries live in the Week 1 section, a falling loop or a locked arena is the bottom FAQ of this page, and a game that won't launch at all starts with the requirements check.",
+      "It was fact-checked against Playstack's official Steam announcements, the publisher's verified community posts, and Steam store data on August 19, 2026 — the day before worldwide release — and rechecked on September 5, 2026 against the Week 1 Update notes (August 29), the September 1 hotfix notes, and the post-patch crash threads. A September 10, 2026 pass added the September 5 update's crash-status note and the first post-patch stutter report below. A September 15, 2026 pass corrected the save-recovery guidance against Playstack's pinned Known Issues post, which carries an official missing-saves workaround. A September 16, 2026 pass added the falling-loop and arena-lock FAQ below from the Bug Reports threads. A September 17, 2026 pass added the cost-free quit-to-menu escape and the September 14 hotfix's patch status to that FAQ. A September 27, 2026 pass folded in the September 24 hotfix's performance surface — the new Low Latency Mode option, the D3D12-queue crash-class report, and the official missing-save support channel in the save FAQ below. An October 1, 2026 pass added the publisher's in-game Restore Save path to that save FAQ. An October 2, 2026 pass added the resolution-cap section with the community-confirmed Windows-scaling cause.",
     ],
     blocks: [
       {
@@ -2939,6 +2939,13 @@ export const guidePages: GuidePage[] = [
         paragraphs: [
           "Screen tearing — horizontal tears in the image when a frame lands mid-refresh — has no officially confirmed fix in Mortal Shell 2. The attributed guidance from LagoFast runs against instinct: disable the in-game V-Sync and cap the frame rate externally instead (for example at 60 FPS via a tool like RivaTuner). The logic is to let one frame-rate governor handle pacing rather than stacking the game's own V-Sync on top of it.",
           "As with every attributed setting on this page, treat it as a test rather than a guarantee: change one thing, re-test, and keep what your hardware actually responds to.",
+        ],
+      },
+      {
+        heading: "Resolution capped below your monitor's native height? The Windows scaling cause (community-confirmed)",
+        paragraphs: [
+          "One more display problem has a community-confirmed cause rather than a fix: the game's resolution list stops short of the monitor — a 4K panel seeing its options top out at 2560×1440 with native 4K absent, and one ultrawide reporter describing restrictions on a 32:9 display with the same suspicion attached. The Bug Reports thread (open since August 17) settled on a cause through the reporter's own experiments: Windows custom scaling. At 100% scaling the full resolution list returned; at 300%, the in-game cap reportedly dropped as low as 720p. That attribution is player-confirmed, not official — a Playstack team member logged the issue with the team (\"I have updated the ticket\"), no patch notes have claimed it, and the September 24 hotfix's only display-adjacent addition is the latency option below.",
+          "What to try, in order of support: set Windows display scaling to 100% (Windows Settings > Display > Scale), relaunch, and re-check the game's resolution list — the reporter-confirmed lever. If you run a higher scaling deliberately, the thread's second lever is single-report only: enabling DPI compatibility on the game's launch file. Neither is an official fix; if one ships, it will be on the [patch notes page](/patch-notes/).",
         ],
       },
       {
@@ -3161,8 +3168,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — \"Multiple crashes between each other\" (September 23 Bug Reports thread, D3D12 queue crash stack)",
         url: "https://steamcommunity.com/app/2584270/discussions/3/581683203528556626/",
       },
+      {
+        name: "Steam Discussions — \"3840x2160 unavailable\" (resolution capped at 2560x1440; Windows scaling cause, ticket logged)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/418424310691129890/",
+      },
     ],
-    reviewedOn: "October 1, 2026",
+    reviewedOn: "October 2, 2026",
     datePublished: "2026-08-20",
   },
   {
