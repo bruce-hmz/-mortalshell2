@@ -383,7 +383,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Updates",
     intro: [
       "This page tracks Mortal Shell II's post-launch updates in one place: what each patch changed, verified against Playstack's own announcements, and what each change means for the builds and routes on this site. Update logs go stale fast — every entry here links the guide pages it affects, so the advice you are reading stays tied to the patch it was tested on.",
-      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed October 3, 2026.",
+      "Verified against Playstack's official announcements on Steam News — the September 24 'Hotfix Live Now' post, the September 14 'New Hotfix out now' post, the September 5 'New Update Out Now' post, the Week 1 Update announcement (August 29, 2026), and the Balance Patch 1 announcement thread (August 20, 2026); the September 1 PC hotfix entry below is the official note text as quoted verbatim by players in the Steam discussions (the developer posted it on Reddit and Discord, not Steam News). Last reviewed October 4, 2026.",
     ],
     blocks: [
       {
@@ -406,7 +406,7 @@ export const guidePages: GuidePage[] = [
         heading: "What the September 24 hotfix does not fix",
         paragraphs: [
           "Three absences to know about. First, the **final-boss shell/weapon disappearance reports** are not on the list — the fire-ring entry is a balance tweak, not a fix, and no patch line addresses the vanishing shell or weapons (the caveat and its workarounds sit in the [boss guide](/bosses/)). Second, the **Demo-save achievements** situation remains untouched. Third, the roadmap's Night Mode / Tarstones / PP-item extensions are still unshipped. One more nuance: the gloom fix line scopes to drops **in the open world**, and neither Egon's Stone line says anything about Gloom already lost before the patch — details in the [farming guide](/farming-guide/).",
-          "One more absence — reported by players, not the notes: **after the September 24 hotfix, five players across four threads report dungeon chests that can no longer be opened**. The chest sits intact in its already-opened cell, but standing in front of it gives **no interaction prompt** at all — reported so far in the Bell, Collapsed, and Feeding Grounds dungeons, with a fourth reporter adding Waterfall Camp and Deserted Mine on September 30 and opening his own bug-report thread on October 2 to say restarting and reinstalling had not brought the prompts back. The same Feeding Grounds report adds a second face: every enemy in that dungeon appears to **spawn in pairs** where walkthrough videos show single enemies, with Night Mode confirmed inactive by the reporter — and a fresh reply on that thread adds that the doubles sometimes **fight each other and then freeze**. One of the original reporters has since described how it cleared for him: \"Nothing much in particular. Rebooted my PC and restarted the game. The issue was resolved.\" That is a single reporter's account, not a verified fix — and the only method anyone has named so far; the Waterfall Camp reporter tried the same reboot and reports it \"didn't do it for me\". This is community-reported only — not acknowledged by the devs yet and absent from the official Known Issues pin as of October 3 — and the dungeon-loading fix in the list above is a different issue (dungeons failing to load after Egon's Stone, not chests refusing to interact). Reporters tried resting at a Beacon and re-entering, plus full restarts and a reinstall, without clearing it: there is **no verified workaround** yet, so if a dungeon chest ignores you, nothing you did broke it — watch the official Known Issues pin or this page for an acknowledgment or fix.",
+          "One more absence — reported by players, not the notes: **after the September 24 hotfix, six players across five threads report dungeon chests that can no longer be opened**. The chest sits intact in its already-opened cell, but standing in front of it gives **no interaction prompt** at all — reported so far in the Bell, Collapsed, and Feeding Grounds dungeons, with a fourth reporter adding Waterfall Camp and Deserted Mine on September 30 and opening his own bug-report thread on October 2 to say restarting and reinstalling had not brought the prompts back. The same Feeding Grounds report adds a second face: every enemy in that dungeon appears to **spawn in pairs** where walkthrough videos show single enemies, with Night Mode confirmed inactive by the reporter — and a fresh reply on that thread adds that the doubles sometimes **fight each other and then freeze**. A sixth reporter's bilingual thread adds a pair-symmetric wrinkle to that face: once the doubling hits, **every switch needs two presses** to open its door, and the duplicates first materialize above the originals' heads before dropping down. One of the original reporters has since described how it cleared for him: \"Nothing much in particular. Rebooted my PC and restarted the game. The issue was resolved.\" That is a single reporter's account, not a verified fix — and the only method anyone has named so far; the Waterfall Camp reporter tried the same reboot and reports it \"didn't do it for me\". This is community-reported only — not acknowledged by the devs yet and absent from the official Known Issues pin as of October 4 — and the dungeon-loading fix in the list above is a different issue (dungeons failing to load after Egon's Stone, not chests refusing to interact). Reporters tried resting at a Beacon and re-entering, plus full restarts and a reinstall, without clearing it: there is **no verified workaround** yet, so if a dungeon chest ignores you, nothing you did broke it — watch the official Known Issues pin or this page for an acknowledgment or fix.",
         ],
       },
       {
@@ -628,8 +628,12 @@ export const guidePages: GuidePage[] = [
         name: "Steam Discussions — dedicated dungeon-chest bug-report thread (chest prompts gone in three dungeons after restart and reinstall attempts)",
         url: "https://steamcommunity.com/app/2584270/discussions/3/581683835681620277/",
       },
+      {
+        name: "Steam Discussions — CN/EN bilingual dungeon-doubling thread (Feeding Grounds; save file offered)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581683835681634623/",
+      },
     ],
-    reviewedOn: "October 3, 2026",
+    reviewedOn: "October 4, 2026",
     datePublished: "2026-08-28",
   },
   {
@@ -2688,7 +2692,7 @@ export const guidePages: GuidePage[] = [
       "The best Mortal Shell II tips follow from two confirmed systems: resolve, the currency your aggression earns, and dungeons built as non-linear branching mazes. Master both and the early game opens up.",
         "Mechanics were verified against the official Steam page on " +
         LAST_REVIEWED +
-        "; boss-preparation habits and shell details below are attributed to Game8's launch guides, checked August 20, 2026. The Adaptive Difficulty section reflects Playstack's official September 5 update notes, checked September 7, 2026. The parry-achievement section reflects the same September 5 patch notes plus the Fextralife trophy guide and a September 8 Steam thread, checked September 10, 2026.",
+        "; boss-preparation habits and shell details below are attributed to Game8's launch guides, checked August 20, 2026. The Adaptive Difficulty section reflects Playstack's official September 5 update notes, checked September 7, 2026. The parry-achievement section reflects the same September 5 patch notes plus the Fextralife trophy guide and a September 8 Steam thread, checked September 10, 2026; a troubleshooting note on Peter's Perfect Parry unlock-failure reports was added October 4, 2026, from two Steam threads.",
     ],
     blocks: [
       {
@@ -2749,6 +2753,7 @@ export const guidePages: GuidePage[] = [
           "It is a parry exam. Peter's Perfect Parry asks for a Perfect Guard on every hit of The Nameless Captive's head-spin attack while you are wearing the Untarnished Seal — a Bronze trophy sitting at 4.2% ownership, and the subject of a 14-reply Steam thread whose opener admits to feeling like quitting over it. Players there complain the captive 'changes trajectory if you don't dodge at the perfect moment' and snaps back into range mid-string. That frustration is the 0.3-second drill above in its hardest form: same skill, tighter tells. His whole fight is a parry gauntlet by design — the [boss guide](/bosses/) maps his rhythm phase by phase.",
           "Two setup facts decide the attempt before it starts. He spawns once per run, and the Untarnished Seal is mandatory — guards without it do not count even when the parry itself lands. Put the seal on before the encounter; there is no backfill once the save moves past him. The [missable content checklist](/missable-content/) carries the full setup, and the [achievements guide](/achievements-guide/) has the exact criteria and rarity context.",
           "One thing the September 5 patch changed in your favor: consecutive parries with the Infinite Seal — the parry-focused seal from the keep's sparring trials — now have a wider window that reaches into the wind-up animation, so a string of incoming hits can be parried instead of only the first one. Status effects also now apply while an enemy recovers from a riposte, so a landed parry pays harder than it used to. The trophy's own seal requirement is unchanged.",
+          "One troubleshooting note the drill above cannot fix: a small cluster of players reports the trophy staying locked even when the parry itself lands. Across two Steam threads, four players describe landing the full second-stage head-spin guard and getting nothing — a report a developer has triaged on the bug board counts all seven attacks registering **without the block meter ever filling**, and reload and restart reportedly did nothing for that player. None of these reports are listed in the Known Issues pin, and the September 24 hotfix did not address them. Two of the four failed their attempts on NG+, which reads like a pattern — but at this sample size it stays **suspected but unconfirmed**. If a clean, seal-correct run does not pop the trophy, the requirements above still stand; the bug board and the [achievements guide](/achievements-guide/) are where follow-ups will surface.",
         ],
       },
       {
@@ -2853,8 +2858,16 @@ export const guidePages: GuidePage[] = [
         name: "Fextralife Wiki — Mortal Shell 2 Trophy and Achievement Guide",
         url: "https://mortalshell2.wiki.fextralife.com/Trophy+and+Achievement+Guide",
       },
+      {
+        name: "Steam Discussions — Peter's Perfect Parry reports on the bug board (developer triage reply)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/582806239606630500/",
+      },
+      {
+        name: "Steam Discussions — Russian-language thread on the same trophy (New Game+ attempts)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/582805931178489819/",
+      },
     ],
-    reviewedOn: "September 11, 2026",
+    reviewedOn: "October 4, 2026",
     datePublished: "2026-08-20",
   },
   {
@@ -3449,7 +3462,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Progression",
     intro: [
       "Fast travel in Mortal Shell II is not a spell you learn or a questline you finish — it is the Beacon network you build yourself. Every region hides corrupted checkpoints that become the travel map's pins as you cleanse them, and by launch week players were asking the same question across Steam and YouTube: where exactly does fast travel start?",
-      "This page covers the mechanic end to end: what Beacons do before and after cleansing, how to trigger the Mether's Breath travel menu, every one of the 49 Beacon locations ordered by region, and the completion stakes — none of them are missable. Everything below was verified against PowerPyx's Beacon compendium and the Fextralife wiki on August 27, 2026. The Week 1 Update (August 29, 2026) has since added new day-only Beacons in Fainweald and Mammon — covered in the first section below; the 49-node catalog documents the verified launch baseline, re-checked September 1, 2026, and the Beacon-revitalization FAQ was added September 5, 2026 from post-patch Steam reports.",
+      "This page covers the mechanic end to end: what Beacons do before and after cleansing, how to trigger the Mether's Breath travel menu, every one of the 49 Beacon locations ordered by region, and the completion stakes — none of them are missable. Everything below was verified against PowerPyx's Beacon compendium and the Fextralife wiki on August 27, 2026. The Week 1 Update (August 29, 2026) has since added new day-only Beacons in Fainweald and Mammon — covered in the first section below; the 49-node catalog documents the verified launch baseline, re-checked September 1, 2026, and the Beacon-revitalization FAQ was added September 5, 2026 from post-patch Steam reports; a known-issue FAQ on the post-boss cleanse/Ova-collection soft-lock face was added October 4, 2026, from Steam bug-board reports.",
     ],
     blocks: [
       {
@@ -3549,6 +3562,12 @@ export const guidePages: GuidePage[] = [
           "If neither applies — the node is a normal cleansable Beacon, the sun is up, and it still refuses the interaction — treat it as a genuine bug: report it on the Steam bug board with a screenshot (the original reports include them), and check the [patch notes page](/patch-notes/) in case a future hotfix addresses it.",
         ],
       },
+      {
+        heading: "Why can't I cleanse a Beacon after killing its boss?",
+        paragraphs: [
+          "One community-reported soft-lock face to know about before it happens to you, reported at Winterglass Lake (Conquered Temple, #32 in the table above) by two independent players: dying **after killing the Beacon's boss but before collecting its Ova** can leave the run stuck on return. One player came back to an already-opened Ova and got **no prompt to cleanse the Beacon**; the other, killed by a mob at the entrance after the boss fell, now finds **no pickup prompt on the Ova** — and the boss **no longer respawns**, so there is no second chance either. Leaving, traveling to another area, and full restarts reportedly do not restore any of it. This is a player-reported bug, not an official one: the Known Issues pin lists nothing about Beacon cleansing or Ova collection as of October 4, 2026, and the thread's earliest report predates the September 24 hotfix, so no patch attribution is claimed. There is **no verified workaround** — if it hits you, report it on the Steam bug board with a save description and watch the [patch notes page](/patch-notes/) for a fix; the Ova it gates feeds the completion trophy mapped in the [Ova locations guide](/ova-locations/).",
+        ],
+      },
     ],
     pending: {
       heading: "Still being verified",
@@ -3586,8 +3605,12 @@ export const guidePages: GuidePage[] = [
         name: "Fextralife Wiki — Mortal Shell 2 Beacons",
         url: "https://mortalshell2.wiki.fextralife.com/Beacons",
       },
+      {
+        name: "Steam Discussions — Winterglass Lake Beacon thread (post-boss-death soft-lock reports from two players)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581680955259065201/",
+      },
     ],
-     reviewedOn: "September 5, 2026",
+     reviewedOn: "October 4, 2026",
      datePublished: "2026-08-27",
    },
   {
