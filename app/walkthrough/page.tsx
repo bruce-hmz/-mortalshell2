@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "mortal shell 2 progression guide",
     "mortal shell 2 chapter guide",
     "mortal shell 2 corruption walls",
+    "mortal shell 2 shrine of trials pillar puzzle",
   ],
   alternates: { canonical: "/walkthrough/" },
   openGraph: {

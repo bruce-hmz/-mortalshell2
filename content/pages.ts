@@ -1869,7 +1869,7 @@ export const guidePages: GuidePage[] = [
     slug: "walkthrough",
     metaTitle: "Mortal Shell 2 Walkthrough: World & Progression",
     metaDescription:
-      "Mortal Shell 2 walkthrough, region by region: step-by-step route through Fainweald and Ruins of Mammon, every beacon and gate in order, boss checkpoints, and detours worth taking.",
+      "Mortal Shell 2 walkthrough, region by region: step-by-step route through Fainweald and Ruins of Mammon, every beacon and gate in order, boss checkpoints, the Shrine of Trials pillar-puzzle solution, and detours worth taking.",
     cardBlurb:
       "An interconnected world of 60+ dungeons — and what hides beyond the golden path.",
     heroImage: {
@@ -1885,7 +1885,7 @@ export const guidePages: GuidePage[] = [
         "), and it drops you into its interconnected world with a map and zero hand-holding. This walkthrough gives you the order: every step from the end of the tutorial to the gates of the Ruins of Mammon — which beacon to activate first, which gate to cleanse next, where each boss waits, and which detours pay off.",
       "The route below follows AltChar's complete progression guide (published August 17, 2026), with encounter specifics corroborated against Rock Paper Shotgun's 45-boss compendium (updated August 25, 2026). The world-structure overview was originally fact-checked against the official Steam page on " +
         LAST_REVIEWED +
-        ". Notes on the game's later regions and final area are marked as still being built out. The mid-game corruption-gate section was added on September 10, 2026 from Fextralife's Endgame and Northeast Gate wiki pages, answering a cluster of stuck-player threads on Steam.",
+        ". Notes on the game's later regions and final area are marked as still being built out. The mid-game corruption-gate section was added on September 10, 2026 from Fextralife's Endgame and Northeast Gate wiki pages, answering a cluster of stuck-player threads on Steam. The Shrine of Trials pillar-puzzle FAQ was added on October 5, 2026, cross-checking Fextralife's dungeon walkthrough against the game's Steam discussion threads.",
     ],
     blocks: [
       {
@@ -1958,6 +1958,12 @@ export const guidePages: GuidePage[] = [
           "The mechanic, per Fextralife's Northeast Gate walkthrough and Endgame pages: each **Corrupted Gate** is a gated area you enter, explore to its boss, kill the boss, and reclaim the Ovas from — and that cleanse is what brings a region's corruption walls down. Fextralife counts **six corrupted gates in total** across Fainweald and the Ruins of Mammon, and some walls additionally stay up until you hold **Mether's Breath**, the boss-gated cleansing/cleansed-travel ability from Step 4. Its endgame page states the finish line plainly: the last section of the game stays blocked \"until you defeat all 6 bosses in each gate and cleanse their respective beacons, taking their numerous Ova. From that moment on, you are in the endgame.\"",
           "So the mid-game checklist when the world walls you in: find whichever gate you haven't cleansed yet (a wall with no cleanse route usually means its gate sits in a region you haven't opened, or you don't hold Mether's Breath yet), keep banking Ova at the Marrow Keep siphon — every gate cleanse pays Ova, and the [Ova locations guide](/ova-locations/) keeps the full accounting — and stop worrying about the snow: the snow areas are the **endgame, not missable content**. When the sixth gate falls, Undermether appears and the path opens beneath Marrow Keep's Ova-room staircase: Monolith, Malborn Offspring, and Orrem the Golem, then **Zmey the Unbidden**, the Foul Passenger, and the player-timed Mether's End ending — where more collected Ova improves your odds on the trip. Per-fight tactics for that whole chain are in the [boss guide](/bosses/).",
           "One genuine bug face lives in the same cluster: a single report describes a corruption-vine wall spawning **behind** the player in the two-sarcophagi area before Lazlo's shell spot — uncleansable, unbreakable, no way around, and it cost the player a quit-to-menu and a save reload. Bug or mechanic is unclear from one thread, so before you touch your own save, check the [missable content guide](/missable-content/): shells, Beacons, and weapons are not missable, and the post-final-boss free-roam window exists precisely so a restart never has to be the answer.",
+        ],
+      },
+      {
+        heading: "Why won't the pillars move in the Shrine of Trials?",
+        paragraphs: [
+          "The Shrine of Trials — the Axe and Dagger dungeon in the chapel northwest of Mushroom Village (Step 2 above) — gates its back rooms behind two pillar puzzles, and a cluster of October Steam threads is stuck on exactly one thing: pillars that seem to ignore being hit. Some of that is the mechanic itself, per Fextralife's Shrine of Trials walkthrough and a community answer the puzzle's original asker confirmed working: pillars are shoved, not struck for damage — each hit slides a pillar **away from the side you strike it**, so where you stand decides which way it moves, and the goal in both rooms is to slide them onto the **floor panels**, whose marks show both where a pillar stops and the solution. The first room holds a single pillar; the second holds two that must land on their panels **in a specific order** — Fextralife's room-by-room hit sequence is in the sources below. But two players in separate threads report a genuine bug face on top of the learning curve: one hit the pillars from every angle and they would not move at all, and another spent about 20 minutes on the first room's pillar just to get it onto its platform. Treat that face as community-reported, not official: the Known Issues pin lists nothing about the Shrine of Trials pillars as of October 5, 2026, and there is **no verified fix** — if the pillars stop responding for you, report it on the Steam bug board and watch the [patch notes page](/patch-notes/) for a future hotfix. The payoff is worth the patience: the [weapons guide](/weapons/) covers the Axe and Dagger waiting behind the puzzle rooms.",
         ],
       },
       {
@@ -2052,8 +2058,24 @@ export const guidePages: GuidePage[] = [
         name: "Rock Paper Shotgun — Mortal Shell 2 shell locations",
         url: "https://www.rockpapershotgun.com/mortal-shell-2-shell-locations",
       },
+      {
+        name: "Fextralife Wiki — Shrine of Trials (pillar-puzzle walkthrough)",
+        url: "https://mortalshell2.wiki.fextralife.com/Shrine+of+Trials",
+      },
+      {
+        name: "Steam Discussions — Shrine of Trials pillar puzzle how-to thread (community solution, answered)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/418424310691207375/",
+      },
+      {
+        name: "Steam Discussions — Shrine of Trials pillar bug report (bug board, dedicated thread)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581683835681592360/",
+      },
+      {
+        name: "Steam Discussions — Shrine of Trials pillar weak-response report (bug board)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581684201210816853/",
+      },
     ],
-    reviewedOn: "September 10, 2026",
+    reviewedOn: "October 5, 2026",
     datePublished: "2026-08-20",
   },
   {
