@@ -1211,7 +1211,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Achievements",
     intro: [
       "Mortal Shell II's 53-achievement list is friendlier than most soulslikes — no no-hit runs, no difficulty modifiers, and a post-game free-roam window that rescues almost every collectible. But three things still punish the unprepared: exactly three achievements are missable, the single rarest one (Seeking the Past, **1.9%** of players per Steam) is a long Glimpse grind — dramatically shorter since the Week 1 Update un-capped the economy — and the Slayer Seal, the game's built-in easy mode, silently disables achievements while equipped.",
-      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. The Ova section gained the community prologue-skip co-factor reports on September 15, 2026, and the zero-unlocks FAQ below gained the community's Demo-save-files fix on September 21, 2026. The Bring My Ova and Seeking the Past bug sections were marked fixed per the September 24 hotfix notes on September 28, 2026, and a Linux/Proton achievement troubleshooting entry was added to the FAQ below from the Steam discussions on October 3, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
+      "This guide orders the list by risk rather than by unlock percentage. Every figure below was checked against Steam's official global achievement stats on August 27, 2026, cross-referenced with PowerPyx's full trophy roadmap; the Week 1 economy and Slayer Seal notes were verified against official sources on September 2, 2026, the Baghead NG+ trap was added September 3, 2026 from Steam bug reports, the Finish the Fight kill-window quirk was added September 5, 2026 from the Steam bug board, and the Baghead entries were refreshed on September 7, 2026 after the September 5 patch officially fixed the NG+ lockout. The Ova section gained the community prologue-skip co-factor reports on September 15, 2026, and the zero-unlocks FAQ below gained the community's Demo-save-files fix on September 21, 2026. The Bring My Ova and Seeking the Past bug sections were marked fixed per the September 24 hotfix notes on September 28, 2026, and a Linux/Proton achievement troubleshooting entry was added to the FAQ below from the Steam discussions on October 3, 2026, and that entry gained Cold Symmetry's in-thread confirmation of the Proton Experimental fix on October 7, 2026. Need the plain list instead? The [full achievements list](/achievements/) has every trophy's official description on one page.",
     ],
     blocks: [
       {
@@ -1285,7 +1285,7 @@ export const guidePages: GuidePage[] = [
           "**Does Night (increased difficulty mode) affect trophies?** No — the in-game Night toggle raises enemy pressure but is required for certain content like night-only Glimpse pickups, and no achievement demands clearing bosses under it specifically.",
           "**Does the Slayer Seal affect achievements?** Yes — equipping it disables Steam achievements for that save. Developers confirmed the lockout and told Rock Paper Shotgun they 'didn't intend to lock everybody out'; nothing in the Week 1 Update notes (August 29) changes it. If the seal is on and you care about the platinum, switch it off before pushing deeper.",
           "**None of my achievements are unlocking at all — is there a fix?** The most common cause reported so far: leftover **Demo save files**. Two players who tried the demo found DEMO-named files sitting in \\Users\\[Your Username]\\AppData\\Local\\MortalShell2\\Saved\\SaveGames, and with those present nothing earned in the full game registered — not even the prologue trophies. Deleting every DEMO-named file from that folder and relaunching the game unlocked the entire backlog on the spot in both cases, and when one of them posted the find in the official bug thread, the publisher replied \"That will definitely help.\" So if your count is zero from the start: clear the Demo files first, then work the official Known Issues triage (confirm the game really granted nothing, check the Slayer Seal is off, run as administrator, then send your saves to support@playstack) — the pin does not list the Demo-file fix yet.",
-          "**Achievements are not popping on Linux/Proton — is there a fix?** A separate, platform-specific face of the zero-unlock problem: players running the game through Proton on Linux report beating bosses and earning nothing — the same thread carries three affected players. Two later replies point to the same community-confirmed lever: switch the Proton build to **Proton Experimental or Proton GE** — one reporter says the switch 'solved it for me', and another reports playing the entire game on Linux (Manjaro, Proton GE) and finishing with **100% achievements**. The first reporter adds in a follow-up thread that already-earned achievements popped **retroactively** after his switch. The thread OP's own boot-into-Windows load remains a single, unconfirmed report. None of this is official — the Known Issues pin lists nothing about Linux as of October 3, 2026 — but if you play through Proton and your count sits at zero, the Proton build is the first lever to try.",
+          "**Achievements are not popping on Linux/Proton — is there a fix?** A separate, platform-specific face of the zero-unlock problem: players running the game through Proton on Linux report beating bosses and earning nothing — the same thread carries three affected players. Two later replies point to the same community-confirmed lever: switch the Proton build to **Proton Experimental or Proton GE** — one reporter says the switch 'solved it for me', and another reports playing the entire game on Linux (Manjaro, Proton GE) and finishing with **100% achievements**. The first reporter adds in a follow-up thread that already-earned achievements popped **retroactively** after his switch. The thread OP's own boot-into-Windows load remains a single, unconfirmed report. **Update, October 7, 2026:** the Proton Experimental advice now has an official stamp — Cold Symmetry's liv replied in the same thread on October 5: \"Using experimental has solved issues for most people playing on Linux.\" The Known Issues pin still lists nothing about Linux (as of the October 7 re-read), but with the publisher's own team confirming the fix in-thread, switching to **Proton Experimental** is the first lever to try if your count sits at zero.",
           "**Does the Baghead chain break in NG+?** It could — and it is now officially fixed. Players who kept the Special Moonshine from their first playthrough found Baghead's quest would not continue in NG+ while the bottle sat in the inventory, and the game has no drop function, so Bag Holder (23.5%) locked on that save. The September 5 patch lists the fix directly — 'Fixed an issue where the player could become locked out of Baghead's Quest in NG+' — though the notes do not say whether saves that were already stuck get unblocked; if you are currently locked out, install the update and try the chain again before resorting to save editing. Returning the moonshine to its place (or finishing his chain) during the endgame free-roam window still costs nothing and remains the safe route; community reports also tie one of the Week 1 questline cosmetics to this chain. The full entry lives in the [missable content guide](/missable-content/).",
           "**Is Ascension the 196-Ova trophy?** No — they are separate entries. Ascension (16.7%, Discover the secret of the Mango) ties to the hidden Mango sanctuary quest; Bring My Ova Back to Me (15.7%) is the Ova-completion one. Community confusion between the two is common because their rates sit close together.",
           "**How long is a full completion?** PowerPyx estimates **40-60 hours** at a 6/10 difficulty rating, with roughly 85% of that being one thorough first playthrough plus two lighter Glimpse-farming cycles.",
@@ -1361,7 +1361,7 @@ export const guidePages: GuidePage[] = [
         url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222819",
       },
       {
-        name: "Steam Discussions — achievements not triggering on Linux/Proton (Proton Experimental / Proton GE replies, October 2026)",
+        name: "Steam Discussions — achievements not triggering on Linux/Proton (Proton Experimental / Proton GE replies + Cold Symmetry in-thread confirmation, October 2026)",
         url: "https://steamcommunity.com/app/2584270/discussions/0/564793766239723978/",
       },
       {
@@ -1369,7 +1369,7 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/3/569298022367989783/",
       },
     ],
-    reviewedOn: "October 3, 2026",
+    reviewedOn: "October 7, 2026",
     datePublished: "2026-08-27",
   },
   {
@@ -2082,7 +2082,7 @@ export const guidePages: GuidePage[] = [
     slug: "shells",
     metaTitle: "Mortal Shell 2 Shells: All 8 Lost Warriors & Abilities",
     metaDescription:
-      "All eight Mortal Shell 2 shells: the named roster, every unlock location from Tiel to Sariel, and the memories that unlock their abilities.",
+      "All eight Mortal Shell 2 shells: the named roster, every unlock location from Tiel to Sariel, the memories that unlock their abilities, and the shell ability bugs players are reporting.",
     cardBlurb:
       "All eight lost warriors: possession, innate abilities, and the memories that unlock them.",
     heroImage: {
@@ -2095,7 +2095,7 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Classes",
     intro: [
       "Shells are Mortal Shell II's answer to classes: the forgotten bodies of eight lost warriors, scattered across the world, each one waiting to be possessed and mastered. This page collects everything officially confirmed about them so far.",
-      "Fact-checked against the official Steam page and the developer's website on August 17, 2026; the three player-question FAQs below (Harros, Genessa's shade, Lazlo's heat) were added September 4, 2026 from the Steam discussion threads linked in the sources, and the September 5 shell-balance section was added September 9, 2026 from Playstack's official update notes and the post-patch Steam threads.",
+      "Fact-checked against the official Steam page and the developer's website on August 17, 2026; the three player-question FAQs below (Harros, Genessa's shade, Lazlo's heat) were added September 4, 2026 from the Steam discussion threads linked in the sources, the September 5 shell-balance section was added September 9, 2026 from Playstack's official update notes and the post-patch Steam threads, and the shell-ability bug FAQ below was added October 7, 2026 from the Steam bug-board threads linked in the sources.",
     ],
     blocks: [
       {
@@ -2201,6 +2201,14 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
+        anchor: "shell-ability-bugs",
+        heading: "Why is my shell's ability or passive acting strangely?",
+        paragraphs: [
+          "Four unusual shell behaviours are being reported on the game's Steam bug boards in early October 2026, and they share a shape: a shell's own ability or passive misbehaving. Everything below is a community report — none of these behaviours appears on Playstack's official Known Issues pin (re-checked October 7, 2026), the developers have not acknowledged any of them, and no fix has shipped for any of them yet. The two invulnerability reports: two players across two threads report that spamming kicks while Smert's Last Vow ability is active appears to grant the shell near-total invincibility — by one account it can trigger with as few as two kicks, and punches seem to reset the state at random, with falling off cliffs the one exception per the same reports. Separately, one player reports that switching from Lazlo to Proxima at a Beacon left Proxima invulnerable until the next Beacon rest — a single report so far, though the poster says it happens every time they make that switch.",
+          "The two passive-facing reports: a PS5 player reports Lazlo's Moonshine passive looking roughly doubled after a Lazlo → Gragu → Lazlo shell-swap sequence, and two players report that Gragu's Devourer passive — bonus Gloom on kills, 15% per the reporter's own description — does nothing at all, with the second player confirming it is still ongoing. None of the trigger conditions above is verified; these are the reporters' own accounts, and what is actually happening awaits an official word or a wider report pattern. If your shell starts behaving like one of these, add a report to Steam's Bug Reports board with your platform and shell — and watch the [patch notes page](/patch-notes/), where the next hotfix will show up first. For the build one of these reports touches, see the [best Smert build](/best-smert-build/).",
+        ],
+      },
+      {
         anchor: "best-shell",
         heading: "Which shell is the best class in Mortal Shell 2?",
         paragraphs: [
@@ -2257,11 +2265,31 @@ export const guidePages: GuidePage[] = [
         url: "https://steamcommunity.com/app/2584270/discussions/3/581681298840564172/",
       },
       {
+        name: "Steam Discussions (bug board) — 'Smert kicking invincibility (Last Vow)' thread (October 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581684201210798848/",
+      },
+      {
+        name: "Steam Discussions (bug board) — 'Bug Report: Invincible Fist God' thread (Smert trigger cross-confirmation, October 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581680955258998925/",
+      },
+      {
+        name: "Steam Discussions — 'Invulnerable when changing shell' thread (Lazlo → Proxima at a Beacon, October 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/0/581684201210979474/",
+      },
+      {
+        name: "Steam Discussions (bug board) — Moonshine passive double after shell swap, PS5 (October 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581684201210801153/",
+      },
+      {
+        name: "Steam Discussions (bug board) — 'Gragu's passive Devourer does nothing' thread (October 2026)",
+        url: "https://steamcommunity.com/app/2584270/discussions/3/581680955259093299/",
+      },
+      {
         name: "Mortal Shell II on Steam (Playstack)",
         url: "https://store.steampowered.com/app/2584270/Mortal_Shell_II/",
       },
     ],
-    reviewedOn: "September 9, 2026",
+    reviewedOn: "October 7, 2026",
     datePublished: "2026-08-20",
   },
  {

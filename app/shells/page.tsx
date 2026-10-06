@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "mortal shell 2 all shells",
     "mortal shell 2 classes",
     "mortal shell 2 shell locations",
+    "mortal shell 2 smert invincibility",
   ],
   alternates: { canonical: "/shells/" },
   openGraph: {
